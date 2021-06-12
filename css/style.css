@@ -54,13 +54,29 @@ header nav {
       position: relative;
       list-style: none;
       text-align: center; }
-      header nav ul li a {
-        font-size: 2.2rem;
-        color: #111;
-        text-decoration: none;
-        font-weight: 300; }
-        header nav ul li a:hover {
-          color: #eb395d; }
+  header nav a {
+    font-size: 2.2rem;
+    color: #111;
+    text-decoration: none;
+    font-weight: 300; }
+    header nav a:hover {
+      color: #eb395d; }
+  header nav .social-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header nav .social-bar .email-icon {
+      position: absolute;
+      bottom: 20px;
+      transform: scale(0.5); }
+    header nav .social-bar a {
+      display: inline-block;
+      transform: scale(0.5); }
 
 section {
   display: flex;

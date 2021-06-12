@@ -50,25 +50,47 @@ header {
         &.active {
             left: 0;
         }
-
+        
         ul {
             position: relative;
 
             li {
                 position: relative;
                 list-style: none;
-                text-align: center;
+                text-align: center;     
+            }
+        }
 
-                a {
-                    font-size: 2.2rem;
-                    color: #111;
-                    text-decoration: none;
-                    font-weight: 300;
+        a {
+            font-size: 2.2rem;
+            color: #111;
+            text-decoration: none;
+            font-weight: 300;
 
-                    &:hover {
-                        color: $btn-red;
-                    }
-                }
+            &:hover {
+                color: $btn-red;
+            }
+        }
+
+        .social-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .email-icon {
+                position: absolute;
+                bottom: 20px;
+                transform: scale(.5);
+            }
+
+            a {
+                display: inline-block;
+                transform: scale(.5);
             }
         }
     }
