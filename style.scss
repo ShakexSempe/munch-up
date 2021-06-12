@@ -2,6 +2,10 @@
 @import 'variables';
 @import 'reset';
 
+body {
+    background-image: radial-gradient( #ffc0cb3f, #a52a2a2d);
+}
+
 header {
     .logo {
         position: relative;
@@ -66,11 +70,22 @@ header {
         left: 100%;
         width: 100%;
         height: 100%;
-        background-color: $nav-bg;
+        background-image: url(../images/logo.jpg);
         z-index: 15;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #ffc0cbf5;
+            background-image: radial-gradient(rgba(182, 12, 12, 0.2),#ffc0cb00 );
+        }
 
 
         &.active {
