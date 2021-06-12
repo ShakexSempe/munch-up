@@ -15,25 +15,27 @@ header {
 
     .toggle {
         position: fixed;
+        background: $btn-red url(../images/menu.png);
+        background-repeat: no-repeat;
+        background-position: center;
         top: 0;
         right: 0;
         width: 60px;
         height: 60px;
         z-index: 20;
-        background: $btn-red;
-        color: $text-color-light;
-        font-size: 3em;
-        display: grid;
-        place-items: center;
         cursor: pointer;
         transition: .2s ease;
-
 
         &:hover {
             transition: .2s ease;
             transform: scale(.9);
         }
     }
+    .toggle.active {
+        background: $btn-red url(../images/close.png) no-repeat center;
+        
+
+        }
 
     nav {
         display: none;

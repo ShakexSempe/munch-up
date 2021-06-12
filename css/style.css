@@ -19,21 +19,22 @@ header .logo {
 
 header .toggle {
   position: fixed;
+  background: #eb395d url(../images/menu.png);
+  background-repeat: no-repeat;
+  background-position: center;
   top: 0;
   right: 0;
   width: 60px;
   height: 60px;
   z-index: 20;
-  background: #eb395d;
-  color: #fff;
-  font-size: 3em;
-  display: grid;
-  place-items: center;
   cursor: pointer;
   transition: .2s ease; }
   header .toggle:hover {
     transition: .2s ease;
     transform: scale(0.9); }
+
+header .toggle.active {
+  background: #eb395d url(../images/close.png) no-repeat center; }
 
 header nav {
   display: none; }
