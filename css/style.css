@@ -15,7 +15,7 @@ header .logo {
   left: 100px;
   font-size: 2rem;
   font-weight: 700;
-  z-index: 10; }
+  z-index: 20; }
 
 header .toggle {
   position: fixed;
@@ -32,12 +32,35 @@ header .toggle {
   header .toggle:hover {
     transition: .2s ease;
     transform: scale(0.9); }
-
-header .toggle.active {
-  background: #eb395d url(../images/close.png) no-repeat center; }
+  header .toggle.active {
+    background: #eb395d url(../images/close.png) no-repeat center; }
 
 header nav {
-  display: none; }
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  header nav.active {
+    left: 0; }
+  header nav ul {
+    position: relative; }
+    header nav ul li {
+      position: relative;
+      list-style: none;
+      text-align: center; }
+      header nav ul li a {
+        font-size: 2.2rem;
+        color: #111;
+        text-decoration: none;
+        font-weight: 300; }
+        header nav ul li a:hover {
+          color: #eb395d; }
 
 section {
   display: flex;
