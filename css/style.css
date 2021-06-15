@@ -19,7 +19,21 @@ body {
   #services .services {
     margin-top: 3em;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5em;
+    text-align: center; }
+    #services .services .service {
+      padding: 2em;
+      background: #f4f4f4;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.301), inset 5px 5px 10px #ddd, inset -5px -5px 10px #000a;
+      transition: .3s ease; }
+      #services .services .service:hover {
+        transition: .3s ease;
+        box-shadow: 1px 1px 1px #ddd, inset 5px 5px 10px rgba(0, 0, 0, 0.459), inset -5px -5px 10px #ddd;
+        transform: scale(0.98); }
+      #services .services .service .icon img {
+        max-width: 100px; }
   #services h2 {
     text-transform: capitalize; }
 
