@@ -9,6 +9,20 @@
 body {
   color: #111; }
 
+#services {
+  display: flex;
+  flex-direction: column;
+  padding: 50px; }
+  @media (max-width: 768px) {
+    #services {
+      padding: 100px 40px; } }
+  #services .services {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+  #services h2 {
+    text-transform: capitalize; }
+
 body {
   background-image: radial-gradient(#ffc0cb3f, #a52a2a2d); }
 
@@ -110,38 +124,39 @@ header nav {
     header nav .social-bar .email-icon {
       position: absolute;
       bottom: 20px;
-      transform: scale(0.5); }
+      margin-bottom: 1em; }
     header nav .social-bar a {
       display: inline-block;
-      transform: scale(0.5); }
+      margin-bottom: 1em; }
 
-section {
+#home {
   display: flex;
+  flex-direction: row;
   height: 100vh;
-  align-items: center;
-  padding: 100px; }
+  padding: 100px;
+  margin-top: 0; }
   @media (max-width: 768px) {
-    section {
+    #home {
       padding: 100px 40px; } }
-  section .home-img {
+  #home .home-img {
     position: absolute;
     right: 0;
     bottom: 0;
     height: 90%; }
-    @media (max-width: 1068px) {
-      section .home-img {
+    @media (max-width: 1024px) {
+      #home .home-img {
         display: none; } }
-  section .home-content {
+  #home .home-content {
     position: relative;
     z-index: 10;
     max-width: 600px; }
-    section .home-content h1 {
+    #home .home-content h1 {
       font-weight: 500;
       font-size: 2.5em; }
-    section .home-content p {
+    #home .home-content p {
       margin: 20px 0 10px;
       font-size: 1.1rem; }
-    section .home-content .btn {
+    #home .home-content .btn {
       cursor: pointer;
       display: inline-block;
       background: #922020;
@@ -151,6 +166,6 @@ section {
       margin: .3em 0;
       border-radius: 5px;
       transition: .3s ease; }
-      section .home-content .btn:hover {
+      #home .home-content .btn:hover {
         transition: .3s ease;
         transform: scale(0.95); }

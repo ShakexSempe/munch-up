@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap');
 @import 'variables';
 @import 'reset';
+@import 'services';
 
 body {
     background-image: radial-gradient( #ffc0cb3f, #a52a2a2d);
+
 }
 
 header {
@@ -129,29 +131,31 @@ header {
             .email-icon {
                 position: absolute;
                 bottom: 20px;
-                transform: scale(.5);
+                margin-bottom: 1em;
             }
 
             a {
                 display: inline-block;
-                transform: scale(.5);
+                margin-bottom: 1em;
+                
             }
         }
     }
     
 }
 
-section {
+#home {
     display: flex;
+    flex-direction: row;
     height: 100vh;
-    align-items: center;
     padding: 100px;
+    margin-top: 0;
     @media (max-width:768px){
         padding: 100px 40px;
     }
     
     .home-img {
-        @media(max-width: 1068px){
+        @media(max-width: 1024px){
             display: none;
         }
         position: absolute;

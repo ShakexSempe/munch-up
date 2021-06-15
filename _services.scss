@@ -1,0 +1,21 @@
+#services {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    @media (max-width:768px) {
+        padding: 100px 40px;
+    }
+
+    .services {
+        margin-top: 3em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+
+
+    h2 {
+        text-transform: capitalize;
+    }
+}
