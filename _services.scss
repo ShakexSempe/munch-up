@@ -36,13 +36,7 @@
                         inset -5px -5px 10px #000a;
             transition: .3s ease;
 
-            &:hover {
-                transition: .3s ease;
-                box-shadow:  1px 1px 1px #ddd,
-                            inset 5px 5px 10px rgba(0, 0, 0, 0.459),
-                            inset -5px -5px 10px #ddd;
-                transform: scale(.98);
-            }
+            
 
             h2 {
                 @media(max-width: 768px){
@@ -56,10 +50,25 @@
 
             .icon {
                 img {
-                    max-width: 100px;
+                    transition: 1s ease;
+                    width: 50%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+            &:hover {
+                transition: .3s ease;
+                box-shadow:  1px 1px 1px #ddd,
+                            inset 5px 5px 10px rgba(0, 0, 0, 0.459),
+                            inset -5px -5px 10px #ddd;
+                transform: scale(.98);
+
+                img {
+                    transform: scale(1.2);
                 }
             }
         }
+        
     }
 
 

@@ -37,10 +37,6 @@ body {
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.301), inset 5px 5px 10px #ddd, inset -5px -5px 10px #000a;
       transition: .3s ease; }
-      #services .services .service:hover {
-        transition: .3s ease;
-        box-shadow: 1px 1px 1px #ddd, inset 5px 5px 10px rgba(0, 0, 0, 0.459), inset -5px -5px 10px #ddd;
-        transform: scale(0.98); }
       #services .services .service h2 {
         font-size: 1.5em;
         font-weight: 500;
@@ -50,7 +46,16 @@ body {
           #services .services .service h2 {
             font-size: 1.2em; } }
       #services .services .service .icon img {
-        max-width: 100px; }
+        transition: 1s ease;
+        width: 50%;
+        height: 100%;
+        border-radius: 10px; }
+      #services .services .service:hover {
+        transition: .3s ease;
+        box-shadow: 1px 1px 1px #ddd, inset 5px 5px 10px rgba(0, 0, 0, 0.459), inset -5px -5px 10px #ddd;
+        transform: scale(0.98); }
+        #services .services .service:hover img {
+          transform: scale(1.2); }
   #services h2 {
     text-transform: capitalize; }
 
@@ -102,6 +107,10 @@ body {
 body {
   background-image: radial-gradient(#ffc0cb3f, #a52a2a2d); }
 
+.container {
+  height: 100vh;
+  overflow: hidden; }
+
 @media (max-width: 768px) {
   header {
     background: pink;
@@ -117,7 +126,7 @@ header .hamburger {
   height: 60px;
   width: 60px;
   display: inline-block;
-  border: 3px solid #fff;
+  border: 3px solid brown;
   border-radius: 50%;
   position: fixed;
   top: 0;
@@ -133,7 +142,7 @@ header .hamburger {
     height: 2px;
     width: 30px;
     position: relative;
-    background-color: #f4f4f4;
+    background-color: brown;
     z-index: -1; }
     header .hamburger .bar::before, header .hamburger .bar::after {
       content: "";
@@ -141,7 +150,7 @@ header .hamburger {
       height: 100%;
       width: 100%;
       left: 0;
-      background-color: #fff;
+      background-color: brown;
       transition: 0.3s ease;
       transition-property: top, bottom; }
     header .hamburger .bar::after {
