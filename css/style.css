@@ -251,12 +251,19 @@ header nav {
       margin-top: 3em; } }
   #home .home-img {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 90%; }
+    right: 2em;
+    bottom: 2em;
+    height: 70%;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px #000a, -10px -1px 10px #88878752;
+    transition: .3s ease; }
     @media (max-width: 1024px) {
       #home .home-img {
         display: none; } }
+    #home .home-img:hover {
+      box-shadow: 10px 10px 10px #88878752, -10px -1px 10px #000a;
+      transform: scale(0.95);
+      transition: .3s ease; }
   #home .home-content {
     position: relative;
     z-index: 10;
