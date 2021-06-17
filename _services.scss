@@ -6,6 +6,10 @@
     @media (max-width:768px) {
         padding: 100px 40px;
     }
+    
+    .title {
+        text-transform: capitalize;
+    }
 
     .services {
         margin-top: 3em;
@@ -19,6 +23,8 @@
         }
         gap: 2.5em;
         text-align: center;
+
+        
 
         .service {
             padding: 2em;

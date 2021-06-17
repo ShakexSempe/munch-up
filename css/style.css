@@ -16,6 +16,8 @@ body {
   @media (max-width: 768px) {
     #services {
       padding: 100px 40px; } }
+  #services .title {
+    text-transform: capitalize; }
   #services .services {
     margin-top: 3em;
     display: grid;
