@@ -244,12 +244,17 @@ header nav {
     header nav ul li {
       position: relative;
       list-style: none;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 1.5em; }
+  header nav .nav-links a {
+    padding: .1em .4em;
+    border-radius: 10px; }
   header nav a {
     font-size: 2.5rem;
     color: #111;
     text-decoration: none;
-    font-weight: 300; }
+    font-weight: 300;
+    box-shadow: -2px -2px 10px #f4f4f43a, 2px 2px 10px #333a, inset -2px -2px 5px #333a, inset 2px 2px 10px #ddda; }
     @media (max-width: 768px) {
       header nav a {
         font-size: 2rem; } }
@@ -257,7 +262,7 @@ header nav {
       color: #eb395d; }
   header nav .social-bar {
     position: absolute;
-    top: 0;
+    top: 1em;
     left: 0;
     width: 60px;
     height: 100%;
@@ -270,7 +275,9 @@ header nav {
       margin-bottom: 1em; }
     header nav .social-bar a {
       display: inline-block;
-      margin-bottom: 1em; }
+      margin-bottom: 1em;
+      margin-left: .5em;
+      padding: .3em; }
 
 #home {
   display: flex;
