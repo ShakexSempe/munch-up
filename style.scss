@@ -195,6 +195,7 @@ header {
             &:hover {
                 transition: .2s ease;
                 color: $btn-red;
+                letter-spacing: .1em;
                 box-shadow: -2px -2px 5px #333a,
                             2px 2px 5px #f4f4f43a,
                             inset -2px -2px 5px #ddda,
@@ -277,6 +278,12 @@ header {
         p {
             margin: 20px 0 10px;
             font-size: 1.1rem;
+            font-weight: 500;
+            box-shadow: 1px 1px 1px #333a;
+            border-radius: 10px;
+            padding: .5em;
+            box-shadow: -3px -3px 5px #fff, 3px 3px 5px #000;
+            backdrop-filter: blur(.2em);
         }
 
         .btn {
