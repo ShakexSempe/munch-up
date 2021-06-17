@@ -175,7 +175,6 @@ const portfolio = document.querySelector('.portfolio');
 //display items via () when DOM conetent has loaded 
 window.addEventListener('DOMContentLoaded', () => {
     displayWorkItems(work);
-    console.log(displayWorkItems)
 })
 //function to display work items in portfolio section 
 //map() to display each work item wrapped in the item class via template literal
