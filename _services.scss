@@ -11,6 +11,12 @@
         margin-top: 3em;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        @media(max-width:768px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media(max-width:500px){
+            grid-template-columns: 1fr;
+        }
         gap: 2.5em;
         text-align: center;
 
@@ -29,6 +35,16 @@
                             inset 5px 5px 10px rgba(0, 0, 0, 0.459),
                             inset -5px -5px 10px #ddd;
                 transform: scale(.98);
+            }
+
+            h2 {
+                @media(max-width: 768px){
+                    font-size: 1.2em;
+                }
+                font-size: 1.5em;
+                font-weight: 500;
+                margin-top: 20px;
+                color: #1b206e;
             }
 
             .icon {
