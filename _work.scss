@@ -1,9 +1,23 @@
 #work {
     margin-top: 3em;
-
+    @media (max-width: 768px) {
+        margin-top: 20vh;
+    }
     .title {
         text-align: center;
+
+        h1 {
+            font-size: 3em;
+            letter-spacing: .4em;
+            text-decoration: underline;
+            text-underline-offset: .3em;
+            margin-bottom: 1em;
+        }
+        p {
+            font-size: 1.3em;
+        }
     }
+    
 }
 
 .portfolio {

@@ -61,8 +61,19 @@ body {
 
 #work {
   margin-top: 3em; }
+  @media (max-width: 768px) {
+    #work {
+      margin-top: 20vh; } }
   #work .title {
     text-align: center; }
+    #work .title h1 {
+      font-size: 3em;
+      letter-spacing: .4em;
+      text-decoration: underline;
+      text-underline-offset: .3em;
+      margin-bottom: 1em; }
+    #work .title p {
+      font-size: 1.3em; }
 
 .portfolio {
   display: flex;
@@ -169,7 +180,9 @@ header .logo {
   left: 50px;
   z-index: 20;
   width: 25vw;
-  background-color: #922020; }
+  background-color: #922020;
+  border-radius: 10px;
+  padding: .5em; }
   @media (max-width: 768px) {
     header .logo {
       background: none;
