@@ -1,4 +1,4 @@
-const menu = [{
+const work = [{
         id: 1,
         title: "Frozen Theme Cake",
         category: "girls",
@@ -169,3 +169,27 @@ const menu = [{
 
 
 ];
+
+//target portfolio section to be populated ith items:
+const portfolio = document.querySelector('.portfolio');
+//display items via () when DOM conetent has loaded 
+window.addEventListener('DOMContentLoaded', () => {
+    displayWorkItems(work);
+    console.log(displayWorkItems)
+})
+//function to display work items in portfolio section 
+//map() to display each work item wrapped in the item class via template literal
+//join("");
+// portfolio innerHTML
+displayWorkItems = (workItems) => {
+    let displayWork = workItems.map(item => {
+        return `<div class="item">
+                    <img src=${item.img} alt="cake">
+                    <div class="action">
+                        <a href="#">Launch</a>
+                    </div>
+                </div>`
+    });
+    displayWork = displayWork.join("");
+    portfolio.innerHTML = displayWork;
+}
