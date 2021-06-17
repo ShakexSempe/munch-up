@@ -69,9 +69,9 @@ body {
     #work .title h1 {
       font-size: 3em;
       letter-spacing: .4em;
-      text-decoration: underline;
-      text-underline-offset: .3em;
-      margin-bottom: 1em; }
+      margin-bottom: 1em;
+      text-decoration: underline rgba(0, 0, 0, 0.315);
+      text-underline-offset: .5em; }
     #work .title p {
       font-size: 1.3em; }
 
@@ -88,7 +88,10 @@ body {
     @media (max-width: 500px) {
       .portfolio .item {
         width: 80%;
-        height: 40vh; } }
+        height: 55vh;
+        margin: 1em; }
+        .portfolio .item img {
+          border-radius: 10px; } }
     .portfolio .item img {
       width: 100%;
       height: 100%; }

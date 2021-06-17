@@ -9,9 +9,9 @@
         h1 {
             font-size: 3em;
             letter-spacing: .4em;
-            text-decoration: underline;
-            text-underline-offset: .3em;
             margin-bottom: 1em;
+            text-decoration: underline rgba(0, 0, 0, 0.315);
+            text-underline-offset: .5em;
         }
         p {
             font-size: 1.3em;
@@ -33,7 +33,12 @@
         margin: 0;
         @media (max-width:500px){
             width: 80%;
-            height: 40vh;
+            height: 55vh;
+            margin: 1em;
+
+            img {
+                border-radius:  10px;
+            }
         }
 
 
