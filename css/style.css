@@ -254,12 +254,15 @@ header nav {
     color: #111;
     text-decoration: none;
     font-weight: 300;
-    box-shadow: -2px -2px 10px #f4f4f43a, 2px 2px 10px #333a, inset -2px -2px 5px #333a, inset 2px 2px 10px #ddda; }
+    box-shadow: -2px -2px 10px #f4f4f43a, 2px 2px 10px #333a, inset -2px -2px 5px #333a, inset 2px 2px 10px #ddda;
+    transition: .2s ease; }
     @media (max-width: 768px) {
       header nav a {
         font-size: 2rem; } }
     header nav a:hover {
-      color: #eb395d; }
+      transition: .2s ease;
+      color: #eb395d;
+      box-shadow: -2px -2px 5px #333a, 2px 2px 5px #f4f4f43a, inset -2px -2px 5px #ddda, inset 2px 2px 5px #333a; }
   header nav .social-bar {
     position: absolute;
     top: 1em;

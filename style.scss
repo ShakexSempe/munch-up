@@ -189,9 +189,15 @@ header {
                             2px 2px 10px #333a,
                             inset -2px -2px 5px #333a,
                             inset 2px 2px 10px #ddda;
+            transition: .2s ease;
 
             &:hover {
+                transition: .2s ease;
                 color: $btn-red;
+                box-shadow: -2px -2px 5px #333a,
+                            2px 2px 5px #f4f4f43a,
+                            inset -2px -2px 5px #ddda,
+                            inset 2px 2px 5px #333a;
             }
         }
 
