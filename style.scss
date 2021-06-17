@@ -235,7 +235,7 @@ header {
     
     .home-img {
         @media(max-width: 1024px){
-            display: none;
+            height: 40%;
         }
         position: absolute;
         right: 2em;

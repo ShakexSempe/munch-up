@@ -284,7 +284,7 @@ header nav {
     transition: .3s ease; }
     @media (max-width: 1024px) {
       #home .home-img {
-        display: none; } }
+        height: 40%; } }
     #home .home-img:hover {
       box-shadow: 10px 10px 10px #88878752, -10px -1px 10px #000a;
       transform: scale(0.95);
