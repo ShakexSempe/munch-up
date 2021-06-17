@@ -1,5 +1,9 @@
 #work {
     margin-top: 3em;
+
+    .title {
+        text-align: center;
+    }
 }
 
 .portfolio {
@@ -12,7 +16,11 @@
         position: relative;
         width: 300px;
         height: 300px;
-        margin: 5px;
+        margin: 0;
+        @media (max-width:500px){
+            width: 80%;
+            height: 40vh;
+        }
 
 
         img {
