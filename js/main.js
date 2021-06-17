@@ -1,8 +1,8 @@
-const toggle = document.querySelector('.toggle');
+const hamburger = document.querySelector('.hamburger');
 const navigation = document.querySelector('.navigation');
 
 
-toggle.addEventListener('click', () => {
-    toggle.classList.toggle('active');
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
     navigation.classList.toggle('active');
 });
