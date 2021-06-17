@@ -25,24 +25,30 @@ header {
     }
     
     .hamburger {
-        height: 60px;
-        width: 60px;
+        height: 70px;
+        width: 70px;
         display: inline-block;
-        border: 3px solid brown;
+        border: .3em solid brown;
         border-radius: 50%;
         position: fixed;
-        top: 0;
+        top: .5em;
         right: 0;
         display: flex;
         align-items: center;
         justify-content: center;
         z-index: 20;
         cursor: pointer;
-        transform: scale(0.8);
         margin: 3px 20px;
+        transition: .3s;
+        
+        &:hover {
+            transition: .3s;
+            transform: scale(.94);
+        }
+                    
 
         .bar {
-            height: 2px;
+            height: 3px;
             width: 30px;
             position: relative;
             background-color: brown;
@@ -75,6 +81,7 @@ header {
         &.active .bar::before {
             bottom: 0;
         }
+        
     }
     .logo {
         position: relative;
