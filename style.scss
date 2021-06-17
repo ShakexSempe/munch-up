@@ -28,7 +28,7 @@ header {
         height: 3em;
         width: 3em;
         display: inline-block;
-        border: .2em solid brown;
+        border: .2em solid #000a;
         border-radius: 50%;
         position: fixed;
         top: .5em;
@@ -40,10 +40,21 @@ header {
         cursor: pointer;
         margin: 3px 20px;
         transition: .3s;
+        animation: burger 2s infinite;
+
+        @keyframes burger {
+            50% {
+                transform: scale(1.1);
+            }
+        }
         
-        &:hover {
+        &:hover, &:focus {
             transition: .3s;
+            transition-delay: 50ms;
             transform: scale(.94);
+            animation: none;
+            box-shadow: 3px 3px 5px #000a,
+                        -3px -3px 5px rgba(116, 115, 115, 0.418);
         }
                     
 
@@ -51,7 +62,7 @@ header {
             height: .17em;
             width: 60%;
             position: relative;
-            background-color: brown;
+            background-color: #000;
             z-index: -1;
 
             &::before,
@@ -61,7 +72,7 @@ header {
                 height: 100%;
                 width: 100%;
                 left: 0;
-                background-color: brown;
+                background-color: #000a;
                 transition: 0.3s ease;
                 transition-property: top, bottom;
 
@@ -111,8 +122,8 @@ header {
 
         img {
             @media (max-width: 768px) {
-                width: 7em;
-                height: 7em;
+                width: 6em;
+                height: 6em;
                 box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.336);
             }
             width: 6em;
