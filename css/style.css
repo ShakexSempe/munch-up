@@ -146,7 +146,8 @@ body {
           font-size: 1em;
           font-weight: 300;
           margin: 10px 0;
-          resize: none; }
+          resize: none;
+          border-radius: 5px; }
           .contact .contact-form form .row input[type='submit'], .contact .contact-form form .row textarea[type='submit'] {
             background-color: #922020;
             color: #fff;
@@ -178,11 +179,27 @@ body {
         margin-right: 40px;
         font-size: 2em;
         color: #922020; }
-      .contact .contact-info .info-box .details h4 {
-        color: #922020; }
-      .contact .contact-info .info-box .details a, .contact .contact-info .info-box .details p {
-        color: #111;
-        cursor: pointer; }
+      .contact .contact-info .info-box .details {
+        display: flex;
+        flex-direction: column; }
+        .contact .contact-info .info-box .details h4 {
+          font-size: 1.8em;
+          color: #922020;
+          margin-bottom: .5em; }
+        .contact .contact-info .info-box .details a, .contact .contact-info .info-box .details p {
+          color: #000;
+          font-size: 1.1em;
+          cursor: pointer;
+          box-shadow: 2px 2px 5px #000a;
+          padding: .5em .7em;
+          margin: 10px;
+          transition: .2s ease;
+          text-decoration: none;
+          border-radius: 5px; }
+          .contact .contact-info .info-box .details a:hover, .contact .contact-info .info-box .details p:hover {
+            transition: .2s ease;
+            letter-spacing: .1em;
+            box-shadow: -2px -2px #000a; }
 
 body {
   background-image: radial-gradient(#ffc0cb3f, #a52a2a2d); }
