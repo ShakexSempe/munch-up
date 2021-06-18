@@ -10,15 +10,11 @@ body {
   color: #111; }
 
 #services {
-  display: flex;
-  flex-direction: column;
   padding: 50px;
-  margin-top: 4.5em; }
+  margin-top: 2em; }
   @media (max-width: 768px) {
     #services {
       padding: 100px 40px; } }
-  #services .title {
-    text-transform: capitalize; }
   #services .services {
     margin-top: 3em;
     display: grid;
@@ -58,22 +54,6 @@ body {
           transform: scale(1.2); }
   #services h2 {
     text-transform: capitalize; }
-
-#work {
-  margin-top: 3em; }
-  @media (max-width: 768px) {
-    #work {
-      margin-top: 20vh; } }
-  #work .title {
-    text-align: center; }
-    #work .title h1 {
-      font-size: 3em;
-      letter-spacing: .4em;
-      margin-bottom: 1em;
-      text-decoration: underline rgba(0, 0, 0, 0.315);
-      text-underline-offset: .5em; }
-    #work .title p {
-      font-size: 1.3em; }
 
 .portfolio {
   display: flex;
@@ -124,6 +104,22 @@ body {
 .container {
   height: 100vh;
   overflow: hidden; }
+
+section {
+  margin-top: 3em; }
+  @media (max-width: 768px) {
+    section {
+      margin-top: 20vh; } }
+  section .title {
+    text-align: center;
+    text-transform: capitalize; }
+    section .title h1 {
+      font-size: 3em;
+      letter-spacing: .2em;
+      margin-bottom: 1em;
+      text-decoration: underline rgba(0, 0, 0, 0.115); }
+    section .title p {
+      font-size: 1.3em; }
 
 @media (max-width: 768px) {
   header {

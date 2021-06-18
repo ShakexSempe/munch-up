@@ -1,15 +1,9 @@
 #services {
-    display: flex;
-    flex-direction: column;
     padding: 50px;
-    margin-top: 4.5em;
+    margin-top: 2em;
 
     @media (max-width:768px) {
         padding: 100px 40px;
-    }
-    
-    .title {
-        text-transform: capitalize;
     }
 
     .services {

@@ -3,6 +3,7 @@
 @import 'reset';
 @import 'services';
 @import 'work';
+@import 'contact';
 
 body {
     background-image: radial-gradient( #ffc0cb3f, #a52a2a2d);
@@ -10,6 +11,28 @@ body {
 .container {
     height: 100vh;
     overflow: hidden;
+}
+section {
+    margin-top: 3em;
+    @media (max-width: 768px) {
+        margin-top: 20vh;
+    }
+    .title {
+        text-align: center;
+        text-transform: capitalize;
+
+        h1 {
+            font-size: 3em;
+            letter-spacing: .2em;
+            margin-bottom: 1em;
+            text-decoration: underline rgba(0, 0, 0, 0.115);
+            
+        }
+        p {
+            font-size: 1.3em;
+        }
+    }
+    
 }
 
 header {
