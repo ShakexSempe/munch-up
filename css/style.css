@@ -14,7 +14,11 @@ body {
   margin-top: 2em; }
   @media (max-width: 768px) {
     #services {
-      padding: 100px 40px; } }
+      padding: 100px 40px; }
+      #services .title h1 {
+        font-size: 2em; }
+      #services .title p {
+        font-size: 1.2em; } }
   #services .services {
     margin-top: 3em;
     display: grid;
