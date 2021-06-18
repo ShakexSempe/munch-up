@@ -46,7 +46,7 @@
 
                 input, textarea {
                     position: relative;
-                    border: 1px solid rgba(0, 0, 0, .2);
+                    border: 1px solid rgba(0, 0, 0, 0.507);
                     color: #111;
                     background: transparent;
                     width: 100%;
@@ -68,6 +68,16 @@
                         border: 0;
                         border-radius: 5px;
                         cursor: pointer;
+                        box-shadow: 2px 2px 5px #000a,
+                                    -2px -2px 5px #a7a6a6aa;
+                    
+                        &:hover {
+                            transition: .3s ease;
+                            transform: scale(.98);
+                            box-shadow: 2px 2px 5px #a7a6a6aa,
+                                        -2px -2px 5px #000a;
+                            letter-spacing: .3em;
+                        }
                     }
                 }
 
@@ -109,12 +119,17 @@
                     font-size: 1.8em;
                     color: $munch-brown;
                     margin-bottom: .5em;
+                    font-family: $header-font;
+                    text-transform: capitalize;
                 }
                 a, p {
+                    font-family: $header-font;
+                    font-weight: 500;
                     color: #000;
                     font-size: 1.1em;
                     cursor: pointer;
-                    box-shadow: 2px 2px 5px #000a;
+                    box-shadow: -2px -2px 5px #ddd,
+                                2px 2px 5px #333a;
                     padding: .5em .7em;
                     margin: 10px;
                     transition: .2s ease;
@@ -124,7 +139,8 @@
                     &:hover {
                         transition: .2s ease;
                         letter-spacing: .1em;
-                        box-shadow: -2px -2px #000a;
+                        box-shadow: -2px -2px 5px #333a,
+                                    2px 2px 5px #ddd;
                     } 
                 }
             }

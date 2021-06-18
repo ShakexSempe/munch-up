@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&family=Varela+Round&display=swap');
 @import 'variables';
 @import 'reset';
 @import 'services';
@@ -27,9 +27,11 @@ section {
             margin-bottom: 1em;
             // text-decoration: underline rgba(0, 0, 0, 0.115);
             color: $munch-brown;
+            font-family: $header-font;
         }
         p {
             font-size: 1.3em;
+            font-family: $content-font;
         }
     }
     
@@ -312,6 +314,7 @@ header {
         ul {
             margin-top: 1em;
             display: flex;
+            font-family: $header-font;
             li {
                 margin-left: 2em;
                 font-size: 1.2em;
@@ -325,6 +328,7 @@ header {
         }
 
         p {
+            font-family: 'Varela Round', sans-serif;
             margin: 20px 0 10px;
             font-size: 1.4rem;
             font-weight: 500;
@@ -339,6 +343,7 @@ header {
         }
 
         .btn {
+            font-family: $header-font;
             cursor: pointer;
             display: inline-block;
             background: $munch-brown;
@@ -349,11 +354,13 @@ header {
             border-radius: 5px;
             transition: .3s ease;
             box-shadow: 3px 3px 5px #000a,
-                        -3px -3px 5px #333a;
+                        -3px -3px 5px #949494aa;
             font-size: 1.4em;
             &:hover {
                 transition: .3s ease;
                 transform: scale(.95);
+                box-shadow: 3px 3px 5px #949494aa,
+                            -3px -3px 5px #000a ;
             }
             @media (max-width: 768px){
                 font-size: 1.2em;

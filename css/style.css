@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&family=Varela+Round&display=swap");
 /*munch theme*/
 * {
   margin: 0;
@@ -37,10 +37,13 @@ body {
         font-size: 1.5em;
         font-weight: 500;
         margin-top: 20px;
-        color: #1b206e; }
+        color: #922020;
+        font-family: "Raleway", sans-serif; }
         @media (max-width: 768px) {
           #services .services .service h2 {
             font-size: 1.2em; } }
+      #services .services .service p {
+        font-family: "Varela Round", sans-serif; }
       #services .services .service .icon img {
         transition: 1s ease;
         width: 50%;
@@ -137,7 +140,7 @@ body {
           margin: 0; }
         .contact .contact-form form .row input, .contact .contact-form form .row textarea {
           position: relative;
-          border: 1px solid rgba(0, 0, 0, 0.2);
+          border: 1px solid rgba(0, 0, 0, 0.507);
           color: #111;
           background: transparent;
           width: 100%;
@@ -157,7 +160,13 @@ body {
             font-weight: 300;
             border: 0;
             border-radius: 5px;
-            cursor: pointer; }
+            cursor: pointer;
+            box-shadow: 2px 2px 5px #000a, -2px -2px 5px #a7a6a6aa; }
+            .contact .contact-form form .row input[type='submit']:hover, .contact .contact-form form .row textarea[type='submit']:hover {
+              transition: .3s ease;
+              transform: scale(0.98);
+              box-shadow: 2px 2px 5px #a7a6a6aa, -2px -2px 5px #000a;
+              letter-spacing: .3em; }
         .contact .contact-form form .row textarea {
           height: 150px; }
   .contact .contact-info {
@@ -185,12 +194,16 @@ body {
         .contact .contact-info .info-box .details h4 {
           font-size: 1.8em;
           color: #922020;
-          margin-bottom: .5em; }
+          margin-bottom: .5em;
+          font-family: "Raleway", sans-serif;
+          text-transform: capitalize; }
         .contact .contact-info .info-box .details a, .contact .contact-info .info-box .details p {
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
           color: #000;
           font-size: 1.1em;
           cursor: pointer;
-          box-shadow: 2px 2px 5px #000a;
+          box-shadow: -2px -2px 5px #ddd, 2px 2px 5px #333a;
           padding: .5em .7em;
           margin: 10px;
           transition: .2s ease;
@@ -199,7 +212,7 @@ body {
           .contact .contact-info .info-box .details a:hover, .contact .contact-info .info-box .details p:hover {
             transition: .2s ease;
             letter-spacing: .1em;
-            box-shadow: -2px -2px #000a; }
+            box-shadow: -2px -2px 5px #333a, 2px 2px 5px #ddd; }
 
 body {
   background-image: radial-gradient(#ffc0cb3f, #a52a2a2d); }
@@ -220,9 +233,11 @@ section {
       font-size: 3em;
       letter-spacing: .2em;
       margin-bottom: 1em;
-      color: #922020; }
+      color: #922020;
+      font-family: "Raleway", sans-serif; }
     section .title p {
-      font-size: 1.3em; }
+      font-size: 1.3em;
+      font-family: "Varela Round", sans-serif; }
 
 @media (max-width: 768px) {
   header {
@@ -426,7 +441,8 @@ header nav {
           font-size: 3em; } }
     #home .home-content ul {
       margin-top: 1em;
-      display: flex; }
+      display: flex;
+      font-family: "Raleway", sans-serif; }
       #home .home-content ul li {
         margin-left: 2em;
         font-size: 1.2em;
@@ -435,6 +451,7 @@ header nav {
         #home .home-content ul li {
           font-size: 1em; } }
     #home .home-content p {
+      font-family: 'Varela Round', sans-serif;
       margin: 20px 0 10px;
       font-size: 1.4rem;
       font-weight: 500;
@@ -447,6 +464,7 @@ header nav {
         #home .home-content p {
           font-size: 1.2em; } }
     #home .home-content .btn {
+      font-family: "Raleway", sans-serif;
       cursor: pointer;
       display: inline-block;
       background: #922020;
@@ -456,11 +474,12 @@ header nav {
       margin: .3em 0;
       border-radius: 5px;
       transition: .3s ease;
-      box-shadow: 3px 3px 5px #000a, -3px -3px 5px #333a;
+      box-shadow: 3px 3px 5px #000a, -3px -3px 5px #949494aa;
       font-size: 1.4em; }
       #home .home-content .btn:hover {
         transition: .3s ease;
-        transform: scale(0.95); }
+        transform: scale(0.95);
+        box-shadow: 3px 3px 5px #949494aa, -3px -3px 5px #000a; }
       @media (max-width: 768px) {
         #home .home-content .btn {
           font-size: 1.2em; } }
