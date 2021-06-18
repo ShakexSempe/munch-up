@@ -71,7 +71,7 @@ body {
     position: relative;
     width: 300px;
     height: 300px;
-    margin: 0; }
+    margin: .5em; }
     @media (max-width: 500px) {
       .portfolio .item {
         width: 80%;
@@ -90,15 +90,27 @@ body {
       height: 100%;
       background: rgba(0, 0, 0, 0.8);
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: space-evenly;
       align-items: center;
       opacity: 0;
-      transition: .5s ease; }
+      transition: .5s ease;
+      color: #fff;
+      border-radius: 10px; }
+      .portfolio .item .action h3 {
+        font-size: 1.2em;
+        text-transform: capitalize;
+        text-decoration: underline #ddda; }
+      .portfolio .item .action p {
+        padding: 0 1.5em;
+        text-align: center;
+        font-family: "Varela Round", sans-serif; }
       .portfolio .item .action a {
         display: inline-block;
         color: #fff;
         text-decoration: none;
         border: 1px solid #ddda;
+        box-shadow: inset 2px 2px 10px #fffa, inset -2px -2px 10px #000;
         padding: .5em 1em;
         border-radius: 10px; }
     .portfolio .item:hover .action {

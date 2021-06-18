@@ -185,6 +185,8 @@ displayWorkItems = (workItems) => {
         return `<div class="item">
                     <img src=${item.img} alt="cake">
                     <div class="action">
+                        <h3>${item.title}</h3>
+                        <p>${item.desc}</p>
                         <a href="#">R${item.price}</a>
                     </div>
                 </div>`
