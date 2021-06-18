@@ -65,6 +65,7 @@
                             inset -2px -2px 10px #000;
                 padding: .5em 1em;
                 border-radius: 10px;
+                pointer-events: none;
             }
         }
         &:hover .action {
