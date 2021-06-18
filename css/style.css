@@ -105,22 +105,36 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; }
+  @media (max-width: 700px) {
+    .contact {
+      flex-direction: column; } }
   .contact .contact-form {
     position: relative;
     background: #f9f9f9;
     width: calc(100% - 400px);
-    padding: 60px 40px 20px; }
+    padding: 60px 40px 20px;
+    border-radius: 10px; }
+    @media (max-width: 767px) {
+      .contact .contact-form {
+        width: 100%;
+        padding: 30px 20px 30px; } }
     .contact .contact-form form {
       width: 100%; }
       .contact .contact-form form .row {
         width: 100%;
         display: flex; }
+        @media (max-width: 767px) {
+          .contact .contact-form form .row {
+            flex-direction: column; } }
         .contact .contact-form form .row .input50 {
           width: 50%;
           margin: 0 10px; }
         .contact .contact-form form .row .input100 {
           width: 100%;
           margin: 0 10px; }
+        .contact .contact-form form .row .input50, .contact .contact-form form .row .input100 {
+          width: 100%;
+          margin: 0; }
         .contact .contact-form form .row input, .contact .contact-form form .row textarea {
           position: relative;
           border: 1px solid rgba(0, 0, 0, 0.2);
@@ -134,7 +148,7 @@ body {
           margin: 10px 0;
           resize: none; }
           .contact .contact-form form .row input[type='submit'], .contact .contact-form form .row textarea[type='submit'] {
-            background-color: #1b206e;
+            background-color: #922020;
             color: #fff;
             margin: 0;
             text-transform: uppercase;
@@ -145,6 +159,30 @@ body {
             cursor: pointer; }
         .contact .contact-form form .row textarea {
           height: 150px; }
+  .contact .contact-info {
+    width: 350px;
+    background: #f9f9f9;
+    padding: 60px 40px 20px;
+    border-radius: 10px; }
+    @media (max-width: 767px) {
+      .contact .contact-info {
+        width: 100%;
+        margin-top: 20px;
+        padding: 30px 30px 20px; } }
+    .contact .contact-info .info-box {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 40px; }
+      .contact .contact-info .info-box .contact-icon {
+        width: 20px;
+        margin-right: 40px;
+        font-size: 2em;
+        color: #922020; }
+      .contact .contact-info .info-box .details h4 {
+        color: #922020; }
+      .contact .contact-info .info-box .details a, .contact .contact-info .info-box .details p {
+        color: #111;
+        cursor: pointer; }
 
 body {
   background-image: radial-gradient(#ffc0cb3f, #a52a2a2d); }
