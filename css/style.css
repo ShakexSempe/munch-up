@@ -405,7 +405,7 @@ header nav {
       color: #111a;
       font-weight: 500;
       letter-spacing: .1em;
-      box-shadow: -1px -1px 1px #333a, -2px -2px 5px #333a, 2px 2px 5px #f4f4f43a, inset -2px -2px 5px #922020, inset -1px -1px 1px #ddda, inset 2px 2px 5px #ddda; }
+      box-shadow: -1px -1px 1px #333a, -2px -2px 5px #333a, 2px 2px 5px #f4f4f43a, inset -2px -2px 5px #f4f4f43a, inset -1px -1px 1px #ddda, inset 2px 2px 5px #ddda; }
   header nav .social-bar {
     position: absolute;
     top: 1em;
