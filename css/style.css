@@ -481,10 +481,12 @@ header nav {
         #home .home-content ul li {
           font-size: 1em; } }
     #home .home-content p {
+      text-align: center;
       font-family: 'Varela Round', sans-serif;
       margin: 20px 0 10px;
       font-size: 1.4rem;
       font-weight: 500;
+      line-height: 1.3em;
       box-shadow: 1px 1px 1px #333a;
       border-radius: 10px;
       padding: .5em;
