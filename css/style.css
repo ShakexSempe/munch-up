@@ -501,7 +501,7 @@ header nav {
       margin: .3em 0;
       border-radius: 5px;
       transition: .3s ease;
-      box-shadow: 3px 3px 5px #000a, -3px -3px 5px #949494aa;
+      box-shadow: inset 3px 3px 5px #fffa, inset -3px -3px 5px #000;
       font-size: 1.4em; }
       #home .home-content .btn:hover {
         transition: .3s ease;
