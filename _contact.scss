@@ -68,15 +68,17 @@
                         border: 0;
                         border-radius: 5px;
                         cursor: pointer;
-                        box-shadow: 2px 2px 5px #000a,
-                                    -2px -2px 5px #a7a6a6aa;
+                        letter-spacing: .3em;
+                        box-shadow: inset 2px 2px 5px #ddd,
+                                    inset -2px -2px 5px #000,
+                                    2px 2px 5px #000a;
                     
                         &:hover {
                             transition: .3s ease;
                             transform: scale(.98);
-                            box-shadow: 2px 2px 5px #a7a6a6aa,
-                                        -2px -2px 5px #000a;
-                            letter-spacing: .3em;
+                            box-shadow: inset 2px 2px 5px #000,
+                                        inset -2px -2px 5px #ddd;
+                            letter-spacing: .1em;
                         }
                     }
                 }
