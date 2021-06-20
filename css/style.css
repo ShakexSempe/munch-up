@@ -41,7 +41,7 @@ body {
       #services .services .service h2 {
         font-size: 1.5em;
         font-weight: 500;
-        margin-top: 20px;
+        margin-bottom: .5em;
         color: #800000;
         font-family: "Raleway", sans-serif; }
         @media (max-width: 768px) {
@@ -243,7 +243,7 @@ body {
           text-transform: capitalize; }
         .contact .contact-info .info-box .details a, .contact .contact-info .info-box .details p {
           font-family: "Raleway", sans-serif;
-          font-weight: 500;
+          font-weight: 600;
           color: #000;
           font-size: 1.1em;
           cursor: pointer;
@@ -252,7 +252,11 @@ body {
           margin: 10px;
           transition: .2s ease;
           text-decoration: none;
-          border-radius: 5px; }
+          border-radius: 5px;
+          letter-spacing: .05em; }
+          @media (max-width: 500px) {
+            .contact .contact-info .info-box .details a, .contact .contact-info .info-box .details p {
+              font-size: 1em; } }
           .contact .contact-info .info-box .details a:hover, .contact .contact-info .info-box .details p:hover {
             transition: .2s ease;
             letter-spacing: .1em;
