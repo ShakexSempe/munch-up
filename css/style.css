@@ -295,7 +295,7 @@ header .hamburger {
   height: 3em;
   width: 3em;
   display: inline-block;
-  border: .2em solid #000;
+  border: 0.2em solid #434343;
   border-radius: 50%;
   position: fixed;
   top: .5em;
@@ -321,7 +321,7 @@ header .hamburger {
     height: .17em;
     width: 60%;
     position: relative;
-    background-color: #000;
+    background-color: #434343;
     z-index: -1; }
     header .hamburger .bar::before, header .hamburger .bar::after {
       content: "";
