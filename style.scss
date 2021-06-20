@@ -53,7 +53,7 @@ header {
         height: 3em;
         width: 3em;
         display: inline-block;
-        border: .2em solid #000a;
+        border: .2em solid #000;
         border-radius: 50%;
         position: fixed;
         top: .5em;
@@ -79,7 +79,7 @@ header {
             transform: scale(.94);
             animation: none;
             box-shadow: 3px 3px 5px #000a,
-                        -3px -3px 5px rgba(116, 115, 115, 0.418);
+                        -3px -3px 5px $munch-mist;
         }
         
 
@@ -97,7 +97,7 @@ header {
                 height: 100%;
                 width: 100%;
                 left: 0;
-                background-color: #000a;
+                background-color: #000;
                 transition: 0.3s ease;
                 transition-property: top, bottom;
 
@@ -349,7 +349,7 @@ header {
             li {
                 margin-left: 2em;
                 font-size: 1.2em;
-                color: $munch-brown;
+                color: $text-color-brown;
             }
             @media (max-width: 768px){
                 position: relative;
@@ -386,7 +386,7 @@ header {
             font-family: $header-font;
             cursor: pointer;
             display: inline-block;
-            background: $munch-brown;
+            background: $btn-brown;
             color: $text-color-light;
             text-decoration: none;
             padding: .4em .5em;
@@ -400,6 +400,7 @@ header {
             &:hover {
                 transition: .3s ease;
                 transform: scale(.95);
+            color: $text-color-pink;
                 box-shadow: inset 3px 3px 5px #000a,
                             inset -3px -3px 5px #fffa;
             }
