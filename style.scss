@@ -279,7 +279,7 @@ header {
         @media(max-width: 450px){
             height: 50%;
             box-shadow: none;
-            bottom: 4em;
+            bottom: 2.5em;
             right: 0;
         }
         position: absolute;
@@ -321,7 +321,7 @@ header {
         }
 
         ul {
-            margin-top: 1em;
+            margin: .5em 1em 2em;
             display: flex;
             font-family: $header-font;
             li {

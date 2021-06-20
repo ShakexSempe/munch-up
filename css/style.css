@@ -451,7 +451,7 @@ header nav {
       #home .home-img {
         height: 50%;
         box-shadow: none;
-        bottom: 4em;
+        bottom: 2.5em;
         right: 0; } }
     #home .home-img:hover {
       box-shadow: 10px 10px 10px #88878752, -10px -1px 10px #000a;
@@ -474,7 +474,7 @@ header nav {
         #home .home-content h1 {
           font-size: 3em; } }
     #home .home-content ul {
-      margin-top: 1em;
+      margin: .5em 1em 2em;
       display: flex;
       font-family: "Raleway", sans-serif; }
       #home .home-content ul li {
