@@ -466,7 +466,8 @@ header nav {
       letter-spacing: .1em;
       text-align: center;
       font-size: 4.5em;
-      color: #922020; }
+      color: #922020;
+      color: #640a0a; }
       @media (max-width: 768px) {
         #home .home-content h1 {
           font-size: 3.5em; } }
