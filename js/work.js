@@ -4,7 +4,7 @@ const work = [{
         category: "girls",
         price: 450.00,
         img: "images/item-1.jpg",
-        desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+        desc: `Frozen themed cake that is fitting for this freezing winter day.  `,
     },
     {
         id: 2,
@@ -12,7 +12,7 @@ const work = [{
         category: "boys",
         price: 450.00,
         img: "images/item-2.jpg",
-        desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
+        desc: `Another childhood memory cake which is still loved to this day `,
     },
     {
         id: 3,

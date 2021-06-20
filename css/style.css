@@ -70,6 +70,9 @@ body {
   #services h2 {
     text-transform: capitalize; }
 
+#work .title p {
+  display: none; }
+
 .portfolio {
   display: flex;
   justify-content: center;
@@ -108,7 +111,7 @@ body {
       .portfolio .item .action h3 {
         font-size: 1.2em;
         text-transform: capitalize;
-        text-decoration: underline #ddda; }
+        color: #f75394; }
       .portfolio .item .action p {
         padding: 0 1.5em;
         text-align: center;

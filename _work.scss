@@ -1,4 +1,10 @@
-
+#work {
+    .title {
+        p {
+            display: none;
+        }
+    }
+}
 
 .portfolio {
     display: flex;
@@ -46,7 +52,8 @@
             h3 {
                 font-size: 1.2em;
                 text-transform: capitalize;
-                text-decoration: underline #ddda;
+                // text-decoration: underline #ddda;
+                color: $text-color-pink
             }
 
             p {
