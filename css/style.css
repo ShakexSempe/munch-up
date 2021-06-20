@@ -187,7 +187,7 @@ body {
             border-radius: 5px;
             cursor: pointer;
             letter-spacing: .3em;
-            box-shadow: inset 2px 2px 5px #ddd, inset -2px -2px 5px #000, 2px 2px 5px #000a; }
+            box-shadow: inset 2px 2px 5px #7e2c2c, inset -2px -2px 5px #000, 2px 2px 5px #000a; }
             .contact .contact-form form .row input[type='submit']:hover, .contact .contact-form form .row textarea[type='submit']:hover {
               transition: .3s ease;
               transform: scale(0.98);
@@ -462,7 +462,9 @@ header nav {
     z-index: 10;
     max-width: 600px; }
     #home .home-content h1 {
-      font-weight: 600;
+      font-weight: 900;
+      letter-spacing: .1em;
+      text-transform: capitalize;
       font-size: 4.5em;
       color: #922020; }
       @media (max-width: 768px) {
