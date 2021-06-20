@@ -452,7 +452,7 @@ header nav {
       display: inline-block;
       margin-bottom: 1em;
       margin-left: .5em;
-      padding: .3em;
+      padding: .35em;
       border-radius: 50%; }
       header nav .social-bar a:hover {
         letter-spacing: 0; }
@@ -536,11 +536,17 @@ header nav {
       box-shadow: 1px 1px 1px #333a;
       border-radius: 10px;
       padding: .5em;
-      box-shadow: -3px -3px 5px #fff, 3px 3px 5px #000;
-      backdrop-filter: blur(0.3em); }
+      box-shadow: -3px -3px 5px #f0ffff, 3px 3px 5px #000;
+      backdrop-filter: blur(0.1em);
+      transition: .3s ease; }
       @media (max-width: 768px) {
         #home .home-content p {
-          font-size: 1.2em; } }
+          font-size: 1.2em; }
+          #home .home-content p:hover {
+            transition: .3s ease;
+            transform: scale(0.99);
+            backdrop-filter: blur(0.3em);
+            box-shadow: inset -5px -5px 10px pink, inset 3px 3px 10px #000a; } }
     #home .home-content .btn {
       position: absolute;
       top: -1.7em;

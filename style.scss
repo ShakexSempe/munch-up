@@ -264,7 +264,7 @@ header {
                 display: inline-block;
                 margin-bottom: 1em;
                 margin-left: .5em;
-                padding: .3em;
+                padding: .35em;
                 border-radius: 50%;
 
                 &:hover {
@@ -376,10 +376,21 @@ header {
             box-shadow: 1px 1px 1px #333a;
             border-radius: 10px;
             padding: .5em;
-            box-shadow: -3px -3px 5px #fff, 3px 3px 5px #000;
-            backdrop-filter: blur(.3em);
+            box-shadow: -3px -3px 5px $munch-mist,
+                        3px 3px 5px #000;
+            backdrop-filter: blur(.1em);
+            transition: .3s ease;
+
             @media (max-width:768px){
                 font-size: 1.2em;
+                &:hover {
+                    transition: .3s ease;
+                    transform: scale(.99);
+                    backdrop-filter: blur(.3em);
+                    box-shadow:
+                        inset -5px -5px 10px $munch-pink-light,
+                        inset 3px 3px 10px #000a;
+                }
             }
         }
 
