@@ -168,18 +168,18 @@ body {
           margin: 0 10px; }
         .contact .contact-form form .row .input50, .contact .contact-form form .row .input100 {
           width: 100%;
-          margin: 0; }
+          margin: .1em; }
         .contact .contact-form form .row input, .contact .contact-form form .row textarea {
           position: relative;
           border: none;
-          box-shadow: inset 2px 2px 5px #000a, inset -2px -2px 5px #ddd;
-          color: #640a0a;
+          box-shadow: inset 2px 2px 5px #ddd, inset -2px -2px 5px #000a;
+          color: #000;
           background: transparent;
           width: 100%;
           padding: 10px;
           outline: none;
           font-size: 1em;
-          font-weight: 300;
+          font-weight: 600;
           margin: 10px 0;
           resize: none;
           border-radius: 5px;
@@ -203,8 +203,11 @@ body {
               letter-spacing: .1em; }
           .contact .contact-form form .row input:hover, .contact .contact-form form .row textarea:hover {
             transition: .2s linear;
-            box-shadow: inset -2px -2px 5px #000a, inset 2px 2px 5px #ddd;
+            box-shadow: inset -2px -2px 5px #ddda, inset 2px 2px 5px #000a;
             transform: scale(1.01); }
+          .contact .contact-form form .row input::placeholder, .contact .contact-form form .row textarea::placeholder {
+            color: #333;
+            font-weight: 300; }
         .contact .contact-form form .row textarea {
           height: 150px; }
   .contact .contact-info {

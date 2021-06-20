@@ -50,21 +50,21 @@
                 }
                 .input50, .input100 {
                     width: 100%;
-                    margin: 0;
+                    margin: .1em;
                 }
 
                 input, textarea {
                     position: relative;
                     border: none;
-                    box-shadow: inset 2px 2px 5px #000a,
-                                inset -2px -2px 5px #ddd;
-                    color: $munch-brown-dark;
+                    box-shadow: inset 2px 2px 5px #ddd,
+                                inset -2px -2px 5px #000a;
+                    color: #000;
                     background: transparent;
                     width: 100%;
                     padding: 10px;
                     outline: none;
                     font-size: 1em;
-                    font-weight: 300;
+                    font-weight: 600;
                     margin: 10px 0;
                     resize: none;
                     border-radius: 5px;
@@ -95,9 +95,13 @@
                    }
                    &:hover {
                     transition: .2s linear;
-                    box-shadow: inset -2px -2px 5px #000a,
-                                inset 2px 2px 5px #ddd;
+                    box-shadow: inset -2px -2px 5px #ddda,
+                                inset 2px 2px 5px #000a;
                     transform: scale(1.01);
+                }
+                &::placeholder {
+                    color: #333;
+                    font-weight: 300;
                 }
                 }
 
