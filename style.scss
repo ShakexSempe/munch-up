@@ -373,12 +373,12 @@ header {
             font-size: 1.4rem;
             font-weight: 500;
             line-height: 1.3em;
-            box-shadow: 1px 1px 1px #333a;
             border-radius: 10px;
             padding: .5em;
-            box-shadow: -3px -3px 5px $munch-mist,
+            box-shadow: inset 3px 3px 10px $munch-pink-light,
+                        inset -3px -3px 5px #000a,
                         3px 3px 5px #000;
-            backdrop-filter: blur(.1em);
+            backdrop-filter: blur(.18em);
             transition: .3s ease;
 
             @media (max-width:768px){
@@ -388,8 +388,9 @@ header {
                     transform: scale(.99);
                     backdrop-filter: blur(.3em);
                     box-shadow:
-                        inset -5px -5px 10px $munch-pink-light,
-                        inset 3px 3px 10px #000a;
+                        inset -3px -3px 10px $munch-pink-light,
+                        inset 3px 3px 10px #000a,
+                        inset 3px 3px 2px #000a;
                 }
             }
         }
