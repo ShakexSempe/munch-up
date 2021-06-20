@@ -319,7 +319,7 @@ header .hamburger {
     transition-delay: 50ms;
     transform: scale(0.94);
     animation: none;
-    box-shadow: 3px 3px 5px #000a, -3px -3px 5px #f0ffff; }
+    box-shadow: 3px 3px 5px #000a, -3px -3px 5px #ddda; }
   header .hamburger .bar {
     height: .17em;
     width: 60%;
