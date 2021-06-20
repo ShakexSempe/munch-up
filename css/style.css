@@ -464,7 +464,7 @@ header nav {
     #home .home-content h1 {
       font-weight: 900;
       letter-spacing: .1em;
-      text-transform: capitalize;
+      text-align: center;
       font-size: 4.5em;
       color: #922020; }
       @media (max-width: 768px) {
