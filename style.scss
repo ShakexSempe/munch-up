@@ -121,6 +121,14 @@ header {
     }
     .logo {
         position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        @media (min-width: 768px) {
+            max-width: 300px;
+            min-width: 250px;
+            
+        }
         height: 100%;
         top: .5em;
         left: 50px;
@@ -133,6 +141,9 @@ header {
             background: none;
             top: -.5em;
             left: 1em;
+        }
+        @media (max-width: 360px){
+            left: 2em;
         }
 
         h3 {
@@ -253,7 +264,8 @@ header {
                 display: inline-block;
                 margin-bottom: 1em;
                 margin-left: .5em;
-                padding: .3em;
+                padding: .4em;
+                border-radius: 50%;
             }
         }
     }

@@ -343,6 +343,9 @@ header .hamburger {
 
 header .logo {
   position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   height: 100%;
   top: .5em;
   left: 50px;
@@ -351,11 +354,18 @@ header .logo {
   background-color: #922020;
   border-radius: 10px;
   padding: .5em; }
+  @media (min-width: 768px) {
+    header .logo {
+      max-width: 300px;
+      min-width: 250px; } }
   @media (max-width: 768px) {
     header .logo {
       background: none;
       top: -.5em;
       left: 1em; } }
+  @media (max-width: 360px) {
+    header .logo {
+      left: 2em; } }
   header .logo h3 {
     color: pink;
     font-size: 3rem;
@@ -439,7 +449,8 @@ header nav {
       display: inline-block;
       margin-bottom: 1em;
       margin-left: .5em;
-      padding: .3em; }
+      padding: .4em;
+      border-radius: 50%; }
 
 #home {
   display: flex;
