@@ -319,7 +319,7 @@ header {
             text-align: center;
             font-size: 4.5em;
             color: $munch-brown;
-            color: rgb(100, 10, 10);
+            color: $munch-brown-dark;
             @media (max-width: 768px){
                 font-size: 3.5em;
                 position: relative;
