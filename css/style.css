@@ -271,8 +271,24 @@ body {
   background-image: radial-gradient(#ffc0cb3f, #a52a2a2d); }
 
 .container {
-  height: 100vh;
-  overflow: hidden; }
+  height: 100vh; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: .5em;
+  width: 50%; }
+  footer p {
+    backdrop-filter: blur(2em);
+    font-size: 1.1em;
+    margin: 0 auto;
+    color: #000;
+    font-weight: 600; }
+  @media (max-width: 768px) {
+    footer {
+      width: 100%; }
+      footer p {
+        text-align: center; } }
 
 section {
   margin-top: 3em; }

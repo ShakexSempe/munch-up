@@ -10,7 +10,25 @@ body {
 }
 .container {
     height: 100vh;
-    overflow: hidden;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: .5em;
+    width: 50%;
+    p {
+        backdrop-filter: blur(2em);
+        font-size: 1.1em;
+        margin: 0 auto;
+        color: #000;
+        font-weight: 600;
+    }
+    @media (max-width: 768px) {
+        width: 100%;
+        p {
+            text-align: center;
+        }
+    }
 }
 section {
     margin-top: 3em;
