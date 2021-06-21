@@ -144,7 +144,7 @@ body {
   align-items: flex-start; }
   @media (max-width: 700px) {
     .contact {
-      flex-direction: column; } }
+      flex-direction: column-reverse; } }
   .contact .contact-form {
     position: relative;
     background: #f9f9f9;
@@ -163,6 +163,11 @@ body {
         @media (max-width: 767px) {
           .contact .contact-form form .row {
             flex-direction: column; } }
+        .contact .contact-form form .row label {
+          text-transform: capitalize;
+          font-weight: 600;
+          color: #800000;
+          letter-spacing: .1em; }
         .contact .contact-form form .row .input50 {
           width: 50%;
           margin: 0 10px; }
@@ -209,7 +214,7 @@ body {
             box-shadow: inset -2px -2px 5px #ddda, inset 2px 2px 5px #000a;
             transform: scale(1.01); }
           .contact .contact-form form .row input::placeholder, .contact .contact-form form .row textarea::placeholder {
-            color: #333;
+            color: #000;
             font-weight: 300; }
         .contact .contact-form form .row textarea {
           height: 150px; }
