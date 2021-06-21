@@ -348,22 +348,24 @@ header {
         max-width: 600px;
 
         h1 {
-            
             font-weight: 900;
             letter-spacing: .1em;
             text-align: center;
             font-size: 4.5em;
             color: $munch-brown;
             color: $munch-brown-dark;
-            @media (max-width: 768px){
+
+            @media (max-width: 768px) {
                 font-size: 3.5em;
                 position: relative;
                 left: -1em;
             }
-            @media (max-width: 400px){
+
+            @media (max-width: 400px) {
                 font-size: 3em;
             }
-        }
+            }
+
 
         ul {
             margin: .5em 1em 2em;

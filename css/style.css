@@ -54,7 +54,8 @@ body {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        justify-content: space-between; }
+        justify-content: space-between;
+        transition: .3s ease; }
         #services .services .service .icon img {
           transition: 1s ease;
           width: 70%;
@@ -66,7 +67,11 @@ body {
         transform: scale(0.98); }
         #services .services .service:hover img {
           width: 100%;
-          transform: scale(1.2); }
+          transform: scale(1.19);
+          top: 0; }
+        #services .services .service:hover h2 {
+          opacity: .7;
+          margin-bottom: 2em; }
   #services h2 {
     text-transform: capitalize; }
 
@@ -110,6 +115,8 @@ body {
       border-radius: 10px; }
       .portfolio .item .action h3 {
         font-size: 1.2em;
+        padding: .5em 2em;
+        text-align: center;
         text-transform: capitalize;
         color: #f75394; }
       .portfolio .item .action p {
