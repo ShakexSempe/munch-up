@@ -288,7 +288,8 @@ footer {
     footer {
       width: 100%; }
       footer p {
-        text-align: center; } }
+        text-align: center;
+        font-size: .7em; } }
 
 section {
   margin-top: 3em; }
