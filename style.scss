@@ -352,7 +352,6 @@ header {
             letter-spacing: .1em;
             text-align: center;
             font-size: 4.5em;
-            color: $munch-brown;
             color: $munch-brown-dark;
 
             @media (max-width: 768px) {
@@ -364,7 +363,30 @@ header {
             @media (max-width: 400px) {
                 font-size: 3em;
             }
-            }
+            position: relative;
+            
+            // #bite1 {
+            //     position: absolute;
+            //     width: .5em;
+            //     height: .5em;
+            //     background: $munch-bg;
+            //     right: 2em;
+            //     top: .05em;
+            //     border-radius: 10px;
+
+            //     &::before {
+            //         position: absolute;
+            //         content: '';
+            //         background: $munch-bg;
+            //         width: .3em;
+            //         height: .3em;
+            //         right: 3.2em;
+            //         top: .15em;
+            //         border-radius: 10px;
+            //     }
+            // }
+
+        }
 
 
         ul {
