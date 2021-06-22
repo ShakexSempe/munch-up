@@ -41,11 +41,14 @@
                 }
                 label {
                     text-transform: capitalize;
-                    font-weight: 600;
-                    color: $text-color-brown;
-                    letter-spacing: .1em;
+                    color: $munch-gray;
+                    position: absolute;
+                    top: 1em;
+                    font-size: 1.5em;
+                    // transform: translateY(-50%);
+                    left: .8em;
+                    padding: 0 .3em;
                 }
-
                 .input50 {
                     width: 50%;
                     margin: 0 10px;
@@ -56,34 +59,48 @@
                 }
                 .input50, .input100 {
                     width: 100%;
-                    margin: .1em;
-                }
+                    height: 100%;
+                    margin: .4em;
+                    position: relative;
 
+                    
+
+                    &:hover label {
+                        transition: .5s ease;
+                        padding: .1em .5em;
+                        color: $text-color-brown;
+                        font-weight: 700;
+                        font-size: 1.3em;
+                        letter-spacing: .2em;
+                    }
+                }
                 input, textarea {
                     position: relative;
                     border: none;
-                    box-shadow: inset 2px 2px 5px #ddd,
+                    box-shadow: inset 2px 2px 5px #ddda,
                                 inset -2px -2px 5px #000a;
-                    color: #000;
+                    color: $munch-brown-dark;
                     background: transparent;
                     width: 100%;
-                    padding: 10px;
+                    padding: .7em .5em;
                     outline: none;
-                    font-size: 1em;
+                    font-size: 1.2em;
                     font-weight: 600;
                     margin: 10px 0;
                     resize: none;
+                    bottom: -2em;
                     border-radius: 5px;
                     transition: .2s linear;
 
                     &[type='submit'] {
                         background-color: $munch-brown;
                         color: #fff;
-                        margin: 0;
+                        margin: 2em auto;
                         text-transform: uppercase;
                         letter-spacing: .2em;
                         font-weight: 300;
                         border: 0;
+                        padding: .5em;
                         border-radius: 5px;
                         cursor: pointer;
                         letter-spacing: .3em;
@@ -97,17 +114,14 @@
                             box-shadow: inset 2px 2px 5px #000,
                                         inset -2px -2px 5px #ddd;
                             letter-spacing: .1em;
+                            
                         }
                    }
                    &:hover {
                     transition: .2s linear;
                     box-shadow: inset -2px -2px 5px #ddda,
-                                inset 2px 2px 5px #000a;
-                    transform: scale(1.01);
-                }
-                &::placeholder {
-                    color: #000;
-                    font-weight: 300;
+                                inset 2px 2px 5px $munch-pink;
+                    transform: scale(1.01); 
                 }
                 }
 
