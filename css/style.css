@@ -18,7 +18,6 @@ body {
       #services .title h1 {
         font-size: 2em; }
       #services .title p {
-        display: none;
         font-size: 1.2em; } }
   #services .services {
     margin-top: 3em;
