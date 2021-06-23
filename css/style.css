@@ -175,9 +175,9 @@ body {
           color: #434343;
           position: absolute;
           top: 1em;
-          font-size: 1.5em;
+          font-size: 1.3em;
           left: .8em;
-          padding: 0 .3em; }
+          padding: 0 4em 0em 0; }
         .contact .contact-form form .row .input50 {
           width: 50%;
           margin: 0 10px; }
@@ -191,10 +191,9 @@ body {
           position: relative; }
           .contact .contact-form form .row .input50:hover label, .contact .contact-form form .row .input100:hover label {
             transition: .5s ease;
-            padding: .1em .5em;
+            padding: 0 4em 0em 0;
             color: #800000;
             font-weight: 700;
-            font-size: 1.3em;
             letter-spacing: .2em; }
         .contact .contact-form form .row input, .contact .contact-form form .row textarea {
           position: relative;

@@ -44,10 +44,10 @@
                     color: $munch-gray;
                     position: absolute;
                     top: 1em;
-                    font-size: 1.4em;
+                    font-size: 1.3em;
                     // transform: translateY(-50%);
                     left: .8em;
-                    padding: 0 .3em;
+                    padding: 0 4em 0em 0;
                 }
                 .input50 {
                     width: 50%;
@@ -67,10 +67,9 @@
 
                     &:hover label {
                         transition: .5s ease;
-                        padding: .1em .5em;
+                        padding: 0 4em 0em 0;
                         color: $text-color-brown;
                         font-weight: 700;
-                        font-size: 1.3em;
                         letter-spacing: .2em;
                     }
                 }
