@@ -79,6 +79,9 @@ body {
   #services h2 {
     text-transform: capitalize; }
 
+#work .title h1 {
+  font-size: 3em; }
+
 #work .title p {
   display: none; }
 
