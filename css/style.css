@@ -234,9 +234,12 @@ body {
               box-shadow: inset 2px 2px 5px #000, inset -2px -2px 5px #ddd;
               letter-spacing: .1em; }
           .contact .contact-form form .row input:hover, .contact .contact-form form .row textarea:hover {
-            transition: .2s linear;
-            box-shadow: inset -2px -2px 5px #ddda, inset 2px 2px 5px #f75394;
+            transition: .3s ease;
+            box-shadow: inset -2px -2px 5px #ddda, inset 2px 2px 5px #000a;
             transform: scale(1.01); }
+            .contact .contact-form form .row input:hover:focus, .contact .contact-form form .row textarea:hover:focus {
+              color: #800000;
+              box-shadow: inset 0px 0px 5px #f75394; }
         .contact .contact-form form .row textarea {
           height: 150px; }
   .contact .contact-info {

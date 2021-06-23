@@ -62,9 +62,7 @@
                     height: 100%;
                     margin: .4em;
                     position: relative;
-
                     
-
                     &:hover label {
                         transition: .5s ease;
                         padding: 0 4em 0em 0;
@@ -117,10 +115,14 @@
                         }
                    }
                    &:hover {
-                    transition: .2s linear;
+                    transition: .3s ease;
                     box-shadow: inset -2px -2px 5px #ddda,
-                                inset 2px 2px 5px $munch-pink;
-                    transform: scale(1.01); 
+                                inset 2px 2px 5px #000a;
+                    transform: scale(1.01);
+                    &:focus {
+                        color: $munch-brown;
+                        box-shadow: inset 0px 0px 5px $munch-pink;
+                    } 
                 }
                 }
 
