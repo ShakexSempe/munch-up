@@ -218,6 +218,7 @@ body {
           .contact .contact-form form .row input[type='submit'], .contact .contact-form form .row textarea[type='submit'] {
             background-color: #800000;
             color: #fff;
+            width: 50%;
             margin: 2em auto;
             text-transform: uppercase;
             letter-spacing: .2em;
