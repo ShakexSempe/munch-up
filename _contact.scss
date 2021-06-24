@@ -102,9 +102,9 @@
                         border-radius: 5px;
                         cursor: pointer;
                         letter-spacing: .3em;
-                        box-shadow: inset 2px 2px 5px rgb(126, 44, 44),
-                                    inset -2px -2px 5px #000,
-                                    2px 2px 5px #000a;
+                        box-shadow: 
+                                    inset 2px 2px 5px $munch-mist,
+                                    inset -2px -2px 5px #000;
                     
                         &:hover {
                             transition: .3s ease;

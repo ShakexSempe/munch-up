@@ -232,7 +232,7 @@ body {
             border-radius: 5px;
             cursor: pointer;
             letter-spacing: .3em;
-            box-shadow: inset 2px 2px 5px #7e2c2c, inset -2px -2px 5px #000, 2px 2px 5px #000a; }
+            box-shadow: inset 2px 2px 5px #f0ffff, inset -2px -2px 5px #000; }
             .contact .contact-form form .row input[type='submit']:hover, .contact .contact-form form .row textarea[type='submit']:hover {
               transition: .3s ease;
               transform: scale(0.98);
