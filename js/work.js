@@ -8,7 +8,7 @@ const work = [{
     },
     {
         id: 2,
-        title: "dragoballZ Theme cake",
+        title: "dragonballZ Theme cake",
         category: "boys",
         price: 450.00,
         img: "images/item-2.jpg",
@@ -172,7 +172,7 @@ const work = [{
 
 //target portfolio section to be populated ith items:
 const portfolio = document.querySelector('.portfolio');
-//display items via () when DOM conetent has loaded 
+//display items via () when DOM content has loaded 
 window.addEventListener('DOMContentLoaded', () => {
     displayWorkItems(work);
 })
@@ -186,11 +186,30 @@ displayWorkItems = (workItems) => {
                     <img src=${item.img} alt="cake">
                     <div class="action">
                         <h3>${item.title}</h3>
-                        <p>${item.desc}</p>
-                        <a href="#">R${item.price}</a>
+                        <p >${item.desc}</p>
+                        <button class="overlaybtn" href="#">R${item.price}</button>
                     </div>
                 </div>`
     });
     displayWork = displayWork.join("");
     portfolio.innerHTML = displayWork;
+
+    // const overlaybtn = document.querySelectorAll('.overlaybtn');  
+    
+    // overlaybtn.forEach(btn => {
+    //     btn.addEventListener("click", ()=> {
+    //         workItems.map(item => {
+    //             return `<div class="modal-overlay">
+    //             <div class="modal-container">
+    //               <img class="modal-content" src=${item.img}/>
+    //               <button class="close-btn">
+    //                 <i class="fas fa-times"></i>
+    //               </button>
+    //             </div>
+    //           </div>`
+    //         });
+    //     })
+    // })
+
 }
+
