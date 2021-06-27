@@ -84,6 +84,8 @@ header {
         cursor: pointer;
         margin: 3px 20px;
         transition: .3s;
+        box-shadow: inset -3px -3px 5px #000a,
+                    inset 3px 3px 5px #ddda;
         // animation: burger 2s infinite;
 
         @keyframes burger {
@@ -97,8 +99,9 @@ header {
             transition-delay: 50ms;
             transform: scale(.94);
             animation: none;
-            box-shadow: 3px 3px 5px #000a,
-                        -3px -3px 5px #ddda;
+            box-shadow: inset -2px -2px 5px #ddda,
+                        inset 2px 2px 5px #333a,
+                        0px 0px 5px #000a;
         }
         
 
