@@ -353,7 +353,7 @@ header .hamburger {
   height: 3em;
   width: 3em;
   display: inline-block;
-  border: 0.2em solid #434343;
+  border: 1px solid #434343;
   border-radius: 50%;
   position: fixed;
   top: .5em;
@@ -365,17 +365,12 @@ header .hamburger {
   cursor: pointer;
   margin: 3px 20px;
   transition: .3s;
-  box-shadow: inset -3px -3px 5px #000a, inset 3px 3px 5px #ddda; }
-
-@keyframes burger {
-  50% {
-    transform: scale(1.1); } }
+  box-shadow: inset -2px -2px 3px #000a, inset 2px 2px 3px #ddd; }
   header .hamburger:hover, header .hamburger:focus {
     transition: .3s;
     transition-delay: 50ms;
     transform: scale(0.94);
-    animation: none;
-    box-shadow: inset -2px -2px 5px #ddda, inset 2px 2px 5px #333a, 0px 0px 5px #000a; }
+    box-shadow: inset -1px -1px 5px #ddda, inset 1px 1px 5px rgba(54, 25, 25, 0.667); }
   header .hamburger .bar {
     height: .17em;
     width: 60%;
