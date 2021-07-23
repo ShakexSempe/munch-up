@@ -385,12 +385,13 @@ header .hamburger {
     z-index: -2;
     box-shadow: inset -2px -2px 3px #fffa, inset 2px 2px 3px #000a; }
   header .hamburger:hover, header .hamburger:focus {
-    transition-delay: 50ms;
-    transform: scale(0.94); }
+    transition-delay: 50ms; }
     header .hamburger:hover::before, header .hamburger:focus::before {
       opacity: 0; }
     header .hamburger:hover::after, header .hamburger:focus::after {
       opacity: 1; }
+  header .hamburger:active {
+    transform: scale(0.8); }
   header .hamburger .bar {
     height: .17em;
     width: 60%;
@@ -498,12 +499,15 @@ header nav {
       padding: .5em 1em;
       transition: .3s; }
       header nav .nav-links li a {
-        border-radius: 10px; }
+        border-radius: 10px;
+        font-size: 1.6em; }
         header nav .nav-links li a i {
           color: rgba(12, 12, 12, 0.377);
           margin-right: .5em; }
       header nav .nav-links li:hover {
         transform: scale(0.99) translateY(-0.4em); }
+        header nav .nav-links li:hover i {
+          color: #434343; }
   header nav a {
     font-size: 2.5rem;
     color: #000;
@@ -551,13 +555,17 @@ header nav {
       header nav .social-bar ul li {
         margin-bottom: 1em; }
         header nav .social-bar ul li i {
-          color: #654321; }
+          color: #800000; }
+        header nav .social-bar ul li:hover i {
+          color: #f75394; }
     header nav .social-bar .email-icon {
       position: absolute;
       bottom: 20px;
       margin-bottom: 1em;
       display: inline-block;
       color: #800000; }
+      header nav .social-bar .email-icon:hover {
+        color: #9abcde; }
     header nav .social-bar a {
       padding: .35em;
       border-radius: 50%;
@@ -577,12 +585,10 @@ header nav {
       header nav .social-bar a::after {
         box-shadow: inset -2px -2px 5px #fffa, inset 2px 2px 5px #654321;
         opacity: 0; }
-      header nav .social-bar a:hover {
-        letter-spacing: 0; }
-        header nav .social-bar a:hover::before {
-          opacity: 0; }
-        header nav .social-bar a:hover::after {
-          opacity: 1; }
+      header nav .social-bar a:hover::before {
+        opacity: 0; }
+      header nav .social-bar a:hover::after {
+        opacity: 1; }
 
 #home {
   display: flex;

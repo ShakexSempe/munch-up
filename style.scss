@@ -113,13 +113,15 @@ header {
         
         &:hover, &:focus {
             transition-delay: 50ms;
-            transform: scale(.94);
             &::before {
                 opacity: 0;
             }
             &::after {
                 opacity: 1;
             }
+        }
+        &:active {
+            transform: scale(.8);
         }
         
 
@@ -251,6 +253,8 @@ header {
             width: 300px;
             @media (min-width: 1000px){
                 width: 300px;
+
+
             }
             padding: 1em 0em 1em 1em;
             margin-left: 4em;
@@ -261,6 +265,7 @@ header {
 
             a {
                 border-radius: 10px;
+                font-size: 1.6em;
 
                 i {
                     color: rgba(12, 12, 12, 0.377);
@@ -269,6 +274,10 @@ header {
             }
             &:hover {
                 transform: scale(.99) translateY(-.4em);
+
+                i {
+                    color: $munch-gray;
+                }
             }
         }
         }
@@ -305,11 +314,6 @@ header {
             &:hover {
                 transition: .2s ease;
 
-                // i {
-                //     color: $munch-pink;
-                //     transition: .2s;
-                // }
-
                 &::before {
                     opacity: 0;
                 }
@@ -339,7 +343,13 @@ header {
                     margin-bottom: 1em;
 
                     i {
-                        color: $munch-brown-dark;
+                        color: $munch-brown;
+                    }
+
+                    &:hover {
+                        i {
+                            color: $munch-pink;
+                        }
                     }
                 }
             }
@@ -349,6 +359,10 @@ header {
                 margin-bottom: 1em;
                 display: inline-block;
                 color: $munch-brown;
+
+                &:hover {
+                    color: $munch-blue;
+                }
             }
 
             a {
@@ -375,13 +389,13 @@ header {
                     opacity: 0;
                 }
                 &:hover {
+
                     &::before {
                         opacity: 0;
                     }
                     &::after {
                         opacity: 1;
                     }
-                    letter-spacing: 0;
                 }
             }
         }
