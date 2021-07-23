@@ -253,15 +253,18 @@ header {
 
             li {
                 padding: .5em 1em;
+                transition: .3s;
+
             a {
-
                 border-radius: 10px;
-
 
                 i {
                     color: rgba(12, 12, 12, 0.377);
                     margin-right: .5em;
                 }
+            }
+            &:hover {
+                transform: scale(.99) translateY(-.4em);
             }
         }
         }

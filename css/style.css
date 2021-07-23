@@ -491,12 +491,15 @@ header nav {
       header nav .nav-links {
         width: 300px; } }
     header nav .nav-links li {
-      padding: .5em 1em; }
+      padding: .5em 1em;
+      transition: .3s; }
       header nav .nav-links li a {
         border-radius: 10px; }
         header nav .nav-links li a i {
           color: rgba(12, 12, 12, 0.377);
           margin-right: .5em; }
+      header nav .nav-links li:hover {
+        transform: scale(0.99) translateY(-0.4em); }
   header nav a {
     font-size: 2.5rem;
     color: #000;
