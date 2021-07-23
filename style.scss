@@ -244,22 +244,26 @@ header {
             }
         }
         .nav-links {
-            width: 230px;
+            width: 300px;
             @media (min-width: 1000px){
                 width: 300px;
             }
             padding: 1em 0em 1em 1em;
             margin-left: 4em;
+
+            li {
+                padding: .5em 1em;
             a {
 
                 border-radius: 10px;
 
+
                 i {
                     color: rgba(12, 12, 12, 0.377);
                     margin-right: .5em;
-                    padding: .4em;
                 }
             }
+        }
         }
 
         a {
@@ -293,13 +297,11 @@ header {
 
             &:hover {
                 transition: .2s ease;
-                color: #111a;
-                letter-spacing: .1em;
 
-                i {
-                    color: $munch-pink;
-                    transition: .2s;
-                }
+                // i {
+                //     color: $munch-pink;
+                //     transition: .2s;
+                // }
 
                 &::before {
                     opacity: 0;

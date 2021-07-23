@@ -484,18 +484,19 @@ header nav {
       text-align: left;
       margin-bottom: 1.5em; }
   header nav .nav-links {
-    width: 230px;
+    width: 300px;
     padding: 1em 0em 1em 1em;
     margin-left: 4em; }
     @media (min-width: 1000px) {
       header nav .nav-links {
         width: 300px; } }
-    header nav .nav-links a {
-      border-radius: 10px; }
-      header nav .nav-links a i {
-        color: rgba(12, 12, 12, 0.377);
-        margin-right: .5em;
-        padding: .4em; }
+    header nav .nav-links li {
+      padding: .5em 1em; }
+      header nav .nav-links li a {
+        border-radius: 10px; }
+        header nav .nav-links li a i {
+          color: rgba(12, 12, 12, 0.377);
+          margin-right: .5em; }
   header nav a {
     font-size: 2.5rem;
     color: #000;
@@ -521,12 +522,7 @@ header nav {
       box-shadow: inset -2px -2px 5px #fffa, inset 2px 2px 5px #654321;
       opacity: 0; }
     header nav a:hover {
-      transition: .2s ease;
-      color: #111a;
-      letter-spacing: .1em; }
-      header nav a:hover i {
-        color: #f75394;
-        transition: .2s; }
+      transition: .2s ease; }
       header nav a:hover::before {
         opacity: 0; }
       header nav a:hover::after {
