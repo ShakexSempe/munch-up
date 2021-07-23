@@ -458,13 +458,13 @@ header nav {
     background-color: #ffc0cbf5;
     background-image: radial-gradient(rgba(182, 12, 12, 0.2), #ffc0cb00); }
   header nav.active {
-    left: 0; }
+    left: 10%; }
   header nav ul {
     position: relative; }
     header nav ul li {
       position: relative;
       list-style: none;
-      text-align: center;
+      text-align: left;
       margin-bottom: 1.5em; }
   header nav .nav-links a {
     padding: .1em .4em;

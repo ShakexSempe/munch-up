@@ -208,7 +208,7 @@ header {
 
 
         &.active {
-            left: 0;
+            left: 10%;
         }
         
         ul {
@@ -217,7 +217,7 @@ header {
             li {
                 position: relative;
                 list-style: none;
-                text-align: center;
+                text-align: left;
                 margin-bottom: 1.5em;
             }
         }
