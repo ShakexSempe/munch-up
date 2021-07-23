@@ -100,9 +100,13 @@ header {
         }
         &::before {
             box-shadow: $hamburger-shadow;
+            background: $munch-pink-light;
+            z-index: -1;
         }
         &::after {
             opacity: 0;
+            background: $munch-pink-light;
+            z-index: -2;
             box-shadow: $hamburger-shadow-hover;
         }
 

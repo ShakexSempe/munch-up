@@ -376,9 +376,13 @@ header .hamburger {
     height: 100%;
     transition: .3s; }
   header .hamburger::before {
-    box-shadow: inset -2px -2px 3px #000, inset 2px 2px 3px #fff; }
+    box-shadow: inset -2px -2px 3px #000, inset 2px 2px 3px #fff;
+    background: pink;
+    z-index: -1; }
   header .hamburger::after {
     opacity: 0;
+    background: pink;
+    z-index: -2;
     box-shadow: inset -2px -2px 3px #fffa, inset 2px 2px 3px #000a; }
   header .hamburger:hover, header .hamburger:focus {
     transition-delay: 50ms;
