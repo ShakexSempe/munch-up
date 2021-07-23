@@ -10,10 +10,9 @@ body {
 }
 .container {
     height: 100vh;
+    display: grid;
 }
 footer {
-    position: fixed;
-    bottom: 0;
     padding: .5em;
     width: 50%;
     p {
@@ -71,6 +70,7 @@ header {
     .hamburger {
         height: 3em;
         width: 3em;
+
         display: inline-block;
         border: 1px solid $munch-gray;
         border-radius: 50%;
