@@ -349,10 +349,12 @@ section {
     padding: .5em 0; } }
 
 header .hamburger {
+  position: relative;
   height: 3em;
   width: 3em;
   display: inline-block;
-  border: 1px solid #434343;
+  border: none;
+  outline: none;
   border-radius: 50%;
   position: fixed;
   top: .5em;
@@ -363,13 +365,28 @@ header .hamburger {
   z-index: 20;
   cursor: pointer;
   margin: 3px 20px;
-  transition: .3s;
-  box-shadow: inset -2px -2px 3px #000a, inset 2px 2px 3px #ddd; }
+  transition: .3s; }
+  header .hamburger::before, header .hamburger::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    border-radius: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s; }
+  header .hamburger::before {
+    box-shadow: inset -2px -2px 3px #000, inset 2px 2px 3px #fff; }
+  header .hamburger::after {
+    opacity: 0;
+    box-shadow: inset -2px -2px 3px #fffa, inset 2px 2px 3px #000a; }
   header .hamburger:hover, header .hamburger:focus {
-    transition: .3s;
     transition-delay: 50ms;
-    transform: scale(0.94);
-    box-shadow: inset -1px -1px 5px #ddda, inset 1px 1px 5px rgba(54, 25, 25, 0.667); }
+    transform: scale(0.94); }
+    header .hamburger:hover::before, header .hamburger:focus::before {
+      opacity: 0; }
+    header .hamburger:hover::after, header .hamburger:focus::after {
+      opacity: 1; }
   header .hamburger .bar {
     height: .17em;
     width: 60%;
@@ -467,7 +484,7 @@ header nav {
       text-align: left;
       margin-bottom: 1.5em; }
   header nav .nav-links {
-    width: 200px;
+    width: 250px;
     padding: 1em 0em 1em 1em;
     margin-left: 4em; }
     @media (min-width: 1000px) {
@@ -482,10 +499,9 @@ header nav {
   header nav a {
     font-size: 2.5rem;
     color: #000;
-    font-weight: 900;
+    font-weight: 500;
     text-decoration: none;
     text-transform: capitalize;
-    font-weight: 300;
     transition: .2s ease; }
     @media (max-width: 768px) {
       header nav a {
@@ -507,7 +523,6 @@ header nav {
     header nav a:hover {
       transition: .2s ease;
       color: #111a;
-      font-weight: 500;
       letter-spacing: .1em; }
       header nav a:hover::before {
         opacity: 0; }
@@ -533,7 +548,8 @@ header nav {
       position: absolute;
       bottom: 20px;
       margin-bottom: 1em;
-      display: inline-block; }
+      display: inline-block;
+      color: navy; }
     header nav .social-bar a {
       padding: .35em;
       border-radius: 50%;

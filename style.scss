@@ -68,11 +68,12 @@ header {
     }
     
     .hamburger {
+        position: relative;
         height: 3em;
         width: 3em;
-
         display: inline-block;
-        border: 1px solid $munch-gray;
+        border: none;
+        outline: none;
         border-radius: 50%;
         position: fixed;
         top: .5em;
@@ -84,16 +85,37 @@ header {
         cursor: pointer;
         margin: 3px 20px;
         transition: .3s;
-        box-shadow: inset -2px -2px 3px #000a,
-                    inset 2px 2px 3px #ddd;
+        
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            border-radius: 50%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: .3s;
+        }
+        &::before {
+            box-shadow: $hamburger-shadow;
+        }
+        &::after {
+            opacity: 0;
+            box-shadow: $hamburger-shadow-hover;
+        }
 
         
         &:hover, &:focus {
-            transition: .3s;
             transition-delay: 50ms;
             transform: scale(.94);
-            box-shadow: inset -1px -1px 5px #ddda,
-                        inset 1px 1px 5px rgba(54, 25, 25, 0.667);
+            &::before {
+                opacity: 0;
+            }
+            &::after {
+                opacity: 1;
+            }
         }
         
 
@@ -222,7 +244,7 @@ header {
             }
         }
         .nav-links {
-            width: 200px;
+            width: 250px;
             @media (min-width: 1000px){
                 width: 300px;
             }
@@ -245,10 +267,9 @@ header {
             }
             font-size: 2.5rem;
             color: #000;
-            font-weight: 900;
+            font-weight: 500;
             text-decoration: none;
             text-transform: capitalize;
-            font-weight: 300;
             transition: .2s ease;
                 &::before,
                 &::after {
@@ -272,7 +293,6 @@ header {
             &:hover {
                 transition: .2s ease;
                 color: #111a;
-                font-weight: 500;
                 letter-spacing: .1em;
 
                 &::before {
@@ -309,6 +329,7 @@ header {
                 bottom: 20px;
                 margin-bottom: 1em;
                 display: inline-block;
+                color: navy;
             }
 
             a {
