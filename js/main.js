@@ -8,4 +8,5 @@ hamburger.addEventListener('click', () => {
     navigation.classList.toggle('active');
 });
 
+
 date.innerHTML = new Date().getFullYear();
