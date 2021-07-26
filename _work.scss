@@ -14,6 +14,21 @@
             height: 300px;
             margin: .5em;
             cursor: pointer;
+            border-radius: 5px;
+            overflow: hidden;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                box-shadow: inset 4px 4px 3px #fffa,
+                            inset -4px -4px 3px rgba(255, 192, 203, 0.74);
+                z-index: 10;
+            }
 
             @media (max-width:500px) {
                 width: 80%;
@@ -21,7 +36,7 @@
                 margin: 1em;
 
                 img {
-                    border-radius: 10px;
+                    border-radius: 5px;
                 }
             }
 
@@ -29,30 +44,37 @@
             img {
                 width: 100%;
                 height: 100%;
+                transition: 1s;
             }
-
+            &:hover {
+                img {
+                    transform: scale(1.4);
+                }
+            }
             .action {
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background: rgba(0, 0, 0, .8);
+                background: rgba(0, 0, 0, .7);
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
                 align-items: center;
                 opacity: 0;
                 transition: .5s ease;
-                color: #fff;
-                border-radius: 10px;
+                color: #ddd;
+                border-radius: 5px;
+                overflow: hidden;
 
                 h3 {
                     font-size: 1.2em;
                     padding: .5em 2em;
                     text-align: center;
                     text-transform: capitalize;
-                    color: $text-color-pink
+                    color: $text-color-pink;
+                    text-decoration: underline rgba(255, 192, 203, 0.397);
                 }
 
                 p {
@@ -64,21 +86,28 @@
 
                 button {
                     display: inline-block;
-                    color: #000;
+                    background: $munch-pink-light;
+                    color: $munch-brown;
+                    font-weight: 600;
                     text-decoration: none;
-                    border: 1px solid #ddda;
-                    box-shadow: inset 2px 2px 10px #fffa,
-                        inset -2px -2px 10px #000;
-                    padding: .5em 1em;
+                    border: none;
+                    outline: none;
+                    padding: .7em 1.5em;
                     border-radius: 10px;
                     cursor: pointer;
+                    width: 100px;
+                    box-shadow: inset 2px 2px 5px #fff,
+                                inset -2px -2px 5px #000;
                 }
             }
 
             &:hover .action {
                 transition: .5s ease;
+                transition-delay: 1s;
+                transform: scale(1.05);
                 opacity: 1;
             }
+            
         }
     }
 }
