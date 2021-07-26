@@ -1,18 +1,5 @@
 #services {
-    padding: 50px;
-    margin-top: 2em;
     
-    @media (max-width:768px) {
-        padding: 100px 40px;
-        .title {
-            h1 {
-                font-size: 2em;
-            }
-            p {
-                font-size: 1.2em;
-            }
-        }
-    }
 
     .services {
         margin-top: 3em;

@@ -1,116 +1,84 @@
 #work {
-    .title {
-        h1 {
-            font-size: 3em;
-            border-radius: 10px;
-            width: 50%;
-            margin: 1em auto;
-            position: relative;
-            padding: .2em .3em;
 
-            &::before {  
+
+
+    .portfolio {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 2em;
+
+        .item {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: .5em;
+            cursor: pointer;
+
+            @media (max-width:500px) {
+                width: 80%;
+                height: 55vh;
+                margin: 1em;
+
+                img {
+                    border-radius: 10px;
+                }
+            }
+
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .action {
                 position: absolute;
-                content: '';
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
-                transition: .3s;
+                background: rgba(0, 0, 0, .8);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                opacity: 0;
+                transition: .5s ease;
+                color: #fff;
                 border-radius: 10px;
-                box-shadow: inset 2px 2px 5px #fff,
-                            inset -2px -2px 5px #000a;
+
+                h3 {
+                    font-size: 1.2em;
+                    padding: .5em 2em;
+                    text-align: center;
+                    text-transform: capitalize;
+                    color: $text-color-pink
+                }
+
+                p {
+                    padding: 0 1.5em;
+                    text-align: center;
+                    font-family: $content-font;
+                }
+
+
+                button {
+                    display: inline-block;
+                    color: #000;
+                    text-decoration: none;
+                    border: 1px solid #ddda;
+                    box-shadow: inset 2px 2px 10px #fffa,
+                        inset -2px -2px 10px #000;
+                    padding: .5em 1em;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
             }
 
-            i {
-                margin-right: .3em;
-                color: $munch-pink;
-                opacity: .6;
+            &:hover .action {
+                transition: .5s ease;
+                opacity: 1;
             }
-        }
-        @media (max-width:668px){
-            h1 {
-                width: 80%;
-                font-size: 2em;
-            }
-        }
-    }
-}
-
-.portfolio {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2em;
-
-    .item {
-        position: relative;
-        width: 300px;
-        height: 300px;
-        margin: .5em;
-        cursor: pointer;
-        @media (max-width:500px){
-            width: 80%;
-            height: 55vh;
-            margin: 1em;
-
-            img {
-                border-radius:  10px;
-            }
-        }
-
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .action {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, .8);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            opacity: 0;
-            transition: .5s ease;
-            color: #fff;
-            border-radius: 10px;
-
-            h3 {
-                font-size: 1.2em;
-                padding: .5em 2em;
-                text-align: center;
-                text-transform: capitalize;
-                // text-decoration: underline #ddda;
-                color: $text-color-pink
-            }
-
-            p {
-                padding: 0 1.5em;
-                text-align: center;
-                font-family: $content-font;
-            }
-            
-
-            button {
-                display: inline-block;
-                color: #000;
-                text-decoration: none;
-                border: 1px solid #ddda;
-                box-shadow: inset 2px 2px 10px #fffa,
-                            inset -2px -2px 10px #000;
-                padding: .5em 1em;
-                border-radius: 10px;
-                cursor: pointer;
-            }
-        }
-        &:hover .action {
-            transition: .5s ease;
-            opacity: 1;
         }
     }
 }
