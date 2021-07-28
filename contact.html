@@ -56,25 +56,25 @@
 
         <div class="contact">
             <div class="contact-form">
-                <form>
+                <form action="https://formsubmit.co/bshakex@gmail.com" method="POST">
                     <div class="row">
                         <div class="input50">
                             <label for="name">Name:</label>
-                            <input type="text" id="name" placeholder="">
+                            <input name="name" type="text" id="name" placeholder="" required>
                         </div>
                         <div class="input50">
-                            <label for="name">Last Name:</label>
-                            <input type="text" placeholder="">
+                            <label for="lastname">Last Name:</label>
+                            <input name="lastname" type="text" placeholder="">
                         </div>
                     </div>
                     <div class="row">
                         <div class="input50">
                             <label for="name">email:</label>
-                            <input type="email" placeholder="">
+                            <input name="email" type="email" placeholder="">
                         </div>
                         <div class="input50">
                             <label for="tel">phone number:</label>
-                            <input id="tel" type="tel" placeholder="">
+                            <input name="tel" id="tel" type="tel" placeholder="" required>
                         </div>
                     </div>
                         
@@ -82,7 +82,7 @@
                     <div class="row">
                         <div class="input100">
                             <label for="name">order:</label>
-                            <textarea id="order" placeholder=""></textarea>
+                            <textarea name="order" id="order" placeholder="" required></textarea>
                         </div>
                     </div>
                     <div class="row">
@@ -90,6 +90,8 @@
                             <input type="submit" value="send">
                         </div>
                     </div>
+                    <!-- thank you page -->
+                    <input type="hidden" name="_next" value="https://https://shakexsempe.github.io/munch-up//thanks.html">
                 </form>
             </div>
 
