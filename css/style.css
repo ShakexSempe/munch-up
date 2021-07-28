@@ -167,7 +167,7 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.55);
+      background: rgba(0, 0, 0, 0.25);
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -179,15 +179,20 @@ body {
       overflow: hidden; }
       #work .portfolio .item .action h3 {
         font-size: 1.2em;
-        padding: .5em 2em;
+        padding: .2em 1em;
+        border-radius: 5px;
         font-weight: 700;
         text-align: center;
         text-transform: capitalize;
         color: #f75394;
+        background: #000a;
         text-decoration: underline rgba(255, 192, 203, 0.397); }
       #work .portfolio .item .action p {
-        padding: 0 1.5em;
+        padding: .5em;
+        margin: 1em;
+        border-radius: 5px;
         text-align: center;
+        background: #000a;
         font-weight: 500;
         font-family: "Varela Round", sans-serif; }
       #work .portfolio .item .action button {
