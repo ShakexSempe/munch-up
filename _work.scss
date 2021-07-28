@@ -57,7 +57,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background: rgba(0, 0, 0, .7);
+                background: rgba(0, 0, 0, .55);
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
@@ -71,6 +71,7 @@
                 h3 {
                     font-size: 1.2em;
                     padding: .5em 2em;
+                    font-weight: 700;
                     text-align: center;
                     text-transform: capitalize;
                     color: $text-color-pink;
@@ -80,6 +81,7 @@
                 p {
                     padding: 0 1.5em;
                     text-align: center;
+                    font-weight: 500;
                     font-family: $content-font;
                 }
 
