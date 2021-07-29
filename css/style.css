@@ -363,6 +363,72 @@ body {
             letter-spacing: .1em;
             box-shadow: -2px -2px 5px #333a, 2px 2px 5px #ddd; }
 
+#thankYou {
+  font-size: 1.5em;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  @media (max-width: 768px) {
+    #thankYou {
+      font-size: 1em; }
+      #thankYou ul li {
+        padding: 5em; } }
+  #thankYou p {
+    text-align: center; }
+  #thankYou ul {
+    margin-top: 3em;
+    width: 20%;
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+    @media (max-width: 768px) {
+      #thankYou ul {
+        width: 60%; } }
+    #thankYou ul li {
+      margin: 2em 0;
+      padding: .5em 1em;
+      list-style: none; }
+      #thankYou ul li a {
+        color: #000;
+        text-decoration: none;
+        position: relative;
+        display: block;
+        padding: .5em .1em;
+        width: 100%;
+        height: 100%; }
+        #thankYou ul li a::before {
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          z-index: -1;
+          box-shadow: inset 2px 2px 5px #ddda, inset -2px -2px 5px #000a; }
+        #thankYou ul li a i {
+          margin: 0 1em;
+          color: #333a;
+          transition: .2s; }
+      #thankYou ul li:hover {
+        transition: .2s;
+        transform: scale(0.98); }
+        #thankYou ul li:hover i {
+          color: #f75394; }
+      #thankYou ul li:active {
+        transform: scale(0.9); }
+
+footer {
+  position: fixed;
+  bottom: 0; }
+  footer a {
+    color: #000; }
+
 body {
   background-image: radial-gradient(#ffc0cb3f, #a52a2a2d); }
 
