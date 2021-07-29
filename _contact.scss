@@ -68,7 +68,7 @@
                         letter-spacing: .2em;
                     }
                 }
-                input, textarea {
+                input, textarea, select {
                     position: relative;
                     border: none;
                     box-shadow: inset 2px 2px 5px #ddda,
@@ -80,11 +80,15 @@
                     outline: none;
                     font-size: 1.2em;
                     font-weight: 600;
-                    margin: 10px 0;
+                    margin: 1em 0;
                     resize: none;
                     bottom: -2em;
                     border-radius: 5px;
                     transition: .2s linear;
+
+                    &::placeholder {
+                        font-size: .8em;
+                    }
 
                     &[type='submit'] {
                         background-color: $munch-brown;
@@ -135,8 +139,9 @@
     .contact-info {
         width: 350px;
         background: #f9f9f9;
-        padding: 60px 40px 20px;
+        padding: 2em 1em 20px;
         border-radius: 10px;
+        
         @media (max-width: 767px){
             width: 100%;
             margin-top: 20px;
@@ -159,17 +164,17 @@
                 display: flex;
                 flex-direction: column;
                 h4 {
-                    font-size: 1.8em;
+                    font-size: 1.6em;
                     color: $munch-brown;
                     margin-bottom: .5em;
                     font-family: $header-font;
                     text-transform: capitalize;
                 }
                 a, p {
-                    font-family: $header-font;
+                    font-family: $content-font;
                     font-weight: 600;
                     color: #000;
-                    font-size: 1.1em;
+                    font-size: 1em;
                     cursor: pointer;
                     box-shadow: -2px -2px 5px #ddd,
                                 2px 2px 5px #333a;
@@ -178,7 +183,9 @@
                     transition: .2s ease;
                     text-decoration: none;
                     border-radius: 5px;
-                    letter-spacing: .05em;
+                    letter-spacing: .1em;
+                    position: relative;
+                    left: -2em;
 
                     @media (max-width:500px){
                         font-size: 1em;
