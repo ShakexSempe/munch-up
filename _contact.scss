@@ -22,6 +22,7 @@
         margin: 0;
         width: 100%;
         height: 150px;
+        overflow: hidden;
         legend {
             margin-left: 1em;
             font-weight: 500;
@@ -73,6 +74,7 @@
                     border: 1px solid $munch-pink-light;
                     height: 350px;
                     border-radius: 5px;
+                    overflow: hidden;
 
                     legend {
                         color: $munch-pink;
