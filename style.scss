@@ -92,9 +92,31 @@ header {
         height: 10%;
         top: 0;
         z-index: 20;
-        padding: .5em 0;
+        padding: .5em 0;   
     }
-    
+    .shop-link {
+        position: fixed;
+        display: inline-block;
+        top: .5em;
+        margin: .5em;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $munch-pink;
+        border-radius: 50%;
+        padding: 1em;
+        cursor: pointer;
+        box-shadow: inset 3px 3px 5px #fffa,
+                    inset -3px -3px 5px #000a;
+        
+        a {
+            color: $munch-mist;
+        }
+
+        &:active {
+            transition: .2s;
+            transform: translateX(-50%) scale(.9);
+        }
+    }
     .hamburger {
         position: relative;
         height: 3em;
