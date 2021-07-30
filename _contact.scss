@@ -127,11 +127,15 @@
                     
                         &:hover {
                             transition: .3s ease;
-                            transform: scale(.98);
                             box-shadow: inset 2px 2px 5px #000,
                                         inset -2px -2px 5px #ddd;
+                                        
+                                    }
+                            &:active {
+                            transform: scale(.8);
+                            transition: .3s ease;
                             letter-spacing: .1em;
-                            
+
                         }
                    }
                    &:hover {

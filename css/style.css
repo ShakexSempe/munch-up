@@ -318,8 +318,10 @@ body {
             box-shadow: inset 2px 2px 5px #f0ffff, inset -2px -2px 5px #000; }
             .contact .contact-form form .row input[type='submit']:hover, .contact .contact-form form .row textarea[type='submit']:hover, .contact .contact-form form .row select[type='submit']:hover {
               transition: .3s ease;
-              transform: scale(0.98);
-              box-shadow: inset 2px 2px 5px #000, inset -2px -2px 5px #ddd;
+              box-shadow: inset 2px 2px 5px #000, inset -2px -2px 5px #ddd; }
+            .contact .contact-form form .row input[type='submit']:active, .contact .contact-form form .row textarea[type='submit']:active, .contact .contact-form form .row select[type='submit']:active {
+              transform: scale(0.8);
+              transition: .3s ease;
               letter-spacing: .1em; }
           .contact .contact-form form .row input:hover, .contact .contact-form form .row textarea:hover, .contact .contact-form form .row select:hover {
             transition: .3s ease;
