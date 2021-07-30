@@ -60,25 +60,24 @@
                     <div class="row">
                         <div class="input50">
                             <label for="name">Name:</label>
-                            <input name="name" type="text" id="name" placeholder="Name" required>
+                            <input name="name" type="text" id="name" placeholder="name & surname" required>
                         </div>
-                    </div>
-                    <div class="row">
+                    
                         <div class="input50">
                             <label for="name">email:</label>
-                            <input name="email" type="email" placeholder="">
+                            <input name="email" type="email" placeholder="email">
                         </div>
                         <div class="input50">
                             <label for="tel">phone number:</label>
-                            <input name="tel" id="tel" type="tel" placeholder="" required>
+                            <input name="tel" id="tel" type="tel" placeholder="phone number" required>
                         </div>
                     </div>
                         
 
                     <div class="row">
                         <div class="input50">
-                            <label for="order">Order:</label>
-                            <select name="order">
+                            <fieldset> <legend>Munch Up</legend>
+                            <select name="cakes">
                                 <optgroup label="Cakes">
                                     <option>birthday cake</option>
                                     <option>holiday cake</option>
@@ -94,10 +93,27 @@
                                     <option>cakesicles</option>
                                 </optgroup>
                                 </select>
+                            <select name="flavours">
+                                <optgroup label="flavour">
+                                    <option>chocolate</option>
+                                    <option>vanilla</option>
+                                    <option>strawberry</option>
+                                    <option>Black Forrest</option>
+                                    <option>strawberry</option>
+                                </optgroup>
+                                </select>
+                                <select name="cake-topper">
+                                    <optgroup label="cake-topper">
+                                        <option>edible</option>
+                                        <option>decorative</option>
+                                        <option>branded cake</option>
+                                    </optgroup>
+                                    </select>
+                            </fieldset>
                         </div>
                         <div class="input100">
                             <label for="name">custom:</label>
-                            <textarea name="custom" id="custom" placeholder="eg. Chocolate cake, strawberry cupcakes etc.."></textarea>
+                            <textarea name="custom" id="custom" placeholder="eg. Spiderman cake for 9 year old."></textarea>
                         </div>
                     </div>
                     <div class="row">

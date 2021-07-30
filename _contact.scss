@@ -36,6 +36,20 @@
                 @media (max-width: 767px){
                     flex-direction: column;
                 }
+                fieldset {
+                    padding: .5em 1em;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 2em auto;
+                    border: 1px solid $munch-pink-light;
+                    height: 350px;
+                    border-radius: 5px;
+
+                    legend {
+                        color: $munch-pink;
+                        font-size: 1em;
+                    }
+                }
                 label {
                     text-transform: capitalize;
                     color: $munch-gray;
@@ -88,19 +102,23 @@
 
                     &::placeholder {
                         font-size: .8em;
+                        color: rgba(151, 149, 149, 0.822);
+                    }
+                    option, optgroup {
+                        text-transform: capitalize;
                     }
 
                     &[type='submit'] {
                         background-color: $munch-brown;
                         color: #fff;
                         width: 50%;
-                        margin: 2em auto;
+                        margin: 1em auto;
                         text-transform: uppercase;
                         letter-spacing: .2em;
                         font-weight: 300;
                         border: 0;
                         padding: .5em;
-                        border-radius: 5px;
+                        border-radius: 20px;
                         cursor: pointer;
                         letter-spacing: .3em;
                         box-shadow: 

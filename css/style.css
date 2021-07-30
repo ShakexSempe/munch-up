@@ -245,6 +245,17 @@ body {
         @media (max-width: 767px) {
           .contact .contact-form form .row {
             flex-direction: column; } }
+        .contact .contact-form form .row fieldset {
+          padding: .5em 1em;
+          display: flex;
+          flex-direction: column;
+          margin: 2em auto;
+          border: 1px solid pink;
+          height: 350px;
+          border-radius: 5px; }
+          .contact .contact-form form .row fieldset legend {
+            color: #f75394;
+            font-size: 1em; }
         .contact .contact-form form .row label {
           text-transform: capitalize;
           color: #434343;
@@ -287,18 +298,21 @@ body {
           border-radius: 5px;
           transition: .2s linear; }
           .contact .contact-form form .row input::placeholder, .contact .contact-form form .row textarea::placeholder, .contact .contact-form form .row select::placeholder {
-            font-size: .8em; }
+            font-size: .8em;
+            color: rgba(151, 149, 149, 0.822); }
+          .contact .contact-form form .row input option, .contact .contact-form form .row input optgroup, .contact .contact-form form .row textarea option, .contact .contact-form form .row textarea optgroup, .contact .contact-form form .row select option, .contact .contact-form form .row select optgroup {
+            text-transform: capitalize; }
           .contact .contact-form form .row input[type='submit'], .contact .contact-form form .row textarea[type='submit'], .contact .contact-form form .row select[type='submit'] {
             background-color: #800000;
             color: #fff;
             width: 50%;
-            margin: 2em auto;
+            margin: 1em auto;
             text-transform: uppercase;
             letter-spacing: .2em;
             font-weight: 300;
             border: 0;
             padding: .5em;
-            border-radius: 5px;
+            border-radius: 20px;
             cursor: pointer;
             letter-spacing: .3em;
             box-shadow: inset 2px 2px 5px #f0ffff, inset -2px -2px 5px #000; }
