@@ -50,14 +50,15 @@
 
     <section id="contact">
         <div class="title">
-            <h1><i class="fas fa-id-card"></i>Contact</h1>
-            <p>Lorem ipsum dolor sit amet  placeat esse enim provident iusto aliquid, quas praesentium a.</p>
+            <h1><i class="fas fa-shopping-cart"></i>Order here</h1>
+            <p>Enter your contact details and place order in the form below.</p>
         </div>
 
         <div class="contact">
             <div class="contact-form">
                 <form action="https://formsubmit.co/bshakex@gmail.com" method="POST">
                     <div class="row">
+                        <fieldset id="contact-field"> <legend>contact info</legend>
                         <div class="input50">
                             <label for="name">Name:</label>
                             <input name="name" type="text" id="name" placeholder="name & surname" required>
@@ -72,11 +73,11 @@
                             <input name="tel" id="tel" type="tel" placeholder="phone number" required>
                         </div>
                     </div>
-                        
+                </fieldset>
 
                     <div class="row">
                         <div class="input50">
-                            <fieldset> <legend>Munch Up</legend>
+                            <fieldset> <legend>choose a treat & flavor</legend>
                             <select name="cakes">
                                 <optgroup label="Cakes">
                                     <option>birthday cake</option>
@@ -93,7 +94,8 @@
                                     <option>cakesicles</option>
                                 </optgroup>
                                 </select>
-                            <select  name="flavours">
+                            
+                                <select name="flavours">
                                 <optgroup class="flavorGroup" label="flavour">
                                     <!-- javascript -->
                                 </optgroup>

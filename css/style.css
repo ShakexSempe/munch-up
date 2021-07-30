@@ -215,7 +215,8 @@ body {
       opacity: 1; }
 
 #contact .title p {
-  display: none; }
+  font-size: 1em;
+  text-transform: none; }
 
 .contact {
   position: relative;
@@ -227,6 +228,27 @@ body {
   @media (max-width: 700px) {
     .contact {
       flex-direction: column-reverse; } }
+  .contact #contact-field {
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 150px; }
+    .contact #contact-field legend {
+      margin-left: 1em;
+      font-weight: 500; }
+    @media (max-width: 700px) {
+      .contact #contact-field {
+        flex-direction: column;
+        margin-bottom: 2em;
+        height: 60vh;
+        padding: .5em .7em;
+        overflow: hidden; }
+        .contact #contact-field .input50 {
+          height: auto; } }
+    @media (max-width: 500px) {
+      .contact #contact-field {
+        height: 50vh; } }
   .contact .contact-form {
     position: relative;
     background: #f9f9f9;
@@ -245,6 +267,9 @@ body {
         @media (max-width: 767px) {
           .contact .contact-form form .row {
             flex-direction: column; } }
+        @media (min-width: 768px) {
+          .contact .contact-form form .rowlabel {
+            font-size: .8em; } }
         .contact .contact-form form .row fieldset {
           padding: .5em 1em;
           display: flex;
