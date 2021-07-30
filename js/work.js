@@ -169,7 +169,6 @@ const work = [{
 
 
 ];
-
 //target portfolio section to be populated ith items:
 const portfolio = document.querySelector('.portfolio');
 //display items via () when DOM content has loaded 
@@ -194,22 +193,6 @@ displayWorkItems = (workItems) => {
     displayWork = displayWork.join("");
     portfolio.innerHTML = displayWork;
 
-    // const overlaybtn = document.querySelectorAll('.overlaybtn');  
-    
-    // overlaybtn.forEach(btn => {
-    //     btn.addEventListener("click", ()=> {
-    //         workItems.map(item => {
-    //             return `<div class="modal-overlay">
-    //             <div class="modal-container">
-    //               <img class="modal-content" src=${item.img}/>
-    //               <button class="close-btn">
-    //                 <i class="fas fa-times"></i>
-    //               </button>
-    //             </div>
-    //           </div>`
-    //         });
-    //     })
-    // })
 
 }
 
