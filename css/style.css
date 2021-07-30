@@ -237,7 +237,7 @@ body {
     .contact #contact-field legend {
       margin-left: 1em;
       font-weight: 500; }
-    @media (max-width: 700px) {
+    @media (max-width: 500px) {
       .contact #contact-field {
         flex-direction: column;
         margin-bottom: 2em;
@@ -246,9 +246,9 @@ body {
         overflow: hidden; }
         .contact #contact-field .input50 {
           height: auto; } }
-    @media (max-width: 500px) {
+    @media (max-width: 350px) {
       .contact #contact-field {
-        height: 50vh; } }
+        height: 65vh; } }
   .contact .contact-form {
     position: relative;
     background: #f9f9f9;
