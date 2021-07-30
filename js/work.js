@@ -186,7 +186,7 @@ displayWorkItems = (workItems) => {
                     <div class="action">
                         <h3>${item.title}</h3>
                         <p >${item.desc}</p>
-                        <button class="overlaybtn" href="#">R${item.price}</button>
+                        <button class="overlaybtn" href="contact.html">R${item.price}</button>
                     </div>
                 </div>`
     });
