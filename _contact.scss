@@ -26,12 +26,11 @@
             margin-left: 1em;
             font-weight: 500;
         }
-        @media (max-width: 500px){
+        @media (max-width: 768px){
             flex-direction: column;
             margin-bottom: 2em;
             height: 60vh;
-            padding: .5em .7em;
-            overflow: hidden;
+            padding: 2em .7em;
             
             .input50 {
                 height: auto;
@@ -85,10 +84,11 @@
                     color: $munch-gray;
                     position: absolute;
                     top: 1em;
-                    font-size: 1.3em;
+                    font-size: 1.2em;
                     left: .8em;
                     padding: 0 4em 0em 0;
-                    
+                    letter-spacing: .1em;
+                    transform: translateY(50%);
                 }
                 .input50 {
                     width: 50%;
@@ -106,10 +106,9 @@
                     
                     &:hover label {
                         transition: .5s ease;
-                        padding: 0 2em 0em .5em;
-                        color: $text-color-brown;
                         font-weight: 700;
-                        letter-spacing: .2em;
+                        color: $text-color-brown;
+                        transform: translateY(50%) translateX(1em);
                     }
                 }
                 input, textarea, select {

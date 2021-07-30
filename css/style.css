@@ -237,13 +237,12 @@ body {
     .contact #contact-field legend {
       margin-left: 1em;
       font-weight: 500; }
-    @media (max-width: 500px) {
+    @media (max-width: 768px) {
       .contact #contact-field {
         flex-direction: column;
         margin-bottom: 2em;
         height: 60vh;
-        padding: .5em .7em;
-        overflow: hidden; }
+        padding: 2em .7em; }
         .contact #contact-field .input50 {
           height: auto; } }
     @media (max-width: 350px) {
@@ -286,9 +285,11 @@ body {
           color: #434343;
           position: absolute;
           top: 1em;
-          font-size: 1.3em;
+          font-size: 1.2em;
           left: .8em;
-          padding: 0 4em 0em 0; }
+          padding: 0 4em 0em 0;
+          letter-spacing: .1em;
+          transform: translateY(50%); }
         .contact .contact-form form .row .input50 {
           width: 50%;
           margin: 0 10px; }
@@ -302,10 +303,9 @@ body {
           position: relative; }
           .contact .contact-form form .row .input50:hover label, .contact .contact-form form .row .input100:hover label {
             transition: .5s ease;
-            padding: 0 2em 0em .5em;
-            color: #800000;
             font-weight: 700;
-            letter-spacing: .2em; }
+            color: #800000;
+            transform: translateY(50%) translateX(1em); }
         .contact .contact-form form .row input, .contact .contact-form form .row textarea, .contact .contact-form form .row select {
           position: relative;
           border: none;
