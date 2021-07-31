@@ -74,12 +74,13 @@
                         </div>
                     </div>
                 </fieldset>
-
+                <!-- treat and flavour -->
                     <div class="row">
                         <div class="input50">
-                            <fieldset> <legend>choose a treat & flavor</legend>
-                            <select name="cakes">
-                                <optgroup label="Cakes">
+                            <fieldset id="treats"> <legend>choose a treat & flavor</legend>
+                           <label for="item">item</label> 
+                           <select name="item">
+                                <optgroup label="cakes">
                                     <option>birthday cake</option>
                                     <option>holiday cake</option>
                                     <option>branded cake</option>
@@ -94,12 +95,15 @@
                                     <option>cakesicles</option>
                                 </optgroup>
                                 </select>
-                            
+                                
+                                <label for="flavour">flavour</label>
                                 <select name="flavours">
                                 <optgroup class="flavorGroup" label="flavour">
                                     <!-- javascript -->
                                 </optgroup>
                                 </select>
+                                <label for="topper">topper</label>
+
                                 <select name="cake-topper">
                                     <optgroup label="cake-topper">
                                         <option>edible</option>
@@ -109,11 +113,13 @@
                                     </select>
                             </fieldset>
                         </div>
+                <!-- end of treat and flavour -->
                         <div class="input100">
                             <label for="name">custom:</label>
                             <textarea name="custom" id="custom" placeholder="eg. Spiderman cake for 9 year old."></textarea>
                         </div>
                     </div>
+                    
                     <div class="row">
                         <div class="input100">
                             <input type="submit" value="send">
