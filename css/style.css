@@ -715,6 +715,9 @@ header .logo {
         width: 4.5em;
         height: 4.5em;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.479); } }
+    header .logo img:active {
+      transition: .3s;
+      transform: scale(0.9); }
 
 header nav {
   position: fixed;

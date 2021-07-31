@@ -266,6 +266,10 @@ header {
             width: 6em;
             height: 6em;
             border-radius: 50%;
+            &:active {
+                transition: .3s;
+                transform: scale(.9);
+            }
         }
     }
 
