@@ -233,6 +233,11 @@ body {
 #contact .title p {
   font-size: 1em;
   text-transform: none; }
+  #contact .title p a {
+    color: #b768a2;
+    font-weight: 600; }
+    #contact .title p a:hover {
+      color: #f75394; }
 
 .contact {
   position: relative;
@@ -579,6 +584,7 @@ header .shop-link {
   background: #f75394;
   border-radius: 10px;
   cursor: pointer;
+  z-index: 15;
   box-shadow: inset 3px 3px 5px #fffa, inset -3px -3px 5px #000a, 0 5px 5px rgba(0, 0, 0, 0.479); }
   header .shop-link a {
     color: #f0ffff; }

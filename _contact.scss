@@ -3,6 +3,14 @@
         p {
             font-size: 1em;
             text-transform: none;
+            a {
+                color: $munch-purple;
+                font-weight: 600;
+
+                &:hover {
+                    color: $munch-pink;
+                }
+            }
         }
     }
 }
@@ -189,6 +197,7 @@
                 
             }
         }
+        
     }
 
     .contact-info {
