@@ -260,7 +260,8 @@ body {
         width: 100%;
         padding: 30px 20px 30px; } }
     .contact .contact-form form {
-      width: 100%; }
+      width: 100%;
+      scroll-padding: 8em auto; }
       .contact .contact-form form .row {
         width: 100%;
         display: flex; }
@@ -475,6 +476,9 @@ footer {
   bottom: 0; }
   footer a {
     color: #000; }
+
+* {
+  scroll-behavior: smooth; }
 
 body {
   background-image: radial-gradient(#ffc0cb3f, #a52a2a2d); }

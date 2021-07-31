@@ -5,6 +5,10 @@
 @import 'work';
 @import 'contact';
 
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: radial-gradient( #ffc0cb3f, #a52a2a2d);
 }
