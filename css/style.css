@@ -557,38 +557,37 @@ section {
 header .shop-link {
   position: fixed;
   display: inline-block;
-  top: .5em;
-  margin: .5em;
+  top: 1em;
   left: 50%;
   transform: translateX(-50%);
   background: #f75394;
-  border-radius: 50%;
-  padding: 1em;
+  border-radius: 10px;
   cursor: pointer;
-  box-shadow: inset 3px 3px 5px #fffa, inset -3px -3px 5px #000a; }
+  box-shadow: inset 3px 3px 5px #fffa, inset -3px -3px 5px #000a, 0 5px 5px rgba(0, 0, 0, 0.479); }
   header .shop-link a {
     color: #f0ffff; }
+    header .shop-link a i {
+      margin: 0 auto;
+      padding: .5em 2em; }
   header .shop-link:active {
     transition: .2s;
     transform: translateX(-50%) scale(0.9); }
 
 header .hamburger {
-  position: relative;
-  height: 3em;
-  width: 3em;
-  display: inline-block;
-  border: none;
-  outline: none;
-  border-radius: 50%;
   position: fixed;
-  top: .5em;
-  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 3em;
+  width: 3em;
+  margin: 3px 20px;
+  top: .5em;
+  right: 0;
+  border: none;
+  outline: none;
+  border-radius: 50%;
   z-index: 20;
   cursor: pointer;
-  margin: 3px 20px;
   transition: .3s; }
   header .hamburger::before, header .hamburger::after {
     position: absolute;
@@ -893,16 +892,11 @@ header nav {
       border-radius: 10px;
       padding: .5em;
       box-shadow: inset 3px 3px 10px pink, inset -3px -3px 5px #000a, 3px 3px 5px #000;
-      backdrop-filter: blur(0.18em);
+      backdrop-filter: blur(0.25em);
       transition: .3s ease; }
       @media (max-width: 768px) {
         #home .home-content p {
-          font-size: 1.2em; }
-          #home .home-content p:hover {
-            transition: .3s ease;
-            transform: scale(0.99);
-            backdrop-filter: blur(0.3em);
-            box-shadow: inset -3px -3px 10px pink, inset 3px 3px 10px #000a, inset 3px 3px 2px #000a; } }
+          font-size: 1.2em; } }
     #home .home-content .btn {
       position: absolute;
       top: -1.7em;

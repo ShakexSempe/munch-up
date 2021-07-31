@@ -102,19 +102,23 @@ header {
     .shop-link {
         position: fixed;
         display: inline-block;
-        top: .5em;
-        margin: .5em;
+        top: 1em;
         left: 50%;
         transform: translateX(-50%);
         background: $munch-pink;
-        border-radius: 50%;
-        padding: 1em;
+        border-radius: 10px;
         cursor: pointer;
         box-shadow: inset 3px 3px 5px #fffa,
-                    inset -3px -3px 5px #000a;
+                    inset -3px -3px 5px #000a,
+                    0 5px 5px rgba(0, 0, 0, 0.479);
         
         a {
             color: $munch-mist;
+
+            i {
+            margin: 0 auto;
+            padding: .5em 2em;
+            }
         }
 
         &:active {
@@ -123,22 +127,20 @@ header {
         }
     }
     .hamburger {
-        position: relative;
-        height: 3em;
-        width: 3em;
-        display: inline-block;
-        border: none;
-        outline: none;
-        border-radius: 50%;
         position: fixed;
-        top: .5em;
-        right: 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 3em;
+        width: 3em;
+        margin: 3px 20px;
+        top: .5em;
+        right: 0;
+        border: none;
+        outline: none;
+        border-radius: 50%;
         z-index: 20;
         cursor: pointer;
-        margin: 3px 20px;
         transition: .3s;
         
 
@@ -561,20 +563,11 @@ header {
             box-shadow: inset 3px 3px 10px $munch-pink-light,
                         inset -3px -3px 5px #000a,
                         3px 3px 5px #000;
-            backdrop-filter: blur(.18em);
+            backdrop-filter: blur(.25em);
             transition: .3s ease;
 
             @media (max-width:768px){
                 font-size: 1.2em;
-                &:hover {
-                    transition: .3s ease;
-                    transform: scale(.99);
-                    backdrop-filter: blur(.3em);
-                    box-shadow:
-                        inset -3px -3px 10px $munch-pink-light,
-                        inset 3px 3px 10px #000a,
-                        inset 3px 3px 2px #000a;
-                }
             }
         }
 
