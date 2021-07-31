@@ -557,7 +557,7 @@ section {
 header .shop-link {
   position: fixed;
   display: inline-block;
-  top: 1em;
+  top: .5em;
   left: 50%;
   transform: translateX(-50%);
   background: #f75394;
