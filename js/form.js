@@ -212,11 +212,3 @@ displayFlavor = (flavorsItem) => {
 }
 
 //  product select group
-displayProducts = (workItems) => {
-    console.log(workItems);
-    product = workItems.map( item => {
-        return `<option>${item.title}</option>`
-    });
-    product = product.join("");
-    products.innerHTML = product
-}
