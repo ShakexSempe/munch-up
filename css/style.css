@@ -591,11 +591,32 @@ header .shop-link {
   top: 1em;
   left: 50%;
   transform: translateX(-50%);
-  background: #f75394;
-  border-radius: 10px;
+  border: none;
+  outline: none;
   cursor: pointer;
-  z-index: 15;
-  box-shadow: inset 3px 3px 5px #fffa, inset -3px -3px 5px #000a, 0 5px 5px rgba(0, 0, 0, 0.479); }
+  z-index: 15; }
+  header .shop-link::before, header .shop-link::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background: #f75394;
+    z-index: -2;
+    transition: .3s; }
+  header .shop-link::before {
+    z-index: -1;
+    box-shadow: inset 3px 3px 5px #fffa, inset -3px -3px 5px #000a, 0 5px 5px rgba(0, 0, 0, 0.479); }
+  header .shop-link::after {
+    opacity: 0;
+    z-index: -1;
+    box-shadow: inset 3px 3px 5px #000a, inset -3px -3px 5px #fffa, 0 5px 10px rgba(0, 0, 0, 0.479); }
+  header .shop-link:hover::before {
+    opacity: 0; }
+  header .shop-link:hover::after {
+    opacity: 1; }
   header .shop-link a {
     color: #f0ffff; }
     header .shop-link a i {

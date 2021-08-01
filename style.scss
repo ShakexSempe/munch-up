@@ -105,14 +105,42 @@ header {
         top: 1em;
         left: 50%;
         transform: translateX(-50%);
-        background: $munch-pink;
-        border-radius: 10px;
+        // border-radius: 10px;
+        border: none;
+        outline: none;
         cursor: pointer;
         z-index: 15;
-        box-shadow: inset 3px 3px 5px #fffa,
+        
+        &::before,
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            background: $munch-pink;
+            z-index: -2;
+            transition: .3s;
+        }
+        &::before {
+            z-index: -1;
+            box-shadow: inset 3px 3px 5px #fffa,
                     inset -3px -3px 5px #000a,
                     0 5px 5px rgba(0, 0, 0, 0.479);
-        
+        }
+        &::after {
+            opacity: 0;
+            z-index: -1;
+            box-shadow: inset 3px 3px 5px #000a,
+                    inset -3px -3px 5px #fffa,
+                    0 5px 10px rgba(0, 0, 0, 0.479);
+        } 
+        &:hover {
+            &::before {opacity: 0}
+            &::after {opacity: 1}
+        }
         a {
             color: $munch-mist;
 
@@ -121,7 +149,6 @@ header {
             padding: .5em 2em;
             }
         }
-
         &:active {
             transition: .2s;
             transform: translateX(-50%) scale(.9);
