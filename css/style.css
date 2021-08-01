@@ -76,7 +76,7 @@ body {
       transform: scale(0.98);
       cursor: pointer; }
       #services .services .service:hover img {
-        transform: scale(1.1);
+        transform: scale(1.15);
         z-index: 20; }
       #services .services .service:hover h2 {
         opacity: .8;
