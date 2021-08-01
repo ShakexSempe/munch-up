@@ -234,10 +234,10 @@ body {
     text-transform: none;
     padding: 1em; }
     #contact .title p a {
-      color: #b768a2;
+      color: #f75394;
       font-weight: 600; }
       #contact .title p a:hover {
-        color: #f75394; }
+        color: #b768a2; }
 
 .contact {
   position: relative;
@@ -325,9 +325,21 @@ body {
         .contact .contact-form form .row .input100 {
           width: 100%;
           margin: 0 10px; }
-        .contact .contact-form form .row #custom-classic label {
-          position: relative;
-          transform: translateY(1.5em); }
+        .contact .contact-form form .row #custom-classic {
+          overflow: hidden; }
+          .contact .contact-form form .row #custom-classic label {
+            position: relative;
+            transform: translateY(1em); }
+          .contact .contact-form form .row #custom-classic h3 {
+            width: 100%;
+            text-align: center;
+            margin: 2em auto 0;
+            background: #f75394;
+            color: #f0ffff;
+            border-radius: 5px;
+            padding: .2em; }
+          .contact .contact-form form .row #custom-classic select {
+            font-size: 1em; }
         .contact .contact-form form .row .input50, .contact .contact-form form .row .input100 {
           width: 100%;
           height: 100%;

@@ -191,11 +191,13 @@ const work = [{
 //  flavors select group
 //  target containers 
 const flavorGroup = document.querySelector('.flavorGroup');
-const products = document.querySelector('.products');
+const classic = document.getElementById('classic');
+
 //display items via () when DOM content has loaded 
 window.addEventListener("DOMContentLoaded", () => {
     //call function which displays mapped flavor items
     displayFlavor(flavors);
+    displayClassic(work);
 });
 //function to display work items in portfolio section 
 //map() to display each work item wrapped in the item class via template literal
@@ -210,3 +212,10 @@ displayFlavor = (flavorsItem) => {
 }
 
 //  product select group
+displayClassic = (workItems) => {
+    product = workItems.map(item => {
+        return `<option>${item.title}</option>`
+    });
+    product = product.join("");
+    classic.innerHTML = product
+}

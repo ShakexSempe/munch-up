@@ -6,11 +6,11 @@
             text-transform: none;
             padding: 1em;
             a {
-                color: $munch-purple;
+                color: $munch-pink;
                 font-weight: 600;
 
                 &:hover {
-                    color: $munch-pink;
+                    color: $munch-purple;
                 }
             }
         }
@@ -122,9 +122,22 @@
                     margin: 0 10px;
                 }
                 #custom-classic {
+                    overflow: hidden;
                     label {
                         position: relative;
-                        transform: translateY(1.5em);
+                        transform: translateY(1em);
+                    }
+                    h3 {
+                        width: 100%;
+                        text-align: center;
+                        margin: 2em auto 0;
+                        background: $munch-pink;
+                        color: $munch-mist;
+                        border-radius: 5px;
+                        padding: .2em;
+                    }
+                    select {
+                        font-size: 1em;
                     }
                 }
                 .input50, .input100 {
