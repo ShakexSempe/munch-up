@@ -71,7 +71,7 @@
                         </div>
                         <div class="input50">
                             <label for="tel">phone:</label>
-                            <input name="tel" id="tel" type="tel" placeholder="phone number">
+                            <input name="tel" id="tel" type="tel" placeholder="phone number" required>
                         </div>
                     </div>
                 </fieldset>
@@ -79,8 +79,6 @@
                     <div class="row">
                         <div class="input50">
                             <fieldset id="treats"> <legend>choose a treat & flavor</legend>
-                           
-
                            <label for="item">item</label> 
                            <select name="item">
                                 <optgroup label="cakes">
@@ -118,8 +116,14 @@
                         </div>
                 <!-- end of treat and flavour -->
                         <div class="input100">
-                            <label for="name">custom:</label>
+                            <fieldset id="custom-classic"><legend>custom or classic</legend>
+                                <label for="classic">classic:</label>
+                                <select name="classic" id="classic">
+                                    <!-- javascript -->
+                                </select>
+                                <label for="name">custom:</label>
                             <textarea name="custom" id="custom" placeholder="eg. Spiderman cake for 9 year old."></textarea>
+                        </fieldset>
                         </div>
                     </div>
                     
@@ -131,8 +135,8 @@
                     <!-- thank you page -->
                     <input type="hidden" name="_next" value="https://shakexsempe.github.io/munch-up/thanks.html">
                     <!-- subject -->
-                    <input type="hidden" name="_subject" value="Munch Up prodct order">
-                    <input type="hidden" name="_autoresponse" value="Your order at Munch Up has been received">
+                    <input type="hidden" name="_subject" value="New order!">
+                    <input type="hidden" name="_autoresponse" value="Your order has been placed">
                     <input type="hidden" name="_template" value="table">
 
                 </form>

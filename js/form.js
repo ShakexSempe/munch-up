@@ -192,12 +192,10 @@ const work = [{
 //  target containers 
 const flavorGroup = document.querySelector('.flavorGroup');
 const products = document.querySelector('.products');
-console.log(products);
 //display items via () when DOM content has loaded 
 window.addEventListener("DOMContentLoaded", () => {
     //call function which displays mapped flavor items
     displayFlavor(flavors);
-    displayProducts(work);
 });
 //function to display work items in portfolio section 
 //map() to display each work item wrapped in the item class via template literal
