@@ -15,6 +15,23 @@ const flavors = [
         id: 4,
         flavor: 'black forrest'
     },
+    {
+        id: 5,
+        flavor: 'red velvet'
+    },{
+        id: 6,
+        flavor: 'carrot'
+    },{
+        id: 7,
+        flavor: 'Coconut'
+    },{
+        id: 8,
+        flavor: 'Lemon'
+    },
+    {
+        id: 9,
+        flavor: 'white chocolate'
+    }
 ];
 const work = [{
     id: 1,

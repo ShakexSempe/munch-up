@@ -366,6 +366,8 @@ body {
             color: rgba(151, 149, 149, 0.822); }
           .contact .contact-form form .row input option, .contact .contact-form form .row input optgroup, .contact .contact-form form .row textarea option, .contact .contact-form form .row textarea optgroup, .contact .contact-form form .row select option, .contact .contact-form form .row select optgroup {
             text-transform: capitalize; }
+            .contact .contact-form form .row input option select, .contact .contact-form form .row input optgroup select, .contact .contact-form form .row textarea option select, .contact .contact-form form .row textarea optgroup select, .contact .contact-form form .row select option select, .contact .contact-form form .row select optgroup select {
+              text-transform: capitalize; }
           .contact .contact-form form .row input[type='submit'], .contact .contact-form form .row textarea[type='submit'], .contact .contact-form form .row select[type='submit'] {
             background-color: #800000;
             color: #fff;

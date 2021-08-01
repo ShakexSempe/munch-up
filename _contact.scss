@@ -170,6 +170,10 @@
                     }
                     option, optgroup {
                         text-transform: capitalize;
+
+                        select {
+                            text-transform: capitalize;
+                        }
                     }
 
                     &[type='submit'] {
