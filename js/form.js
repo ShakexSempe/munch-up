@@ -107,7 +107,7 @@ const work = [{
 },
 {
     id: 10,
-    title: "Munch Up",
+    title: "cupcakes",
     category: "cupcakes",
     price: 250,
     img: "images/item-10.jpg",
@@ -147,7 +147,7 @@ const work = [{
 },
 {
     id: 15,
-    title: "Munch Up",
+    title: "Gender reveal",
     category: "kids",
     price: 450,
     img: "images/item-15.jpg",

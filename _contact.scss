@@ -138,6 +138,7 @@
                     }
                     select {
                         font-size: 1em;
+                        text-transform: capitalize;
                     }
                 }
                 .input50, .input100 {
@@ -168,8 +169,11 @@
                         font-size: .8em;
                         color: rgba(151, 149, 149, 0.822);
                     }
-                    option, optgroup {
+                    optgroup {
                         text-transform: capitalize;
+                        option {
+                            text-transform: lowercase;
+                        }
 
                         select {
                             text-transform: capitalize;

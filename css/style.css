@@ -339,7 +339,8 @@ body {
             border-radius: 5px;
             padding: .2em; }
           .contact .contact-form form .row #custom-classic select {
-            font-size: 1em; }
+            font-size: 1em;
+            text-transform: capitalize; }
         .contact .contact-form form .row .input50, .contact .contact-form form .row .input100 {
           width: 100%;
           height: 100%;
@@ -364,9 +365,11 @@ body {
           .contact .contact-form form .row input::placeholder, .contact .contact-form form .row textarea::placeholder, .contact .contact-form form .row select::placeholder {
             font-size: .8em;
             color: rgba(151, 149, 149, 0.822); }
-          .contact .contact-form form .row input option, .contact .contact-form form .row input optgroup, .contact .contact-form form .row textarea option, .contact .contact-form form .row textarea optgroup, .contact .contact-form form .row select option, .contact .contact-form form .row select optgroup {
+          .contact .contact-form form .row input optgroup, .contact .contact-form form .row textarea optgroup, .contact .contact-form form .row select optgroup {
             text-transform: capitalize; }
-            .contact .contact-form form .row input option select, .contact .contact-form form .row input optgroup select, .contact .contact-form form .row textarea option select, .contact .contact-form form .row textarea optgroup select, .contact .contact-form form .row select option select, .contact .contact-form form .row select optgroup select {
+            .contact .contact-form form .row input optgroup option, .contact .contact-form form .row textarea optgroup option, .contact .contact-form form .row select optgroup option {
+              text-transform: lowercase; }
+            .contact .contact-form form .row input optgroup select, .contact .contact-form form .row textarea optgroup select, .contact .contact-form form .row select optgroup select {
               text-transform: capitalize; }
           .contact .contact-form form .row input[type='submit'], .contact .contact-form form .row textarea[type='submit'], .contact .contact-form form .row select[type='submit'] {
             background-color: #800000;
