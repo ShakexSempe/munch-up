@@ -326,7 +326,7 @@ body {
           width: 100%;
           margin: 0 10px; }
         .contact .contact-form form .row #custom-classic {
-          overflow: hidden; }
+          overflow: scroll; }
           .contact .contact-form form .row #custom-classic label {
             position: relative;
             transform: translateY(1em); }
