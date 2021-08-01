@@ -229,7 +229,9 @@ body {
 
 #contact .title p {
   font-size: 1em;
-  text-transform: none; }
+  text-transform: none;
+  padding: .3em;
+  font-style: italic; }
   #contact .title p a {
     color: #b768a2;
     font-weight: 600; }
