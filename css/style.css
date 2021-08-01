@@ -804,11 +804,12 @@ header nav {
         font-size: 1.6em; }
         header nav .nav-links li a i {
           color: rgba(12, 12, 12, 0.377);
-          margin-right: .5em; }
+          margin-right: .5em;
+          transition: .2s; }
       header nav .nav-links li:hover {
         transform: scale(0.99) translateY(-0.4em); }
         header nav .nav-links li:hover i {
-          color: #434343; }
+          color: #f75394; }
   header nav a {
     font-size: 2.5rem;
     color: #000;
@@ -856,15 +857,20 @@ header nav {
       header nav .social-bar ul li {
         margin-bottom: 1em; }
         header nav .social-bar ul li i {
-          color: #800000; }
+          color: #800000;
+          transition: .2s; }
         header nav .social-bar ul li:hover i {
           color: #f75394; }
+        header nav .social-bar ul li:active {
+          transition: .2s;
+          transform: scale(0.9); }
     header nav .social-bar .email-icon {
       position: absolute;
       bottom: 20px;
       margin-bottom: 1em;
       display: inline-block;
-      color: #800000; }
+      color: #800000;
+      transition: .2s; }
       header nav .social-bar .email-icon:hover {
         color: #9abcde; }
     header nav .social-bar a {

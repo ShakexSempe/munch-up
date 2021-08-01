@@ -359,13 +359,14 @@ header {
                 i {
                     color: rgba(12, 12, 12, 0.377);
                     margin-right: .5em;
+                    transition: .2s;
                 }
             }
             &:hover {
                 transform: scale(.99) translateY(-.4em);
 
                 i {
-                    color: $munch-gray;
+                    color: $munch-pink;
                 }
             }
         }
@@ -433,12 +434,17 @@ header {
 
                     i {
                         color: $munch-brown;
+                        transition: .2s;
                     }
 
                     &:hover {
                         i {
                             color: $munch-pink;
                         }
+                    }
+                    &:active {
+                        transition: .2s;
+                        transform: scale(.9);
                     }
                 }
             }
@@ -448,6 +454,7 @@ header {
                 margin-bottom: 1em;
                 display: inline-block;
                 color: $munch-brown;
+                transition: .2s;
 
                 &:hover {
                     color: $munch-blue;
