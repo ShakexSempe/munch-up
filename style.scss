@@ -101,11 +101,10 @@ header {
     }
     .shop-link {
         position: fixed;
-        display: inline-block;
         top: 1em;
         left: 50%;
         transform: translateX(-50%);
-        // border-radius: 10px;
+        border-radius: 10px;
         border: none;
         outline: none;
         cursor: pointer;
@@ -146,7 +145,7 @@ header {
 
             i {
             margin: 0 auto;
-            padding: .5em 2em;
+            padding: .6em 2.1em;
             }
         }
         &:active {

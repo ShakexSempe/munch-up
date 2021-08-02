@@ -627,10 +627,10 @@ section {
 
 header .shop-link {
   position: fixed;
-  display: inline-block;
   top: 1em;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 10px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -661,7 +661,7 @@ header .shop-link {
     color: #f0ffff; }
     header .shop-link a i {
       margin: 0 auto;
-      padding: .5em 2em; }
+      padding: .6em 2.1em; }
   header .shop-link:active {
     transition: .2s;
     transform: translateX(-50%) scale(0.9); }
