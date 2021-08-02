@@ -444,6 +444,7 @@ body {
           transition: .2s ease;
           text-decoration: none;
           letter-spacing: .2em;
+          border-radius: 5px;
           position: relative;
           left: -2em; }
           .contact .contact-info .info-box .details a::before, .contact .contact-info .info-box .details p::before {
@@ -454,14 +455,28 @@ body {
             width: 100%;
             height: 100%;
             border-radius: 5px;
+            transition: .2s;
             box-shadow: inset 2px 2px 4px #ddda, inset -2px -2px 4px #000a; }
+          .contact .contact-info .info-box .details a::after, .contact .contact-info .info-box .details p::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            border-radius: 5px;
+            transition: .2s;
+            box-shadow: inset 2px 2px 4px #000a, inset -2px -2px 4px #ddda; }
           @media (max-width: 500px) {
             .contact .contact-info .info-box .details a, .contact .contact-info .info-box .details p {
               font-size: .9em; } }
           .contact .contact-info .info-box .details a:hover, .contact .contact-info .info-box .details p:hover {
-            transition: .2s ease;
-            letter-spacing: .1em;
-            box-shadow: -2px -2px 5px #333a, 2px 2px 5px #ddd; }
+            transition: .2s ease; }
+            .contact .contact-info .info-box .details a:hover::before, .contact .contact-info .info-box .details p:hover::before {
+              opacity: 0; }
+            .contact .contact-info .info-box .details a:hover::after, .contact .contact-info .info-box .details p:hover::after {
+              opacity: 1; }
 
 #thankYou {
   font-size: 1.5em;
