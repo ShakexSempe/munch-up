@@ -317,6 +317,7 @@
                         transition: .2s ease;
                         &::before{opacity:0;}
                         &::after{opacity:1;}
+                        transform: scale(1.04);
                     } 
                 }
             }

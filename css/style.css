@@ -472,7 +472,8 @@ body {
             .contact .contact-info .info-box .details a, .contact .contact-info .info-box .details p {
               font-size: .9em; } }
           .contact .contact-info .info-box .details a:hover, .contact .contact-info .info-box .details p:hover {
-            transition: .2s ease; }
+            transition: .2s ease;
+            transform: scale(1.04); }
             .contact .contact-info .info-box .details a:hover::before, .contact .contact-info .info-box .details p:hover::before {
               opacity: 0; }
             .contact .contact-info .info-box .details a:hover::after, .contact .contact-info .info-box .details p:hover::after {
