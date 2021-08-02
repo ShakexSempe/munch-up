@@ -85,6 +85,9 @@
                         color: $munch-gray;
                         transform: translateY(1.5em);
                     }
+                    option {
+                        text-transform: capitalize;
+                    }
                 }
                 fieldset {
                     padding: 1em ;

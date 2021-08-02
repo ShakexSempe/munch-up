@@ -297,6 +297,8 @@ body {
             position: relative;
             color: #434343;
             transform: translateY(1.5em); }
+          .contact .contact-form form .row #treats option {
+            text-transform: capitalize; }
         .contact .contact-form form .row fieldset {
           padding: 1em;
           display: flex;
