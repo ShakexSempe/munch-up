@@ -72,8 +72,9 @@
             }
             
             p {
-                display: none;
                 font-family: $content-font;
+                padding: .2em 1em;
+                color: $munch-brown;
             }
 
             .icon {
@@ -99,9 +100,7 @@
 
                 }
                 h2 {
-                    opacity: .8;
-                    transform: translateY(-1em);
-                }
+                    opacity: 0;}
             }
         }
         

@@ -59,8 +59,9 @@ body {
         #services .services .service h2 {
           font-size: 1.2em; } }
     #services .services .service p {
-      display: none;
-      font-family: "Varela Round", sans-serif; }
+      font-family: "Varela Round", sans-serif;
+      padding: .2em 1em;
+      color: #800000; }
     #services .services .service .icon {
       display: flex;
       flex-direction: column-reverse;
@@ -79,8 +80,7 @@ body {
         transform: scale(1.15);
         z-index: 20; }
       #services .services .service:hover h2 {
-        opacity: .8;
-        transform: translateY(-1em); }
+        opacity: 0; }
 
 #services #work-link {
   display: inline-block;
