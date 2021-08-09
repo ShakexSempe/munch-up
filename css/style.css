@@ -969,6 +969,23 @@ header nav {
       @media (max-width: 400px) {
         #home .home-content ul li {
           font-size: 1em; } }
+    #home .home-content p {
+      text-align: center;
+      font-family: 'Varela Round', sans-serif;
+      margin: 20px 0 10px;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.3em;
+      border-radius: 10px;
+      padding: .5em;
+      box-shadow: inset 3px 3px 10px pink, inset -3px -3px 5px #000a, 3px 3px 5px #000;
+      backdrop-filter: blur(0.25em);
+      transition: .3s ease; }
+      @media (max-width: 768px) {
+        #home .home-content p {
+          font-size: 1em;
+          margin: .5em auto;
+          width: 90%; } }
     #home .home-content .btn {
       position: relative;
       font-family: "Raleway", sans-serif;
