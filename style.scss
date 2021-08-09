@@ -506,13 +506,13 @@ header {
     // padding: 100px;
     margin-top: 1em;
     
-    @media (max-width:768px){
+    @media (max-width:1024px){
         padding: 100px 40px;
         margin-top: 2em;
         flex-direction: column;
     }
     @media (max-width:500px){
-        // padding: 0;
+        padding: 0;
         margin-top: 4em;
 
     }
@@ -522,7 +522,8 @@ header {
         // position: relative;
         z-index: 10;
         display: flex;
-        padding: .5em;
+        // padding: .5em;
+        margin: 3em auto;
         flex-direction: column;
         // border: 1px solid red;
         height: 100%;
@@ -597,6 +598,9 @@ header {
 
             @media (max-width:768px){
                 font-size: 1em;
+                margin: .5em auto;
+                width: 90%;
+
             }
         }
 
@@ -665,10 +669,12 @@ header {
         }
 
         .home-img {
-            @media(min-width: 768px){
+            @media(min-width: 1024px){
                 height: auto;
                 width: 30vw;
                 position: absolute;
+                border: 1px solid green;
+
                 right: 5%;
                 top: 30%;
                 // margin: 9em auto;
@@ -679,9 +685,17 @@ header {
                     width: 100%;
                 }
             }
+            @media(max-width: 1024px){
+                width: 10%;
+                position: relative;
+                top: 0;
+                margin: 2em auto;
+                right: 0;
+                
+            }
             @media(max-width: 768px){
                 height: auto;
-                width: 70%;
+                width: 60%;
                 box-shadow: none;
                 margin: .5em auto;
                 right: 0;
