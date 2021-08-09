@@ -924,7 +924,7 @@ header nav {
   @media (max-width: 500px) {
     #home {
       padding: 0;
-      margin-top: 4em; } }
+      margin-top: 1.5em; } }
   #home .home-content {
     z-index: 10;
     display: flex;
@@ -953,12 +953,14 @@ header nav {
           position: relative; } }
       @media (max-width: 400px) {
         #home .home-content h1 {
-          font-size: 2.5em; } }
+          font-size: 2.6em; } }
     #home .home-content ul {
-      border: 1px solid blue;
-      margin: 1em auto;
+      padding: .5em;
+      margin: .5em auto;
       display: flex;
-      font-family: "Raleway", sans-serif; }
+      font-family: "Raleway", sans-serif;
+      border-radius: 5px;
+      box-shadow: inset 2px 2px 4px #ddda, inset -2px -2px 4px #000a; }
       #home .home-content ul li {
         margin-left: 2em;
         font-size: 1.2em;
@@ -1038,7 +1040,6 @@ header nav {
         height: auto;
         width: 30vw;
         position: absolute;
-        border: 1px solid green;
         right: 5%;
         top: 30%;
         transform: translateY(-50%); }
@@ -1059,12 +1060,9 @@ header nav {
         box-shadow: none;
         margin: .5em auto;
         right: 0;
-        position: relative;
-        border: 1px solid yellow; }
+        position: relative; }
         #home .home-content .home-img img {
-          object-fit: contain;
-          border-radius: 100%;
-          border: 1px solid blue; } }
+          border-radius: 100%; } }
     #home .home-content .home-img img {
       width: 100%; }
 
