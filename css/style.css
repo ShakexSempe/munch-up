@@ -1033,18 +1033,19 @@ header nav {
           margin: .3em auto; } }
     @media (min-width: 1000px) {
       #home .home-content .home-img {
-        height: 40vh;
+        height: auto;
         width: 30vw;
         position: absolute;
-        right: 1em;
+        right: 5%;
         top: 50%;
         transform: translateY(-50%); }
         #home .home-content .home-img img {
-          border-radius: 50%; } }
+          border-radius: 50%;
+          width: 100%; } }
     @media (max-width: 768px) {
       #home .home-content .home-img {
-        height: 30vh;
-        width: 100%;
+        height: auto;
+        width: 70%;
         box-shadow: none;
         margin: 1em auto;
         right: 0;
@@ -1052,15 +1053,10 @@ header nav {
         border: 1px solid yellow; }
         #home .home-content .home-img img {
           object-fit: contain;
-          height: 100%;
-          width: 100%;
-          border-radius: 100%; } }
+          border-radius: 100%;
+          border: 1px solid blue; } }
     #home .home-content .home-img img {
       width: 100%; }
-    #home .home-content .home-img:hover {
-      box-shadow: 10px 10px 10px #88878752, -10px -1px 10px #000a;
-      transform: scale(0.95);
-      transition: .3s ease; }
 
 .body {
   height: 100vh;
