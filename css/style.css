@@ -911,29 +911,29 @@ header nav {
         opacity: 1; }
 
 #home {
+  position: relative;
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 1em; }
   @media (max-width: 768px) {
     #home {
+      padding: 100px 40px;
       margin-top: 2em;
       flex-direction: column; } }
   @media (max-width: 500px) {
     #home {
-      margin-top: 15vh; } }
+      margin-top: 4em; } }
   #home .home-content {
     z-index: 10;
     display: flex;
-    padding: 1em .5em;
+    padding: .5em;
     flex-direction: column;
-    border: 1px solid red;
     height: 100%;
-    overflow: hidden;
     align-items: center;
     text-align: center;
     justify-content: space-evenly; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       #home .home-content {
         height: 55%;
         margin: 1em; } }
@@ -948,12 +948,11 @@ header nav {
       @media (max-width: 768px) {
         #home .home-content h1 {
           font-size: 3em;
-          padding: 0 3.5em;
+          padding: 0 2em;
           position: relative; } }
       @media (max-width: 400px) {
         #home .home-content h1 {
-          font-size: 2.5em;
-          padding: 0 1em; } }
+          font-size: 2.5em; } }
     #home .home-content ul {
       border: 1px solid blue;
       margin: 1em auto;
@@ -1031,13 +1030,13 @@ header nav {
       @media (max-width: 360px) {
         #home .home-content .btn {
           margin: .3em auto; } }
-    @media (min-width: 1000px) {
+    @media (min-width: 768px) {
       #home .home-content .home-img {
         height: auto;
         width: 30vw;
         position: absolute;
         right: 5%;
-        top: 50%;
+        top: 30%;
         transform: translateY(-50%); }
         #home .home-content .home-img img {
           border-radius: 50%;
@@ -1047,7 +1046,7 @@ header nav {
         height: auto;
         width: 70%;
         box-shadow: none;
-        margin: 1em auto;
+        margin: .5em auto;
         right: 0;
         position: relative;
         border: 1px solid yellow; }
