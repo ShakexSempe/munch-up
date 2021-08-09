@@ -527,6 +527,7 @@ header {
         margin: 3em auto;
         flex-direction: column;
         height: 100%;
+        width: 100%;
         overflow: hidden;
         align-items: center;
         text-align: center;
@@ -535,6 +536,7 @@ header {
         @media (min-width: 1024px){
             height: 60%;
             margin: 1em;
+            width: auto;
         }
 
         h1 {

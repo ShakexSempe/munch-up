@@ -930,13 +930,16 @@ header nav {
     margin: 3em auto;
     flex-direction: column;
     height: 100%;
+    width: 100%;
+    overflow: hidden;
     align-items: center;
     text-align: center;
     justify-content: space-evenly; }
     @media (min-width: 1024px) {
       #home .home-content {
         height: 60%;
-        margin: 1em; } }
+        margin: 1em;
+        width: auto; } }
     #home .home-content h1 {
       font-weight: 900;
       line-height: .9;
