@@ -550,7 +550,7 @@ body {
 
 .container {
   height: 100vh;
-  display: grid; }
+  width: 100%; }
 
 footer {
   margin: .5em auto;
@@ -916,7 +916,8 @@ header nav {
   display: flex;
   flex-direction: row;
   min-height: 100vh;
-  margin-top: 1em; }
+  margin-top: 1em;
+  width: 100%; }
   @media (max-width: 1024px) {
     #home {
       padding: 100px 40px;
@@ -925,7 +926,7 @@ header nav {
   @media (max-width: 500px) {
     #home {
       padding: 0;
-      margin-top: 1.5em; } }
+      margin-top: 2.5em; } }
   #home .home-content {
     z-index: 10;
     display: flex;
@@ -937,7 +938,7 @@ header nav {
     justify-content: space-evenly; }
     @media (min-width: 1024px) {
       #home .home-content {
-        height: 55%;
+        height: 60%;
         margin: 1em; } }
     #home .home-content h1 {
       font-weight: 900;
@@ -977,7 +978,7 @@ header nav {
       font-weight: 500;
       line-height: 1.3em;
       border-radius: 10px;
-      padding: 1em;
+      padding: .5em;
       box-shadow: inset 3px 3px 10px pink, inset -3px -3px 5px #000a, 3px 3px 5px #000;
       backdrop-filter: blur(0.25em);
       transition: .3s ease; }
@@ -1067,7 +1068,7 @@ header nav {
 .slogan {
   height: 100vh;
   background-color: #434343;
-  background-image: url(images/logo.jpg);
+  background-image: url(../images/logo.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
