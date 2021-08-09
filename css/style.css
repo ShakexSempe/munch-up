@@ -555,6 +555,7 @@ body {
 footer {
   margin: .5em auto;
   padding: .5em;
+  text-align: center;
   width: 50%; }
   footer p {
     backdrop-filter: blur(2em);
@@ -943,7 +944,6 @@ header nav {
       line-height: .9;
       letter-spacing: .1em;
       text-align: center;
-      text-transform: capitalize;
       font-size: 4.5em;
       color: #654321;
       position: relative; }
@@ -952,9 +952,6 @@ header nav {
           font-size: 3em;
           padding: 0 2em;
           position: relative; } }
-      @media (max-width: 400px) {
-        #home .home-content h1 {
-          font-size: 2.6em; } }
     #home .home-content ul {
       padding: .5em;
       margin: .5em auto;
@@ -972,23 +969,6 @@ header nav {
       @media (max-width: 400px) {
         #home .home-content ul li {
           font-size: 1em; } }
-    #home .home-content p {
-      text-align: center;
-      font-family: 'Varela Round', sans-serif;
-      margin: 20px 0 10px;
-      font-size: 1.4rem;
-      font-weight: 500;
-      line-height: 1.3em;
-      border-radius: 10px;
-      padding: .5em;
-      box-shadow: inset 3px 3px 10px pink, inset -3px -3px 5px #000a, 3px 3px 5px #000;
-      backdrop-filter: blur(0.25em);
-      transition: .3s ease; }
-      @media (max-width: 768px) {
-        #home .home-content p {
-          font-size: 1em;
-          margin: .5em auto;
-          width: 90%; } }
     #home .home-content .btn {
       position: relative;
       font-family: "Raleway", sans-serif;
@@ -1067,6 +1047,40 @@ header nav {
     #home .home-content .home-img img {
       width: 100%; }
 
-.body {
+.slogan {
   height: 100vh;
-  background-color: #000; }
+  background-color: #434343;
+  background-image: url(/images/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  display: grid;
+  place-items: center;
+  position: relative; }
+  .slogan::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.858); }
+  .slogan p {
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    margin: 20px 0 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.3em;
+    border-radius: 10px;
+    padding: .5em;
+    box-shadow: inset 3px 3px 10px pink, inset -3px -3px 5px #000a, 3px 3px 5px #000;
+    backdrop-filter: blur(0.25em);
+    transition: .3s ease; }
+    @media (max-width: 768px) {
+      .slogan p {
+        font-size: 1em;
+        margin: .5em auto;
+        width: 90%; } }

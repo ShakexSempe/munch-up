@@ -20,6 +20,7 @@ body {
 footer {
     margin: .5em auto;
     padding: .5em;
+    text-align: center;
     width: 50%;
     p {
         backdrop-filter: blur(2em);
@@ -519,13 +520,10 @@ header {
     
     
     .home-content {
-        // position: relative;
         z-index: 10;
         display: flex;
-        // padding: .5em;
         margin: 3em auto;
         flex-direction: column;
-        // border: 1px solid red;
         height: 100%;
         // overflow: hidden;
         align-items: center;
@@ -542,7 +540,6 @@ header {
             line-height: .9;
             letter-spacing: .1em;
             text-align: center;
-            text-transform: capitalize;
             font-size: 4.5em;
             color: $munch-brown-dark;
 
@@ -550,12 +547,6 @@ header {
                 font-size: 3em;
                 padding: 0 2em;
                 position: relative;
-                // left: -1em;
-            }
-
-            @media (max-width: 400px) {
-                font-size: 2.6em;
-                // padding: 0 2em;
             }
             position: relative;
         }
@@ -585,33 +576,31 @@ header {
             }
         }
 
-        p {
-            text-align: center;
-            font-family: 'Varela Round', sans-serif;
-            margin: 20px 0 10px;
-            font-size: 1.4rem;
-            font-weight: 500;
-            line-height: 1.3em;
-            border-radius: 10px;
-            padding: .5em;
-            box-shadow: inset 3px 3px 10px $munch-pink-light,
-                        inset -3px -3px 5px #000a,
-                        3px 3px 5px #000;
-            backdrop-filter: blur(.25em);
-            transition: .3s ease;
+        // p {
+        //     text-align: center;
+        //     font-family: 'Varela Round', sans-serif;
+        //     margin: 20px 0 10px;
+        //     font-size: 1.4rem;
+        //     font-weight: 500;
+        //     line-height: 1.3em;
+        //     border-radius: 10px;
+        //     padding: .5em;
+        //     box-shadow: inset 3px 3px 10px $munch-pink-light,
+        //                 inset -3px -3px 5px #000a,
+        //                 3px 3px 5px #000;
+        //     backdrop-filter: blur(.25em);
+        //     transition: .3s ease;
 
-            @media (max-width:768px){
-                font-size: 1em;
-                margin: .5em auto;
-                width: 90%;
+        //     @media (max-width:768px){
+        //         font-size: 1em;
+        //         margin: .5em auto;
+        //         width: 90%;
 
-            }
-        }
+        //     }
+        // }
 
         .btn {
             position: relative;
-            // top: -1.7em;
-            // right: -1.7em;
             font-family: $header-font;
             cursor: pointer;
             display: inline-block;
@@ -729,7 +718,48 @@ header {
 
 }
 
-.body {
+.slogan {
     height: 100vh;
-    background-color: #000;
+    background-color: $munch-gray;
+    background-image: url(/images/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.858);
+    }
+
+    p {
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+        margin: 20px 0 10px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #fff;
+        line-height: 1.3em;
+        border-radius: 10px;
+        padding: .5em;
+        box-shadow: inset 3px 3px 10px $munch-pink-light,
+                    inset -3px -3px 5px #000a,
+                    3px 3px 5px #000;
+        backdrop-filter: blur(.25em);
+        transition: .3s ease;
+
+        @media (max-width:768px){
+            font-size: 1em;
+            margin: .5em auto;
+            width: 90%;
+
+        }
+    }
 }
