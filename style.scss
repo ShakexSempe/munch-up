@@ -505,18 +505,18 @@ header {
     display: flex;
     flex-direction: row;
     // min-height: 100vh;
-    padding: 100px 0;
-    margin-top: 1em;
+    // padding: 2em 0;
+    margin-top: 4.5em;
     width: 100%;
     
     @media (max-width:1024px){
-        padding: 100px 40px;
+        // padding: 100px 40px;
         margin-top: 2em;
         flex-direction: column;
     }
     @media (max-width:500px){
-        padding: 0;
         margin-top: 2.5em;
+        // padding: 1em 0;
 
     }
     

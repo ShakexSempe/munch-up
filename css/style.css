@@ -915,17 +915,14 @@ header nav {
   position: relative;
   display: flex;
   flex-direction: row;
-  padding: 100px 0;
-  margin-top: 1em;
+  margin-top: 4.5em;
   width: 100%; }
   @media (max-width: 1024px) {
     #home {
-      padding: 100px 40px;
       margin-top: 2em;
       flex-direction: column; } }
   @media (max-width: 500px) {
     #home {
-      padding: 0;
       margin-top: 2.5em; } }
   #home .home-content {
     z-index: 10;
