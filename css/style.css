@@ -1047,7 +1047,7 @@ header nav {
           width: 100%; } }
     @media (max-width: 1024px) {
       #home .home-content .home-img {
-        width: 10%;
+        width: 20%;
         position: relative;
         top: 0;
         margin: 2em auto;
@@ -1055,7 +1055,7 @@ header nav {
     @media (max-width: 768px) {
       #home .home-content .home-img {
         height: auto;
-        width: 60%;
+        width: 40%;
         box-shadow: none;
         margin: .5em auto;
         right: 0;
