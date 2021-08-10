@@ -548,8 +548,9 @@ header {
             color: $munch-brown-dark;
 
             @media (max-width: 768px) {
-                font-size: 3em;
+                font-size: 3.5em;
                 padding: 0 2em;
+                margin: 0;
                 position: relative;
             }
             position: relative;
@@ -558,7 +559,7 @@ header {
 
         ul {
             padding: .5em;
-            margin: .5em auto;
+            margin: 2em auto;
             display: flex;
             font-family: $header-font;
             border-radius: 5px;
@@ -596,6 +597,7 @@ header {
             transition: .3s ease;
 
             @media (max-width:768px){
+                display: none;
                 font-size: 1em;
                 margin: .5em auto;
                 width: 90%;
@@ -658,10 +660,10 @@ header {
             }
             @media (max-width: 768px){
                 font-size: 1.2em;
-                
+                margin: 2em auto;
             }
             @media (max-width: 360px){
-                margin: .3em auto;
+                margin: 1em auto;
             }
         }
 
@@ -690,7 +692,7 @@ header {
             }
             @media(max-width: 768px){
                 height: auto;
-                width: 40%;
+                width: 60%;
                 box-shadow: none;
                 margin: .5em auto;
                 right: 0;

@@ -950,12 +950,13 @@ header nav {
       position: relative; }
       @media (max-width: 768px) {
         #home .home-content h1 {
-          font-size: 3em;
+          font-size: 3.5em;
           padding: 0 2em;
+          margin: 0;
           position: relative; } }
     #home .home-content ul {
       padding: .5em;
-      margin: .5em auto;
+      margin: 2em auto;
       display: flex;
       font-family: "Raleway", sans-serif;
       border-radius: 5px;
@@ -984,6 +985,7 @@ header nav {
       transition: .3s ease; }
       @media (max-width: 768px) {
         #home .home-content p {
+          display: none;
           font-size: 1em;
           margin: .5em auto;
           width: 90%; } }
@@ -1030,10 +1032,11 @@ header nav {
         transform: scale(0.9); }
       @media (max-width: 768px) {
         #home .home-content .btn {
-          font-size: 1.2em; } }
+          font-size: 1.2em;
+          margin: 2em auto; } }
       @media (max-width: 360px) {
         #home .home-content .btn {
-          margin: .3em auto; } }
+          margin: 1em auto; } }
     @media (min-width: 1024px) {
       #home .home-content .home-img {
         height: auto;
@@ -1055,7 +1058,7 @@ header nav {
     @media (max-width: 768px) {
       #home .home-content .home-img {
         height: auto;
-        width: 40%;
+        width: 60%;
         box-shadow: none;
         margin: .5em auto;
         right: 0;
