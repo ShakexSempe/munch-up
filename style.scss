@@ -496,7 +496,6 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: 3px solid blue;
     min-height: 100vh;
     // padding: 10vh 0;
     margin: 10vh 10vw 0;
@@ -505,7 +504,7 @@ header {
         // padding: 100px 40px;
         justify-content: center;
         flex-direction: column;
-        margin: 5vh 10vw 0;
+        margin: 5vh 5vw 0;
     }
     @media (max-width:500px){
         // padding: 1em 0;
@@ -580,7 +579,8 @@ header {
             height: 60%;
             margin: 20vh 0;
             width: 50%;
-            border: 1px solid yellow;
+            border: 5px solid pink;
+            border-radius: 5px;
         }
 
         h1 {
@@ -592,7 +592,7 @@ header {
             color: $munch-brown-dark;
 
             @media (max-width: 768px) {
-                font-size: 4gtem;
+                font-size: 4em;
                 padding: 0 2em;
                 margin: 0;
                 position: relative;
@@ -616,6 +616,7 @@ header {
             }
             @media (max-width: 768px){
                 position: relative;
+                justify-content: space-evenly;
                 // left: -3em;
             }
             @media (max-width:400px){
