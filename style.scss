@@ -102,15 +102,16 @@ header {
         height: 10%;
         top: 0;
         z-index: 20;
-        padding: .5em 5vw;  
+        padding: 5vh 5vw;  
     }
+
     position: fixed;
     top: 0;
     z-index: 20;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: green;
+    background: pink;
     height: auto;
     width: 100%;
     padding: 1em 10vw;
@@ -262,7 +263,7 @@ header {
 
     .logo {
         position: relative;
-        height: 10vh;
+        height: 3em;
         overflow: none;
         z-index: 20;
         background-color: $munch-brown;
@@ -494,7 +495,8 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    border: 3px solid blue;
     min-height: 100vh;
     // padding: 10vh 0;
     margin: 10vh 10vw 0;

@@ -619,7 +619,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: green;
+  background: pink;
   height: auto;
   width: 100%;
   padding: 1em 10vw; }
@@ -632,7 +632,7 @@ header {
       height: 10%;
       top: 0;
       z-index: 20;
-      padding: .5em 5vw; } }
+      padding: 5vh 5vw; } }
   header .shop-link {
     position: relative;
     border-radius: 10px;
@@ -735,7 +735,7 @@ header {
       bottom: 0; }
   header .logo {
     position: relative;
-    height: 10vh;
+    height: 3em;
     overflow: none;
     z-index: 20;
     background-color: #800000;
@@ -898,7 +898,8 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  border: 3px solid blue;
   min-height: 100vh;
   margin: 10vh 10vw 0; }
   @media (max-width: 1024px) {
