@@ -12,6 +12,8 @@
 
 body {
     background-image: radial-gradient( #ffc0cb3f, #a52a2a2d);
+    width: 100vw;
+    overflow-x: hidden;
 }
 .container {
     height: 100vh;
@@ -100,19 +102,26 @@ header {
         height: 10%;
         top: 0;
         z-index: 20;
-        padding: .5em 0;   
+        padding: .5em 5vw;  
     }
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: green;
+    height: auto;
+    width: 100%;
+    padding: 1em 10vw;
     .shop-link {
-        position: fixed;
-        top: 1em;
-        left: 50%;
-        transform: translateX(-50%);
+        position: relative;
         border-radius: 10px;
         border: none;
         outline: none;
         cursor: pointer;
-        z-index: 15;
-        
+        z-index: 1;
+        display: block;
         &::before,
         &::after {
             position: absolute;
@@ -143,29 +152,30 @@ header {
             &::before {opacity: 0}
             &::after {opacity: 1}
         }
+        
+        &:active {
+            transition: .2s;
+            transform: scale(.9);
+        }
         a {
             color: $munch-mist;
-
             i {
             margin: 0 auto;
             padding: .6em 2.1em;
             }
         }
-        &:active {
-            transition: .2s;
-            transform: translateX(-50%) scale(.9);
-        }
     }
+    // hamburger icon
     .hamburger {
-        position: fixed;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         height: 3em;
         width: 3em;
-        margin: 3px 20px;
-        top: .5em;
-        right: 0;
+        // margin: 3px 20px;
+        // top: .5em;
+        // right: 0;
         border: none;
         outline: none;
         border-radius: 50%;
@@ -248,52 +258,31 @@ header {
         }
         
     }
+    // end of hamburger icon
+
     .logo {
         position: relative;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        @media (min-width: 768px) {
-            max-width: 300px;
-            min-width: 250px;
-            
-        }
-        height: 100%;
-        top: .5em;
-        left: 50px;
+        height: 10vh;
+        overflow: none;
         z-index: 20;
-        width: 25vw;
         background-color: $munch-brown;
-        border-radius: 10px;
-        padding: .5em;
+        border-radius: 50%;
         @media (max-width: 768px){
             background: none;
-            top: -.5em;
-            left: 1em;
+            // top: -.5em;
+            // left: 1em;
         }
         @media (max-width: 360px){
             left: 2em;
         }
 
-        h3 {
-            @media (max-width: 768px){
-                display: none;
-            }
-            color: $munch-pink-light;
-            font-size: 3rem;
-            font-weight: 700;
-            padding: .1em;
-        }
-
         img {
+            width: 100%;
+            height: 100%;
             @media (max-width: 768px) {
-                width: 4.5em;
-                height: 4.5em;
                 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.479);
                 
             }
-            width: 6em;
-            height: 6em;
             border-radius: 50%;
             &:active {
                 transition: .3s;
@@ -504,25 +493,77 @@ header {
     position: relative;
     display: flex;
     flex-direction: row;
-    // min-height: 100vh;
-    // padding: 2em 0;
-    margin-top: 4.5em;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    // padding: 10vh 0;
+    margin: 10vh 10vw 0;
     
     @media (max-width:1024px){
         // padding: 100px 40px;
-        margin-top: 2em;
+        justify-content: center;
         flex-direction: column;
+        margin: 5vh 10vw 0;
     }
     @media (max-width:500px){
-        margin-top: 2.5em;
         // padding: 1em 0;
 
     }
-    
+    .home-img {
+        @media(min-width: 1400px) {
+            height: 60%;
+            overflow: hidden;
+            width: 30vw;
+            // position: absolute;
+            // right: 0;
+            // top: 20vh;
+            // transform: translateY(-50%);
+
+            img {
+                border-radius: 50%;
+                width: 100%;
+            }
+        }
+
+        @media(max-width: 1024px) {
+            width: 50%;
+            position: relative;
+
+        }
+
+        @media(max-width: 1024px) {
+            height: auto;
+            box-shadow: none;
+            margin: .5em auto;
+            right: 0;
+            position: relative;
+
+            // overflow: hidden;
+            // height: 20%;
+            // transform: translateX(-50%);
+            // bottom: 1em;
+            img {
+                border-radius: 100%;
+            }
+
+        }
+
+        // position: absolute;
+        // right: 2em;
+        // bottom: 1em;
+        // height: 70%;
+        // width: 40%;
+        // border-radius: 50%;
+        // box-shadow: 10px 10px 10px #000a,
+        //             -10px -1px 10px #88878752;
+        // transition: .3s ease;
+        img {
+            width: 100%;
+        }
+    }
     
     .home-content {
-        z-index: 10;
+        z-index: 1;
         display: flex;
         margin: 3em auto;
         flex-direction: column;
@@ -533,10 +574,11 @@ header {
         text-align: center;
         justify-content: space-evenly;
         
-        @media (min-width: 1024px){
+        @media (min-width: 1400px){
             height: 60%;
-            margin: 1em;
-            width: auto;
+            margin: 20vh 0;
+            width: 50%;
+            border: 1px solid yellow;
         }
 
         h1 {
@@ -548,7 +590,7 @@ header {
             color: $munch-brown-dark;
 
             @media (max-width: 768px) {
-                font-size: 3.5em;
+                font-size: 4gtem;
                 padding: 0 2em;
                 margin: 0;
                 position: relative;
@@ -667,59 +709,6 @@ header {
             }
         }
 
-        .home-img {
-            @media(min-width: 1024px){
-                height: auto;
-                width: 30vw;
-                position: absolute;
-
-                right: 5%;
-                top: 30%;
-                transform: translateY(-50%);
-
-                img {
-                    border-radius: 50%;
-                    width: 100%;
-                }
-            }
-            @media(max-width: 1024px){
-                width: 20%;
-                position: relative;
-                top: 0;
-                margin: 2em auto;
-                right: 0;
-                
-            }
-            @media(max-width: 768px){
-                height: auto;
-                width: 60%;
-                box-shadow: none;
-                margin: .5em auto;
-                right: 0;
-                position: relative;
-                // overflow: hidden;
-                // height: 20%;
-                // transform: translateX(-50%);
-                // bottom: 1em;
-                img {
-                    border-radius: 100%;
-                }
-                
-            }
-            // position: absolute;
-            // right: 2em;
-            // bottom: 1em;
-            // height: 70%;
-            // width: 40%;
-            // border-radius: 50%;
-            // box-shadow: 10px 10px 10px #000a,
-            //             -10px -1px 10px #88878752;
-            // transition: .3s ease;
-            img {
-                width: 100%;
-            }
-                    }
-    
     }
 
 }
