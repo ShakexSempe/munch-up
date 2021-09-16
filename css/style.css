@@ -906,15 +906,16 @@ header {
       justify-content: center;
       flex-direction: column;
       margin: 5vh 5vw 0; } }
-  @media (min-width: 1400px) {
+  @media (min-width: 768px) {
     #home .home-img {
       height: 60%;
       overflow: hidden;
-      width: 30vw; }
+      width: 30vw;
+      border-radius: 50%; }
       #home .home-img img {
         border-radius: 50%;
         width: 100%; } }
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     #home .home-img {
       width: 50%;
       position: relative; } }
@@ -932,10 +933,13 @@ header {
   #home .home-content {
     z-index: 1;
     display: flex;
-    margin: 3em auto;
     flex-direction: column;
+    border: 3px solid pink;
     height: 100%;
     width: 100%;
+    margin: 3em auto 0;
+    padding-top: 1em;
+    border-radius: 5px;
     overflow: hidden;
     align-items: center;
     text-align: center;
