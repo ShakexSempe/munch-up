@@ -4,7 +4,6 @@
         p {
             font-size: 1em;
             text-transform: none;
-            padding: 1em;
             a {
                 color: $munch-pink;
                 font-weight: 600;
@@ -23,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    @media (max-width: 700px){
+    @media (max-width: 768px){
         flex-direction: column-reverse;
     }
     #contact-field {
@@ -58,7 +57,7 @@
         width: calc(100% - 400px);
         padding: 60px 40px 20px;
 
-        @media (max-width: 767px){
+        @media (max-width: 768px){
             width: 100%;
             padding: 30px 20px 30px;
         }
@@ -70,7 +69,7 @@
             .row {
                 width: 100%;
                 display: flex;
-                @media (max-width: 767px){
+                @media (max-width: 768px){
                     flex-direction: column;
                 }
                 @media (min-width: 768px) {
@@ -239,7 +238,7 @@
         padding: 2em 1em 20px;
         border-radius: 10px;
         
-        @media (max-width: 767px){
+        @media (max-width: 768px){
             width: 95%;
             margin: 20px auto;
             padding: 1em;

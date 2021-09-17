@@ -41,19 +41,19 @@ footer {
     }
 }
 section {
-    margin-top: 3em;
+    margin-top: 15vh;
     @media (max-width: 768px) {
         margin-top: 20vh;
     }
     .title {
         text-align: center;
         text-transform: capitalize;
+        margin: 5vh 10vw;
 
         h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             border-radius: 10px;
-            width: 50%;
-            margin: 1em auto;
+            width: 100%;
             position: relative;
             padding: .2em .3em;
             letter-spacing: .1em;
@@ -82,10 +82,11 @@ section {
         p {
             font-size: 1.3em;
             font-family: $content-font;
+            margin: 3vh auto; 
         }
         @media (max-width:668px){
             h1 {
-                width: 80%;
+                width: 100%;
                 font-size: 2em;
             }
         }
@@ -547,23 +548,26 @@ header {
         z-index: 1;
         display: flex;
         flex-direction: column;
-        border: 3px solid $munch-pink-light;
+        border: none;
+        outline: none;
+        box-shadow: inset 3px 3px 4px #fffa,
+                    inset -3px -3px 4px #000a;
         height: 100%;
         width: 100%;
         margin: 3em auto 0;
         padding-top: 1em;
-        border-radius: 5px;
+        border-radius: 10px;
         overflow: hidden;
         align-items: center;
         text-align: center;
         justify-content: space-evenly;
+        background-color: $munch-pink-light;
         
         @media (min-width: 1400px){
             height: 60%;
             margin: 20vh 0;
             width: 50%;
-            border: 5px solid pink;
-            border-radius: 5px;
+            border-radius: 10px;
         }
 
         h1 {
@@ -591,7 +595,7 @@ header {
             text-align: center;
             font-family: 'Varela Round', sans-serif;
             color: $munch-brown-dark;
-            opacity: .8;
+            opacity: 1;
             border: 1px solid pink;
             margin: .5em auto;
             font-size: 1.5em;
@@ -611,6 +615,7 @@ header {
                 border: none;
                 margin: 1em auto .5em;
                 padding: .5em 1em;
+                font-weight: 500;
 
             }
         }
