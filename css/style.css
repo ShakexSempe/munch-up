@@ -897,7 +897,8 @@ header {
   align-items: center;
   justify-content: space-between;
   min-height: 100vh;
-  margin: 10vh 10vw 0; }
+  margin: 10vh 10vw 0;
+  font-size: 16px; }
   @media (max-width: 1024px) {
     #home {
       justify-content: center;
@@ -956,48 +957,38 @@ header {
       font-size: 4.5em;
       color: #654321;
       position: relative; }
+      #home .home-content h1 span {
+        font-size: .5em;
+        position: absolute; }
       @media (max-width: 768px) {
         #home .home-content h1 {
           font-size: 4em;
           padding: 0 2em;
           margin: 0;
           position: relative; } }
-    #home .home-content ul {
-      padding: .5em;
-      margin: 2em auto;
-      display: flex;
-      font-family: "Raleway", sans-serif;
-      border-radius: 5px;
-      box-shadow: inset 2px 2px 4px #ddda, inset -2px -2px 4px #000a; }
-      #home .home-content ul li {
-        margin-left: 2em;
-        font-size: 1.2em;
-        color: #800000; }
-      @media (max-width: 768px) {
-        #home .home-content ul {
-          position: relative;
-          justify-content: space-evenly; } }
-      @media (max-width: 400px) {
-        #home .home-content ul li {
-          font-size: 1em; } }
     #home .home-content p {
       text-align: center;
       font-family: 'Varela Round', sans-serif;
-      margin: 20px 0 10px;
-      font-size: 1.4rem;
+      color: #654321;
+      opacity: .8;
+      border: 1px solid pink;
+      margin: .5em auto;
+      font-size: 1.5em;
       font-weight: 500;
       line-height: 1.3em;
       border-radius: 10px;
       padding: .5em;
-      box-shadow: inset 3px 3px 10px pink, inset -3px -3px 5px #000a, 3px 3px 5px #000;
-      backdrop-filter: blur(0.25em);
-      transition: .3s ease; }
+      transition: .3s ease;
+      text-transform: capitalize; }
       @media (max-width: 768px) {
         #home .home-content p {
-          display: none;
           font-size: 1em;
-          margin: .5em auto;
-          width: 90%; } }
+          width: auto;
+          background: #654321;
+          color: pink;
+          border: none;
+          margin: 1em auto .5em;
+          padding: .5em 1em; } }
     #home .home-content .btn {
       position: relative;
       font-family: "Raleway", sans-serif;

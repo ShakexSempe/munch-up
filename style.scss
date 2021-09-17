@@ -496,6 +496,7 @@ header {
     min-height: 100vh;
     // padding: 10vh 0;
     margin: 10vh 10vw 0;
+    font-size: 16px;
     
     @media (max-width:1024px){
         // padding: 100px 40px;
@@ -572,6 +573,10 @@ header {
             text-align: center;
             font-size: 4.5em;
             color: $munch-brown-dark;
+            span {
+                font-size: .5em;
+                position: absolute;
+            }
 
             @media (max-width: 768px) {
                 font-size: 4em;
@@ -582,52 +587,30 @@ header {
             position: relative;
         }
 
-
-        ul {
-            padding: .5em;
-            margin: 2em auto;
-            display: flex;
-            font-family: $header-font;
-            border-radius: 5px;
-            box-shadow: inset 2px 2px 4px #ddda,
-                        inset -2px -2px 4px #000a;
-            li {
-                margin-left: 2em;
-                font-size: 1.2em;
-                color: $text-color-brown;
-            }
-            @media (max-width: 768px){
-                position: relative;
-                justify-content: space-evenly;
-                // left: -3em;
-            }
-            @media (max-width:400px){
-                li {
-                    font-size: 1em;
-                }
-            }
-        }
-
         p {
             text-align: center;
             font-family: 'Varela Round', sans-serif;
-            margin: 20px 0 10px;
-            font-size: 1.4rem;
+            color: $munch-brown-dark;
+            opacity: .8;
+            border: 1px solid pink;
+            margin: .5em auto;
+            font-size: 1.5em;
             font-weight: 500;
             line-height: 1.3em;
             border-radius: 10px;
+            // width: 100%;
             padding: .5em;
-            box-shadow: inset 3px 3px 10px $munch-pink-light,
-                        inset -3px -3px 5px #000a,
-                        3px 3px 5px #000;
-            backdrop-filter: blur(.25em);
             transition: .3s ease;
+            text-transform: capitalize;
 
             @media (max-width:768px){
-                display: none;
                 font-size: 1em;
-                margin: .5em auto;
-                width: 90%;
+                width: auto;
+                background: $munch-brown-dark;
+                color: $munch-pink-light;
+                border: none;
+                margin: 1em auto .5em;
+                padding: .5em 1em;
 
             }
         }
