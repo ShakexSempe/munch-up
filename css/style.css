@@ -1086,7 +1086,7 @@ header {
     color: #000;
     background: #fff;
     line-height: 1.6;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: .5em;
     transition: .3s ease; }
     @media (max-width: 768px) {
