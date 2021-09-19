@@ -784,7 +784,7 @@ header {
         position: relative;
         list-style: none;
         text-align: left;
-        margin-bottom: 1.5em; }
+        margin: 0 5vw 5vh 0; }
     header nav .nav-links {
       width: 300px;
       padding: 1em 0em 1em 1em;
