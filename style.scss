@@ -325,25 +325,36 @@ header {
                 position: relative;
                 list-style: none;
                 text-align: left;
-                margin: 0 5vw 5vh 0;
             }
         }
         .nav-links {
             width: 300px;
-            @media (min-width: 1000px){
-                width: 300px;
-
-
-            }
             padding: 1em 0em 1em 1em;
             margin-left: 4em;
+            @media (min-width: 1000px){
+                width: 300px;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+            
 
             li {
                 padding: .5em 1em;
                 transition: .3s;
+                // margin: 0 5vw 5vh 0;
+                margin: 5vh 5vw;
+                background-color: $munch-pink-light;
+                border-radius: 10px;
+                border: none;
+                outline: none;
 
             a {
-                border-radius: 10px;
                 font-size: 1.6em;
 
                 i {
@@ -372,6 +383,7 @@ header {
             text-decoration: none;
             text-transform: capitalize;
             transition: .2s ease;
+            z-index: 5;
                 &::before,
                 &::after {
                     position: absolute;
@@ -407,7 +419,7 @@ header {
             position: absolute;
             top: 0;
             left: 0;
-            width: 70px;
+            width: 20vw;
             height: 100%;
             display: flex;
             justify-content: center;
@@ -417,17 +429,17 @@ header {
             ul {
                 display: grid;
                 place-items: center;
-                gap: 2em;
+                gap: 3em;
                 
                 li {
-                    margin-bottom: 1em;
-
                     i {
-                        color: $munch-brown;
+                        color: $munch-cyan;
                         transition: .2s;
                     }
 
                     &:hover {
+                        transition: .2s;
+                        transform: scale(.95);
                         i {
                             color: $munch-pink;
                         }
@@ -445,17 +457,20 @@ header {
                 display: inline-block;
                 color: $munch-brown;
                 transition: .2s;
-
+                &::before {
+                    background-color: $munch-cyan;
+                }
                 &:hover {
                     color: $munch-blue;
                 }
             }
 
             a {
-                padding: .35em;
+                padding: .5em;
                 border-radius: 50%;
                 font-size: 1.7em;
                 position: relative;
+                z-index: 1;
                 &::before,
                 &::after {
                     position: absolute;
@@ -466,8 +481,10 @@ header {
                     height: 100%;
                     border-radius: 50%;
                     transition: .3s;
+                    z-index: -1;
                 }
                 &::before {
+                    background-color: $munch-brown;
                     box-shadow: $links-shadow;
                 }
                 &::after {
