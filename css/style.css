@@ -888,7 +888,7 @@ header {
       header nav .social-bar a {
         padding: .5em;
         border-radius: 50%;
-        font-size: 1.7em;
+        font-size: 1.5em;
         position: relative;
         z-index: 1; }
         header nav .social-bar a::before, header nav .social-bar a::after {
