@@ -530,6 +530,7 @@ header {
 
     }
     .home-img {
+        transition: 3s ease;
 
         @media(min-width: 768px) {
             height: 60%;
@@ -583,6 +584,9 @@ header {
         justify-content: space-evenly;
         background-color: $munch-white;
         position: relative;
+        opacity: 1;
+        transition: 1s ease;
+
         // home content shadow
         &::before {
             position: absolute;
@@ -604,6 +608,7 @@ header {
             margin: 20vh 0;
             width: 50%;
             border-radius: 10px;
+            opacity: 1;
         }
 
         h1 {
@@ -671,6 +676,8 @@ header {
             transition: .3s ease;
             font-size: 1.5em;
             text-transform: uppercase;
+            isolation: isolate;
+            z-index: 1;
             &::before,
             &::after {
                 position: absolute;
@@ -686,19 +693,20 @@ header {
                 z-index: -1;
             }
             &::before {
-                box-shadow: 3px 3px 5px #000a,
-                        inset 3px 3px 5px #fffa,
+                box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.548),
+                        inset 3px 3px 3px #fffa,
                         inset -3px -3px 5px #000a;
             }
             &::after {
                 opacity: 0;
-                box-shadow: inset 3px 3px 5px #000a,
-                            inset -3px -3px 5px #fffa;
+                box-shadow: inset 3px 3px 4px #000a,
+                            inset -3px -3px 3px #fffa,
+                            3px 5px 5px #000a;
             }
 
             &:hover {
                 transition: .2s ease;
-                color: $text-color-pink;
+                transform: scale(.98);
                 &::before {
                     opacity: 0;
                 }
