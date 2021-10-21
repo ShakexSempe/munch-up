@@ -41,7 +41,9 @@ $links-shadow-hover:
                     inset 2px 2px 5px $munch-brown-dark;
 
 $hamburger-shadow: inset -2px -2px 3px #000,
-inset 2px 2px 3px #fff;
+                    inset 2px 2px 3px #fff,
+                    3px 3px 5px rgba(0, 0, 0, 0.356);
 
-$hamburger-shadow-hover:inset -2px -2px 3px #fffa,
-inset 2px 2px 3px #000a;
+$hamburger-shadow-hover: inset -2px -2px 3px #fffa,
+                        inset 2px 2px 3px #000a,
+                        2px 3px 5px #000a;

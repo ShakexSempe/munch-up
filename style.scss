@@ -139,16 +139,16 @@ header {
         }
         &::before {
             z-index: -1;
-            box-shadow: inset 3px 3px 5px #fffa,
-                    inset -3px -3px 5px #000a,
-                    0 5px 5px rgba(0, 0, 0, 0.479);
+            box-shadow: inset 3px 3px 3px #fffa,
+                    inset -3px -3px 3px #000a,
+                    5px 5px 5px rgba(0, 0, 0, 0.350);
         }
         &::after {
             opacity: 0;
             z-index: -1;
             box-shadow: inset 3px 3px 5px #000a,
                     inset -3px -3px 5px #fffa,
-                    0 5px 10px rgba(0, 0, 0, 0.479);
+                    0 5px 5px rgba(0, 0, 0, 0.479);
         } 
         &:hover {
             &::before {opacity: 0}
@@ -175,9 +175,6 @@ header {
         justify-content: center;
         height: 3em;
         width: 3em;
-        // margin: 3px 20px;
-        // top: .5em;
-        // right: 0;
         border: none;
         outline: none;
         border-radius: 50%;
@@ -686,7 +683,7 @@ header {
                 left: 0;
                 width: 100%;
                 height: 100%;
-                transition: .3s;
+                transition: .3s ease;
                 border-radius: 20px;
                 // background: $btn-brown; 
                 background: $munch-pink; 
@@ -695,13 +692,13 @@ header {
             &::before {
                 box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.548),
                         inset 3px 3px 3px #fffa,
-                        inset -3px -3px 5px #000a;
+                        inset -3px -3px 4px #000a;
             }
             &::after {
                 opacity: 0;
                 box-shadow: inset 3px 3px 4px #000a,
                             inset -3px -3px 3px #fffa,
-                            3px 5px 5px #000a;
+                            0px 5px 5px #000a;
             }
 
             &:hover {
