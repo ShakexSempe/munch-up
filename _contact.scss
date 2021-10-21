@@ -26,32 +26,10 @@
     overflow: hidden;
     @media (max-width: 768px){
         flex-direction: column-reverse;
-    }
-    #contact-field {
-        flex-direction: row;
+        align-items: center;
         padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 150px;
-        overflow: hidden;
-        legend {
-            margin-left: 1em;
-            font-weight: 500;
-        }
-        @media (max-width: 768px){
-            flex-direction: column;
-            margin-bottom: 2em;
-            height: auto;
-            padding: 1em .5em 10vh;
-            
-            .input50 {
-                height: auto;
-        }
-        }
-        @media (max-width: 350px){
-            height: 70vh;
-        }
     }
+    
     .contact-form {
         position: relative;
 
@@ -73,23 +51,14 @@
                 display: flex;
                 @media (max-width: 768px){
                     flex-direction: column;
+                    align-items: center;
                 }
                 @media (min-width: 768px) {
                     &label {
                         font-size: .8em;
                     }
                 }
-                #treats {
-                    padding: 1em;
-                    label {
-                        position: relative;
-                        color: $munch-gray;
-                        transform: translateY(1.5em);
-                    }
-                    option {
-                        text-transform: capitalize;
-                    }
-                }
+                
                 fieldset {
                     padding: 1em;
                     display: flex;
@@ -103,7 +72,63 @@
 
                     legend {
                         color: $munch-pink;
-                        font-size: 1em;
+                        font-weight: 600;
+                        font-size: 1.2em;
+                        margin-left: .5em;
+
+                    }
+                    // contact-info fieldset
+                    &#contact-field {
+                        flex-direction: row;
+                        padding: 0;
+                        margin: 0;
+                        width: 100%;
+                        height: 150px;
+                        overflow: hidden;
+                        legend {
+                            font-weight: 500;
+                        }
+                        @media (max-width: 768px){
+                            flex-direction: column;
+                            margin-bottom: 5vh;
+                            height: auto;
+                            padding: 1em .5em 10vh;
+                            
+                            .input50 {
+                                height: auto;
+                                padding-right: 1em;
+                        }
+                        }
+                        @media (max-width: 350px){
+                            height: auto;
+                        }
+                    }
+                    // end of contact-info fieldset
+                    &#treats {
+                        padding: 1em;
+                        label {
+                            position: relative;
+                            color: $munch-gray;
+                            transform: translateY(1.5em);
+                        }
+                        option {
+                            text-transform: capitalize;
+                        }
+                        @media (max-width: 768px){
+                            flex-direction: column;
+                            // margin-bottom: 5vh;
+                            height: auto;
+                            padding: 1em .5em 10vh;
+                            margin: 10vh auto;
+                            
+                            .input50 {
+                                height: auto;
+                                // padding-right: 1em;
+                        }
+                        }
+                        @media (max-width: 350px){
+                            height: auto;
+                        }
                     }
                 }
                 label {
@@ -112,7 +137,7 @@
                     position: absolute;
                     top: 1em;
                     font-size: 1.2em;
-                    left: .8em;
+                    left: 0;
                     padding: 0 4em 0em 0;
                     letter-spacing: .1em;
                     transform: translateY(50%);
@@ -148,7 +173,6 @@
                 .input50, .input100 {
                     width: 100%;
                     height: 100%;
-                    margin: .4em;
                     position: relative;
                 }
                 input, textarea, select {
@@ -172,6 +196,9 @@
                     &::placeholder {
                         font-size: .8em;
                         color: rgba(151, 149, 149, 0.822);
+                    }
+                    &:invalid {
+                        background-color: rgba(255, 192, 203, 0.200);
                     }
                     optgroup {
                         text-transform: capitalize;
@@ -235,7 +262,7 @@
 
                 textarea {
                     height: 150px;
-                    margin-bottom: 5vh;
+                    margin-bottom: 10vh;
 
                 }
                 

@@ -252,28 +252,9 @@ body {
   overflow: hidden; }
   @media (max-width: 768px) {
     .contact {
-      flex-direction: column-reverse; } }
-  .contact #contact-field {
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 150px;
-    overflow: hidden; }
-    .contact #contact-field legend {
-      margin-left: 1em;
-      font-weight: 500; }
-    @media (max-width: 768px) {
-      .contact #contact-field {
-        flex-direction: column;
-        margin-bottom: 2em;
-        height: auto;
-        padding: 1em .5em 10vh; }
-        .contact #contact-field .input50 {
-          height: auto; } }
-    @media (max-width: 350px) {
-      .contact #contact-field {
-        height: 70vh; } }
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 0; } }
   .contact .contact-form {
     position: relative;
     background: #f9f9f9;
@@ -291,18 +272,11 @@ body {
         display: flex; }
         @media (max-width: 768px) {
           .contact .contact-form form .row {
-            flex-direction: column; } }
+            flex-direction: column;
+            align-items: center; } }
         @media (min-width: 768px) {
           .contact .contact-form form .rowlabel {
             font-size: .8em; } }
-        .contact .contact-form form .row #treats {
-          padding: 1em; }
-          .contact .contact-form form .row #treats label {
-            position: relative;
-            color: #434343;
-            transform: translateY(1.5em); }
-          .contact .contact-form form .row #treats option {
-            text-transform: capitalize; }
         .contact .contact-form form .row fieldset {
           padding: 1em;
           display: flex;
@@ -314,14 +288,56 @@ body {
           overflow: hidden; }
           .contact .contact-form form .row fieldset legend {
             color: #f75394;
-            font-size: 1em; }
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-left: .5em; }
+          .contact .contact-form form .row fieldset#contact-field {
+            flex-direction: row;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 150px;
+            overflow: hidden; }
+            .contact .contact-form form .row fieldset#contact-field legend {
+              font-weight: 500; }
+            @media (max-width: 768px) {
+              .contact .contact-form form .row fieldset#contact-field {
+                flex-direction: column;
+                margin-bottom: 5vh;
+                height: auto;
+                padding: 1em .5em 10vh; }
+                .contact .contact-form form .row fieldset#contact-field .input50 {
+                  height: auto;
+                  padding-right: 1em; } }
+            @media (max-width: 350px) {
+              .contact .contact-form form .row fieldset#contact-field {
+                height: auto; } }
+          .contact .contact-form form .row fieldset#treats {
+            padding: 1em; }
+            .contact .contact-form form .row fieldset#treats label {
+              position: relative;
+              color: #434343;
+              transform: translateY(1.5em); }
+            .contact .contact-form form .row fieldset#treats option {
+              text-transform: capitalize; }
+            @media (max-width: 768px) {
+              .contact .contact-form form .row fieldset#treats {
+                flex-direction: column;
+                height: auto;
+                padding: 1em .5em 10vh;
+                margin: 10vh auto; }
+                .contact .contact-form form .row fieldset#treats .input50 {
+                  height: auto; } }
+            @media (max-width: 350px) {
+              .contact .contact-form form .row fieldset#treats {
+                height: auto; } }
         .contact .contact-form form .row label {
           text-transform: capitalize;
           color: #434343;
           position: absolute;
           top: 1em;
           font-size: 1.2em;
-          left: .8em;
+          left: 0;
           padding: 0 4em 0em 0;
           letter-spacing: .1em;
           transform: translateY(50%); }
@@ -348,7 +364,6 @@ body {
         .contact .contact-form form .row .input50, .contact .contact-form form .row .input100 {
           width: 100%;
           height: 100%;
-          margin: .4em;
           position: relative; }
         .contact .contact-form form .row input, .contact .contact-form form .row textarea, .contact .contact-form form .row select {
           position: relative;
@@ -369,6 +384,8 @@ body {
           .contact .contact-form form .row input::placeholder, .contact .contact-form form .row textarea::placeholder, .contact .contact-form form .row select::placeholder {
             font-size: .8em;
             color: rgba(151, 149, 149, 0.822); }
+          .contact .contact-form form .row input:invalid, .contact .contact-form form .row textarea:invalid, .contact .contact-form form .row select:invalid {
+            background-color: rgba(255, 192, 203, 0.2); }
           .contact .contact-form form .row input optgroup, .contact .contact-form form .row textarea optgroup, .contact .contact-form form .row select optgroup {
             text-transform: capitalize; }
             .contact .contact-form form .row input optgroup option, .contact .contact-form form .row textarea optgroup option, .contact .contact-form form .row select optgroup option {
@@ -413,7 +430,7 @@ body {
               box-shadow: inset 0px 0px 5px #f75394; }
         .contact .contact-form form .row textarea {
           height: 150px;
-          margin-bottom: 5vh; }
+          margin-bottom: 10vh; }
   .contact .contact-info {
     width: 350px;
     background: #f9f9f9;
