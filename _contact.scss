@@ -41,8 +41,8 @@
         @media (max-width: 768px){
             flex-direction: column;
             margin-bottom: 2em;
-            height: 65vh;
-            padding: 2em .7em;
+            height: auto;
+            padding: 1em .5em 10vh;
             
             .input50 {
                 height: auto;
@@ -91,14 +91,14 @@
                     }
                 }
                 fieldset {
-                    padding: 1em ;
+                    padding: 1em;
                     display: flex;
                     flex-direction: column;
                     margin: 2em auto;
                     border: 3px solid $munch-pink-light;
-                    height: 75vh;
+                    height: auto;
                     border-radius: 5px;
-                    overflow: auto;
+                    overflow: hidden;
                     
 
                     legend {
@@ -126,7 +126,7 @@
                     margin: 0 10px;
                 }
                 #custom-classic {
-                    overflow: scroll;
+                    // overflow: scroll;
                     label {
                         position: relative;
                         transform: translateY(1em);
@@ -163,7 +163,7 @@
                     outline: none;
                     font-size: 1.2em;
                     font-weight: 600;
-                    margin: 1em 0;
+                    margin: 1em 0 5vh;
                     resize: none;
                     bottom: -2em;
                     border-radius: 5px;
@@ -187,31 +187,38 @@
                     &[type='submit'] {
                         background-color: $munch-brown;
                         color: #fff;
-                        width: 50%;
-                        margin: 1em auto;
+                        width: 100%;
+                        margin: 0 auto 10vh;
                         text-transform: uppercase;
                         letter-spacing: .2em;
+                        font-size: 1em;
+                        @media (max-width: 768px){
+                            font-size: 1em;
+                        }
                         font-weight: 300;
                         border: 0;
-                        padding: .5em;
-                        border-radius: 20px;
+                        padding: 1em .5em;
+                        border-radius: 10px;
+                        border: none;
+                        outline: none;
                         cursor: pointer;
                         letter-spacing: .3em;
+                        position: relative;
                         box-shadow: 
-                                    inset 2px 2px 5px $munch-mist,
-                                    inset -2px -2px 5px #000;
+                                    inset 2px 2px 4px $munch-mist,
+                                    inset -2px -2px 4px #000;
                     
                         &:hover {
                             transition: .3s ease;
+                            transform: scale(.97);
                             box-shadow: inset 2px 2px 5px #000,
                                         inset -2px -2px 5px #ddd;
                                         
                                     }
                             &:active {
-                            transform: scale(.8);
+                            transform: scale(.94);
                             transition: .3s ease;
                             letter-spacing: .1em;
-
                         }
                    }
                    &:hover {
@@ -228,6 +235,8 @@
 
                 textarea {
                     height: 150px;
+                    margin-bottom: 5vh;
+
                 }
                 
             }
