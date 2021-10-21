@@ -730,27 +730,16 @@ header {
 
 .logo-pad {
     background-image: url(../images/logo.jpg);
-    // background-color: red;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
     padding: 0;
-    margin: 0;
+    margin:  0;
     min-height: 100vh;
     position: relative;
     @media (min-width: 500px) {
-        background-size: 40%;
-    }
-    &::after {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(45deg, $munch-pink, rgba(0, 0, 0, 0.315));
-        opacity: .3;
+        background-size: 35%;
     }
 }
 

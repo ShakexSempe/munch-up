@@ -317,7 +317,7 @@ body {
             .contact .contact-form form .row fieldset#treats label {
               position: relative;
               color: #434343;
-              transform: translateY(1.5em); }
+              transform: translateY(1em); }
             .contact .contact-form form .row fieldset#treats option {
               text-transform: capitalize; }
             @media (max-width: 768px) {
@@ -1102,16 +1102,7 @@ header {
   position: relative; }
   @media (min-width: 500px) {
     .logo-pad {
-      background-size: 40%; } }
-  .logo-pad::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(45deg, #f75394, rgba(0, 0, 0, 0.315));
-    opacity: .3; }
+      background-size: 35%; } }
 
 .slogan {
   min-height: 100vh;
