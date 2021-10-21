@@ -19,9 +19,11 @@
     position: relative;
     width: 100%;
     margin-top: 50px;
+    padding: 0 5vw;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    overflow: hidden;
     @media (max-width: 768px){
         flex-direction: column-reverse;
     }
@@ -55,7 +57,7 @@
 
         background: #f9f9f9;
         width: calc(100% - 400px);
-        padding: 60px 40px 20px;
+        padding: 10vh 40px 20px;
 
         @media (max-width: 768px){
             width: 100%;
@@ -235,8 +237,9 @@
     .contact-info {
         width: 350px;
         background: #f9f9f9;
-        padding: 2em 1em 20px;
+        padding: 10vh 1em 20px;
         border-radius: 10px;
+        // border: 1px solid green;
         
         @media (max-width: 768px){
             width: 95%;
@@ -248,14 +251,19 @@
             display: flex;
             align-items: flex-start;
             margin-bottom: 40px;
+            padding: .3em;
+            border: 1px solid $munch-pink;
+            border-radius: 5px;
+            // overflow: hidden;
+            width: 100%;
+
             @media (max-width:767px) {
-                align-items: center;
-                margin: .5em auto;
+                margin: .5em 0 5vh;
             }
 
             .contact-icon {
                 width: 20px;
-                margin-right: 40px;
+                margin-right: .5em;
                 font-size: 2em;
                 color: $munch-brown;
             }
@@ -263,8 +271,11 @@
             .details{
                 display: flex;
                 flex-direction: column;
+                // border: 1px solid red;
+                padding: 0 1em;
+                width: 100%;
                 h4 {
-                    font-size: 1.6em;
+                    font-size: 1.5em;
                     color: $munch-brown;
                     margin-bottom: .5em;
                     font-family: $header-font;
@@ -276,40 +287,38 @@
                     color: #000;
                     font-size: 1em;
                     cursor: pointer;
-                    padding: .7em 1em;
-                    margin: 10px;
+                    margin: .5em 0;
                     transition: .2s ease;
                     text-decoration: none;
-                    letter-spacing: .2em;
                     border-radius: 5px;
                     position: relative;
-                    left: -2em;
+                    // left: -1em;
 
-                    &::before {
-                        position: absolute;
-                        content: '';
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 5px;
-                        transition: .2s;
-                        box-shadow: inset 2px 2px 4px #ddda,
-                                    inset -2px -2px 4px #000a;
-                    }
-                    &::after {
-                        position: absolute;
-                        content: '';
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        opacity: 0;
-                        border-radius: 5px;
-                        transition: .2s;
-                        box-shadow: inset 2px 2px 4px #000a,
-                                    inset -2px -2px 4px #ddda;
-                    }
+                    // &::before {
+                    //     position: absolute;
+                    //     content: '';
+                    //     top: 0;
+                    //     left: 0;
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     border-radius: 5px;
+                    //     transition: .2s;
+                    //     box-shadow: inset 2px 2px 4px #ddda,
+                    //                 inset -2px -2px 4px #000a;
+                    // }
+                    // &::after {
+                    //     position: absolute;
+                    //     content: '';
+                    //     top: 0;
+                    //     left: 0;
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     opacity: 0;
+                    //     border-radius: 5px;
+                    //     transition: .2s;
+                    //     box-shadow: inset 2px 2px 4px #000a,
+                    //                 inset -2px -2px 4px #ddda;
+                    // }
 
                     @media (max-width:500px){
                         font-size: .9em;

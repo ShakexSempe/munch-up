@@ -245,9 +245,11 @@ body {
   position: relative;
   width: 100%;
   margin-top: 50px;
+  padding: 0 5vw;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; }
+  align-items: flex-start;
+  overflow: hidden; }
   @media (max-width: 768px) {
     .contact {
       flex-direction: column-reverse; } }
@@ -276,7 +278,7 @@ body {
     position: relative;
     background: #f9f9f9;
     width: calc(100% - 400px);
-    padding: 60px 40px 20px;
+    padding: 10vh 40px 20px;
     border-radius: 10px; }
     @media (max-width: 768px) {
       .contact .contact-form {
@@ -408,7 +410,7 @@ body {
   .contact .contact-info {
     width: 350px;
     background: #f9f9f9;
-    padding: 2em 1em 20px;
+    padding: 10vh 1em 20px;
     border-radius: 10px; }
     @media (max-width: 768px) {
       .contact .contact-info {
@@ -418,21 +420,26 @@ body {
     .contact .contact-info .info-box {
       display: flex;
       align-items: flex-start;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      padding: .3em;
+      border: 1px solid #f75394;
+      border-radius: 5px;
+      width: 100%; }
       @media (max-width: 767px) {
         .contact .contact-info .info-box {
-          align-items: center;
-          margin: .5em auto; } }
+          margin: .5em 0 5vh; } }
       .contact .contact-info .info-box .contact-icon {
         width: 20px;
-        margin-right: 40px;
+        margin-right: .5em;
         font-size: 2em;
         color: #800000; }
       .contact .contact-info .info-box .details {
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        padding: 0 1em;
+        width: 100%; }
         .contact .contact-info .info-box .details h4 {
-          font-size: 1.6em;
+          font-size: 1.5em;
           color: #800000;
           margin-bottom: .5em;
           font-family: "Raleway", sans-serif;
@@ -443,35 +450,11 @@ body {
           color: #000;
           font-size: 1em;
           cursor: pointer;
-          padding: .7em 1em;
-          margin: 10px;
+          margin: .5em 0;
           transition: .2s ease;
           text-decoration: none;
-          letter-spacing: .2em;
           border-radius: 5px;
-          position: relative;
-          left: -2em; }
-          .contact .contact-info .info-box .details a::before, .contact .contact-info .info-box .details p::before {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-            transition: .2s;
-            box-shadow: inset 2px 2px 4px #ddda, inset -2px -2px 4px #000a; }
-          .contact .contact-info .info-box .details a::after, .contact .contact-info .info-box .details p::after {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            border-radius: 5px;
-            transition: .2s;
-            box-shadow: inset 2px 2px 4px #000a, inset -2px -2px 4px #ddda; }
+          position: relative; }
           @media (max-width: 500px) {
             .contact .contact-info .info-box .details a, .contact .contact-info .info-box .details p {
               font-size: .9em; } }
@@ -1103,7 +1086,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(45deg, #f75394, pink);
+    background-image: linear-gradient(45deg, #f75394, rgba(0, 0, 0, 0.315));
     opacity: .3; }
 
 .slogan {
