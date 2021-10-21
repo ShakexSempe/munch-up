@@ -924,7 +924,7 @@ header {
   @media (max-width: 1024px) {
     #home {
       justify-content: center;
-      flex-direction: column;
+      flex-direction: column-reverse;
       margin: 5vh 5vw 0; } }
   @media (min-width: 768px) {
     #home .home-img {
@@ -939,13 +939,15 @@ header {
     #home .home-img {
       width: 65%;
       position: relative; } }
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     #home .home-img {
       height: auto;
       box-shadow: none;
-      margin: 5vh auto;
+      margin: 5vh auto 10vh;
       right: 0;
-      position: relative; }
+      position: relative;
+      position: sticky;
+      top: 15vh; }
       #home .home-img img {
         border-radius: 100%; } }
   #home .home-img img {
@@ -958,14 +960,14 @@ header {
     outline: none;
     height: 100%;
     width: 100%;
-    margin: 3em auto 0;
+    margin: 3em auto;
     padding-top: 1em;
     overflow: hidden;
     align-items: center;
     text-align: center;
     border-radius: 10px;
     justify-content: space-evenly;
-    background-color: #fffa;
+    background-color: #fff;
     position: relative; }
     #home .home-content::before {
       position: absolute;

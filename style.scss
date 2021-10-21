@@ -522,7 +522,7 @@ header {
     @media (max-width:1024px){
         // padding: 100px 40px;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin: 5vh 5vw 0;
     }
     @media (max-width:500px){
@@ -546,15 +546,16 @@ header {
         @media(max-width: 768px) {
             width: 65%;
             position: relative;
-
         }
 
-        @media(max-width: 1024px) {
+        @media(max-width: 1023px) {
             height: auto;
             box-shadow: none;
-            margin: 5vh auto;
+            margin: 5vh auto 10vh;
             right: 0;
             position: relative;
+            position: sticky;
+            top: 15vh;
             img {
                 border-radius: 100%;
             }
@@ -573,7 +574,7 @@ header {
         outline: none;
         height: 100%;
         width: 100%;
-        margin: 3em auto 0;
+        margin: 3em auto;
         padding-top: 1em;
         overflow: hidden;
         align-items: center;
