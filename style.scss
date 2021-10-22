@@ -21,16 +21,19 @@ body {
     // display: grid;
 }
 footer {
-    margin: .5em auto;
-    padding: .5em;
+    width: 100%;
+    background-color: $munch-pink-light;
+    margin: 0;
+    padding: 5vh .5em;
     text-align: center;
-    width: 50%;
     p {
         backdrop-filter: blur(2em);
-        font-size: 1.1em;
+        font-size: 1.2em;
         margin: 0 auto;
         color: #000;
         font-weight: 600;
+        line-height: 1.7;
+        text-transform: capitalize;
     }
     @media (max-width: 768px) {
         width: 100%;
