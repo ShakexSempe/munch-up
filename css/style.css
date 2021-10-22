@@ -1005,7 +1005,7 @@ header {
     justify-content: space-evenly;
     background-color: #fff;
     position: relative;
-    opacity: 1;
+    opacity: 0;
     transition: 1s ease; }
     #home .home-content::before {
       position: absolute;
