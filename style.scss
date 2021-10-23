@@ -811,6 +811,9 @@ header {
             width: 100%;
             border-radius: 5px;
             margin: 0 0 15vh;
+            text-align: center;
+            display: grid;
+            place-items: center;
             p {
                 margin: 0;
                 text-align: center;
@@ -819,7 +822,7 @@ header {
                 font-weight: 500;
                 color: $munch-brown-darkest;
                 border-radius: 5px;
-                padding: .5em;
+                padding: .5em 0;
                 transition: .3s ease;
                 &:nth-child(2) {
                     color: $text-color-brown;
