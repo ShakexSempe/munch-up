@@ -793,6 +793,9 @@ header {
     z-index: 1;
     margin: 10vh 0;
     padding:  0 10vw;
+    @media (max-width: 768px) {
+        padding: 0 5vw;
+    }
     // &::before {
     //     position: absolute;
     //     content: '';
@@ -823,7 +826,7 @@ header {
                 }
 
                 @media (max-width:768px) {
-                    font-size: 2em;
+                    font-size: 1.5em;
                     margin: 0;
                     width: 90%;
 
@@ -860,7 +863,7 @@ header {
             grid-template-columns: 1fr 1fr;
             place-items: center;
             gap: 0;
-            margin: 5vh 5vw;
+            margin: 5vh 0;
             padding: 5vh 0;
         }
 

@@ -1151,6 +1151,9 @@ header {
   z-index: 1;
   margin: 10vh 0;
   padding: 0 10vw; }
+  @media (max-width: 768px) {
+    .slogan {
+      padding: 0 5vw; } }
   .slogan article {
     border: 5px solid pink;
     width: 100%;
@@ -1170,7 +1173,7 @@ header {
         color: #800000; }
       @media (max-width: 768px) {
         .slogan article p {
-          font-size: 2em;
+          font-size: 1.5em;
           margin: 0;
           width: 90%; } }
   .slogan .gallery {
@@ -1198,5 +1201,5 @@ header {
         grid-template-columns: 1fr 1fr;
         place-items: center;
         gap: 0;
-        margin: 5vh 5vw;
+        margin: 5vh 0;
         padding: 5vh 0; } }
