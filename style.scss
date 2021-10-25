@@ -212,6 +212,7 @@ header {
         
         &:hover, &:focus {
             transition-delay: 50ms;
+            transform: scale(.95);
             &::before {
                 opacity: 0;
             }
