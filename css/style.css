@@ -1178,7 +1178,7 @@ header {
   .slogan article {
     position: sticky;
     top: 15vh;
-    border: 5px solid #f75394;
+    border: 3px solid #f75394;
     width: 100%;
     border-radius: 5px;
     margin: 0 0 15vh;
