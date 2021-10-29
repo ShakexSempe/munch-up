@@ -371,8 +371,7 @@ body {
           position: relative; }
         .contact .contact-form form .row input, .contact .contact-form form .row textarea, .contact .contact-form form .row select {
           position: relative;
-          border: none;
-          box-shadow: inset 2px 2px 5px #ddda, inset -2px -2px 5px #000a;
+          border: 2px solid #333;
           color: #654321;
           background: transparent;
           width: 100%;
@@ -389,7 +388,10 @@ body {
             font-size: .8em;
             color: rgba(151, 149, 149, 0.822); }
           .contact .contact-form form .row input:invalid, .contact .contact-form form .row textarea:invalid, .contact .contact-form form .row select:invalid {
+            border: 1px solid purple;
             background-color: rgba(255, 192, 203, 0.2); }
+          .contact .contact-form form .row input:valid, .contact .contact-form form .row textarea:valid, .contact .contact-form form .row select:valid {
+            border: 2px solid pink; }
           .contact .contact-form form .row input optgroup, .contact .contact-form form .row textarea optgroup, .contact .contact-form form .row select optgroup {
             text-transform: capitalize; }
             .contact .contact-form form .row input optgroup option, .contact .contact-form form .row textarea optgroup option, .contact .contact-form form .row select optgroup option {
@@ -419,19 +421,15 @@ body {
                 font-size: 1em; } }
             .contact .contact-form form .row input[type='submit']:hover, .contact .contact-form form .row textarea[type='submit']:hover, .contact .contact-form form .row select[type='submit']:hover {
               transition: .3s ease;
-              transform: scale(0.97);
-              box-shadow: inset 2px 2px 5px #000, inset -2px -2px 5px #ddd; }
+              transform: scale(0.985); }
             .contact .contact-form form .row input[type='submit']:active, .contact .contact-form form .row textarea[type='submit']:active, .contact .contact-form form .row select[type='submit']:active {
               transform: scale(0.94);
               transition: .3s ease;
               letter-spacing: .1em; }
           .contact .contact-form form .row input:hover, .contact .contact-form form .row textarea:hover, .contact .contact-form form .row select:hover {
-            transition: .3s ease;
-            box-shadow: inset -2px -2px 5px #ddda, inset 2px 2px 5px #000a;
-            transform: scale(1.01); }
+            transition: .3s ease; }
             .contact .contact-form form .row input:hover:focus, .contact .contact-form form .row textarea:hover:focus, .contact .contact-form form .row select:hover:focus {
-              color: #800000;
-              box-shadow: inset 0px 0px 5px #f75394; }
+              color: #800000; }
         .contact .contact-form form .row textarea {
           height: 150px;
           margin-bottom: 10vh; }

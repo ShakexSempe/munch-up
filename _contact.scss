@@ -182,9 +182,8 @@
                 }
                 input, textarea, select {
                     position: relative;
-                    border: none;
-                    box-shadow: inset 2px 2px 5px #ddda,
-                                inset -2px -2px 5px #000a;
+                    border: 2px solid #333;
+                    
                     color: $munch-brown-dark;
                     background: transparent;
                     width: 100%;
@@ -203,9 +202,12 @@
                         color: rgba(151, 149, 149, 0.822);
                     }
                     &:invalid {
+                        border: 1px solid purple;
                         background-color: rgba(255, 192, 203, 0.200);
                     }
-                    
+                    &:valid {
+                        border: 2px solid pink;
+                    }
                     optgroup {
                         text-transform: capitalize;
                         option {
@@ -243,11 +245,8 @@
                     
                         &:hover {
                             transition: .3s ease;
-                            transform: scale(.97);
-                            box-shadow: inset 2px 2px 5px #000,
-                                        inset -2px -2px 5px #ddd;
-                                        
-                                    }
+                            transform: scale(.985);
+                        }
                             &:active {
                             transform: scale(.94);
                             transition: .3s ease;
@@ -256,12 +255,8 @@
                    }
                    &:hover {
                     transition: .3s ease;
-                    box-shadow: inset -2px -2px 5px #ddda,
-                                inset 2px 2px 5px #000a;
-                    transform: scale(1.01);
                     &:focus {
                         color: $munch-brown;
-                        box-shadow: inset 0px 0px 5px $munch-pink;
                     } 
                 }
                 }
