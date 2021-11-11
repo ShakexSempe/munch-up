@@ -100,7 +100,8 @@ body {
     position: relative;
     z-index: 1;
     width: 50%;
-    margin: 0em auto; }
+    margin: 0em auto;
+    padding: 1em 0; }
     #services #work-link .catalogBtn a {
       color: #ddd;
       text-decoration: none;
@@ -573,7 +574,7 @@ body {
 footer {
   width: 100%;
   background-color: pink;
-  margin: 0;
+  margin: 10vh 0;
   padding: 5vh .5em;
   text-align: center; }
   footer p {
@@ -1078,6 +1079,7 @@ header {
       color: #654321;
       opacity: 1;
       border: 1px solid pink;
+      background-color: pink;
       margin: .5em auto;
       font-size: 1.5em;
       font-weight: 500;
@@ -1148,7 +1150,7 @@ header {
           margin: 1em auto; } }
 
 .logo-pad {
-  background-image: url(../images/logo.jpg);
+  background-image: url(../images/logo-min.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1175,8 +1177,9 @@ header {
       padding: 0 5vw; } }
   .slogan article {
     position: sticky;
-    top: 15vh;
+    top: 20vh;
     border: 3px solid #f75394;
+    background-color: pink;
     width: 100%;
     border-radius: 5px;
     margin: 0 0 15vh;

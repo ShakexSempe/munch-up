@@ -23,7 +23,7 @@ body {
 footer {
     width: 100%;
     background-color: $munch-pink-light;
-    margin: 0;
+    margin: 10vh 0;
     padding: 5vh .5em;
     text-align: center;
     p {
@@ -706,6 +706,7 @@ header {
             color: $munch-brown-dark;
             opacity: 1;
             border: 1px solid pink;
+            background-color: $munch-pink-light;
             margin: .5em auto;
             font-size: 1.5em;
             font-weight: 500;
@@ -800,7 +801,7 @@ header {
 }
 
 .logo-pad {
-    background-image: url(../images/logo.jpg);
+    background-image: url(../images/logo-min.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -838,8 +839,9 @@ header {
     // }
         article {
             position: sticky;
-            top: 15vh;
+            top: 20vh;
             border: 3px solid $munch-pink;
+            background-color: $munch-pink-light;
             width: 100%;
             border-radius: 5px;
             margin: 0 0 15vh;

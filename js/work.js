@@ -3,7 +3,7 @@ const work = [{
         title: "Frozen Theme Cake",
         category: "girls",
         price: 450.00,
-        img: "images/item-1.jpg",
+        img: "images/item-1-min.jpg",
         desc: `Frozen themed cake that is fitting for this freezing winter day.  `,
     },
     {
@@ -11,7 +11,7 @@ const work = [{
         title: "dragonballZ Theme cake",
         category: "boys",
         price: 450.00,
-        img: "images/item-2.jpg",
+        img: "images/item-2-min.jpg",
         desc: `Another childhood memory cake which is still loved to this day `,
     },
     {
@@ -19,7 +19,7 @@ const work = [{
         title: "BMW theme cake",
         category: "boys",
         price: 400.00,
-        img: "images/item-3.jpg",
+        img: "images/item-3-min.jpg",
         desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
     },
     {
@@ -27,7 +27,7 @@ const work = [{
         title: "white wedding",
         category: "adults",
         price: 500.00,
-        img: "images/item-4.jpg",
+        img: "images/item-4-min.jpg",
         desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `,
     },
     {
@@ -35,7 +35,7 @@ const work = [{
         title: "mother's birthday",
         category: "adult",
         price: 550.00,
-        img: "images/item-5.jpg",
+        img: "images/item-5-min.jpg",
         desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
     },
     {
@@ -43,7 +43,7 @@ const work = [{
         title: "mother's birthday rose bucket",
         category: "adults",
         price: 450.00,
-        img: "images/item-6.jpg",
+        img: "images/item-6-min.jpg",
         desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
     },
     {
@@ -51,7 +51,7 @@ const work = [{
         title: "ladies birthday",
         category: "adults",
         price: 550.00,
-        img: "images/item-7.jpg",
+        img: "images/item-7-min.jpg",
         desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird `,
     },
     {
@@ -59,7 +59,7 @@ const work = [{
         title: "birthday classic drip",
         category: "girls",
         price: 450.00,
-        img: "images/item-8.jpg",
+        img: "images/item-8-min.jpg",
         desc: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut  `,
     },
     {
@@ -67,7 +67,7 @@ const work = [{
         title: "chocolate & vanilla",
         category: "birthday",
         price: 400,
-        img: "images/item-9.jpg",
+        img: "images/item-9-min.jpg",
         desc: `Delicious birthday Cakes.. Munch Up`,
     },
     {
@@ -75,7 +75,7 @@ const work = [{
         title: "Munch Up",
         category: "cupcakes",
         price: 250,
-        img: "images/item-10.jpg",
+        img: "images/item-10-min.jpg",
         desc: `Delicious Cupcakes.. Munch Up`,
     },
     {
@@ -83,7 +83,7 @@ const work = [{
         title: "Baby Boy birthday cake",
         category: "kids",
         price: 400,
-        img: "images/item-11.jpg",
+        img: "images/item-11-min.jpg",
         desc: `Delicious Baby birthday Cakes.. Munch Up`,
     },
     {
@@ -91,7 +91,7 @@ const work = [{
         title: "Valentines Cupcakes",
         category: "cupcakes",
         price: 250,
-        img: "images/item-12.jpg",
+        img: "images/item-12-min.jpg",
         desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
     },
     {
@@ -99,7 +99,7 @@ const work = [{
         title: "berry compote and cream cheese filling cake",
         category: "adults",
         price: 550,
-        img: "images/item-13.jpg",
+        img: "images/item-13-min.jpg",
         desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
     },
     {
@@ -107,7 +107,7 @@ const work = [{
         title: "spiderman theme cake",
         category: "kids",
         price: 500,
-        img: "images/item-14.jpg",
+        img: "images/item-14-min.jpg",
         desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
     },
     {
@@ -115,7 +115,7 @@ const work = [{
         title: "Munch Up",
         category: "kids",
         price: 450,
-        img: "images/item-15.jpg",
+        img: "images/item-15-min.jpg",
         desc: `How I miss putting the smile on people's faces with the work of my hands, being creative and putting my best foot forward. `,
     },
     {
@@ -123,7 +123,7 @@ const work = [{
         title: "lemon blueberry cake",
         category: "adults",
         price: 550,
-        img: "images/item-16.jpg",
+        img: "images/item-16-min.jpg",
         desc: `So for Mothers day, make this delicious lemon blueberry cake. So moist, got that tang and considering including this baby in my cake list.`,
     },
     {
@@ -131,7 +131,7 @@ const work = [{
         title: "birthday cake",
         category: "birthday",
         price: 550,
-        img: "images/item-17.jpg",
+        img: "images/item-17-min.jpg",
         desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
     },
     {
@@ -139,7 +139,7 @@ const work = [{
         title: "vanilla and rose flavour marble cake",
         category: "birthday",
         price: 550,
-        img: "images/item-18.jpg",
+        img: "images/item-18-min.jpg",
         desc: `Made this delicious moist cake for one of my loyal customers, a vanilla and rose flavour marble cake for her birthday. Just enjoy making people smile through a slice of cake`,
     },
     {
@@ -147,7 +147,7 @@ const work = [{
         title: "Superhero cake",
         category: "kids",
         price: 400,
-        img: "images/item-19.jpg",
+        img: "images/item-19-min.jpg",
         desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
     },
     {
@@ -155,7 +155,7 @@ const work = [{
         title: "Spiderman theme",
         category: "boys",
         price: 400,
-        img: "images/item-20.jpg",
+        img: "images/item-20-min.jpg",
         desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
     },
     {
@@ -163,7 +163,7 @@ const work = [{
         title: "Teletubbies theme cake",
         category: "kids",
         price: 0,
-        img: "images/item-21.jpg",
+        img: "images/item-21-min.jpg",
         desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
     },
 
