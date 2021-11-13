@@ -261,6 +261,7 @@ body {
     background: #f9f9f9;
     width: calc(100% - 400px);
     padding: 10vh 40px 20px;
+    margin: 10vh 0;
     border-radius: 10px; }
     @media (max-width: 1024px) {
       .contact .contact-form {
@@ -574,7 +575,7 @@ body {
 footer {
   width: 100%;
   background-color: pink;
-  margin: 10vh 0;
+  margin: 0;
   padding: 5vh .5em;
   text-align: center; }
   footer p {
@@ -794,7 +795,7 @@ header {
       header .logo img:active {
         transition: .3s;
         transform: scale(0.9); }
-  header nav {
+  header aside {
     position: fixed;
     top: 0;
     left: 100%;
@@ -804,8 +805,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .4s; }
-    header nav::before {
+    transition: .5s ease; }
+    header aside::before {
       content: '';
       position: absolute;
       top: 0;
@@ -814,46 +815,46 @@ header {
       height: 100vh;
       background-color: #ffc0cbf5;
       background-image: radial-gradient(rgba(182, 12, 12, 0.2), #ffc0cb00); }
-    header nav.active {
-      left: 0; }
-    header nav ul {
+    header aside ul {
       position: relative; }
-      header nav ul li {
+      header aside ul li {
         position: relative;
         list-style: none;
         text-align: left; }
-    header nav .nav-links {
+    header aside .nav-links {
       width: 300px;
       padding: 1em 0em 1em 1em;
       margin-left: 4em; }
       @media (min-width: 1000px) {
-        header nav .nav-links {
+        header aside .nav-links {
           width: 300px;
           margin: 0;
           padding: 0; }
-          header nav .nav-links li {
+          header aside .nav-links li {
             width: 100%;
             padding: 0;
             margin: 0; } }
-      header nav .nav-links li {
+      header aside .nav-links li {
         padding: .5em 1em;
         transition: .3s;
         margin: 5vh 5vw;
         background-color: pink;
         border-radius: 10px;
         border: none;
-        outline: none; }
-        header nav .nav-links li a {
+        outline: none;
+        transform: scale(0.1);
+        transition: .3s; }
+        header aside .nav-links li a {
           font-size: 1.6em; }
-          header nav .nav-links li a i {
+          header aside .nav-links li a i {
             color: rgba(12, 12, 12, 0.377);
             margin-right: .5em;
             transition: .2s; }
-        header nav .nav-links li:hover {
+        header aside .nav-links li:hover {
           transform: scale(0.99) translateY(-0.4em); }
-          header nav .nav-links li:hover i {
+          header aside .nav-links li:hover i {
             color: #f75394; }
-    header nav a {
+    header aside a {
       font-size: 2.5rem;
       color: #000;
       font-weight: 500;
@@ -862,9 +863,9 @@ header {
       transition: .2s ease;
       z-index: 5; }
       @media (max-width: 768px) {
-        header nav a {
+        header aside a {
           font-size: 1.7rem; } }
-      header nav a::before, header nav a::after {
+      header aside a::before, header aside a::after {
         position: absolute;
         content: '';
         top: 0;
@@ -873,63 +874,65 @@ header {
         height: 100%;
         border-radius: 10px;
         transition: .5s; }
-      header nav a::before {
+      header aside a::before {
         box-shadow: inset -2px -2px 5px #654321, inset 2px 2px 10px #fff; }
-      header nav a::after {
+      header aside a::after {
         box-shadow: inset -2px -2px 5px #fffa, inset 2px 2px 5px #654321;
         opacity: 0; }
-      header nav a:hover {
+      header aside a:hover {
         transition: .2s ease; }
-        header nav a:hover::before {
+        header aside a:hover::before {
           opacity: 0; }
-        header nav a:hover::after {
+        header aside a:hover::after {
           opacity: 1; }
-    header nav .social-bar {
+    header aside .social-bar {
       position: absolute;
       top: 0;
       left: 0;
-      width: 10vw;
+      width: 50vw;
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #e7feff; }
+      background: #e7feff;
+      transition: .4s;
+      transition-delay: .2s; }
       @media (max-width: 768px) {
-        header nav .social-bar {
-          width: 20vw; } }
-      header nav .social-bar ul {
+        header aside .social-bar {
+          width: 50vw; } }
+      header aside .social-bar ul {
         display: grid;
         place-items: center;
         gap: 3em; }
-        header nav .social-bar ul li i {
+        header aside .social-bar ul li i {
           color: #e0ffff;
           transition: .2s; }
-        header nav .social-bar ul li:hover {
+        header aside .social-bar ul li:hover {
           transition: .2s;
           transform: scale(0.95); }
-          header nav .social-bar ul li:hover i {
+          header aside .social-bar ul li:hover i {
             color: #f75394; }
-        header nav .social-bar ul li:active {
+        header aside .social-bar ul li:active {
           transition: .2s;
           transform: scale(0.9); }
-      header nav .social-bar .email-icon {
+      header aside .social-bar .email-icon {
         position: absolute;
         bottom: 20px;
         margin-bottom: 1em;
         display: inline-block;
         color: #f75394;
         transition: .2s; }
-        header nav .social-bar .email-icon::before {
+        header aside .social-bar .email-icon::before {
           background-color: #e0ffff; }
-        header nav .social-bar .email-icon:hover {
+        header aside .social-bar .email-icon:hover {
           color: #b768a2; }
-      header nav .social-bar a {
+      header aside .social-bar a {
         padding: .5em;
         border-radius: 50%;
         font-size: 1.5em;
         position: relative;
         z-index: 1; }
-        header nav .social-bar a::before, header nav .social-bar a::after {
+        header aside .social-bar a::before, header aside .social-bar a::after {
           position: absolute;
           content: '';
           top: 0;
@@ -939,16 +942,27 @@ header {
           border-radius: 50%;
           transition: .3s;
           z-index: -1; }
-        header nav .social-bar a::before {
+        header aside .social-bar a::before {
           background-color: #f75394;
           box-shadow: inset -2px -2px 5px #654321, inset 2px 2px 10px #fff; }
-        header nav .social-bar a::after {
+        header aside .social-bar a::after {
           box-shadow: inset -2px -2px 5px #fffa, inset 2px 2px 5px #654321;
           opacity: 0; }
-        header nav .social-bar a:hover::before {
+        header aside .social-bar a:hover::before {
           opacity: 0; }
-        header nav .social-bar a:hover::after {
+        header aside .social-bar a:hover::after {
           opacity: 1; }
+    header aside.active {
+      left: 0; }
+      header aside.active ul li {
+        transition-delay: .28s;
+        transform: scale(1); }
+      header aside.active .social-bar {
+        transition-delay: .25s;
+        width: 5vw; }
+        @media (max-width: 768px) {
+          header aside.active .social-bar {
+            width: 20vw; } }
 
 #home {
   position: relative;
@@ -1149,8 +1163,7 @@ header {
         #home .home-content .btn {
           margin: 1em auto; } }
 
-.logo-pad {
-  background-image: url(../images/logo-min.jpg);
+.pad {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1160,8 +1173,30 @@ header {
   min-height: 100vh;
   position: relative; }
   @media (min-width: 500px) {
-    .logo-pad {
-      background-size: 35%; } }
+    .pad {
+      background-size: 35%;
+      margin: 0 10vw; } }
+  .pad.pad1 {
+    background-image: url(../images/yonko-kilasi-sl7jqLgd7lo-unsplash.jpg);
+    background-size: 50%;
+    background-position: center; }
+    @media (max-width: 768px) {
+      .pad.pad1 {
+        background-size: cover; } }
+  .pad.pad2 {
+    background-image: url(../images/heather-mount-kg60vwnXHro-unsplash-min.jpg);
+    background-size: contain; }
+    @media (max-width: 768px) {
+      .pad.pad2 {
+        background-size: 100%; } }
+  .pad.pad2-2 {
+    background-image: url(../images/heather-mount-kg60vwnXHro-unsplash-min.jpg);
+    background-size: 100%; }
+    @media (max-width: 768px) {
+      .pad.pad2-2 {
+        background-size: cover; } }
+  .pad.pad3 {
+    background-image: url(../images/logo-min.jpg); }
 
 .slogan {
   min-height: 100vh;
@@ -1179,7 +1214,7 @@ header {
     position: sticky;
     top: 20vh;
     border: 3px solid #f75394;
-    background-color: pink;
+    background-color: #fff;
     width: 100%;
     border-radius: 5px;
     margin: 0 0 15vh;
