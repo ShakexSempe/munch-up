@@ -1189,12 +1189,6 @@ header {
     @media (max-width: 768px) {
       .pad.pad2 {
         background-size: 100%; } }
-  .pad.pad2-2 {
-    background-image: url(../images/heather-mount-kg60vwnXHro-unsplash-min.jpg);
-    background-size: 100%; }
-    @media (max-width: 768px) {
-      .pad.pad2-2 {
-        background-size: cover; } }
   .pad.pad3 {
     background-image: url(../images/logo-min.jpg); }
 
