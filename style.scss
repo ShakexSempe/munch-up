@@ -833,6 +833,23 @@ header {
         margin: 0 10vw;
 
     }
+
+    &.pad1 {
+        background-image: url(../images/item-2-min.jpg);
+        background-size: 25%;
+        background-position: center;
+        @media (max-width: 768px) {
+            background-size: 100%;
+        }
+    }
+    &.pad1-1 {
+        background-image: url(../images/item-6-min.jpg);
+        background-size: 25%;
+        background-position: center;
+        @media (max-width: 768px) {
+            background-size: 100%;
+        }
+    }
     &.pad2 {
         background-image: url(../images/heather-mount-kg60vwnXHro-unsplash-min.jpg);
         background-size: contain;
