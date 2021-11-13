@@ -835,19 +835,26 @@ header {
     }
 
     &.pad1 {
-        background-image: url(../images/yonko-kilasi-sl7jqLgd7lo-unsplash.jpg);
-        background-size: 50%;
+        background-image: url(../images/item-2-min.jpg);
+        background-size: 25%;
         background-position: center;
         @media (max-width: 768px) {
-            background-size: cover;
+            background-size: 100%;
         }
-
+    }
+    &.pad1-1 {
+        background-image: url(../images/item-6-min.jpg);
+        background-size: 25%;
+        background-position: center;
+        @media (max-width: 768px) {
+            background-size: 100%;
+        }
     }
     &.pad2 {
         background-image: url(../images/heather-mount-kg60vwnXHro-unsplash-min.jpg);
         background-size: contain;
         @media (max-width: 768px) {
-            background-size: 100%;
+            background-size: cover;
         }
     }
     &.pad3 {
