@@ -1195,7 +1195,10 @@ header {
     background-size: contain; }
     @media (max-width: 768px) {
       .pad.pad2 {
-        background-size: cover; } }
+        background-size: cover;
+        margin: 0 5vw;
+        min-height: 80vh;
+        background-position: bottom; } }
   .pad.pad3 {
     background-image: url(../images/logo-min.jpg); }
 

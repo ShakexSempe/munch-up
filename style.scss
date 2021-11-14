@@ -855,6 +855,9 @@ header {
         background-size: contain;
         @media (max-width: 768px) {
             background-size: cover;
+            margin: 0 5vw;
+            min-height: 80vh;
+            background-position: bottom;
         }
     }
     &.pad3 {
