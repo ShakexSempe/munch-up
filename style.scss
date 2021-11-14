@@ -23,8 +23,8 @@ body {
 footer {
     width: 100%;
     background-color: $munch-pink-light;
-    margin: 0;
-    padding: 5vh .5em;
+    margin: 5vh 0;
+    padding: 1em .5em;
     text-align: center;
     p {
         backdrop-filter: blur(2em);
@@ -852,11 +852,12 @@ header {
     }
     &.pad2 {
         background-image: url(../images/heather-mount-kg60vwnXHro-unsplash-min.jpg);
-        background-size: contain;
+        background-size: cover;
+        background-position: center top;
         @media (max-width: 768px) {
             background-size: cover;
-            margin: 0 5vw;
-            min-height: 80vh;
+            // margin: 0 5vw;
+            min-height: 90vh;
             background-position: bottom;
         }
     }

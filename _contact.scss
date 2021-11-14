@@ -276,6 +276,7 @@
         width: 350px;
         background: #f9f9f9;
         padding: 10vh 1em 20px;
+        margin: 10vh 0;
         border-radius: 10px;
         // border: 1px solid green;
         
@@ -316,7 +317,7 @@
                 width: 100%;
                 transform: translateX(-.5em);
                 transition: .2s ease;
-                h4 {
+                h2 {
                     font-size: 1.5em;
                     color: $munch-brown;
                     margin-bottom: .5em;

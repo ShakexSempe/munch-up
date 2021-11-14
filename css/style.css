@@ -439,6 +439,7 @@ body {
     width: 350px;
     background: #f9f9f9;
     padding: 10vh 1em 20px;
+    margin: 10vh 0;
     border-radius: 10px; }
     @media (max-width: 1024px) {
       .contact .contact-info {
@@ -469,7 +470,7 @@ body {
         width: 100%;
         transform: translateX(-0.5em);
         transition: .2s ease; }
-        .contact .contact-info .info-box .details h4 {
+        .contact .contact-info .info-box .details h2 {
           font-size: 1.5em;
           color: #800000;
           margin-bottom: .5em;
@@ -575,8 +576,8 @@ body {
 footer {
   width: 100%;
   background-color: pink;
-  margin: 0;
-  padding: 5vh .5em;
+  margin: 5vh 0;
+  padding: 1em .5em;
   text-align: center; }
   footer p {
     backdrop-filter: blur(2em);
@@ -1192,12 +1193,12 @@ header {
         background-size: 100%; } }
   .pad.pad2 {
     background-image: url(../images/heather-mount-kg60vwnXHro-unsplash-min.jpg);
-    background-size: contain; }
+    background-size: cover;
+    background-position: center top; }
     @media (max-width: 768px) {
       .pad.pad2 {
         background-size: cover;
-        margin: 0 5vw;
-        min-height: 80vh;
+        min-height: 90vh;
         background-position: bottom; } }
   .pad.pad3 {
     background-image: url(../images/logo-min.jpg); }
