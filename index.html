@@ -27,11 +27,11 @@
     <div class="container">
         <header>
             <figure class="logo">
-                <a href="services.html">
+                <a href="#">
                     <img src="images/logo-min.jpg" alt="logo"></a>
             </figure>
             <button class="shop-link">
-                <a href="contact.html" target="_blank">
+                <a href="#contact">
                 <i class="fas fa-shopping-cart"></i>
                 </a>
             </button>
@@ -73,7 +73,7 @@
                 <h1>munch</h1>
                 <h1>UP<span>&trade;</span></h1>
                 <p>Bakery & Cupcake shop</p>
-                <a href="work.html" class="btn">catalogue</a>
+                <a href="#gallery" class="btn">catalogue</a>
             </div>
                 <div class="home-img">
                     <a href="#home-logo">
@@ -83,37 +83,36 @@
         </section>
 
         <section  class="slogan">
-            <article>
+            <article data-scroll>
                 <h2>We bake & make: </h2>
                 <p>Cakes, cake pops, cupcakes cakesicles and party combos.</p>
             </article>
-            <div class="gallery">
+            <div id="gallery" class="gallery">
                 <figure>
-                    <img src="images/item-1-min.jpg" loading="lazy" alt="img">
+                    <img data-scroll src="images/item-1-min.jpg" loading="lazy" alt="img">
                 </figure>
                 <figure>
-                    <img src="images/item-21-min.jpg" loading="lazy" alt="img">
+                    <img data-scroll src="images/item-21-min.jpg" loading="lazy" alt="img">
                 </figure>
                 <figure>
-                    <img src="images/item-14-min.jpg" loading="lazy" alt="img">
+                    <img data-scroll src="images/item-14-min.jpg" loading="lazy" alt="img">
                 </figure>
                 <figure>
-                    <img src="images/item-13-min.jpg" loading="lazy" alt="img">
+                    <img data-scroll src="images/item-13-min.jpg" loading="lazy" alt="img">
                 </figure>
                 <figure>
-                    <img src="images/item-6-min.jpg" loading="lazy" alt="img">
+                    <img data-scroll src="images/item-6-min.jpg" loading="lazy" alt="img">
                 </figure>
                 <figure>
-                    <img src="images/item-9-min.jpg" loading="lazy" alt="img">
+                    <img data-scroll src="images/item-9-min.jpg" loading="lazy" alt="img">
                 </figure>
             </div>
         </section>
 
-        <section class="pad pad2"></section>
-
         
-        <div class="contact">
+        <div id="contact" class="contact">
             <div id="form" class="contact-form">
+                <h1 title="contact form" class="contact-info-title">order form</h1>
                 <form action="https://formsubmit.co/bshakex@gmail.com" method="POST">
                     <div class="row">
                         <fieldset id="contact-field">
@@ -180,7 +179,7 @@
                     
                     <div class="row">
                         <div class="input100">
-                            <input type="submit" value="submit order">
+                            <input data-scroll title="submit order" type="submit" value="submit order">
                         </div>
                     </div>
                     <!-- thank you page -->
@@ -195,6 +194,7 @@
             </div>
 
             <div class="contact-info">
+                <h1 title="contact info: munch up" class="contact-info-title">contact info</h1>
                 <div class="info-box">
                     <i class="fas fa-map-marked-alt contact-icon"></i>
                     <div class="details">
@@ -221,12 +221,6 @@
             </div>
 
         </div>
-        
-        <section class="pad pad1"></section>
-        <section class="pad pad1-1"></section>
-        <section class="pad pad3"></section>
-
-
         <footer>
             <p>copyright&copy; <a href="https://www.facebook.com/Munch-Up-107890190776218" target="_blank">Munch UP</a>&trade;</p>
             <p> presented by <a href="http://shakexsempe.netlify.app/" target="_blank">Shakex Sempe</a> <span id="date"></span> 
@@ -234,7 +228,15 @@
         </footer>
     </div>
         
-    <script src="js/main.js"></script>
     <script src="https://use.fontawesome.com/3b4fc72e2a.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+        ScrollOut({
+            onShown(el) {
+                el.classList.add("animated");
+            }
+        });
+    </script>
 </body>
 </html>
