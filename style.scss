@@ -529,18 +529,47 @@ header {
     justify-content: space-between;
     min-height: 100vh;
     // width: 100%;
-    // padding: 10vh 0;
-    margin: 10vh 10vw 0;
+    padding:  0 10vw;
+    margin: 10vh 0 0;
     font-size: 16px;
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(/images/heather-mount-kg60vwnXHro-unsplash-min.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @media (min-width: 768px) {
+            background-attachment: fixed;
+        }
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(40deg, pink, transparent 100%);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
     
     @media (max-width:1024px){
         // padding: 100px 40px;
         justify-content: center;
         flex-direction: column-reverse;
-        margin: 5vh 1rem 0;
+
     }
     @media (max-width:500px){
-        // padding: 1em 0;
+        padding: 0;
+        margin: 0;
 
     }
     .home-img {
@@ -573,7 +602,7 @@ header {
 
         @media(min-width: 768px) {
             height: 60%;
-            width: 30vw;
+            width: 20rem;
             border-radius: 50%;
 
             img {
@@ -583,7 +612,7 @@ header {
         }
 
         @media(max-width: 768px) {
-            width: 65%;
+            width: 15rem;
             position: relative;
         }
 
@@ -626,7 +655,7 @@ header {
         border: none;
         outline: none;
         height: 100%;
-        width: 100%;
+        width: 90%;
         margin: 3em auto;
         padding-top: 1em;
         overflow: hidden;
@@ -897,22 +926,25 @@ header {
     .gallery {
         display: grid;
         place-items: center;
-        grid-template-columns: 1fr 1fr;
-        gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
         margin: 5vh 0 10vh;
         border-radius: 5px;
         border: 3px solid $munch-pink-light;
         background-color: $munch-pink-light;
         z-index: 5;
         figure {
-            width: 85%;
-            height: 85%;
+            width: 95%;
+            height: 95%;
             overflow: hidden;
             // border: 2px solid #fff000;
             border-radius: 5px;
             background-color: $munch-pink-light;
             padding: .5em;
             img {
+                &[data-scroll] {
+                    transform: scale(1);
+                }
                 &[data-scroll="in"] {
                     transition: 1.5s;
                 }
@@ -920,11 +952,13 @@ header {
                 height: 100%;
                 object-position: center;
                 object-fit: contain;
-                transition: .5s ease;
+                transition: .3s ease;
             }
             &:hover {
                 background-image: $munch-background;
                 img {
+                transition: .3s ease;
+
                     transform: scale(1.1);
                 }
             }
@@ -933,7 +967,7 @@ header {
         @media (max-width: 767px) {
             grid-template-columns: 1fr;
             place-items: center;
-            gap: 1em;
+            gap: 10vh;
             margin: 5vh 0;
 
             figure {
