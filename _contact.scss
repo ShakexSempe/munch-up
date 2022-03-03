@@ -229,7 +229,7 @@
                     }
 
                     &[type='submit'] {
-                        background-color: $munch-brown;
+                        background: $submit-btn;
                         color: #fff;
                         width: 100%;
                         margin: 0 auto 10vh;
@@ -242,15 +242,16 @@
                         font-weight: 300;
                         border: 0;
                         padding: 1em .5em;
-                        border-radius: 10px;
+                        border-radius: 30px;
                         border: none;
                         outline: none;
                         cursor: pointer;
                         letter-spacing: .3em;
                         position: relative;
                         box-shadow: 
-                                    inset 2px 2px 4px $munch-mist,
-                                    inset -2px -2px 4px #000;
+                                    inset 2px 2px 3px $munch-mist,
+                                    inset -2px -2px 3px #000,
+                                            3px 3px 3px rgba(0, 0, 0, .200);
                     
                         &:hover {
                             transition: .3s ease;

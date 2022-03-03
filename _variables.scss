@@ -32,6 +32,10 @@ $munch-bg: #fde9ed;
 
 $btn-red: #eb395d;
 $btn-brown: #800000;
+$submit-btn: linear-gradient(0deg, hsl(0, 100%, 20%), hsl(0, 100%, 40%) );
+$submit-btn-hover: linear-gradient(0deg, hsl(0, 100%, 35%), hsl(0, 100%, 25%));
+$btn-gradient: linear-gradient(0deg, hsl(336, 91%, 45%), #f75394 );
+$btn-gradient-hover: linear-gradient(0deg , #f75394, hsl(336, 91%, 45%) );
 
 $header-font: 'Raleway', sans-serif ;
 $content-font: 'Varela Round', sans-serif;
