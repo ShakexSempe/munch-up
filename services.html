@@ -86,42 +86,42 @@
             <p>We bake & make cakes and treats for: 
         </div>
         <div class="services">
-            <div class="service">
+            <div data-scroll class="service">
                 <div class="icon">
                     <img src="images/item-1-min.jpg" width="100px" alt="">
                     <h2>girls</h2>
                     <p>R200 - R450</p>
                 </div>
             </div>
-            <div class="service">
+            <div data-scroll class="service">
                 <div class="icon">
                     <img src="images/item-2-min.jpg" width="100px" alt="">
                     <h2>boys</h2>
                     <p>R200 - R450</p>
                 </div>
             </div>
-            <div class="service">
+            <div data-scroll class="service">
                 <div class="icon">
                     <img src="images/item-5-min.jpg" width="100px" alt="">
                     <h2>Special occasions </h2>
                     <p>R350 - R600</p>
                 </div>
             </div>
-            <div class="service">
+            <div data-scroll class="service">
                 <div class="icon">
                     <img src="images/item-3-min.jpg" width="100px" alt="">
                     <h2>branded cakes</h2>
                     <p>R350 - R600</p>
                 </div>
             </div>
-            <div class="service">
+            <div data-scroll class="service">
                 <div class="icon">
                     <img src="images/item-12-min.jpg" width="100px" alt="">
                     <h2>holiday celebrations</h2>
                     <p>R250 - R400</p>
                 </div>
             </div>
-            <div class="service">
+            <div data-scroll class="service">
                 <div class="icon">
                     <img src="images/item-17-min.jpg" width="100px" alt="">
                     <h2>birthdays</h2>
@@ -141,5 +141,13 @@
 
     <script src="js/main.js"></script>
     <script src="https://use.fontawesome.com/3b4fc72e2a.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+        ScrollOut({
+            onShown(el) {
+                el.classList.add("animated");
+            }
+        });
+    </script>
 </body>
 </html>
