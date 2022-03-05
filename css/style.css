@@ -706,7 +706,6 @@ header {
       position: relative;
       background-color: #434343;
       background-color: #000;
-      border-radius: 10px;
       z-index: -1; }
       header .hamburger .bar::before, header .hamburger .bar::after {
         content: "";
@@ -922,7 +921,8 @@ header {
   align-items: center;
   justify-content: space-between;
   min-height: 100vh;
-  padding: 0 10vw;
+  width: 100%;
+  padding: 0 5vw;
   margin: 10vh 0 0;
   font-size: 16px; }
   #home::before {
@@ -953,7 +953,8 @@ header {
   @media (max-width: 1024px) {
     #home {
       justify-content: center;
-      flex-direction: column-reverse; } }
+      flex-direction: column-reverse;
+      flex-direction: column; } }
   @media (max-width: 500px) {
     #home {
       padding: 0;
@@ -982,7 +983,7 @@ header {
       box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.404); }
     @media (min-width: 768px) {
       #home .home-img {
-        height: 60%;
+        height: 50%;
         width: 20rem;
         border-radius: 50%; }
         #home .home-img img {
@@ -990,16 +991,14 @@ header {
           width: 100%; } }
     @media (max-width: 768px) {
       #home .home-img {
-        width: 15rem;
+        width: 10rem;
         position: relative; } }
     @media (max-width: 1023px) {
       #home .home-img {
         height: auto;
-        margin: 5vh auto 10vh;
+        margin: 10vh auto 1rem;
         right: 0;
-        position: relative;
-        position: sticky;
-        top: 15vh; }
+        position: relative; }
         #home .home-img img {
           border-radius: 100%; } }
     #home .home-img img {
@@ -1011,9 +1010,8 @@ header {
       #home .home-img:hover::after {
         opacity: 1; }
     #home .home-img:active {
-      transform: scale(0.7); }
+      transform: scale(0.97); }
   #home .home-content {
-    scroll-padding-top: 200px;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -1021,7 +1019,7 @@ header {
     outline: none;
     height: 100%;
     width: 90%;
-    margin: 3em auto;
+    margin: 10vh auto 0;
     padding-top: 1em;
     overflow: hidden;
     align-items: center;
@@ -1029,8 +1027,8 @@ header {
     border-radius: 10px;
     justify-content: space-evenly;
     background-color: #fff;
+    background-color: #fffa;
     position: relative;
-    opacity: 0;
     transition: 1s ease; }
     #home .home-content::before {
       position: absolute;
@@ -1043,7 +1041,7 @@ header {
       border: none;
       outline: none;
       box-shadow: inset 3px 3px 5px pink, inset -3px -3px 5px pink; }
-    @media (min-width: 1400px) {
+    @media (min-width: 1024px) {
       #home .home-content {
         height: 60%;
         margin: 20vh 0;
