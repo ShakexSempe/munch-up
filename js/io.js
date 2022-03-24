@@ -1,8 +1,7 @@
-const logo = document.querySelector(".logo");
 const homeSection = document.getElementById("home");
 console.log(home);
 const homeOptions = {
-    rootMargin: "-75% 0px 0px 0px"
+    rootMargin: "-62% 0px 0px 0px"
 };
 
 const homeObserver = new IntersectionObserver(

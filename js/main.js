@@ -2,6 +2,7 @@ const hamburger = document.querySelector('.hamburger');
 const navigation = document.querySelector('.navigation');
 const home = document.querySelector('.home-content');
 const homeImg = document.querySelector('.home-img');
+const logo = document.querySelector(".logo");
 
 const date = document.getElementById('date');
 
@@ -24,6 +25,12 @@ console.log(home);
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navigation.classList.toggle('active');
+    if(logo.classList.contains("active")) {
+        logo.classList.remove("active")
+    } else {
+        logo.classList.add("active")
+    }
+    
 });
 
 
