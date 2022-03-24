@@ -105,7 +105,7 @@ header {
       bottom: 0; }
   header .logo {
     position: relative;
-    top: 40vh;
+    top: 30vh;
     left: 10vw;
     height: 2.5rem;
     overflow: none;
@@ -123,7 +123,7 @@ header {
         background: none;
         height: 2rem;
         width: auto;
-        top: 20vh;
+        top: 15vh;
         left: 10vw;
         transform: scale(3.5); } }
     header .logo img {
@@ -1017,7 +1017,7 @@ section {
     outline: none;
     height: 100%;
     width: 95%;
-    margin: 40vh auto 0;
+    margin: 30vh auto 0;
     padding-top: 1em;
     overflow: hidden;
     align-items: center;
