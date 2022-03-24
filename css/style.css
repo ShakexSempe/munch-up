@@ -72,7 +72,7 @@ header {
       height: 100%;
       transition: .3s; }
     header .hamburger::before {
-      box-shadow: inset -2px -2px 3px #000, inset 2px 2px 3px #fff, 3px 3px 4px rgba(0, 0, 0, 0.2);
+      box-shadow: inset -2px -2px 2px #000a, inset 2px 2px 2px #fffa, 2px 2px 3px rgba(0, 0, 0, 0.2);
       background: pink;
       z-index: -1; }
     header .hamburger:hover {
@@ -80,7 +80,7 @@ header {
     header .hamburger:active {
       transform: scale(0.9); }
     header .hamburger .bar {
-      height: .15em;
+      height: 2px;
       width: 50%;
       position: relative;
       background-color: #434343;
@@ -129,10 +129,8 @@ header {
     header .logo img {
       width: 100%;
       height: 100%;
-      border-radius: 50%; }
-      @media (max-width: 768px) {
-        header .logo img {
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.479); } }
+      border-radius: 50%;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3); }
       header .logo img:active {
         transition: .3s;
         transform: scale(0.9); }
