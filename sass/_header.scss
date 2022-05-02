@@ -154,7 +154,7 @@ header {
         left: 10vw;
         height: 2.5rem;
         overflow: none;
-        z-index: -1;
+        z-index: 20;
         background-color: $munch-brown;
         border-radius: 50%;
         transform: scale(5);
@@ -251,6 +251,7 @@ header {
                 border: none;
                 outline: none;
                 transform: scale(.1);
+                opacity: 0;
                 transition: .3s;
 
                 a {
@@ -430,8 +431,21 @@ header {
 
             ul {
                 li {
-                    transition-delay: .28s;
                     transform: scale(1);
+                    transition: .5s;
+                    opacity: 1;
+                    &:nth-child(1){
+                        transition-delay: .3s;
+                    }
+                    &:nth-child(2){
+                        transition-delay: .35s;
+                    }
+                    &:nth-child(3){
+                        transition-delay: .4s;
+                    }
+                    &:nth-child(4){
+                        transition-delay: .45s;
+                    }
                 }
             }
 

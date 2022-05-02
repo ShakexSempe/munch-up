@@ -129,7 +129,7 @@ header .logo {
   left: 10vw;
   height: 2.5rem;
   overflow: none;
-  z-index: -1;
+  z-index: 20;
   background-color: #800000;
   border-radius: 50%;
   transform: scale(5);
@@ -216,6 +216,7 @@ header aside .nav-links li {
   border: none;
   outline: none;
   transform: scale(0.1);
+  opacity: 0;
   transition: 0.3s;
 }
 header aside .nav-links li a {
@@ -360,8 +361,21 @@ header aside.active {
   left: 0;
 }
 header aside.active ul li {
-  transition-delay: 0.28s;
   transform: scale(1);
+  transition: 0.5s;
+  opacity: 1;
+}
+header aside.active ul li:nth-child(1) {
+  transition-delay: 0.3s;
+}
+header aside.active ul li:nth-child(2) {
+  transition-delay: 0.35s;
+}
+header aside.active ul li:nth-child(3) {
+  transition-delay: 0.4s;
+}
+header aside.active ul li:nth-child(4) {
+  transition-delay: 0.45s;
 }
 header aside.active .social-bar {
   transition-delay: 0.25s;
@@ -385,13 +399,14 @@ body {
 }
 
 [data-scroll] {
-  transition: 1s;
-  transform: scale(0.5);
+  transition: 1.5s;
+  opacity: 0;
+  transform: scale(0.5) translateY(10vh);
 }
 
 [data-scroll=in] {
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1) translateY(0);
 }
 
 [data-scroll=out] {
@@ -427,10 +442,6 @@ body {
   transform-style: preserve-3d;
   position: relative;
   cursor: pointer;
-}
-#services .services .service[data-scroll] {
-  transform: scale(1);
-  transition: 1.5s;
 }
 #services .services .service h2 {
   font-size: 1.3em;
