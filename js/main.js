@@ -25,7 +25,7 @@ console.log(home);
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navigation.classList.toggle('active');
-    logo.classList.add("active");
+    logo.classList.remove("active");
     
 });
 

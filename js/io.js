@@ -10,10 +10,10 @@ const homeObserver = new IntersectionObserver(
         entries.forEach(entry => {
             if(!entry.isIntersecting) {
                 console.log("home NOT intersecting");
-                logo.classList.add("active");
+                logo.classList.remove("active");
                 homeBtn.classList.add("active-btn");
             } else {
-                logo.classList.remove("active");
+                logo.classList.add("active");
                 homeBtn.classList.remove("active-btn");
 
                 console.log("home IS intersecting");
