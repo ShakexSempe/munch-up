@@ -147,7 +147,7 @@ header .logo.active {
     width: auto;
     top: 25vh;
     left: 40vw;
-    transform: scale(6);
+    transform: scale(5);
   }
 }
 header .logo img {
@@ -1460,14 +1460,14 @@ section .title p {
 }
 .slogan article h2 {
   color: #654321;
-  font-size: 2em;
+  font-size: 1.5rem;
   text-transform: capitalize;
 }
 .slogan article p {
   margin: 0;
   text-align: center;
   font-family: "Varela Round", sans-serif;
-  font-size: 1.5em;
+  font-size: 1rem;
   font-weight: 500;
   color: #51361a;
   border-radius: 5px;
