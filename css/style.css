@@ -1141,6 +1141,7 @@ section .title p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 @media (min-width: 768px) {
   #home {
