@@ -1098,12 +1098,7 @@ body {
 }
 
 section {
-  margin-top: 15vh;
-}
-@media (max-width: 768px) {
-  section {
-    margin-top: 20vh;
-  }
+  margin-top: 5vh;
 }
 section .title {
   text-align: center;
@@ -1151,7 +1146,6 @@ section .title p {
 #home {
   min-height: 100vh;
   width: 100%;
-  padding: 0 5vw;
   margin: 0vh 0 0;
 }
 #home::before {
@@ -1263,7 +1257,7 @@ section .title p {
   z-index: 1;
   outline: none;
   width: 95%;
-  margin: 50vh auto 0;
+  margin: 0 auto;
   padding: 1em 0;
   overflow: hidden;
   text-align: center;
@@ -1271,6 +1265,14 @@ section .title p {
   backdrop-filter: blur(0.15rem);
   position: relative;
   transition: 1s ease;
+}
+@media (max-width: 900px) {
+  #home .home-content {
+    position: absolute;
+    top: 60vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+  }
 }
 #home .home-content::before {
   position: absolute;
@@ -1364,7 +1366,7 @@ section .title p {
   width: auto;
   margin: 1em auto;
   transition: 0.3s ease;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   text-transform: capitalize;
   isolation: isolate;
   z-index: 1;

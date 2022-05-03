@@ -25,10 +25,10 @@ body {
     
 
     section {
-        margin-top: 15vh;
+        margin-top: 5vh;
 
         @media (max-width: 768px) {
-            margin-top: 20vh;
+            // margin-top: 20vh;
         }
 
         .title {
@@ -93,8 +93,9 @@ body {
         // border: 3px solid blue;
         min-height: 100vh;
         width: 100%;
-        padding: 0 5vw;
+        // padding: 0 5vw;
         margin: 0vh 0 0;
+        // background: red;
 
         &::before {
             position: absolute;
@@ -227,13 +228,19 @@ body {
             // border: 1px solid red;
             outline: none;
             width: 95%;
-            margin: 50vh auto 0;
+            margin: 0 auto;
             padding: 1em 0;
             overflow: hidden;
             text-align: center;
             border-radius: 10px;
             backdrop-filter: blur(.15rem);
             position: relative;
+            @media (max-width: 900px){
+            position: absolute;
+            top: 60vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            }
             transition: 1s ease;
 
             // HOME CONTENT SHADOW
@@ -341,7 +348,7 @@ body {
                 margin: 1em auto;
                 // margin: 5em auto;
                 transition: .3s ease;
-                font-size: 1.5em;
+                font-size: 1.5rem;
                 text-transform: capitalize;
                 isolation: isolate;
                 z-index: 1;
