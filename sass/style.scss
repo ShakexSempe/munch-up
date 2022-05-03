@@ -515,6 +515,14 @@ body {
 
                 }
             }
+
+            // DATA SCROLL
+            &[data-scroll]{
+                transform: scale(1) translateY(-10vh);
+            }
+            &[data-scroll="in"] {
+                transform: scale(1) translateY(0);
+            }
         }
 
         .gallery {
@@ -537,14 +545,15 @@ body {
                 background-color: $munch-pink-light;
                 padding: .5em;
 
-                img {
-                    &[data-scroll] {
-                        transform: scale(1);
-                    }
+                // DATA SCROLL
+                &[data-scroll] {
+                    transform: scale(1) translateY(10vh);
+                }
 
-                    &[data-scroll="in"] {
-                        transition: 1.5s;
-                    }
+                &[data-scroll="in"] {
+                    transform: scale(1) translateY(0);
+                }
+                img {
 
                     width: 100%;
                     height: 100%;
