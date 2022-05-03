@@ -125,14 +125,14 @@ header .hamburger.active .bar::before {
 }
 header .logo {
   position: relative;
-  top: 30vh;
+  top: 50vh;
   left: 10vw;
   height: 2.5rem;
   overflow: none;
   z-index: 20;
   background-color: #800000;
   border-radius: 50%;
-  transform: scale(5);
+  transform: scale(7);
   transition: all 0.5s ease-out;
 }
 header .logo.active {
@@ -147,7 +147,7 @@ header .logo.active {
     width: auto;
     top: 25vh;
     left: 40vw;
-    transform: scale(6.5);
+    transform: scale(6);
   }
 }
 header .logo img {
@@ -1153,7 +1153,6 @@ section .title p {
   width: 100%;
   padding: 0 5vw;
   margin: 0vh 0 0;
-  font-size: 16px;
 }
 #home::before {
   position: absolute;
@@ -1262,10 +1261,7 @@ section .title p {
 }
 #home .home-content {
   z-index: 1;
-  justify-content: center;
-  border: none;
   outline: none;
-  height: 100%;
   width: 95%;
   margin: 50vh auto 0;
   padding: 1em 0;
@@ -1290,13 +1286,19 @@ section .title p {
 }
 @media (min-width: 1024px) {
   #home .home-content {
-    height: 60%;
-    margin: 20vh 0;
+    height: 50vh;
+    margin: 0vh 0;
     width: 50%;
     border-radius: 10px;
     opacity: 1;
+    backdrop-filter: blur(0.25rem);
     position: absolute;
     right: 5vw;
+    top: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 #home .home-content h1 {
@@ -1324,10 +1326,9 @@ section .title p {
   text-align: center;
   font-family: "Varela Round", sans-serif;
   color: #654321;
+  color: #fff;
   opacity: 1;
-  border: 1px solid pink;
-  background-color: pink;
-  margin: 0.5em auto;
+  margin: 0 auto;
   font-size: 1.5em;
   font-weight: 500;
   line-height: 1.3em;
@@ -1344,8 +1345,6 @@ section .title p {
     background: transparent;
     color: #fff;
     border: none;
-    margin: 1em auto 0.5em;
-    padding: 0.5em 1em;
     font-weight: 500;
   }
 }
