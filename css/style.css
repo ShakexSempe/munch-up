@@ -1341,7 +1341,7 @@ section .title p {
 }
 @media (max-width: 768px) {
   #home .home-content p {
-    font-size: 1.5em;
+    font-size: 1.25em;
     width: auto;
     background: #654321;
     background: transparent;
