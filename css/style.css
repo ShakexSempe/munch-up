@@ -200,7 +200,7 @@ header aside .nav-links {
 header aside .nav-links li {
   padding: 0.5em 1em;
   transition: 0.3s;
-  margin: 5vh 5vw;
+  margin: 1rem 5vw;
   background-color: pink;
   border-radius: 10px;
   border: none;
@@ -210,7 +210,7 @@ header aside .nav-links li {
   transition: 0.3s;
 }
 header aside .nav-links li a {
-  font-size: 1.6em;
+  font-size: 1rem;
 }
 header aside .nav-links li a i {
   color: rgba(12, 12, 12, 0.377);
@@ -218,13 +218,13 @@ header aside .nav-links li a i {
   transition: 0.2s;
 }
 header aside .nav-links li:hover {
-  transform: scale(0.99) translateY(-0.4em);
+  transform: scale(0.99);
 }
 header aside .nav-links li:hover i {
   color: #f75394;
 }
 header aside a {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #000;
   font-weight: 500;
   text-decoration: none;
@@ -234,7 +234,7 @@ header aside a {
 }
 @media (max-width: 768px) {
   header aside a {
-    font-size: 1.7rem;
+    font-size: 0.1rem;
   }
 }
 header aside a::before, header aside a::after {
@@ -366,6 +366,9 @@ header aside.active ul li:nth-child(3) {
 }
 header aside.active ul li:nth-child(4) {
   transition-delay: 0.45s;
+}
+header aside.active ul li:hover {
+  transition: 0.3s;
 }
 header aside.active .social-bar {
   transition-delay: 0.25s;

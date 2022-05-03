@@ -232,7 +232,7 @@ header {
                 padding: .5em 1em;
                 transition: .3s;
                 // margin: 0 5vw 5vh 0;
-                margin: 5vh 5vw;
+                margin: 1rem 5vw;
                 background-color: $munch-pink-light;
                 border-radius: 10px;
                 border: none;
@@ -242,7 +242,7 @@ header {
                 transition: .3s;
 
                 a {
-                    font-size: 1.6em;
+                    font-size: 1rem;
 
                     i {
                         color: rgba(12, 12, 12, 0.377);
@@ -252,7 +252,7 @@ header {
                 }
 
                 &:hover {
-                    transform: scale(.99) translateY(-.4em);
+                    transform: scale(.99);
 
                     i {
                         color: $munch-pink;
@@ -263,10 +263,10 @@ header {
 
         a {
             @media (max-width: 768px) {
-                font-size: 1.7rem;
+                font-size: .1rem;
             }
 
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: #000;
             font-weight: 500;
             text-decoration: none;
@@ -432,6 +432,9 @@ header {
                     }
                     &:nth-child(4){
                         transition-delay: .45s;
+                    }
+                    &:hover {
+                        transition: .3s;
                     }
                 }
             }
