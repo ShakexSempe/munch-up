@@ -636,6 +636,7 @@ body {
     .top-btn {
         position: fixed;
         bottom: -5vh;
+        opacity: 0;
         transition: 1s;
         right: 1rem;
         z-index: 10;
@@ -662,6 +663,7 @@ body {
 
         &.active-btn {
             bottom: 5vh;
+            opacity: 1;
         }
     }
 

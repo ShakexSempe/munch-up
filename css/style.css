@@ -1580,6 +1580,7 @@ footer:hover a::before {
 .top-btn {
   position: fixed;
   bottom: -5vh;
+  opacity: 0;
   transition: 1s;
   right: 1rem;
   z-index: 10;
@@ -1603,6 +1604,7 @@ footer:hover a::before {
 }
 .top-btn.active-btn {
   bottom: 5vh;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
