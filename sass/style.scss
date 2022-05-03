@@ -651,7 +651,8 @@ body {
 
     .top-btn {
         position: fixed;
-        bottom: 1rem;
+        bottom: -5vh;
+        transition: 1s;
         right: 1rem;
         z-index: 10;
         a {
@@ -673,6 +674,10 @@ body {
                     background: hsla(350, 100%, 88%, 1);
                 }
             }
+        }
+
+        &.active-btn {
+            bottom: 5vh;
         }
     }
 

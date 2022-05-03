@@ -1,5 +1,6 @@
 const homeSection = document.getElementById("home");
-console.log(home);
+const homeBtn = document.querySelector(".top-btn");
+console.log(homeBtn);
 const homeOptions = {
     rootMargin: "-62% 0px 0px 0px"
 };
@@ -9,10 +10,13 @@ const homeObserver = new IntersectionObserver(
         entries.forEach(entry => {
             if(!entry.isIntersecting) {
                 console.log("home NOT intersecting");
-                logo.classList.add("active")
+                logo.classList.add("active");
+                homeBtn.classList.add("active-btn");
             } else {
-                logo.classList.remove("active")
-                console.log("home IS intersecting")
+                logo.classList.remove("active");
+                homeBtn.classList.remove("active-btn");
+
+                console.log("home IS intersecting");
             }
         });
     }, homeOptions 

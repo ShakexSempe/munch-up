@@ -1596,7 +1596,8 @@ footer:hover a::before {
 
 .top-btn {
   position: fixed;
-  bottom: 1rem;
+  bottom: -5vh;
+  transition: 1s;
   right: 1rem;
   z-index: 10;
 }
@@ -1616,6 +1617,9 @@ footer:hover a::before {
 .top-btn a:hover i {
   border: 2px solid #000a;
   background: #ffc2cc;
+}
+.top-btn.active-btn {
+  bottom: 5vh;
 }
 
 /*# sourceMappingURL=style.css.map */
