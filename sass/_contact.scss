@@ -141,13 +141,13 @@
                 }
                 label {
                     text-transform: capitalize;
-                    color: $munch-gray;
+                    color: #000;
                     position: absolute;
                     top: 1em;
-                    font-size: 1.2em;
+                    font-size: 1rem;
                     left: 0;
                     padding: 0 4em 0em 0;
-                    letter-spacing: .1em;
+                    letter-spacing: .05rem;
                     transform: translateY(50%);
                     &.required::after {
                         content: '*';
@@ -197,7 +197,7 @@
                     width: 100%;
                     padding: .7em .5em;
                     outline: none;
-                    font-size: 1.2em;
+                    font-size: 1rem;
                     font-weight: 600;
                     margin: 1em 0 5vh;
                     resize: none;
@@ -206,7 +206,10 @@
                     transition: .2s linear;
 
                     &::placeholder {
-                        font-size: .8em;
+                        font-size: .9rem;
+                        opacity: 0;
+                        letter-spacing: .05rem;
+                        text-transform: capitalize;
                         color: rgba(151, 149, 149, 0.822);
                     }
                     &:invalid {
@@ -227,6 +230,14 @@
                         }
                     }
 
+                    // HOVER STATE
+                    &:focus {
+                        &::placeholder {
+                            transition: .4s;
+                            letter-spacing: normal;
+                            opacity: 1;
+                        }
+                    }
                     &[type='submit'] {
                         background: $submit-btn;
                         color: #fff;

@@ -844,13 +844,13 @@ body {
 }
 .contact .contact-form form .row label {
   text-transform: capitalize;
-  color: #434343;
+  color: #000;
   position: absolute;
   top: 1em;
-  font-size: 1.2em;
+  font-size: 1rem;
   left: 0;
   padding: 0 4em 0em 0;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05rem;
   transform: translateY(50%);
 }
 .contact .contact-form form .row label.required::after {
@@ -896,7 +896,7 @@ body {
   width: 100%;
   padding: 0.7em 0.5em;
   outline: none;
-  font-size: 1.2em;
+  font-size: 1rem;
   font-weight: 600;
   margin: 1em 0 5vh;
   resize: none;
@@ -905,7 +905,10 @@ body {
   transition: 0.2s linear;
 }
 .contact .contact-form form .row input::placeholder, .contact .contact-form form .row textarea::placeholder, .contact .contact-form form .row select::placeholder {
-  font-size: 0.8em;
+  font-size: 0.9rem;
+  opacity: 0;
+  letter-spacing: 0.05rem;
+  text-transform: capitalize;
   color: rgba(151, 149, 149, 0.822);
 }
 .contact .contact-form form .row input:invalid, .contact .contact-form form .row textarea:invalid, .contact .contact-form form .row select:invalid {
@@ -923,6 +926,11 @@ body {
 }
 .contact .contact-form form .row input optgroup select, .contact .contact-form form .row textarea optgroup select, .contact .contact-form form .row select optgroup select {
   text-transform: capitalize;
+}
+.contact .contact-form form .row input:focus::placeholder, .contact .contact-form form .row textarea:focus::placeholder, .contact .contact-form form .row select:focus::placeholder {
+  transition: 0.4s;
+  letter-spacing: normal;
+  opacity: 1;
 }
 .contact .contact-form form .row input[type=submit], .contact .contact-form form .row textarea[type=submit], .contact .contact-form form .row select[type=submit] {
   background: linear-gradient(0deg, #660000, #cc0000);
