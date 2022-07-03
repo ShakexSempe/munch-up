@@ -221,8 +221,9 @@ body {
             position: relative;
             @media (max-width: 820px){
             position: absolute;
-            top: 60vh;
-            left: 50vw;
+            top: 60%;
+            left: 50%;
+            width: 90%;
             transform: translate(-50%, -50%);
             }
             transition: 1s ease;
@@ -292,7 +293,7 @@ body {
                 // border: 1px solid pink;
                 // background-color: $munch-pink-light;
                 margin: 0 auto;
-                font-size: 1.5em;
+                font-size: 2rem;
                 font-weight: 500;
                 line-height: 1.3em;
                 border-radius: 10px;
@@ -315,84 +316,7 @@ body {
                 }
             }
 
-            .btn {
-                position: relative;
-                display: block;
-                font-family: $header-font;
-                cursor: pointer;
-                display: inline-block;
-                color: $text-color-light;
-                background: $munch-pink;
-                text-decoration: none;
-                border-radius: 30px;
-                border: none;
-                outline: none;
-                padding: .5em 1em;
-                width: auto;
-                margin: 1em auto;
-                // margin: 5em auto;
-                transition: .3s ease;
-                font-size: 1.5rem;
-                text-transform: capitalize;
-                isolation: isolate;
-                z-index: 1;
-
-                &::before,
-                &::after {
-                    position: absolute;
-                    content: '';
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    transition: .3s ease;
-                    border-radius: 30px;
-                    // background: $btn-brown; 
-                    z-index: -1;
-                }
-
-                &::before {
-                    background: $btn-gradient;
-                    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.300),
-                        inset 3px 3px 3px #fffa,
-                        inset -3px -3px 3px #000a;
-                }
-
-                &::after {
-                    opacity: 0;
-                    background: $btn-gradient-hover;
-                    box-shadow: inset 3px 3px 4px #000a,
-                        inset -3px -3px 2px #fffa,
-                        0px 5px 2px rgba(0, 0, 0, .350);
-                }
-
-                &:hover {
-                    transition: .2s ease;
-                    transform: scale(.98);
-
-                    &::before {
-                        opacity: 0;
-                    }
-
-                    &::after {
-                        opacity: 1;
-                    }
-                }
-
-                &:active {
-                    transition: .3s ease;
-                    transform: scale(.9);
-                }
-
-                @media (max-width: 768px) {
-                    font-size: 1.2em;
-                    margin: .5em auto;
-                }
-
-                @media (max-width: 360px) {
-                    margin: 1em auto;
-                }
-            }
+            
 
         }
 

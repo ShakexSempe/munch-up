@@ -26,34 +26,35 @@ header {
 
     .shop-link {
         position: relative;
-        border-radius: 10px;
+        // border-radius: .5rem;
         height: auto;
-        width: auto;
-        // padding: .1rem 1rem;
+        width: max-content;
         border: none;
         outline: none;
         cursor: pointer;
         z-index: 1;
-        display: block;
+        // display: block;
         transition: .2s;
 
         a {
+            width: 100%;
+            display: grid;
+            place-items: center;
             color: $munch-mist;
-            background: $btn-gradient;
-            border-radius: 20px;
-            padding: .3rem 2rem;
-            box-shadow: inset 2px 2px 2px #fffa,
-                inset -2px -2px 2px #000a,
-                3px 3px 3px rgba(0, 0, 0, .200);
+            padding: .5rem 1rem;
+            font-size: .85rem;
+            @media (min-width: 768px) {
+                font-size: 1rem;
+            }
+            // background: $btn-gradient;
+            // box-shadow: $btn-shadow;
+            // border-radius: 20px;
+            // padding: .3rem 2rem;
 
             i {
-                margin: 0 auto;
                 font-size: 1rem;
                 color: #f4f4f4;
             }
-        }
-        &:hover {
-            transform: scale(.95);
         }
     }
 

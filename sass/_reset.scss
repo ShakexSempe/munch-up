@@ -26,3 +26,85 @@ body {
     opacity: 0;
 }
 // END OF SCROLL OUT
+
+.btn {
+    position: relative;
+    display: block;
+    font-family: $header-font;
+    cursor: pointer;
+    display: inline-block;
+    color: $text-color-light;
+    background-color: $munch-pink;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    padding: .5em 1em;
+    width: 15rem;
+    margin: 1em auto;
+    // margin: 5em auto;
+    transition: .3s ease;
+    font-size: 1.15rem;
+    text-transform: capitalize;
+    letter-spacing: .05rem;
+    isolation: isolate;
+    z-index: 1;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: .3s ease;
+        border-radius: 1.5rem;
+        // background: $btn-brown; 
+        z-index: -1;
+    }
+
+    &::before {
+        background: $btn-gradient;
+        box-shadow: $btn-shadow;
+    }
+
+    &::after {
+        opacity: 0;
+        background: $btn-gradient-hover;
+        box-shadow: $btn-shadow-hover;
+    }
+
+    // BTN HOVER AN D ACTIVE MEDIA QUERY
+    // DESKTOP HOVER
+    @media (min-width: 768px) {
+        width: 20rem;
+        &:hover {
+            transition: .2s ease;
+            letter-spacing: normal;
+            transform: scale(.98);
+            &::before {
+                opacity: 0;
+            }  
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+    // MOBILE ACTIVE
+    @media (max-width: 768px) {
+        &:active {
+            transition: .2s ease;
+            letter-spacing: normal;
+            transform: scale(.98);
+
+            &::before {
+                opacity: 0;
+            }
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}
