@@ -59,7 +59,7 @@ header .hamburger {
   justify-content: center;
   height: 2rem;
   width: 2rem;
-  border: none;
+  border: 2px solid #654321;
   outline: none;
   border-radius: 50%;
   z-index: 20;
@@ -72,33 +72,12 @@ header .hamburger {
     height: 2.5rem;
   }
 }
-header .hamburger::before, header .hamburger::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-  transition: 0.3s;
-}
-header .hamburger::before {
-  box-shadow: inset -2px -2px 2px #000a, inset 2px 2px 2px #fffa, 2px 2px 3px rgba(0, 0, 0, 0.2);
-  background: pink;
-  z-index: -1;
-}
-header .hamburger:hover {
-  transform: scale(0.95);
-}
-header .hamburger:active {
-  transform: scale(0.9);
-}
 header .hamburger .bar {
-  height: 2px;
+  height: 0.15rem;
   width: 50%;
   position: relative;
-  background-color: #434343;
-  background-color: #000;
+  background-color: #654321;
+  border-radius: 0.25rem;
   z-index: -1;
 }
 header .hamburger .bar::before, header .hamburger .bar::after {
@@ -107,7 +86,7 @@ header .hamburger .bar::before, header .hamburger .bar::after {
   height: 100%;
   width: 100%;
   left: 0;
-  background-color: #000;
+  background-color: inherit;
   transition: 0.3s ease;
   transition-property: top, bottom;
 }
@@ -202,7 +181,7 @@ header aside .nav-links li {
   transition: 0.3s;
   margin: 1rem 5vw;
   background-color: pink;
-  border-radius: 10px;
+  border-radius: 1rem;
   border: none;
   outline: none;
   transform: scale(0.1);
@@ -248,10 +227,10 @@ header aside a::before, header aside a::after {
   transition: 0.5s;
 }
 header aside a::before {
-  box-shadow: inset -2px -2px 5px #654321, inset 2px 2px 10px #fff;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15), inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.3);
 }
 header aside a::after {
-  box-shadow: inset -2px -2px 5px #fffa, inset 2px 2px 5px #654321;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.3), inset -2px -2px 2px rgba(255, 255, 255, 0.25);
   opacity: 0;
 }
 header aside a:hover {
@@ -335,10 +314,10 @@ header aside .social-bar a::before, header aside .social-bar a::after {
 }
 header aside .social-bar a::before {
   background-color: #f75394;
-  box-shadow: inset -2px -2px 5px #654321, inset 2px 2px 10px #fff;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15), inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.3);
 }
 header aside .social-bar a::after {
-  box-shadow: inset -2px -2px 5px #fffa, inset 2px 2px 5px #654321;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.3), inset -2px -2px 2px rgba(255, 255, 255, 0.25);
   opacity: 0;
 }
 header aside .social-bar a:hover::before {
@@ -441,12 +420,12 @@ body {
 }
 .btn::before {
   background: linear-gradient(0deg, #db0a5e, #f75394);
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.35), inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15), inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.3);
 }
 .btn::after {
   opacity: 0;
   background: linear-gradient(0deg, #f75394, #db0a5e);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45), inset 2px 2px 2px rgba(0, 0, 0, 0.3), inset -2px -2px 2px rgba(255, 255, 255, 0.25);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.3), inset -2px -2px 2px rgba(255, 255, 255, 0.25);
 }
 @media (min-width: 768px) {
   .btn {
@@ -806,8 +785,9 @@ body {
 }
 .contact .contact-form form .row fieldset legend {
   color: #f75394;
-  font-weight: 600;
-  font-size: 1.2em;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-transform: capitalize;
   margin-left: 0.5em;
 }
 .contact .contact-form form .row fieldset#contact-field {
@@ -817,9 +797,6 @@ body {
   width: 100%;
   height: 150px;
   overflow: hidden;
-}
-.contact .contact-form form .row fieldset#contact-field legend {
-  font-weight: 500;
 }
 @media (max-width: 1024px) {
   .contact .contact-form form .row fieldset#contact-field {
@@ -950,41 +927,40 @@ body {
 .contact .contact-form form .row input[type=submit], .contact .contact-form form .row textarea[type=submit], .contact .contact-form form .row select[type=submit] {
   background: linear-gradient(0deg, #660000, #cc0000);
   color: #fff;
-  width: 100%;
+  width: 20rem;
+  display: block;
   margin: 0 auto 10vh;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 1em;
+  text-transform: capitalize;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
   font-weight: 300;
   border: 0;
   padding: 1em 0.5em;
-  border-radius: 30px;
+  border-radius: 1.5rem;
   border: none;
   outline: none;
   cursor: pointer;
-  letter-spacing: 0.3em;
   position: relative;
-  box-shadow: inset 2px 2px 3px #f0ffff, inset -2px -2px 3px #000, 3px 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15), inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 1024px) {
   .contact .contact-form form .row input[type=submit], .contact .contact-form form .row textarea[type=submit], .contact .contact-form form .row select[type=submit] {
-    font-size: 1em;
+    margin: 0 auto 10vh;
   }
 }
-.contact .contact-form form .row input[type=submit]:hover, .contact .contact-form form .row textarea[type=submit]:hover, .contact .contact-form form .row select[type=submit]:hover {
-  transition: 0.3s ease;
-  transform: scale(0.985);
+@media (min-width: 768px) {
+  .contact .contact-form form .row input[type=submit]:hover, .contact .contact-form form .row textarea[type=submit]:hover, .contact .contact-form form .row select[type=submit]:hover {
+    letter-spacing: normal;
+    transition: 0.3s ease;
+    transform: scale(0.985);
+  }
 }
-.contact .contact-form form .row input[type=submit]:active, .contact .contact-form form .row textarea[type=submit]:active, .contact .contact-form form .row select[type=submit]:active {
-  transform: scale(0.94);
-  transition: 0.3s ease;
-  letter-spacing: 0.1em;
-}
-.contact .contact-form form .row input:hover, .contact .contact-form form .row textarea:hover, .contact .contact-form form .row select:hover {
-  transition: 0.3s ease;
-}
-.contact .contact-form form .row input:hover:focus, .contact .contact-form form .row textarea:hover:focus, .contact .contact-form form .row select:hover:focus {
-  color: #800000;
+@media (max-width: 768px) {
+  .contact .contact-form form .row input[type=submit]:active, .contact .contact-form form .row textarea[type=submit]:active, .contact .contact-form form .row select[type=submit]:active {
+    letter-spacing: normal;
+    transition: 0.3s ease;
+    transform: scale(0.985);
+  }
 }
 .contact .contact-form form .row textarea {
   height: 150px;
