@@ -667,4 +667,47 @@ body {
         }
     }
 
+// LOADER 
+.loader_bg {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(30deg, #faecee, #fff);
+    overflow: hidden;
+    z-index: 999;
+
+    .loader {
+        border: none;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            opacity: 1;
+            border: .5rem solid $munch-pink-light;
+            border-top: .25rem solid $munch-purple;
+            // border-radius: 50%;
+            z-index: 2;
+            animation: spinner 2s linear infinite;
+        }
+
+        @keyframes spinner {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+    }
+    }
+}
+
 
