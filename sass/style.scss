@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&family=Varela+Round&display=swap');
 @import 'variables';
+@import 'components';
 @import 'header';
 @import 'reset';
 @import 'services';
@@ -604,7 +605,7 @@ body {
     .loader {
         border: none;
         height: 3.5rem;
-        width: 3.55rem;
+        width: 3.5rem;
         border-radius: 50%;
         position: absolute;
         top: 50%;
