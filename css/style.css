@@ -16,14 +16,19 @@
   padding: 0;
   display: grid;
   place-items: center;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.2rem;
 }
 .hamburger .btn p {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
   padding: 0.25rem;
+  text-transform: uppercase;
 }
 .hamburger.active-btn .btn {
   letter-spacing: normal;
+}
+.hamburger.active-btn .btn p {
+  font-weight: 300;
 }
 .hamburger .bar {
   height: 0.15rem;
@@ -142,8 +147,8 @@ header {
 }
 @media (max-width: 768px) {
   header {
-    background: pink;
     background: #f4f4f4;
+    background: pink;
     position: fixed;
     top: 0;
     width: 100%;

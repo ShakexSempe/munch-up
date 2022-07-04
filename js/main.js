@@ -26,18 +26,18 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navigation.classList.toggle('active');
     logo.classList.remove("active");
-    hamburger.classList.add("active-btn");
+    hamburger.classList.toggle("active-btn");
 });
 
 // REMOVE HAMBURGER ON LINK CLICK
 const navLinks = document.querySelectorAll('.header a');
 console.log(navLinks);
 navLinks.forEach(link => {
-    link.addEventListener("click" , () => {
+    link.addEventListener("click", () => {
         hamburger.classList.remove('active');
-    navigation.classList.remove('active');
-    logo.classList.remove("active");
-    hamburger.classList.remove("active-btn");
+        navigation.classList.remove('active');
+        logo.classList.remove("active");
+        hamburger.classList.remove("active-btn");
     });
 })
 

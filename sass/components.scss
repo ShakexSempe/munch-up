@@ -22,12 +22,13 @@
             padding: 0;
             display: grid;
             place-items: center;
-            letter-spacing: .15rem;
+            letter-spacing: .2rem;
 
             p {
-                font-size: 1rem;
+                font-size: .9rem;
+                font-weight: 500;
                 padding: .25rem;
-                
+                text-transform: uppercase;
             }
         }
     
@@ -35,6 +36,10 @@
         &.active-btn {
             .btn {
                 letter-spacing: normal;
+
+                p {
+                    font-weight: 300;
+                }
             }
         }
     .bar {
