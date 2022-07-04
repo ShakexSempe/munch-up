@@ -26,6 +26,7 @@ header {
   }
 }
 header .shop-link {
+  display: none;
   position: relative;
   height: auto;
   width: max-content;
