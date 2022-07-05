@@ -7,7 +7,7 @@
   padding: 0;
   z-index: 20;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 .hamburger .menu {
   border: 0.2rem solid #f75394;
@@ -26,6 +26,9 @@
   font-weight: 500;
   text-transform: uppercase;
   transition: 0.25s;
+}
+.hamburger.active-menu {
+  transform: scale(0.9);
 }
 .hamburger.active-menu .menu {
   letter-spacing: normal;
@@ -1184,7 +1187,7 @@ body {
 
 * {
   scroll-behavior: smooth;
-  scroll-padding-top: 10vh;
+  scroll-padding-top: 7vh;
 }
 
 body {
@@ -1317,7 +1320,7 @@ section .title p {
 }
 #home .home-content .btn {
   position: relative;
-  top: 50vh;
+  top: 45vh;
 }
 @media (min-width: 768px) {
   #home .home-content .btn {
@@ -1364,7 +1367,7 @@ section .title p {
 }
 
 main {
-  padding: 5vh 0;
+  padding: 5vh 0 0;
 }
 
 .slogan {
@@ -1407,7 +1410,7 @@ main {
   font-weight: 400;
   color: #51361a;
   border-radius: 5px;
-  padding: 0.5em 0;
+  padding: 1rem 0;
   transition: 0.3s ease;
 }
 .slogan article p:nth-child(2) {

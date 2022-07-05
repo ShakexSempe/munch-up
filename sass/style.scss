@@ -9,7 +9,7 @@
 
 * {
     scroll-behavior: smooth;
-    scroll-padding-top: 10vh;
+    scroll-padding-top: 7vh;
     // border: 2px solid blue;
 }
 
@@ -162,7 +162,7 @@ body {
 
             .btn {
                 position: relative;
-                top: 50vh;
+                top: 45vh;
                 @media (min-width: 768px) {
                     top: 0;
                 }
@@ -250,7 +250,7 @@ body {
         // }
     }
     main {
-        padding: 5vh 0;
+        padding: 5vh 0 0;
     }
     .slogan {
         min-height: 100vh;
@@ -294,7 +294,7 @@ body {
                 font-weight: 400;
                 color: $munch-brown-darkest;
                 border-radius: 5px;
-                padding: .5em 0;
+                padding: 1rem 0;
                 transition: .3s ease;
 
                 &:nth-child(2) {

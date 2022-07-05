@@ -8,7 +8,7 @@
         // border-radius: 50%;
         z-index: 20;
         cursor: pointer;
-        transition: .5s;
+        transition: .25s;
 
         .menu {
             border: .2rem solid $munch-pink;
@@ -34,6 +34,7 @@
     
         // JS CLASS
         &.active-menu {
+            transform: scale(.9);
             .menu {
                 letter-spacing: normal;
 
