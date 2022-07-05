@@ -9,12 +9,15 @@
 
 * {
     scroll-behavior: smooth;
-    scroll-padding-top: 7vh;
+    @media (max-width: 820px){
+        scroll-padding-top: 7vh;
+    }
     // border: 2px solid blue;
 }
 
 body {
-    background-image: radial-gradient( #ffc0cb3f, #a52a2a2d);
+    // background-image: radial-gradient( #ffc0cb3f, #a52a2a2d);
+    background: #f4f4f4;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -311,10 +314,10 @@ body {
 
             // DATA SCROLL
             &[data-scroll]{
-                transform: scale(1) translateY(-10vh);
+                transform: scale(1);
             }
             &[data-scroll="in"] {
-                transform: scale(1) translateY(0);
+                transform: scale(1);
             }
         }
 
@@ -472,7 +475,7 @@ body {
             border-radius: 50%;
             opacity: 1;
             border: .5rem solid $munch-pink-light;
-            border-top: .25rem solid $munch-purple;
+            border-top: .25rem solid $munch-brown-dark;
             // border-radius: 50%;
             z-index: 2;
             animation: spinner 2s linear infinite;

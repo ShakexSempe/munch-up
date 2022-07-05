@@ -99,17 +99,9 @@
         justify-content: center;
         align-items: center;
         transition: .5s ease;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: #ffc0cbf5;
+        background-color: #ffc0cbf5;
             background-image: radial-gradient(rgba(182, 12, 12, 0.2), #ffc0cb00);
-        }
+
 
         ul {
             position: relative;
@@ -374,6 +366,19 @@
 
         .hamburger {
             .menu {
+                background: #000a;
+                p {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    // HERO HEADER 
+    &.hero-header {
+        background: transparent;
+        .hamburger {
+            .menu {
+                background: #000a;
                 p {
                     color: #fff;
                 }

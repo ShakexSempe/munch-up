@@ -27,7 +27,7 @@ homeObserver.observe(home);
 
 // MAIN SECTION OBSERVER
 const mainOptions = {
-    rootMargin: "0% 0px -40% 0px"
+    rootMargin: "0% 0px -85% 0px"
 };
 
 const mainObserver = new IntersectionObserver(
@@ -35,10 +35,10 @@ const mainObserver = new IntersectionObserver(
         entries.forEach(entry => {
             if(!entry.isIntersecting) {
                 console.log("main NOT intersecting");
-                // HEADER.classList.add("active-header");
+                HEADER.classList.add("hero-header");
                 homeBtn.classList.remove("active-btn");
             } else {
-                // HEADER.classList.remove("active-header");
+                HEADER.classList.remove("hero-header");
                 homeBtn.classList.add("active-btn");
                 console.log("main IS intersecting");
             }

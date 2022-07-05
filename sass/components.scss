@@ -11,7 +11,8 @@
         transition: .25s;
 
         .menu {
-            border: .2rem solid $munch-pink;
+            border: .15rem solid $munch-pink;
+            background: #fffa;
             border-radius: 1rem;
             width: 100%;
             height: 2rem;
@@ -24,7 +25,7 @@
             p {
                 color: #000;
                 font-size: .9rem;
-                font-weight: 500;
+                font-weight: 600;
                 // padding: .5rem;
                 text-transform: uppercase;
                 transition: .25s;
@@ -34,53 +35,17 @@
     
         // JS CLASS
         &.active-menu {
-            transform: scale(.9);
+            transform: scale(.95);
             .menu {
+                border-color: #000;
+                background: #000a;
                 letter-spacing: normal;
 
                 p {
+                    color: #fff;
                 }
             }
         }
-    .bar {
-        height: .15rem;
-        width: 50%;
-        position: relative;
-        background-color: $munch-brown-dark;
-        border-radius: .25rem;
-        z-index: -1;
-
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            left: 0;
-            background-color: inherit;
-            transition: 0.3s ease;
-            transition-property: top, bottom;
-
-
-        }
-
-        &::after {
-            top: .35rem;
-        }
-
-        &::before {
-            bottom: .35rem;
-        }
-    }
-
-    &.active .bar::after {
-        top: 0;
-    }
-
-    &.active .bar::before {
-        bottom: 0;
-    }
-
 }
 
 
