@@ -1,25 +1,26 @@
 const homeSection = document.getElementById("home");
+const main = document.getElementById("main");
 const homeBtn = document.querySelector(".top-btn");
-console.log(homeBtn);
-const homeOptions = {
-    rootMargin: "-62% 0px 0px 0px"
+const HEADER = document.getElementById("header");
+// console.log(HEADER);
+const mainOptions = {
+    rootMargin: "-100% 0px 0px 0px"
 };
 
-const homeObserver = new IntersectionObserver(
-    function(entries , homeObserver) {
+const mainObserver = new IntersectionObserver(
+    function(entries , mainObserver) {
         entries.forEach(entry => {
             if(!entry.isIntersecting) {
-                console.log("home NOT intersecting");
-                logo.classList.remove("active");
-                homeBtn.classList.add("active-btn");
-            } else {
-                logo.classList.add("active");
+                console.log("main NOT intersecting");
+                HEADER.classList.add("active-header");
                 homeBtn.classList.remove("active-btn");
-
-                console.log("home IS intersecting");
+            } else {
+                HEADER.classList.remove("active-header");
+                homeBtn.classList.add("active-btn");
+                console.log("main IS intersecting");
             }
         });
-    }, homeOptions 
+    }, mainOptions 
 );
 
-homeObserver.observe(home);
+mainObserver.observe(main);

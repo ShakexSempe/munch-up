@@ -133,7 +133,7 @@
   }
 }
 
-header {
+#header {
   position: fixed;
   top: 0;
   z-index: 20;
@@ -146,9 +146,9 @@ header {
   padding: 0 5vw;
 }
 @media (max-width: 768px) {
-  header {
-    background: #f4f4f4;
+  #header {
     background: pink;
+    background: #f4f4f4;
     position: fixed;
     top: 0;
     width: 100%;
@@ -157,9 +157,10 @@ header {
     align-items: center;
     z-index: 20;
     padding: 0.5rem 1rem;
+    transition: 0.5s;
   }
 }
-header .shop-link {
+#header .shop-link {
   display: none;
   position: relative;
   height: auto;
@@ -170,7 +171,7 @@ header .shop-link {
   z-index: 1;
   transition: 0.2s;
 }
-header .shop-link a {
+#header .shop-link a {
   width: 100%;
   display: grid;
   place-items: center;
@@ -179,42 +180,30 @@ header .shop-link a {
   font-size: 0.85rem;
 }
 @media (min-width: 768px) {
-  header .shop-link a {
+  #header .shop-link a {
     font-size: 1rem;
   }
 }
-header .shop-link a i {
+#header .shop-link a i {
   font-size: 1rem;
   color: #f4f4f4;
 }
-header .logo {
+#header .logo {
   position: relative;
-  top: 0vh;
-  left: 0vw;
   height: 2.5rem;
-  width: 2.5rem;
+  height: 100%;
+  width: auto;
   overflow: hidden;
   z-index: 20;
-  background-color: #800000;
-  border-radius: 50%;
-  transform: scale(1);
   transition: all 0.5s ease-out;
 }
-header .logo.active {
-  transform: scale(4) translateX(10vw) translateY(5vh);
-}
-@media (min-width: 821px) {
-  header .logo.active {
-    transform: scale(7) translateX(2vw) translateY(7vh);
-  }
-}
-header .logo img {
+#header .logo img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
-header aside {
+#header aside {
   position: fixed;
   top: 0;
   left: 100%;
@@ -226,7 +215,7 @@ header aside {
   align-items: center;
   transition: 0.5s ease;
 }
-header aside::before {
+#header aside::before {
   content: "";
   position: absolute;
   top: 0;
@@ -236,32 +225,32 @@ header aside::before {
   background-color: #ffc0cbf5;
   background-image: radial-gradient(rgba(182, 12, 12, 0.2), #ffc0cb00);
 }
-header aside ul {
+#header aside ul {
   position: relative;
 }
-header aside ul li {
+#header aside ul li {
   position: relative;
   list-style: none;
   text-align: left;
 }
-header aside .nav-links {
+#header aside .nav-links {
   width: 300px;
   padding: 1em 0em 1em 1em;
   margin-left: 4em;
 }
 @media (min-width: 1000px) {
-  header aside .nav-links {
+  #header aside .nav-links {
     width: 300px;
     margin: 0;
     padding: 0;
   }
-  header aside .nav-links li {
+  #header aside .nav-links li {
     width: 100%;
     padding: 0;
     margin: 0;
   }
 }
-header aside .nav-links li {
+#header aside .nav-links li {
   padding: 0.5em 1em;
   transition: 0.3s;
   margin: 1rem 5vw;
@@ -273,21 +262,21 @@ header aside .nav-links li {
   opacity: 0;
   transition: 0.3s;
 }
-header aside .nav-links li a {
+#header aside .nav-links li a {
   font-size: 1rem;
 }
-header aside .nav-links li a i {
+#header aside .nav-links li a i {
   color: rgba(12, 12, 12, 0.377);
   margin-right: 0.5em;
   transition: 0.2s;
 }
-header aside .nav-links li:hover {
+#header aside .nav-links li:hover {
   transform: scale(0.99);
 }
-header aside .nav-links li:hover i {
+#header aside .nav-links li:hover i {
   color: #f75394;
 }
-header aside a {
+#header aside a {
   font-size: 2rem;
   color: #000;
   font-weight: 500;
@@ -297,11 +286,11 @@ header aside a {
   z-index: 5;
 }
 @media (max-width: 768px) {
-  header aside a {
+  #header aside a {
     font-size: 0.1rem;
   }
 }
-header aside a::before, header aside a::after {
+#header aside a::before, #header aside a::after {
   position: absolute;
   content: "";
   top: 0;
@@ -311,23 +300,23 @@ header aside a::before, header aside a::after {
   border-radius: 10px;
   transition: 0.5s;
 }
-header aside a::before {
+#header aside a::before {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15), inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.3);
 }
-header aside a::after {
+#header aside a::after {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.3), inset -2px -2px 2px rgba(255, 255, 255, 0.25);
   opacity: 0;
 }
-header aside a:hover {
+#header aside a:hover {
   transition: 0.2s ease;
 }
-header aside a:hover::before {
+#header aside a:hover::before {
   opacity: 0;
 }
-header aside a:hover::after {
+#header aside a:hover::after {
   opacity: 1;
 }
-header aside .social-bar {
+#header aside .social-bar {
   position: absolute;
   top: 0;
   left: 0;
@@ -341,31 +330,31 @@ header aside .social-bar {
   transition-delay: 0.2s;
 }
 @media (max-width: 768px) {
-  header aside .social-bar {
+  #header aside .social-bar {
     width: 50vw;
   }
 }
-header aside .social-bar ul {
+#header aside .social-bar ul {
   display: grid;
   place-items: center;
   gap: 3em;
 }
-header aside .social-bar ul li i {
+#header aside .social-bar ul li i {
   color: #e0ffff;
   transition: 0.2s;
 }
-header aside .social-bar ul li:hover {
+#header aside .social-bar ul li:hover {
   transition: 0.2s;
   transform: scale(0.95);
 }
-header aside .social-bar ul li:hover i {
+#header aside .social-bar ul li:hover i {
   color: #f75394;
 }
-header aside .social-bar ul li:active {
+#header aside .social-bar ul li:active {
   transition: 0.2s;
   transform: scale(0.9);
 }
-header aside .social-bar .email-icon {
+#header aside .social-bar .email-icon {
   position: absolute;
   bottom: 20px;
   margin-bottom: 1em;
@@ -373,20 +362,20 @@ header aside .social-bar .email-icon {
   color: #f75394;
   transition: 0.2s;
 }
-header aside .social-bar .email-icon::before {
+#header aside .social-bar .email-icon::before {
   background-color: #e0ffff;
 }
-header aside .social-bar .email-icon:hover {
+#header aside .social-bar .email-icon:hover {
   color: #b768a2;
 }
-header aside .social-bar a {
+#header aside .social-bar a {
   padding: 0.5em;
   border-radius: 50%;
   font-size: 1.5em;
   position: relative;
   z-index: 1;
 }
-header aside .social-bar a::before, header aside .social-bar a::after {
+#header aside .social-bar a::before, #header aside .social-bar a::after {
   position: absolute;
   content: "";
   top: 0;
@@ -397,50 +386,58 @@ header aside .social-bar a::before, header aside .social-bar a::after {
   transition: 0.3s;
   z-index: -1;
 }
-header aside .social-bar a::before {
+#header aside .social-bar a::before {
   background-color: #f75394;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15), inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.3);
 }
-header aside .social-bar a::after {
+#header aside .social-bar a::after {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.3), inset -2px -2px 2px rgba(255, 255, 255, 0.25);
   opacity: 0;
 }
-header aside .social-bar a:hover::before {
+#header aside .social-bar a:hover::before {
   opacity: 0;
 }
-header aside .social-bar a:hover::after {
+#header aside .social-bar a:hover::after {
   opacity: 1;
 }
-header aside.active {
+#header aside.active {
   left: 0;
 }
-header aside.active ul li {
+#header aside.active ul li {
   transform: scale(1);
   transition: 0.5s;
   opacity: 1;
 }
-header aside.active ul li:nth-child(1) {
+#header aside.active ul li:nth-child(1) {
   transition-delay: 0.3s;
 }
-header aside.active ul li:nth-child(2) {
+#header aside.active ul li:nth-child(2) {
   transition-delay: 0.35s;
 }
-header aside.active ul li:nth-child(3) {
+#header aside.active ul li:nth-child(3) {
   transition-delay: 0.4s;
 }
-header aside.active ul li:nth-child(4) {
+#header aside.active ul li:nth-child(4) {
   transition-delay: 0.45s;
 }
-header aside.active ul li:hover {
+#header aside.active ul li:hover {
   transition: 0.3s;
 }
-header aside.active .social-bar {
+#header aside.active .social-bar {
   transition-delay: 0.25s;
   width: 5vw;
 }
 @media (max-width: 768px) {
-  header aside.active .social-bar {
+  #header aside.active .social-bar {
     width: 20vw;
+  }
+}
+#header.active-header {
+  height: 20vh;
+}
+@media (min-width: 820px) {
+  #header.active-header {
+    height: 25vh;
   }
 }
 
@@ -1212,7 +1209,7 @@ section .title p {
   min-height: 100vh;
   width: 100%;
   margin: 0vh 0 0;
-  background: url(../images/heather-mount-kg60vwnXHro-unsplash-min.jpg);
+  background: url(../images/hero-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1221,6 +1218,7 @@ section .title p {
 @media (min-width: 768px) {
   #home {
     background-attachment: fixed;
+    background: url(../images/heather-mount-kg60vwnXHro-unsplash-min.jpg);
   }
 }
 #home::after {
@@ -1438,8 +1436,6 @@ section .title p {
   }
 }
 .slogan article {
-  position: sticky;
-  top: 10vh;
   border: 3px solid #f75394;
   background-color: #fff;
   width: 100%;
@@ -1618,6 +1614,7 @@ footer:hover a::before {
 }
 
 .loader_bg {
+  display: none;
   position: fixed;
   top: 0;
   width: 100vw;

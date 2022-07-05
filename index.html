@@ -40,7 +40,7 @@
     <div class="loader_bg">
         <div class="loader"></div>
     </div>
-    <div class="container">
+    <div class="container" id="container">
         <header class="header" id="header">
             <figure class="logo">
                 <a title="Munch Up Home" href="#">
@@ -48,15 +48,17 @@
             </figure>
             <div class="shop-link">
                 <a class="btn" title="Shop" href="#contact">
-                place order
-                <!-- <i class="fas fa-shopping-cart"></i> -->
+                    place order
+                    <!-- <i class="fas fa-shopping-cart"></i> -->
                 </a>
             </div>
             <div class="hamburger">
-                <div class="btn"><p>menu</p></div>
+                <div class="btn">
+                    <p>menu</p>
+                </div>
                 <!-- <div class="bar"></div> -->
             </div>
-            
+
             <aside class="navigation">
                 <ul class="nav-links">
                     <li><a href="#"><i class="fas fa-home"></i>home</a></li>
@@ -81,166 +83,171 @@
                 </div>
             </aside>
         </header>
-
-        <section id="home">
+        <section id="home" class="hero">
             <div class="home-content" id="home-logo">
                 <!-- <h1>munch</h1>
                 <h1>UP<span>&trade;</span></h1> -->
                 <p>Bakery & Cupcake shop</p>
                 <a href="#gallery" class="btn">view our munchies</a>
             </div>
-                <!-- <div class="home-img">
+            <!-- <div class="home-img">
                     <a href="#home-logo">
                     <img src="images/logo-min.jpg" alt="">
                 </a>
                 </div> -->
         </section>
+        <main id="main">
+            <section class="slogan">
+                <article data-scroll>
+                    <h2>We bake & make: </h2>
+                    <p>Cakes, cake pops, cupcakes cakesicles and party combos</p>
+                </article>
+                <div id="gallery" class="gallery">
+                    <figure data-scroll>
+                        <img src="images/item-1-min.jpg" loading="lazy" alt="img">
+                    </figure>
+                    <figure data-scroll>
+                        <img src="images/item-21-min.jpg" loading="lazy" alt="img">
+                    </figure>
+                    <figure data-scroll>
+                        <img src="images/item-14-min.jpg" loading="lazy" alt="img">
+                    </figure>
+                    <figure data-scroll>
+                        <img src="images/item-13-min.jpg" loading="lazy" alt="img">
+                    </figure>
+                    <figure data-scroll>
+                        <img src="images/item-6-min.jpg" loading="lazy" alt="img">
+                    </figure>
+                    <figure data-scroll>
+                        <img src="images/item-9-min.jpg" loading="lazy" alt="img">
+                    </figure>
+                </div>
+            </section>
 
-        <section  class="slogan">
-            <article data-scroll>
-                <h2>We bake & make: </h2>
-                <p>Cakes, cake pops, cupcakes cakesicles and party combos</p>
-            </article>
-            <div id="gallery" class="gallery">
-                <figure data-scroll>
-                    <img src="images/item-1-min.jpg" loading="lazy" alt="img">
-                </figure>
-                <figure data-scroll>
-                    <img src="images/item-21-min.jpg" loading="lazy" alt="img">
-                </figure>
-                <figure data-scroll>
-                    <img src="images/item-14-min.jpg" loading="lazy" alt="img">
-                </figure>
-                <figure data-scroll>
-                    <img src="images/item-13-min.jpg" loading="lazy" alt="img">
-                </figure>
-                <figure data-scroll>
-                    <img src="images/item-6-min.jpg" loading="lazy" alt="img">
-                </figure>
-                <figure data-scroll>
-                    <img src="images/item-9-min.jpg" loading="lazy" alt="img">
-                </figure>
-            </div>
-        </section>
 
-        
-        <div id="contact" class="contact">
-            <div id="form" class="contact-form">
-                <h1 title="contact form" class="contact-info-title">order form</h1>
-                <form action="https://formsubmit.co/bshakex@gmail.com" method="POST">
-                    <div class="row">
-                        <fieldset id="contact-field">
-                            <legend>contact info</legend>
-                            <div class="input50">
-                                <label for="name" class="required">Name</label>
-                                <input tabindex="1" name="name" type="text" id="name" placeholder="name & surname"
-                                    required>
-                            </div>
+            <div id="contact" class="contact">
+                <div id="form" class="contact-form">
+                    <h1 title="contact form" class="contact-info-title">order form</h1>
+                    <form action="https://formsubmit.co/bshakex@gmail.com" method="POST">
+                        <div class="row">
+                            <fieldset id="contact-field">
+                                <legend>contact info</legend>
+                                <div class="input50">
+                                    <label for="name" class="required">Name</label>
+                                    <input tabindex="1" name="name" type="text" id="name" placeholder="name & surname"
+                                        required>
+                                </div>
 
-                            <div class="input50">
-                                <label for="name" class="required">email</label>
-                                <input tabindex="2" name="email" type="email" placeholder="email" required>
-                            </div>
-                            <div class="input50">
-                                <label for="tel" class="required">phone</label>
-                                <input tabindex="3" name="tel" id="tel" type="tel" placeholder="phone number" required>
-                            </div>
-                        </fieldset>
-                    </div>
-                    <!-- treat and flavour -->
-                    <div class="row">
-                        <div class="input50">
-                            <fieldset id="treats"> <legend>choose a treat & flavor</legend>
-                           <label for="item">item</label> 
-                           <select name="item">
-                                <optgroup label="cakes">
-                                    <option disabled="disabled" selected="selected">Cake or Treat?</option>
-                                    <option>birthday cake</option>
-                                    <option>holiday cake</option>
-                                    <option>branded cake</option>
-                                </optgroup>
-                                <optgroup label="Cupcakes">
-                                    <option>birthday cupcake</option>
-                                    <option>holiday cupcake</option>
-                                </optgroup>
-                                <optgroup label="Treats">
-                                    <option>cake pops</option>
-                                    <option>party combos</option>
-                                    <option>cakesicles</option>
-                                </optgroup>
-                                </select>
-
-                                <label for="topper">topper</label>
-
-                                <select name="cake-topper">
-                                    <optgroup label="cake-topper">
-                                    <option disabled="disabled" selected="selected">Cake Topper</option>
-
-                                        <option>edible</option>
-                                        <option>decorative</option>
-                                    </optgroup>
-                                    </select>
+                                <div class="input50">
+                                    <label for="name" class="required">email</label>
+                                    <input tabindex="2" name="email" type="email" placeholder="email" required>
+                                </div>
+                                <div class="input50">
+                                    <label for="tel" class="required">phone</label>
+                                    <input tabindex="3" name="tel" id="tel" type="tel" placeholder="phone number"
+                                        required>
+                                </div>
                             </fieldset>
                         </div>
-                    <!-- end of treat and flavour -->
-                        <div class="input100">
-                            <fieldset id="custom-classic"><legend>customize</legend>
-                                <label for="name">custom:</label>
-                            <textarea name="custom" id="custom" placeholder="eg. Spiderman cake for 9 year old."></textarea>
-                        </fieldset>
+                        <!-- treat and flavour -->
+                        <div class="row">
+                            <div class="input50">
+                                <fieldset id="treats">
+                                    <legend>choose a treat & flavor</legend>
+                                    <label for="item">item</label>
+                                    <select name="item">
+                                        <optgroup label="cakes">
+                                            <option disabled="disabled" selected="selected">Cake or Treat?</option>
+                                            <option>birthday cake</option>
+                                            <option>holiday cake</option>
+                                            <option>branded cake</option>
+                                        </optgroup>
+                                        <optgroup label="Cupcakes">
+                                            <option>birthday cupcake</option>
+                                            <option>holiday cupcake</option>
+                                        </optgroup>
+                                        <optgroup label="Treats">
+                                            <option>cake pops</option>
+                                            <option>party combos</option>
+                                            <option>cakesicles</option>
+                                        </optgroup>
+                                    </select>
+
+                                    <label for="topper">topper</label>
+
+                                    <select name="cake-topper">
+                                        <optgroup label="cake-topper">
+                                            <option disabled="disabled" selected="selected">Cake Topper</option>
+
+                                            <option>edible</option>
+                                            <option>decorative</option>
+                                        </optgroup>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <!-- end of treat and flavour -->
+                            <div class="input100">
+                                <fieldset id="custom-classic">
+                                    <legend>customize</legend>
+                                    <label for="name">custom:</label>
+                                    <textarea name="custom" id="custom"
+                                        placeholder="eg. Spiderman cake for 9 year old."></textarea>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input100">
+                                <input title="submit order" type="submit" value="submit order">
+                            </div>
+                        </div>
+                        <!-- thank you page -->
+                        <input type="hidden" name="_next" value="https://munch-up.netlify.app/thanks.html">
+                        <!-- subject -->
+                        <input type="hidden" name="_cc" value="munchup1811@gmail.com">
+                        <input type="hidden" name="_subject" value="New order!">
+                        <input type="hidden" name="_autoresponse" value="Your order has been placed">
+                        <input type="hidden" name="_template" value="table">
+
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h1 title="contact info: munch up" class="contact-info-title">contact info</h1>
+                    <div class="info-box">
+                        <i class="fas fa-map-marked-alt contact-icon"></i>
+                        <div class="details">
+                            <h2>address</h2>
+                            <p>Midrand, South Africa</p>
                         </div>
                     </div>
-                    
-                    <div class="row">
-                        <div class="input100">
-                            <input title="submit order" type="submit" value="submit order">
+
+                    <div class="info-box">
+                        <i class="fas fa-at contact-icon"></i>
+                        <div class="details">
+                            <h2>email</h2>
+                            <a href="mailto:munchup1811@gmail.com">munchup1811@gmail.com</a>
                         </div>
                     </div>
-                    <!-- thank you page -->
-                    <input type="hidden" name="_next" value="https://munch-up.netlify.app/thanks.html">
-                    <!-- subject -->
-                    <input type="hidden" name="_cc" value="munchup1811@gmail.com">
-                    <input type="hidden" name="_subject" value="New order!">
-                    <input type="hidden" name="_autoresponse" value="Your order has been placed">
-                    <input type="hidden" name="_template" value="table">
 
-                </form>
+                    <div class="info-box">
+                        <i class="fas fa-mobile-alt contact-icon"></i>
+                        <div class="details">
+                            <h2>call us</h2>
+                            <a href="tel:+27724407705">+27724407705</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
-            <div class="contact-info">
-                <h1 title="contact info: munch up" class="contact-info-title">contact info</h1>
-                <div class="info-box">
-                    <i class="fas fa-map-marked-alt contact-icon"></i>
-                    <div class="details">
-                        <h2>address</h2>
-                        <p>Midrand, South Africa</p>
-                    </div>
-                </div>
-            
-                <div class="info-box">
-                    <i class="fas fa-at contact-icon"></i>
-                    <div class="details">
-                        <h2>email</h2>
-                        <a href="mailto:munchup1811@gmail.com">munchup1811@gmail.com</a>
-                    </div>
-                </div>
-            
-                <div class="info-box">
-                    <i class="fas fa-mobile-alt contact-icon"></i>
-                    <div class="details">
-                        <h2>call us</h2>
-                        <a href="tel:+27724407705">+27724407705</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <footer>
-            <p>copyright&copy; <a href="https://www.facebook.com/Munch-Up-107890190776218" target="_blank">Munch UP</a>&trade;</p>
-            <p>web design: <a href="http://shakexsempe.netlify.app/" target="_blank">Shakex Sempe</a> <span id="date"></span> 
-            </p>
-        </footer>
-        
+            <footer>
+                <p>copyright&copy; <a href="https://www.facebook.com/Munch-Up-107890190776218" target="_blank">Munch
+                        UP</a>&trade;</p>
+                <p>web design: <a href="http://shakexsempe.netlify.app/" target="_blank">Shakex Sempe</a> <span
+                        id="date"></span>
+                </p>
+            </footer>
+        </main>
     </div>
         <!-- BACK TO TOP -->
         <div class="top-btn">
@@ -251,11 +258,11 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- PRELOADER SCRIPT -->
-    <script>
+    <!-- <script>
         setTimeout(function () {
             $('.loader_bg').fadeToggle();
         }, 4500);
-    </script>
+    </script> -->
     <script src="https://use.fontawesome.com/3b4fc72e2a.js"></script>
     <script src="js/main.js"></script>
     <script src="js/io.js"></script>
