@@ -1,7 +1,11 @@
 #header {
-    @media (max-width: 768px) {
+    @media (min-width: 820px) {
+        background: transparent;
+    }
+    @media (max-width: 820px) {
         background: pink;
         background: #f4f4f4;
+        background: transparent;
         // box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.836);
         position: fixed;
         top: 0;
@@ -12,9 +16,8 @@
         align-items: center;
         z-index: 20;
         padding: .5rem 1rem;
-        transition: .5s;
     }
-
+    
     position: fixed;
     top: 0;
     z-index: 20;
@@ -25,6 +28,7 @@
     height: 8vh;
     width: 100%;
     padding: 0 5vw;
+    transition: .5s;
 
     .shop-link {
         display: none;
