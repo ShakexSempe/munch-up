@@ -2,7 +2,7 @@
 /*munch theme*/
 .hamburger {
   height: auto;
-  width: 7rem;
+  width: 5rem;
   outline: none;
   padding: 0;
   z-index: 20;
@@ -184,8 +184,8 @@
 @media (max-width: 820px) {
   #header {
     background: pink;
-    background: #f4f4f4;
     background: transparent;
+    background: #f4f4f4;
     position: fixed;
     top: 0;
     width: 100%;
@@ -468,7 +468,8 @@
   }
 }
 #header.active-header {
-  height: 20vh;
+  height: 25vh;
+  background: transparent;
 }
 @media (min-width: 820px) {
   #header.active-header {
@@ -1280,7 +1281,7 @@ section .title p {
   border-radius: 10px;
   position: relative;
   position: relative;
-  top: 20vh;
+  top: 25vh;
   transition: 1s ease;
   text-transform: capitalize;
 }
@@ -1300,11 +1301,11 @@ section .title p {
 }
 #home .home-content h1 {
   position: relative;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.5;
   letter-spacing: 0.05rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #fff;
 }
 @media (min-width: 768px) {
@@ -1315,7 +1316,7 @@ section .title p {
 }
 #home .home-content .btn {
   position: relative;
-  top: 55vh;
+  top: 50vh;
 }
 @media (min-width: 768px) {
   #home .home-content .btn {
@@ -1359,6 +1360,10 @@ section .title p {
   .pad {
     margin: 0 10vw;
   }
+}
+
+main {
+  padding: 5vh 0;
 }
 
 .slogan {

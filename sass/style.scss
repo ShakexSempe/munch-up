@@ -129,7 +129,7 @@ body {
             // backdrop-filter: blur(.15rem);
             position: relative;
             position: relative;
-            top: 20vh;
+            top: 25vh;
             transition: 1s ease;
             text-transform: capitalize;
             @media (min-width: 768px) {
@@ -151,11 +151,11 @@ body {
             }
             h1 {
                 position: relative;
-                font-weight: 700;
+                font-weight: 600;
                 line-height: 1.5;
                 letter-spacing: .05rem;
                 text-align: center;
-                font-size: 1.5rem;
+                font-size: 1.7rem;
                 color: #fff;
                 @media (min-width: 768px) {
                     color: $munch-brown-dark;
@@ -165,7 +165,7 @@ body {
 
             .btn {
                 position: relative;
-                top: 55vh;
+                top: 50vh;
                 @media (min-width: 768px) {
                     top: 0;
                 }
@@ -252,7 +252,9 @@ body {
         //     // background-size: 100%;
         // }
     }
-
+    main {
+        padding: 5vh 0;
+    }
     .slogan {
         min-height: 100vh;
         width: 100%;

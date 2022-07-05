@@ -1,6 +1,6 @@
 const hamburger = document.querySelector('.hamburger');
 const navigation = document.querySelector('.navigation');
-const home = document.querySelector('.home-content');
+// const home = document.querySelector('.home-content');
 const homeImg = document.querySelector('.home-img');
 const logo = document.querySelector(".logo");
 

@@ -4,8 +4,8 @@
     }
     @media (max-width: 820px) {
         background: pink;
-        background: #f4f4f4;
         background: transparent;
+        background: #f4f4f4;
         // box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.836);
         position: fixed;
         top: 0;
@@ -366,7 +366,8 @@
 
     // IO HEADER
     &.active-header {
-        height: 20vh;
+        height: 25vh;
+        background: transparent;
         @media (min-width: 820px) {
             height: 25vh;
         }
