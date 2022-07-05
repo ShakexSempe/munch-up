@@ -27,6 +27,8 @@ hamburger.addEventListener('click', () => {
     navigation.classList.toggle('active');
     logo.classList.remove("active");
     hamburger.classList.toggle("active-btn");
+    HEADER.classList.remove("active-header");
+
 });
 
 // REMOVE HAMBURGER ON LINK CLICK
