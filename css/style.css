@@ -1244,7 +1244,7 @@ section .title p {
 }
 @media (min-width: 768px) {
   #home {
-    background: url(../images/desk-hero-1.jpg);
+    background: url(../images/desk-hero.jpg);
     background-attachment: fixed;
     background-size: 100%;
     background-position: center;
