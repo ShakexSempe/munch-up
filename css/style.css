@@ -237,7 +237,6 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 #header aside {
   position: fixed;
@@ -1261,6 +1260,16 @@ section .title p {
     background-repeat: no-repeat;
   }
 }
+#home::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #000a, transparent);
+  opacity: 0.6;
+}
 #home .home-content {
   z-index: 1;
   outline: none;
@@ -1269,7 +1278,6 @@ section .title p {
   padding: 1rem 0;
   text-align: center;
   border-radius: 10px;
-  backdrop-filter: blur(0.15rem);
   position: relative;
   position: relative;
   top: 20vh;
@@ -1308,6 +1316,11 @@ section .title p {
 #home .home-content .btn {
   position: relative;
   top: 55vh;
+}
+@media (min-width: 768px) {
+  #home .home-content .btn {
+    top: 0;
+  }
 }
 #home .home-content p {
   text-align: center;
