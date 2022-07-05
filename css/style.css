@@ -9,7 +9,9 @@
   cursor: pointer;
   transition: 0.5s;
 }
-.hamburger .btn {
+.hamburger .menu {
+  border: 0.2rem solid #f75394;
+  border-radius: 1rem;
   width: 100%;
   height: 2rem;
   margin: 0;
@@ -18,17 +20,15 @@
   place-items: center;
   letter-spacing: 0.2rem;
 }
-.hamburger .btn p {
+.hamburger .menu p {
+  color: #000;
   font-size: 0.9rem;
   font-weight: 500;
-  padding: 0.25rem;
   text-transform: uppercase;
+  transition: 0.25s;
 }
-.hamburger.active-btn .btn {
+.hamburger.active-menu .menu {
   letter-spacing: normal;
-}
-.hamburger.active-btn .btn p {
-  font-weight: 300;
 }
 .hamburger .bar {
   height: 0.15rem;
@@ -475,6 +475,9 @@
   #header.active-header {
     height: 25vh;
   }
+}
+#header.active-header .hamburger .menu p {
+  color: #fff;
 }
 
 * {
@@ -1272,18 +1275,16 @@ section .title p {
   opacity: 0.6;
 }
 #home .home-content {
-  z-index: 1;
-  outline: none;
-  width: 100%;
-  margin: 0 auto;
-  padding: 1rem 0;
-  text-align: center;
-  border-radius: 10px;
-  position: relative;
   position: relative;
   top: 25vh;
-  transition: 1s ease;
+  width: 100%;
+  padding: 1rem 0;
+  margin: 0 auto;
+  text-align: center;
   text-transform: capitalize;
+  outline: none;
+  transition: 1s ease;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   #home .home-content {
@@ -1302,10 +1303,10 @@ section .title p {
 #home .home-content h1 {
   position: relative;
   font-weight: 600;
-  line-height: 1.5;
   letter-spacing: 0.05rem;
   text-align: center;
   font-size: 1.7rem;
+  line-height: 1.5;
   color: #fff;
 }
 @media (min-width: 768px) {

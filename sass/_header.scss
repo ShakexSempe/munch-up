@@ -371,5 +371,13 @@
         @media (min-width: 820px) {
             height: 25vh;
         }
+
+        .hamburger {
+            .menu {
+                p {
+                    color: #fff;
+                }
+            }
+        }
     }
 }

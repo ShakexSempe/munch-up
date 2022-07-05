@@ -26,7 +26,7 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navigation.classList.toggle('active');
     logo.classList.remove("active");
-    hamburger.classList.toggle("active-btn");
+    hamburger.classList.toggle("active-menu");
     HEADER.classList.remove("active-header");
 
 });
@@ -39,7 +39,7 @@ navLinks.forEach(link => {
         hamburger.classList.remove('active');
         navigation.classList.remove('active');
         logo.classList.remove("active");
-        hamburger.classList.remove("active-btn");
+        hamburger.classList.remove("active-menu");
     });
 })
 

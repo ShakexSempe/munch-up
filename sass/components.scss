@@ -1,9 +1,5 @@
-   // hamburger icon
+   // MENU TOGGLE
     .hamburger {
-        // position: relative;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
         height: auto;
         width: 5rem;
         // border: 2px solid $munch-brown-dark;
@@ -14,8 +10,9 @@
         cursor: pointer;
         transition: .5s;
 
-        .btn {
-            // border: 2px solid blue;
+        .menu {
+            border: .2rem solid $munch-pink;
+            border-radius: 1rem;
             width: 100%;
             height: 2rem;
             margin: 0;
@@ -25,20 +22,22 @@
             letter-spacing: .2rem;
 
             p {
+                color: #000;
                 font-size: .9rem;
                 font-weight: 500;
-                padding: .25rem;
+                // padding: .5rem;
                 text-transform: uppercase;
+                transition: .25s;
             }
+
         }
     
         // JS CLASS
-        &.active-btn {
-            .btn {
+        &.active-menu {
+            .menu {
                 letter-spacing: normal;
 
                 p {
-                    font-weight: 300;
                 }
             }
         }
