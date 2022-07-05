@@ -1534,7 +1534,6 @@ footer:hover a::before {
 }
 
 .loader_bg {
-  display: none;
   position: fixed;
   top: 0;
   width: 100vw;
