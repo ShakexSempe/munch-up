@@ -29,7 +29,7 @@ body {
 }
     
 
-    section {
+    .hero {
         margin-top: 5vh;
 
         @media (max-width: 768px) {
@@ -273,12 +273,12 @@ body {
         article {
             // position: sticky;
             // top: 10vh;
-            border: 3px solid $munch-pink;
-            background-color: $munch-white;
+            // border: .1rem solid $munch-pink;
+            // background-color: $munch-white;
             width: 100%;
             border-radius: 5px;
-            margin: 0 0 15vh;
-            padding: 1em 0;
+            margin: 0 auto 10vh;
+            padding: .5rem;
             text-align: center;
             display: grid;
             place-items: center;
@@ -287,6 +287,7 @@ body {
             h2 {
                 color: $munch-brown-dark;
                 font-size: 1.5rem;
+                // font-weight: 700;
                 text-transform: capitalize;
             }
 
@@ -294,23 +295,12 @@ body {
                 margin: 0;
                 text-align: center;
                 font-family: 'Varela Round', sans-serif;
-                font-size: 1rem;
-                font-weight: 400;
-                color: $munch-brown-darkest;
+                font-size: 1.25rem;
+                font-weight: 300;
+                color: $munch-brown-dark;
                 border-radius: 5px;
                 padding: 1rem 0;
                 transition: .3s ease;
-
-                &:nth-child(2) {
-                    color: $text-color-brown;
-                }
-
-                @media (max-width:768px) {
-                    font-size: 1.5em;
-                    margin: 0;
-                    width: 90%;
-
-                }
             }
 
             // DATA SCROLL

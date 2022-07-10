@@ -69,18 +69,18 @@
                 }
                 
                 fieldset {
-                    padding: 1em;
+                    padding: 1rem .5rem;
                     display: flex;
                     flex-direction: column;
                     margin: 2em auto;
-                    border: 3px solid $munch-pink-light;
+                    border: .15rem solid $munch-pink-light;
                     height: auto;
-                    border-radius: 5px;
+                    border-radius: .5rem;
                     overflow: hidden;
                     
 
                     legend {
-                        color: $munch-pink;
+                        color: $munch-brown;
                         font-weight: 500;
                         font-size: 1.1rem;
                         text-transform: capitalize;
@@ -100,7 +100,7 @@
                             flex-direction: column;
                             margin-bottom: 5vh;
                             height: auto;
-                            padding: 1em .5em 10vh;
+                            padding: 1rem 0 2rem ;
                             
                             .input50 {
                                 height: auto;
@@ -207,6 +207,7 @@
 
                     &::placeholder {
                         font-size: .9rem;
+                        font-weight: 400;
                         opacity: 0;
                         letter-spacing: .05rem;
                         text-transform: capitalize;
@@ -308,7 +309,7 @@
             align-items: flex-start;
             margin-bottom: 40px;
             padding: .5em;
-            border: 1px solid $munch-brown;
+            border: 1px solid $munch-brown-darkest;
             border-radius: 5px;
             // overflow: hidden;
             width: 100%;
@@ -323,7 +324,7 @@
                 width: 20px;
                 margin-right: .5em;
                 font-size: 2em;
-                color: $munch-brown;
+                color: $munch-brown-darkest;
             }
             
             .details{
@@ -337,10 +338,12 @@
                 h2 {
                     font-size: 1.5em;
                     color: $munch-brown;
+                    color: #000;
                     margin-bottom: .5em;
                     font-family: $header-font;
                     text-transform: capitalize;
                 }
+                
                 a, p {
                     font-family: $content-font;
                     font-weight: 600;
@@ -363,6 +366,9 @@
                         &::after{opacity:1;}
                         transform: scale(1.04);
                     } 
+                }
+                a {
+                    color: $munch-brown;
                 }
             }
             // info box items hover state
