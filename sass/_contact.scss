@@ -73,9 +73,9 @@
                     display: flex;
                     flex-direction: column;
                     margin: 2em auto;
-                    border: .15rem solid $munch-pink-light;
+                    border: .1rem solid $munch-brown-darkest;
                     height: auto;
-                    border-radius: .5rem;
+                    border-radius: .25rem;
                     overflow: hidden;
                     
 
@@ -116,7 +116,6 @@
                         padding: 1em;
                         label {
                             position: relative;
-                            color: $munch-gray;
                             transform: translateY(1em);
                         }
                         option {
@@ -141,10 +140,11 @@
                 }
                 label {
                     text-transform: capitalize;
-                    color: #000;
+                    color: $munch-brown;
                     position: absolute;
                     top: 1em;
                     font-size: 1rem;
+                    font-weight: 600;
                     left: 0;
                     padding: 0 4em 0em 0;
                     letter-spacing: .05rem;
@@ -192,13 +192,13 @@
                     position: relative;
                     border: 2px solid #333;
                     
-                    color: $munch-brown-dark;
+                    color: #000;
                     background: transparent;
                     width: 100%;
                     padding: .7em .5em;
                     outline: none;
                     font-size: 1rem;
-                    font-weight: 600;
+                    font-weight: 500;
                     margin: 1em 0 5vh;
                     resize: none;
                     bottom: -2em;
@@ -214,8 +214,8 @@
                         color: rgba(151, 149, 149, 0.822);
                     }
                     &:invalid {
-                        border: 1px solid purple;
-                        background-color: rgba(255, 192, 203, 0.200);
+                        border: 1px solid $munch-brown-dark;
+                        background-color: #eee;
                     }
                     &:valid {
                         border: 2px solid pink;
@@ -254,7 +254,7 @@
                         }
                         font-weight: 300;
                         border: 0;
-                        padding: .7rem 1rem;
+                        padding: 1rem;
                         border-radius: 1.5rem;
                         border: none;
                         outline: none;
@@ -293,22 +293,22 @@
     .contact-info {
         width: 350px;
         background: #f9f9f9;
-        padding: 10vh 1em 20px;
+        padding: 10vh .5rem 20px;
         margin: 10vh 0;
         border-radius: 10px;
         // border: 1px solid green;
         
         @media (max-width: 1024px){
-            width: 95%;
-            margin: 20px auto;
-            padding: 1em;
+            // width: 95%;
+            margin: 1rem auto;
+            // padding: 1rem;
         }
 
         .info-box {
             display: flex;
             align-items: flex-start;
             margin-bottom: 40px;
-            padding: .5em;
+            padding: 1rem .5em;
             border: 1px solid $munch-brown-darkest;
             border-radius: 5px;
             // overflow: hidden;
