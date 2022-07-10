@@ -816,8 +816,8 @@ body {
   overflow: hidden;
 }
 .contact .contact-form form .row fieldset legend {
-  color: #800000;
-  font-weight: 500;
+  color: #51361a;
+  font-weight: 600;
   font-size: 1.1rem;
   text-transform: capitalize;
   margin-left: 0.5em;
@@ -879,7 +879,7 @@ body {
   position: absolute;
   top: 1em;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   left: 0;
   padding: 0 4em 0em 0;
   letter-spacing: 0.05rem;
@@ -943,6 +943,7 @@ body {
   letter-spacing: 0.05rem;
   text-transform: capitalize;
   color: rgba(151, 149, 149, 0.822);
+  color: #333;
 }
 .contact .contact-form form .row input:invalid, .contact .contact-form form .row textarea:invalid, .contact .contact-form form .row select:invalid {
   border: 1px solid #654321;
@@ -1053,8 +1054,7 @@ body {
 }
 .contact .contact-info .info-box .details h2 {
   font-size: 1.5em;
-  color: #800000;
-  color: #000;
+  color: #51361a;
   margin-bottom: 0.5em;
   font-family: "Raleway", sans-serif;
   text-transform: capitalize;
@@ -1062,8 +1062,9 @@ body {
 .contact .contact-info .info-box .details a, .contact .contact-info .info-box .details p {
   font-family: "Varela Round", sans-serif;
   font-weight: 600;
-  color: #000;
-  font-size: 1em;
+  color: #800000;
+  font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
   margin: 0.5em 0;
   transition: 0.2s ease;
@@ -1085,9 +1086,6 @@ body {
 }
 .contact .contact-info .info-box .details a:hover::after, .contact .contact-info .info-box .details p:hover::after {
   opacity: 1;
-}
-.contact .contact-info .info-box .details a {
-  color: #800000;
 }
 .contact .contact-info .info-box:hover .details {
   transform: translateX(0);

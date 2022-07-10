@@ -80,8 +80,8 @@
                     
 
                     legend {
-                        color: $munch-brown;
-                        font-weight: 500;
+                        color: $munch-brown-darkest;
+                        font-weight: 600;
                         font-size: 1.1rem;
                         text-transform: capitalize;
                         margin-left: .5em;
@@ -144,7 +144,7 @@
                     position: absolute;
                     top: 1em;
                     font-size: 1rem;
-                    font-weight: 600;
+                    font-weight: 500;
                     left: 0;
                     padding: 0 4em 0em 0;
                     letter-spacing: .05rem;
@@ -212,6 +212,7 @@
                         letter-spacing: .05rem;
                         text-transform: capitalize;
                         color: rgba(151, 149, 149, 0.822);
+                        color: #333;
                     }
                     &:invalid {
                         border: 1px solid $munch-brown-dark;
@@ -337,8 +338,7 @@
                 transition: .2s ease;
                 h2 {
                     font-size: 1.5em;
-                    color: $munch-brown;
-                    color: #000;
+                    color: $munch-brown-darkest;
                     margin-bottom: .5em;
                     font-family: $header-font;
                     text-transform: capitalize;
@@ -347,8 +347,9 @@
                 a, p {
                     font-family: $content-font;
                     font-weight: 600;
-                    color: #000;
-                    font-size: 1em;
+                    color: $munch-brown;
+                    font-size: 1rem;
+                    font-weight: 500;
                     cursor: pointer;
                     margin: .5em 0;
                     transition: .2s ease;
@@ -366,9 +367,6 @@
                         &::after{opacity:1;}
                         transform: scale(1.04);
                     } 
-                }
-                a {
-                    color: $munch-brown;
                 }
             }
             // info box items hover state
