@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *    ,
- * 14 |             border: .15rem solid $munch-pink;
- *    |                                  ^^^^^^^^^^^
+ * 55 |     font-family: $header-font;
+ *    |                  ^^^^^^^^^^^^
  *    '
- *   sass\components.scss 14:34  root stylesheet */
+ *   sass\components.scss 55:18  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 14 \2502              border: .15rem solid $munch-pink;\d\a    \2502                                   ^^^^^^^^^^^\a    \2575 \a   sass\\components.scss 14:34  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 55 \2502      font-family: $header-font;\d\a    \2502                   ^^^^^^^^^^^^\a    \2575 \a   sass\\components.scss 55:18  root stylesheet";
 }

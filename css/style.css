@@ -10,7 +10,7 @@
   transition: 0.25s;
 }
 .hamburger .menu {
-  border: 0.15rem solid #f75394;
+  border: 0.15rem solid #000;
   background: #fffa;
   border-radius: 1rem;
   width: 100%;
@@ -23,7 +23,7 @@
 }
 .hamburger .menu p {
   color: #000;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
   transition: 0.25s;
