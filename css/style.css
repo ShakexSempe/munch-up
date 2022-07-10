@@ -1540,7 +1540,7 @@ footer:hover a::before {
   border-radius: 50%;
   opacity: 1;
   border: 0.5rem solid pink;
-  border-top: 0.25rem solid #654321;
+  border-top: 0.25rem solid #800000;
   z-index: 2;
   animation: spinner 2s linear infinite;
 }
