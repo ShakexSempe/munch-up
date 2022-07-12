@@ -384,17 +384,21 @@ body {
         width: 100%;
         background-color: $munch-pink-light;
         margin: 5vh 0 0;
-        padding: 1em .5em;
+        padding: 10vh 5vw;
         text-align: center;
 
         p {
             backdrop-filter: blur(2em);
-            font-size: 1.4em;
+            font-size: 1.5rem;
             margin: 0 auto;
             color: #000;
-            font-weight: 600;
+            font-weight: 400;
             line-height: 1.7;
             text-transform: capitalize;
+
+            span {
+                color: $munch-brown-darkest;
+            }
         }
 
         @media (max-width: 768px) {
@@ -402,12 +406,12 @@ body {
 
             p {
                 text-align: center;
-                font-size: 1em;
+                font-size: 1rem;
             }
         }
 
         a {
-            color: $text-color-brown;
+            color: $munch-brown-dark;
             text-decoration: none;
             position: relative;
 
@@ -420,7 +424,7 @@ body {
                 width: 100%;
                 height: 2px;
                 opacity: 0;
-                background-color: $text-color-brown;
+                background-color: $munch-brown-darkest;
                 transition: .5s ease;
             }
         }
@@ -428,9 +432,9 @@ body {
         &:hover {
             a {
                 &::before {
-                    opacity: .4;
+                    opacity: .6;
                     width: 100%;
-                    transform: translateY(.2em);
+                    transform: translateY(0em);
                 }
             }
         }
