@@ -1,6 +1,7 @@
 #header {
     @media (min-width: 820px) {
         background: transparent;
+        background: #f4f4f4;
     }
     @media (max-width: 820px) {
         background: pink;
@@ -377,6 +378,12 @@
     &.hero-header {
         background: transparent;
         .hamburger {
+            .line {
+                background: #fff;
+                &::after, &::before {
+                    background: inherit;
+                }
+            }
             .menu {
                 background: #000a;
                 p {
