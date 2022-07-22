@@ -153,11 +153,10 @@ body {
             h1 {
                 position: relative;
                 font-weight: 600;
-                letter-spacing: .05rem;
+                letter-spacing: .1rem;
+                margin-bottom: .5rem;
                 text-align: center;
-                font-size: 1.5rem;
                 font-size: 2.5rem;
-                line-height: 1.5;
                 color: #fff;
                 text-transform: uppercase;
                 @media (min-width: 768px) {
@@ -167,11 +166,10 @@ body {
             }
             h2 {
                 position: relative;
-                font-weight: 300;
+                font-weight: 100;
                 letter-spacing: .05rem;
                 text-align: center;
-                font-size: 1.25rem;
-                line-height: 1.5;
+                font-size: 1.2rem;
                 color: hsl(350, 100%, 95%);
                 @media (min-width: 768px) {
                     color: $munch-brown-dark;
