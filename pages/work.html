@@ -8,7 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- META THEME COLOR -->
         <meta name="theme-color" content="#ffc0cb"/>
-        <!-- META FAVICON --><!-- TITLE -->
+        <!-- META FAVICON -->
+        <link rel="shortcut icon" href="../images/favicon.ico">
+        <!-- TITLE -->
         <title>Munch Up - Bakery and Cupcake Shop</title>
         <!-- META DESCRIPTION -->
         <meta name="description" content="Midrand based small bakery and cupcake shop. Munch up bakes cakes, cupcakes, cakesicles for birthdays, holidays and other occasions. This local bakery takes orders via email and phonecall or via its social media links">
@@ -18,23 +20,23 @@
         <link rel="stylesheet" href="../css/style.css">
         <!-- ICONS LINK -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- META FAVICON -->
-    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <!-- META FAVICON -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
     </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <header class="header" id="header">
             <figure class="logo">
                 <a title="Munch Up Home" href="#">
@@ -53,14 +55,13 @@
                 </div> -->
                 <!-- <div class="bar"></div> -->
             </div>
-
+    
             <aside class="navigation">
                 <ul class="nav-links">
-                    <li><a href="#"><i class="fas fa-home"></i>home</a></li>
-                    <li><a href="services.html"><i class="fas fa-id-card"></i>about</a></li>
-                    <li><a href="work.html"><i class="fas fa-birthday-cake"></i>menu</a></li>
-                    <li><a href="contact.html"><i class="fas fa-shopping-cart"></i>shop</a></li>
-                </ul>
+                    <li><a href="../index.html"><i class="fas fa-home"></i>home</a></li>
+                    <li><a href="services.html"><i class="fas fa-birthday-cake"></i>about</a></li>
+                    <li><a href="contact.html"><i class="fas fa-birthday-cake"></i>contact</a></li>
+                    </ul>
                 <div class="social-bar">
                     <ul>
                         <li><a href="https://www.facebook.com/Munch-Up-107890190776218" target="_blank">
@@ -78,6 +79,19 @@
                 </div>
             </aside>
         </header>
+        <div id="home" class="hero">
+            <div class="home-content" id="home-logo">
+                <h1>munch Up</h1>
+                <!-- <h1>UP<span>&trade;</span></h1> -->
+                <h1>Bakery & Cupcake shop</h1>
+                <a href="#main" class="btn">view catalogue</a>
+            </div>
+            <!-- <div class="home-img">
+                    <a href="#home-logo">
+                    <img src="images/logo-min.jpg" alt="">
+                </a>
+                </div> -->
+        </div>
         <main id="main">
     <section id="work">
         <div class="title">
@@ -88,6 +102,16 @@
         <!-- items added via javascript -->
         </div>
     </section>
+    <footer>
+        <p>All rights reserved.</p>
+        <p>copyright&copy;
+            <a href="https://www.facebook.com/Munch-Up-107890190776218" target="_blank">Munch
+                UP&trade;</a>
+        </p>
+        <p>web design: <a href="http://shakexsempe.netlify.app/" target="_blank">Shakex Sempe</a> <span
+                id="date"></span>
+        </p>
+    </footer>
 </main>
 </div>
     <!-- BACK TO TOP -->

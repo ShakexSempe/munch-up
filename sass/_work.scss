@@ -1,12 +1,10 @@
 #work {
-
-
-
+    padding: 5vh 0;
     .portfolio {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: 3vh 10vw;
+        margin: 5vh 10vw;
         @media (max-width: 767px) {
             margin: 2vh 5vw;
         }

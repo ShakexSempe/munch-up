@@ -693,11 +693,14 @@ body {
   text-transform: capitalize;
 }
 
+#work {
+  padding: 5vh 0;
+}
 #work .portfolio {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 3vh 10vw;
+  margin: 5vh 10vw;
 }
 @media (max-width: 767px) {
   #work .portfolio {
@@ -1424,7 +1427,7 @@ main {
 }
 main .title {
   text-align: center;
-  padding: 0 5vw;
+  padding: 5vh 5vw;
 }
 main .title h1 {
   text-transform: capitalize;
