@@ -255,6 +255,25 @@ body {
     }
     main {
         padding: 5vh 0 0;
+        .title {
+            text-align: center;
+            padding: 0 5vw;
+            h1 {
+                text-transform: capitalize;
+                color: $munch-brown-dark;
+                font-size: 2rem;
+                margin-bottom: 1rem;
+
+                i {
+                    font-size: 1.5rem;
+                    margin-right: .5rem;
+                }
+            }
+    
+            p {
+                text-transform: capitalize;
+            }
+        }
     }
     .slogan {
         min-height: 100vh;

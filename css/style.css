@@ -532,17 +532,6 @@ body {
 #services {
   width: 100%;
 }
-#services .title {
-  text-align: center;
-}
-#services .title h1 {
-  color: #654321;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-#services .title p {
-  text-transform: capitalize;
-}
 #services .services {
   margin: 3vh 10vw;
   display: grid;
@@ -810,12 +799,13 @@ body {
 }
 
 #contact {
-  overflow: hidden;
-  scroll-padding-top: 50vh;
+  overflow-x: hidden;
 }
 #contact .title p {
-  font-size: 1em;
+  font-size: 1rem;
+  text-align: left;
   text-transform: none;
+  line-height: 1.6;
 }
 #contact .title p a {
   color: #f75394;
@@ -898,6 +888,7 @@ body {
   font-size: 1.1rem;
   text-transform: capitalize;
   margin-left: 0.5em;
+  padding: 0 0.25rem;
 }
 .contact .contact-form form .row fieldset#contact-field {
   flex-direction: row;
@@ -1430,6 +1421,23 @@ body {
 
 main {
   padding: 5vh 0 0;
+}
+main .title {
+  text-align: center;
+  padding: 0 5vw;
+}
+main .title h1 {
+  text-transform: capitalize;
+  color: #654321;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+main .title h1 i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+main .title p {
+  text-transform: capitalize;
 }
 
 .slogan {

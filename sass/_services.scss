@@ -1,18 +1,7 @@
 #services {
     width: 100%;
     // overflow-x: hidden;
-    .title {
-        text-align: center;
-        h1 {
-            color: $munch-brown-dark;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            text-transform: capitalize;
-        }
-    }
+    
     .services {
         margin: 3vh 10vw;
         display: grid;
