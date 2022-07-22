@@ -804,9 +804,11 @@ body {
 #contact {
   overflow-x: hidden;
 }
+#contact .title {
+  text-align: left;
+}
 #contact .title p {
   font-size: 1rem;
-  text-align: left;
   text-transform: none;
   line-height: 1.6;
 }
@@ -821,7 +823,6 @@ body {
 .contact {
   position: relative;
   width: 100%;
-  margin-top: 50px;
   padding: 0 5vw;
   display: flex;
   justify-content: space-between;
@@ -846,7 +847,7 @@ body {
   position: relative;
   background: #f9f9f9;
   width: calc(100% - 400px);
-  padding: 10vh 40px 20px;
+  padding: 10vh 0 20px;
   margin: 10vh 0;
   border-radius: 10px;
 }
@@ -895,7 +896,8 @@ body {
 }
 .contact .contact-form form .row fieldset#contact-field {
   flex-direction: row;
-  padding: 0;
+  gap: 0.5rem;
+  padding: 0.5rem;
   margin: 0;
   width: 100%;
   height: 150px;
@@ -919,7 +921,7 @@ body {
   }
 }
 .contact .contact-form form .row fieldset#treats {
-  padding: 1em;
+  padding: 1rem 0.5rem;
 }
 .contact .contact-form form .row fieldset#treats label {
   position: relative;
@@ -963,7 +965,6 @@ body {
 }
 .contact .contact-form form .row .input50 {
   width: 50%;
-  margin: 0 10px;
 }
 .contact .contact-form form .row .input100 {
   width: 100%;
@@ -1345,14 +1346,18 @@ body {
   transition: 1s ease;
   z-index: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: 550px) {
   #home .home-content {
-    top: 10vh;
+    top: 15vh;
+  }
+}
+@media (min-width: 1024px) {
+  #home .home-content {
+    top: 5vh;
     margin: 0vh auto;
     width: 50%;
     border-radius: 10px;
     opacity: 1;
-    backdrop-filter: blur(0.25rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1372,7 +1377,7 @@ body {
 @media (min-width: 768px) {
   #home .home-content h1 {
     color: #654321;
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 #home .home-content h2 {
@@ -1386,7 +1391,7 @@ body {
 @media (min-width: 768px) {
   #home .home-content h2 {
     color: #654321;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 #home .home-content .btn {
@@ -1442,7 +1447,7 @@ main {
 }
 main .title {
   text-align: center;
-  padding: 5vh 5vw;
+  padding: 5vh 5vw 1rem;
 }
 main .title h1 {
   text-transform: capitalize;
