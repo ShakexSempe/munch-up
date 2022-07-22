@@ -529,6 +529,20 @@ body {
   opacity: 0;
 }
 
+#services {
+  width: 100%;
+}
+#services .title {
+  text-align: center;
+}
+#services .title h1 {
+  color: #654321;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#services .title p {
+  text-transform: capitalize;
+}
 #services .services {
   margin: 3vh 10vw;
   display: grid;
@@ -539,6 +553,8 @@ body {
 @media (max-width: 768px) {
   #services .services {
     grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    padding: 5vh 5vw;
   }
 }
 @media (max-width: 500px) {
@@ -599,8 +615,7 @@ body {
 }
 #services #work-link {
   display: inline-block;
-  background: pink;
-  margin: 2em auto 0;
+  margin: 0 auto 0;
   width: 100%;
   text-align: center;
   padding: 1rem 0;
@@ -610,7 +625,6 @@ body {
 }
 #services #work-link .catalogBtn {
   text-decoration: none;
-  text-transform: uppercase;
   color: #e0ffff;
   position: relative;
   z-index: 1;
@@ -622,18 +636,22 @@ body {
 #services #work-link .catalogBtn a {
   color: #ddd;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 1rem;
   padding: 0.2em 1em;
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 1rem;
+  letter-spacing: 0.1rem;
+  transition: 0.2s;
 }
 #services #work-link .catalogBtn a i {
   margin-right: 0.5em;
   color: #ddda;
 }
-#services #work-link .catalogBtn::before {
+#services #work-link .catalogBtn::before, #services #work-link .catalogBtn::after {
   content: "";
   position: absolute;
   top: 0;
@@ -647,21 +665,40 @@ body {
 }
 #services #work-link .catalogBtn::before {
   background: linear-gradient(0deg, #db0a5e, #f75394);
-  box-shadow: inset 3px 3px 3px #fffa, inset -3px -3px 3px #000a, 3px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15), inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.3);
 }
 #services #work-link .catalogBtn::after {
   background: linear-gradient(0deg, #f75394, #db0a5e);
   opacity: 0;
-  box-shadow: inset 3px 3px 3px #000a, inset -3px -3px 3px #ddda, 1px 1px 2px rgba(0, 0, 0, 0.35);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.3), inset -2px -2px 2px rgba(255, 255, 255, 0.25);
 }
 @media (min-width: 768px) {
   #services #work-link .catalogBtn:hover {
     transform: scale(0.98);
   }
+  #services #work-link .catalogBtn:hover a {
+    letter-spacing: normal;
+  }
+  #services #work-link .catalogBtn:hover::before {
+    opacity: 0;
+  }
+  #services #work-link .catalogBtn:hover::after {
+    opacity: 1;
+  }
 }
-#services #work-link .catalogBtn:active {
-  transition: 0.3s;
-  transform: scale(0.8);
+@media (max-width: 768px) {
+  #services #work-link .catalogBtn:active {
+    transform: scale(0.98);
+  }
+  #services #work-link .catalogBtn:active a {
+    letter-spacing: normal;
+  }
+  #services #work-link .catalogBtn:active::before {
+    opacity: 0;
+  }
+  #services #work-link .catalogBtn:active::after {
+    opacity: 1;
+  }
 }
 #services h2 {
   text-transform: capitalize;
@@ -1501,7 +1538,7 @@ main {
 footer {
   width: 100%;
   background-color: pink;
-  margin: 5vh 0 0;
+  margin: 1rem 0 0;
   padding: 10vh 5vw;
   text-align: center;
 }

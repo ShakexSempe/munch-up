@@ -15,7 +15,7 @@
         <!-- META KEYWORDS -->
         <meta name="keywords" content="bakery, shop, cakes, cupcakes,">
         <!-- CSS LINK -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
         <!-- ICONS LINK -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- META FAVICON -->
@@ -34,49 +34,51 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
     </head>
 <body>
-    
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo-min.jpg" alt="logo"></a>   
-        </div>
-        <button class="shop-link">
-            <a href="contact.html">
-            <i class="fas fa-shopping-cart"></i>
-            </a>
-        </button>
-        <div class="hamburger">
-            <div class="bar"></div>
-        </div>
-        <aside class="navigation">
-            <ul class="nav-links">
-                <li><a href="index.html"><i class="fas fa-home"></i>home</a></li>
-                <li><a href="services.html"><i class="fas fa-id-card"></i>about</a></li>
-                <li><a href="work.html"><i class="fas fa-birthday-cake"></i>menu</a></li>
-                <li><a href="contact.html"><i class="fas fa-shopping-cart"></i>shop</a></li>
-            </ul>
-            <div class="social-bar">
-                <ul>
-                    <li><a href="https://facebook.com" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li><a href="https://instagram.com" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <!-- <li><a href="https://twitter.com" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                        </a>
-                    </li> -->
-                </ul>
-                <a href="munchup1811@gmail.com" class="email-icon">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
+    <div class="container">
+        <header class="header" id="header">
+            <figure class="logo">
+                <a title="Munch Up Home" href="#">
+                    <img src="../images/logo-min.jpg" alt="Munch Uplogo"></a>
+            </figure>
+            <div class="shop-link">
+                <a class="btn" title="Shop" href="#contact">
+                    place order
+                    <!-- <i class="fas fa-shopping-cart"></i> -->
                 </a>
             </div>
-        </aside>
-    </header>
+            <div class="hamburger">
+                <div class="line"></div>
+                <!-- <div class="menu">
+                    <p>menu</p>
+                </div> -->
+                <!-- <div class="bar"></div> -->
+            </div>
 
+            <aside class="navigation">
+                <ul class="nav-links">
+                    <li><a href="#"><i class="fas fa-home"></i>home</a></li>
+                    <li><a href="services.html"><i class="fas fa-id-card"></i>about</a></li>
+                    <li><a href="work.html"><i class="fas fa-birthday-cake"></i>menu</a></li>
+                    <li><a href="contact.html"><i class="fas fa-shopping-cart"></i>shop</a></li>
+                </ul>
+                <div class="social-bar">
+                    <ul>
+                        <li><a href="https://www.facebook.com/Munch-Up-107890190776218" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li><a href="https://www.instagram.com/phoebe_lobelo/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="mailto:munchup1811@gmail.com" class="email-icon">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </aside>
+        </header>
+        <main id="main">
     <section id="work">
         <div class="title">
             <h1><i class="fas fa-birthday-cake"></i>Munchies</h1>
@@ -86,15 +88,16 @@
         <!-- items added via javascript -->
         </div>
     </section>
-
+</main>
+</div>
     <!-- BACK TO TOP -->
     <div class="top-btn">
         <a href="#"><i class="fas fa-arrow-up"></i></a>
     </div>
 
 
-    <script src="js/main.js"></script>
-    <script src="js/work.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/work.js"></script>
     <script src="https://use.fontawesome.com/3b4fc72e2a.js"></script>
 </body>
 </html>

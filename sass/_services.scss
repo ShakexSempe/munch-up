@@ -1,12 +1,26 @@
 #services {
-    
+    width: 100%;
+    // overflow-x: hidden;
+    .title {
+        text-align: center;
+        h1 {
+            color: $munch-brown-dark;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
 
+        p {
+            text-transform: capitalize;
+        }
+    }
     .services {
         margin: 3vh 10vw;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         @media(max-width:768px){
             grid-template-columns: repeat(2, 1fr);
+            margin: 0;
+            padding: 5vh 5vw;
         }
         @media(max-width:500px){
             grid-template-columns: 1fr;
@@ -83,8 +97,8 @@
     }
     #work-link {
         display: inline-block;
-        background: $munch-pink-light;
-        margin: 2em auto 0;
+        // background: $munch-pink-light;
+        margin: 0 auto 0;
         width: 100%;
         text-align: center;
         padding: 1rem 0;
@@ -94,7 +108,6 @@
 
         .catalogBtn {
             text-decoration: none;
-            text-transform: uppercase;
             color: $munch-cyan;
             position: relative;
             z-index: 1;
@@ -107,19 +120,23 @@
             a {
                 color: #ddd;
                 text-decoration: none;
-                font-weight: 600;
+                font-weight: 500;
+                text-transform: capitalize;
+                font-size: 1rem;
                 padding: .2em 1em;
                 display: block;
                 width: 100%;
                 height: 100%;
-                border-radius: 20px;
+                border-radius: 1rem;
+                letter-spacing: .1rem;
+                transition: .2s;
                 i {
                     margin-right: .5em;
                     color: #ddda;
                 }
             }
 
-            &::before{
+            &::before, &::after {
                 content: '';
                 position: absolute;
                 top: 0;
@@ -134,26 +151,34 @@
             
             &::before {
                 background: $btn-gradient;
-                box-shadow: inset 3px 3px 3px #fffa,
-                            inset -3px -3px 3px #000a,
-                            3px 3px 3px rgba(0, 0, 0, .300);
+                box-shadow: $btn-shadow;
             }
             &::after {
                 background: $btn-gradient-hover;
                 opacity: 0;
-                box-shadow: inset 3px 3px 3px #000a,
-                            inset -3px -3px 3px #ddda,
-                            1px 1px 2px rgba(0, 0, 0, .350);
+                box-shadow: $btn-shadow-hover;
             }
             @media (min-width: 768px) {
                 &:hover {
                     transform: scale(.98);
+                    a {
+                        letter-spacing: normal;
+                    }
+                    &::before {opacity: 0;}
+                    &::after {opacity: 1;}
                 }
             }
-            &:active {
-                transition: .3s;
-                transform: scale(.8);
+            @media (max-width: 768px) {
+                &:active {
+                    a {
+                        letter-spacing: normal;
+                    }
+                    transform: scale(.98);
+                    &::before {opacity: 0;}
+                    &::after {opacity: 1;}
+                }
             }
+            
         }
         
     }
