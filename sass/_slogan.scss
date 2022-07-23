@@ -1,0 +1,183 @@
+.slogan {
+    min-height: 100vh;
+    width: 100%;
+    background-color: $munch-background;
+    position: relative;
+    z-index: 1;
+    margin: 10vh 0;
+    padding: 0 5vw;
+    isolation: isolate;
+
+    @media (max-width: 768px) {
+        padding: 0 1rem;
+        margin: 5vh 0;
+    }
+
+    .slogan-title {
+        // border: .1rem solid $munch-pink;
+        // background-color: $munch-white;
+        width: 100%;
+        min-height: 90vh;
+        border-radius: 5px;
+        margin: 0 auto 10vh;
+        padding: .5rem;
+        text-align: center;
+        z-index: -1;
+        position: relative;
+
+        h2 {
+            color: $munch-brown-dark;
+            font-size: 1.5rem;
+            // font-weight: 700;
+            text-transform: capitalize;
+        }
+
+        p {
+            margin: 0;
+            text-align: center;
+            font-family: 'Varela Round', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 300;
+            color: $munch-brown-dark;
+            border-radius: 5px;
+            padding: 1rem 0;
+            transition: .3s ease;
+        }
+        @media(max-width: 820px) {
+            padding: 10vh .5rem;
+            margin: 0 0 10vh;
+            background-image: url("../images/hero-4.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            // mix-blend-mode: overlay;
+
+            h2 {
+                color: #fff;
+                text-shadow: 1px 1px 0px $munch-brown-dark;
+                font-weight: 500;
+            }
+
+            p {
+                color: #f4f4f4;
+                font-weight: 100;
+            }
+            .slogan-contact {
+                // border: 1px solid red;
+                width: 100%;
+                position: absolute;
+                bottom: 10vh;
+
+                a {
+                    margin: .5rem 0;
+                }
+            }
+        }
+        // DATA SCROLL
+        &[data-scroll]{
+            transform: scale(1);
+        }
+        &[data-scroll="in"] {
+            transform: scale(1);
+        }
+
+        @media (min-width: 1024px) {
+            // border: 2px solid red;
+            padding: 5vh 0;
+            height: 90vh;
+            background-image: url("../images/desk-hero-1.jpg");
+            background-size: cover;
+            background-position: center;
+
+            .slogan-contact {
+                // border: 2px solid red;
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+
+                a {
+                    width: 12rem;
+                    font-size: 1rem;
+                    margin: 0;
+                    // border: 2px solid green;
+                    border-radius: 1.5rem;
+                    padding: .5rem 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    p {
+                        border: 2px solid yellow;
+                    }
+                }
+            }
+        }
+    }
+
+    .gallery {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+        margin: 5vh 0 10vh;
+        border-radius: 5px;
+        border: 3px solid $munch-pink-light;
+        background-color: $munch-pink-light;
+        z-index: 5;
+
+        figure {
+            width: 95%;
+            height: 95%;
+            overflow: hidden;
+            // border: 2px solid #fff000;
+            border-radius: 5px;
+            background-color: $munch-pink-light;
+            padding: .5em;
+
+            // DATA SCROLL
+            &[data-scroll] {
+                transform: scale(1) translateY(10vh);
+            }
+
+            &[data-scroll="in"] {
+                transform: scale(1) translateY(0);
+            }
+            img {
+
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                object-fit: contain;
+                transition: .3s ease;
+            }
+
+            &:hover {
+                background-image: $munch-background;
+
+                img {
+                    transition: .3s ease;
+
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+            place-items: center;
+            gap: 15vh;
+            margin: 5vh 0;
+
+            figure {
+                width: 100%;
+                height: 100%;
+                border: none;
+
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
+
+
+    }
+}
