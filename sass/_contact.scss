@@ -105,11 +105,11 @@
                             flex-direction: column;
                             margin-bottom: 5vh;
                             height: auto;
-                            padding: 1rem 0 2rem;
+                            padding: 1rem .5rem 2rem;
                             
                             .input50 {
                                 height: auto;
-                                padding-right: 1em;
+                                // padding-right: 1em;
                         }
                         }
                         @media (max-width: 350px){
@@ -342,16 +342,16 @@
                 transform: translateX(-.5em);
                 transition: .2s ease;
                 h2 {
-                    font-size: 1.5em;
+                    font-size: 1.25rem;
+                    font-weight: 600;
                     color: $munch-brown-darkest;
                     margin-bottom: .5em;
-                    font-family: $header-font;
+                    // font-family: $header-font;
                     text-transform: capitalize;
                 }
                 
                 a, p {
                     font-family: $content-font;
-                    font-weight: 600;
                     color: $munch-brown;
                     font-size: 1rem;
                     font-weight: 500;
