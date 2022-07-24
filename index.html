@@ -38,7 +38,11 @@
 <body>
     <!-- PRELOADER -->
     <div class="loader_bg">
-        <div class="loader"></div>
+        <div class="spinner">
+            <div class="sector sector-1"></div>
+            <div class="sector sector-2"></div>
+            <div class="sector sector-3"></div>
+        </div>
     </div>
     <div class="container" id="container">
         <header class="header" id="header">
@@ -264,7 +268,7 @@
     <script>
         setTimeout(function () {
             $('.loader_bg').fadeToggle();
-        }, 4500);
+        }, 6000);
     </script>
     <script src="https://use.fontawesome.com/3b4fc72e2a.js"></script>
     <script src="js/main.js"></script>
