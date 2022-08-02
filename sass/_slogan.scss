@@ -17,7 +17,7 @@
         // border: .1rem solid $munch-pink;
         // background-color: $munch-white;
         width: 100%;
-        min-height: 90vh;
+        height: 90vh;
         border-radius: 5px;
         margin: 0 auto 10vh;
         padding: .5rem;
@@ -81,12 +81,16 @@
         }
 
         @media (min-width: 1024px) {
-            // border: 2px solid red;
+            border: 2px solid transparent;
             padding: 5vh 0;
             height: 90vh;
             background-image: url("../images/desk-hero-1.jpg");
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
+            h2, p {
+                backdrop-filter: blur(.1rem);
+            }
 
             .slogan-contact {
                 // border: 2px solid red;

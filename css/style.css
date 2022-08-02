@@ -728,7 +728,7 @@
 }
 .slogan .slogan-title {
   width: 100%;
-  min-height: 90vh;
+  height: 90vh;
   border-radius: 5px;
   margin: 0 auto 10vh;
   padding: 0.5rem;
@@ -786,11 +786,16 @@
 }
 @media (min-width: 1024px) {
   .slogan .slogan-title {
+    border: 2px solid transparent;
     padding: 5vh 0;
     height: 90vh;
     background-image: url("../images/desk-hero-1.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+  }
+  .slogan .slogan-title h2, .slogan .slogan-title p {
+    backdrop-filter: blur(0.1rem);
   }
   .slogan .slogan-title .slogan-contact {
     display: flex;
