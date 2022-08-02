@@ -565,11 +565,149 @@
 #header.hero-header .hamburger .line::after, #header.hero-header .hamburger .line::before {
   background: inherit;
 }
+@media (min-width: 820px) {
+  #header.hero-header .hamburger .line {
+    background: #800000;
+  }
+  #header.hero-header .hamburger .line::after, #header.hero-header .hamburger .line::before {
+    background: inherit;
+  }
+}
 #header.hero-header .hamburger .menu {
   background: #000a;
 }
 #header.hero-header .hamburger .menu p {
   color: #fff;
+}
+
+#home {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0 5vw;
+  background: url(../images/hero-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+@media (min-width: 768px) {
+  #home {
+    background: url(../images/desk-hero.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+#home::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent);
+}
+#home .home-content {
+  position: relative;
+  top: 23vh;
+  width: max-content;
+  padding: 1rem 0 0;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: capitalize;
+  outline: none;
+  transition: 1s ease;
+  z-index: 1;
+}
+@media (min-width: 550px) {
+  #home .home-content {
+    top: 15vh;
+  }
+}
+@media (min-width: 1024px) {
+  #home .home-content {
+    top: 5vh;
+    margin: 0vh auto;
+    width: 50%;
+    border-radius: 10px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+#home .home-content h1 {
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  font-size: 2.8rem;
+  font-family: "Fredoka One", cursive;
+  color: #f4f4f4;
+  text-transform: capitalize;
+  text-transform: lowercase;
+}
+#home .home-content h1 span {
+  text-transform: uppercase;
+  font-family: inherit;
+}
+@media (min-width: 768px) {
+  #home .home-content h1 {
+    color: #654321;
+    font-size: 3rem;
+  }
+}
+#home .home-content h2 {
+  position: relative;
+  font-weight: 100;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffe6ea;
+}
+@media (min-width: 768px) {
+  #home .home-content h2 {
+    color: #654321;
+    font-size: 1.5rem;
+  }
+}
+#home .home-content .btn {
+  position: relative;
+  top: 40vh;
+}
+@media (min-width: 768px) {
+  #home .home-content .btn {
+    top: 0;
+  }
+}
+#home .home-content p {
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  color: #654321;
+  color: #fff;
+  opacity: 1;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.3em;
+  border-radius: 10px;
+  padding: 0.5em;
+  transition: 0.3s ease;
+  text-transform: capitalize;
+}
+@media (max-width: 820px) {
+  #home .home-content p {
+    font-size: 1.25em;
+    width: auto;
+    background: #654321;
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+  }
 }
 
 .slogan {
@@ -1521,136 +1659,6 @@ body {
   .hero .title h1 {
     width: 100%;
     font-size: 2em;
-  }
-}
-
-#home {
-  min-height: 100vh;
-  width: 100%;
-  margin: 0;
-  padding: 0 5vw;
-  background: url(../images/hero-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-@media (min-width: 768px) {
-  #home {
-    background: url(../images/desk-hero.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
-#home::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent);
-}
-#home .home-content {
-  position: relative;
-  top: 23vh;
-  width: max-content;
-  padding: 1rem 0 0;
-  margin: 0 auto;
-  text-align: center;
-  text-transform: capitalize;
-  outline: none;
-  transition: 1s ease;
-  z-index: 1;
-}
-@media (min-width: 550px) {
-  #home .home-content {
-    top: 15vh;
-  }
-}
-@media (min-width: 1024px) {
-  #home .home-content {
-    top: 5vh;
-    margin: 0vh auto;
-    width: 50%;
-    border-radius: 10px;
-    opacity: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
-#home .home-content h1 {
-  position: relative;
-  font-weight: 500;
-  letter-spacing: 0.2rem;
-  text-align: center;
-  font-size: 2.8rem;
-  font-family: "Fredoka One", cursive;
-  color: #f4f4f4;
-  text-transform: capitalize;
-  text-transform: lowercase;
-}
-#home .home-content h1 span {
-  text-transform: uppercase;
-  font-family: inherit;
-}
-@media (min-width: 768px) {
-  #home .home-content h1 {
-    color: #654321;
-    font-size: 3rem;
-  }
-}
-#home .home-content h2 {
-  position: relative;
-  font-weight: 100;
-  letter-spacing: 0.05rem;
-  text-align: center;
-  font-size: 1.2rem;
-  color: #ffe6ea;
-}
-@media (min-width: 768px) {
-  #home .home-content h2 {
-    color: #654321;
-    font-size: 1.5rem;
-  }
-}
-#home .home-content .btn {
-  position: relative;
-  top: 40vh;
-}
-@media (min-width: 768px) {
-  #home .home-content .btn {
-    top: 0;
-  }
-}
-#home .home-content p {
-  text-align: center;
-  font-family: "Varela Round", sans-serif;
-  color: #654321;
-  color: #fff;
-  opacity: 1;
-  margin: 0 auto;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.3em;
-  border-radius: 10px;
-  padding: 0.5em;
-  transition: 0.3s ease;
-  text-transform: capitalize;
-}
-@media (max-width: 820px) {
-  #home .home-content p {
-    font-size: 1.25em;
-    width: auto;
-    background: #654321;
-    background: transparent;
-    color: #fff;
-    border: none;
-    font-weight: 500;
   }
 }
 

@@ -383,6 +383,12 @@
                 &::after, &::before {
                     background: inherit;
                 }
+                @media(min-width: 820px){
+                    background: $munch-brown;
+                    &::after, &::before {
+                        background: inherit;
+                    }
+                }
             }
             .menu {
                 background: #000a;
