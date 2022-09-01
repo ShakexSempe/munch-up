@@ -763,6 +763,7 @@
     color: #fff;
     text-shadow: 1px 1px 0px #654321;
     font-weight: 500;
+    font-size: 1.8rem;
   }
   .slogan .slogan-title p {
     color: #f4f4f4;
@@ -854,7 +855,7 @@
 }
 .slogan .gallery figure:hover img {
   transition: 0.3s ease;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 @media (max-width: 767px) {
   .slogan .gallery {
