@@ -59,10 +59,10 @@
   transform: scale(0.95);
 }
 .hamburger.active-menu .line::before {
-  transform: translateY(0);
+  transform: translateY(-0.3rem) translateX(0.25rem);
 }
 .hamburger.active-menu .line::after {
-  transform: translateY(0);
+  transform: translateY(0.3rem) translateX(-0.25rem);
 }
 .hamburger.active-menu .menu {
   border-color: #000;
@@ -160,13 +160,12 @@
   color: #000;
   font-size: 1.5rem;
   border-radius: 50%;
-  border: 2px solid #000;
-  background: rgba(255, 194, 204, 0.5);
+  border-radius: 0.25rem;
+  background: rgba(255, 194, 204, 0.8);
   padding: 0.2rem;
   transition: 0.2s;
 }
 .top-btn a:hover i {
-  border: 2px solid #000a;
   background: #ffc2cc;
 }
 .top-btn.active-btn {

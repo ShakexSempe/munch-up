@@ -67,10 +67,10 @@
             transform: scale(.95);
             .line {
                 &::before {
-                    transform: translateY(0);
+                    transform: translateY(-.3rem) translateX(.25rem);
                 }
                 &::after {
-                    transform: translateY(0);
+                    transform: translateY(.3rem) translateX(-.25rem);
                 }
             }
             .menu {
@@ -181,15 +181,15 @@
             color: #000;
             font-size: 1.5rem;
             border-radius: 50%;
-            border: 2px solid #000;
-            background: hsla(350, 100%, 88%, .5);
+            border-radius: .25rem;
+            // border: 1px solid #000;
+            background: hsla(350, 100%, 88%, .8);
             padding: .2rem;
             transition: .2s;
         }
 
         &:hover {
             i {
-                border: 2px solid #000a;
                 background: hsla(350, 100%, 88%, 1);
             }
         }
