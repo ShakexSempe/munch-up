@@ -450,9 +450,16 @@
   place-items: center;
   gap: 3em;
 }
-#header aside .social-bar ul li i {
-  color: #e0ffff;
+#header aside .social-bar ul li a {
+  font-size: 1.5rem;
+  color: #f75394;
   transition: 0.2s;
+  position: relative;
+}
+@media (min-width: 768px) {
+  #header aside .social-bar ul li a {
+    font-size: 2rem;
+  }
 }
 #header aside .social-bar ul li:hover {
   transition: 0.2s;
@@ -467,49 +474,13 @@
 }
 #header aside .social-bar .email-icon {
   position: absolute;
-  bottom: 20px;
-  margin-bottom: 1em;
-  display: inline-block;
+  bottom: 10vh;
   color: #f75394;
   transition: 0.2s;
-}
-#header aside .social-bar .email-icon::before {
-  background-color: #e0ffff;
+  font-size: 1.5rem;
 }
 #header aside .social-bar .email-icon:hover {
   color: #b768a2;
-}
-#header aside .social-bar a {
-  padding: 0.5em;
-  border-radius: 50%;
-  font-size: 1.5em;
-  position: relative;
-  z-index: 1;
-}
-#header aside .social-bar a::before, #header aside .social-bar a::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  transition: 0.3s;
-  z-index: -1;
-}
-#header aside .social-bar a::before {
-  background-color: #f75394;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15), inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.3);
-}
-#header aside .social-bar a::after {
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.3), inset -2px -2px 2px rgba(255, 255, 255, 0.25);
-  opacity: 0;
-}
-#header aside .social-bar a:hover::before {
-  opacity: 0;
-}
-#header aside .social-bar a:hover::after {
-  opacity: 1;
 }
 #header aside.active {
   left: 0;
@@ -552,6 +523,14 @@
 }
 #header aside.active .contact-links a:nth-child(2) i {
   transition-delay: 0.9s;
+}
+#header aside.active .contact-links a:hover {
+  color: #f75394;
+  transition: 0.25s;
+}
+#header aside.active .contact-links a:hover i {
+  opacity: 0.4;
+  transition: 0.25s;
 }
 #header aside.active .social-bar {
   transition-delay: 0.25s;
