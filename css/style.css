@@ -640,11 +640,11 @@
 }
 #home .home-content h1 {
   position: relative;
-  font-weight: 500;
-  letter-spacing: 0.2rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
   text-align: center;
   font-size: 2rem;
-  font-family: "Fredoka One", cursive;
+  font-family: "Varela Round", sans-serif;
   color: #f4f4f4;
   text-transform: capitalize;
   margin-bottom: 0.5rem;
