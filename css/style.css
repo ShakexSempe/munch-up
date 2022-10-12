@@ -688,7 +688,7 @@
 }
 #home .home-content .btn {
   position: relative;
-  top: 50vh;
+  top: 45vh;
 }
 @media (min-width: 768px) {
   #home .home-content .btn {
