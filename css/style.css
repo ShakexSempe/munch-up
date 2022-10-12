@@ -84,8 +84,8 @@
   border-radius: 1.5rem;
   border: none;
   outline: none;
-  padding: 0.5em 1em;
-  width: 15rem;
+  padding: 0.8rem 0.5rem;
+  width: 18rem;
   margin: 1em auto;
   transition: 0.3s ease;
   font-size: 1.15rem;
@@ -661,10 +661,11 @@
 }
 #home .home-content h2 {
   position: relative;
+  text-transform: capitalize;
   font-weight: 100;
   letter-spacing: 0.05rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   color: #ffe6ea;
 }
 @media (min-width: 768px) {
@@ -675,7 +676,7 @@
 }
 #home .home-content .btn {
   position: relative;
-  top: 40vh;
+  top: 50vh;
 }
 @media (min-width: 768px) {
   #home .home-content .btn {
