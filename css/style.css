@@ -115,7 +115,7 @@
 }
 .btn.btn-primary::before {
   background: linear-gradient(0deg, #db0a5e, #f63c86);
-  background: linear-gradient(0deg, #271a0c, #3a2713);
+  background: linear-gradient(0deg, #3a2713, #4d3419);
 }
 .btn.btn-primary::after {
   background: linear-gradient(0deg, #f63c86, #db0a5e);
