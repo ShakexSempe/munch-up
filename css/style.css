@@ -114,7 +114,7 @@
 }
 .btn.btn-primary::before {
   background: linear-gradient(0deg, #db0a5e, #f63c86);
-  background: linear-gradient(0deg, #130d06, #271a0c);
+  background: linear-gradient(0deg, #271a0c, #3a2713);
 }
 .btn.btn-primary::after {
   background: linear-gradient(0deg, #f63c86, #db0a5e);
@@ -665,16 +665,10 @@
   z-index: 1;
   color: #3a2713;
 }
-@media (min-width: 550px) {
-  #home .home-content {
-    top: 15vh;
-  }
-}
-@media (min-width: 1024px) {
+@media (min-width: 576px) {
   #home .home-content {
     top: 5vh;
-    width: 50%;
-    opacity: 1;
+    text-align: center;
   }
 }
 #home .home-content .home-title h1 {
@@ -683,6 +677,11 @@
 }
 #home .home-content .btn i {
   color: #f75394;
+}
+@media (min-width: 576px) {
+  #home .home-content .btn {
+    margin: 1rem auto;
+  }
 }
 .slogan {
   min-height: 100vh;
