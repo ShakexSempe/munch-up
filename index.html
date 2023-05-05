@@ -19,7 +19,7 @@
     <!-- CSS LINK -->
     <link rel="stylesheet" href="css/style.css">
     <!-- ICONS LINK -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- META FAVICON -->
     <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
@@ -37,13 +37,13 @@
 </head>
 <body>
     <!-- PRELOADER -->
-    <div class="loader_bg">
+    <!-- <div class="loader_bg">
         <div class="spinner">
             <div class="sector sector-1"></div>
             <div class="sector sector-2"></div>
             <div class="sector sector-3"></div>
         </div>
-    </div>
+    </div> -->
     <div class="container" id="container">
         <header class="header" id="header">
             <figure class="logo">
@@ -93,11 +93,15 @@
             </aside>
         </header>
         <div id="home" class="hero">
+            <img src="images/desk-hero.jpg" alt="" loading="lazy">
             <div class="home-content" id="home-logo">
-                <h1>cakes & cupcakes</h1>
-                <!-- <h1>munch up</h1> -->
-                <h2>Treats for every occasion</h2>
-                <a href="#main" class="btn">view munchies</a>
+                <div class="home-title">
+                    <h1>cakes & cupcakes</h1>
+                </div>
+                <div class="cta">
+                    <p>Treats for every occasion</p>
+                    <a href="#main" class="btn btn-primary">view munchies<i class="fas fa-angles-right"></i></a>
+                </div>
             </div>
         </div>
         <main id="main">

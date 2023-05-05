@@ -87,27 +87,30 @@
 
 
 .btn {
-    position: relative;
-    display: block;
-    cursor: pointer;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: $text-color-light;
-    background-color: $munch-pink;
-    text-decoration: none;
-    border-radius: 1.5rem;
-    border: none;
-    outline: none;
-    padding: .8rem .5rem;
-    width: 18rem;
-    margin: 1em auto;
-    // margin: 5em auto;
-    transition: .3s ease;
+    
+    padding: .65rem 1rem;
+    width: 15rem;
+    margin: 1rem 0;
+    
     font-size: 1.15rem;
+    text-decoration: none;
     text-transform: capitalize;
-    letter-spacing: .05rem;
+    letter-spacing: .025rem;
+    
+    border-radius: $brand-radius;
+    cursor: pointer;
+    transition: .25s ease;
     isolation: isolate;
-    z-index: 1;
+    position: relative;
 
+    i {
+        transition: .25s;
+    }
+    
     &::before,
     &::after {
         position: absolute;
@@ -116,31 +119,53 @@
         left: 0;
         width: 100%;
         height: 100%;
-        transition: .3s ease;
-        border-radius: 1.5rem;
-        // background: $btn-brown; 
+        transition: .25s ease;
+        border-radius: inherit;
         z-index: -1;
     }
 
     &::before {
-        background: $btn-gradient;
         box-shadow: $btn-shadow;
     }
 
     &::after {
         opacity: 0;
-        background: $btn-gradient-hover;
         box-shadow: $btn-shadow-hover;
     }
+
+    &.btn-primary {
+        &::before {
+            background: $btn-gradient;
+            background: $brand-btn;
+        }
+        &::after {
+            background: $btn-gradient-hover;
+            background: $brand-btn-hover;
+        }
+    }
+
+    &.btn-secondary {
+        color: $munch-pink;
+        &::before {
+            background: #000;
+        }
+        &::after {
+            background: #fff000;
+        }
+    }
+
 
     // BTN HOVER AN D ACTIVE MEDIA QUERY
     // DESKTOP HOVER
     @media (min-width: 768px) {
-        width: 20rem;
         &:hover {
-            transition: .2s ease;
             letter-spacing: normal;
             transform: scale(.98);
+
+            i {
+                transform: translateX(-.05rem);
+            }
+
             &::before {
                 opacity: 0;
             }  
@@ -152,9 +177,12 @@
     // MOBILE ACTIVE
     @media (max-width: 768px) {
         &:active {
-            transition: .2s ease;
             letter-spacing: normal;
             transform: scale(.98);
+
+            i {
+                transform: translateX(-.05rem);
+            }
 
             &::before {
                 opacity: 0;
@@ -201,6 +229,36 @@
     }
 }
 
+// BUTTON BACKGROUND
+.btn-bg {
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        border: none;
+        outline: none;
+        z-index: -1;
+        transition: .3s ease;
+    }
+
+    &::before {
+        background: red;
+        background: yellow;
+        // box-shadow: $box-light-top-sm;
+    }
+
+    &::after {
+        background: blue;
+        // box-shadow: $box-dark-top-sm;
+        opacity: 0;
+    }
+}
 
 // LOADER 
 .loader_bg {

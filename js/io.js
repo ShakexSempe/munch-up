@@ -6,7 +6,7 @@ const HEADER = document.querySelector(".header");
 
 // MAIN SECTION OBSERVER
 const homeOptions = {
-    rootMargin: "-100% 0px 0px 0px"
+    rootMargin: "-90% 0px 0px 0px"
 };
 
 const homeObserver = new IntersectionObserver(
