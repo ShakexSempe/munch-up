@@ -8,8 +8,8 @@
     height: 85vh;
     background: url('../images/desk-hero-3.jpg');
     background-repeat: no-repeat;
-    // background-size: contain;
-    // background-position: bottom;
+    background-size: contain;
+    background-position: bottom;
     @include lg {
         height: 95vh;
         background-attachment: fixed;

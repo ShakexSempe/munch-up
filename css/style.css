@@ -78,7 +78,7 @@
   justify-content: space-between;
   align-items: center;
   color: #fefefe;
-  padding: 0.65rem 1rem;
+  padding: 0.8rem 1rem;
   width: 13rem;
   margin: 1rem 0;
   font-size: 1.15rem;
@@ -694,6 +694,8 @@
   height: 85vh;
   background: url("../images/desk-hero-3.jpg");
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
 }
 @media (min-width: 820px) {
   .slogan {
