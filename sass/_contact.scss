@@ -35,9 +35,9 @@
     .contact-info-title {
         text-transform: capitalize;
         text-align: center;
-        margin: 1em auto 1.5em;
+        margin: 5vh auto;
         color: $munch-brown;
-        text-shadow: 2px 2px 0 pink;
+        font-weight: 600;
     }
     .contact-form {
         position: relative;
@@ -255,15 +255,14 @@
                         letter-spacing: .05rem;
                         font-size: 1rem;
                         @media (max-width: 768px){
-                            margin: 0 auto 10vh;
+                            margin: 0 auto 5vh;
                             width: 100%;
                         }
                         font-weight: 300;
                         border: 0;
                         padding: 1rem;
-                        border-radius: 1.5rem;
+                        border-radius: .5rem;
                         border: none;
-                        outline: none;
                         cursor: pointer;
                         position: relative;
                         box-shadow: $btn-shadow;
