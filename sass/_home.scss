@@ -26,6 +26,7 @@
 
     // DESKTOP HERO
     @include md {
+        height: 100vh;
         img {
             display: none;
         }

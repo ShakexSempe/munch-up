@@ -1,192 +1,102 @@
 .slogan {
-    min-height: 100vh;
-    width: 100%;
-    background-color: $munch-background;
+    background-color: #fafafa;
     position: relative;
     z-index: 1;
-    margin: 10vh 0;
-    padding: 0 5vw;
     isolation: isolate;
+    // border: 2px solid red;
+    padding: 10vh 5vw;
+    height: 85vh;
+    background: url('../images/desk-hero-3.jpg');
+    background-repeat: no-repeat;
+    // background-size: contain;
+    // background-position: bottom;
+    @include lg {
+        height: 95vh;
+        background-attachment: fixed;
+        background-size: contain;
+        background-position: right;
 
-    @media (max-width: 768px) {
-        padding: 0 5vw;
-        margin: 5vh 0;
+        .slogan-content {
+            width: 40%;
+            position: relative;
+            top: 20vh;
+        }
+    }
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
     }
 
-    .slogan-title {
-        // border: .1rem solid $munch-pink;
-        // background-color: $munch-white;
+}
+.gallery {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0em;
+    margin: 5vh auto 10vh;
+    // border: 3px solid blue;
+    // border-radius: 1rem;
+    max-width: 100%;
+    overflow: hidden;
+    // background-color: $munch-pink-light;
+    z-index: 5;
+
+    figure {
         width: 100%;
-        height: 90vh;
-        border-radius: 5px;
-        margin: 0 auto 10vh;
-        padding: .5rem;
-        text-align: center;
-        z-index: -1;
-        position: relative;
-
-        h2 {
-            color: $munch-brown-dark;
-            font-size: 1.5rem;
-            // font-weight: 700;
-            text-transform: capitalize;
-        }
-
-        p {
-            margin: 0;
-            text-align: center;
-            font-family: 'Varela Round', sans-serif;
-            font-size: 1.25rem;
-            font-weight: 300;
-            color: $munch-brown-dark;
-            border-radius: 5px;
-            padding: 1rem 0;
-            transition: .3s ease;
-        }
-        @media(max-width: 820px) {
-            padding: 10vh .5rem;
-            margin: 0 0 10vh;
-            background-image: url("../images/hero-4.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            // mix-blend-mode: overlay;
-
-            h2 {
-                color: #fff;
-                text-shadow: 1px 1px 0px $munch-brown-dark;
-                font-weight: 500;
-                font-size: 1.8rem;
-            }
-
-            p {
-                color: #f4f4f4;
-                font-weight: 100;
-            }
-            .slogan-contact {
-                // border: 1px solid red;
-                width: 100%;
-                position: absolute;
-                bottom: 10vh;
-
-                a {
-                    margin: .5rem 0;
-                }
-            }
+        height: 100%;
+        overflow: hidden;
+        // border: 2px solid #fff000;
+        // border-radius: 5px;
+        // background-color: $munch-pink-light;
+        // padding: .5em;
+        @media (max-width: 820px) {
+            border-radius: .5rem;
         }
         // DATA SCROLL
-        &[data-scroll]{
-            transform: scale(1);
+        &[data-scroll] {
+            transform: scale(1) translateY(10vh);
         }
+
         &[data-scroll="in"] {
-            transform: scale(1);
+            transform: scale(1) translateY(0);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            // object-fit: contain;
+            // border-radius: 5px;
+            transition: .3s ease;
         }
 
-        @media (min-width: 1024px) {
-            border: 2px solid transparent;
-            padding: 5vh 0;
-            height: 90vh;
-            background-image: url("../images/desk-hero-1.jpg");
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            h2, p {
-                backdrop-filter: blur(.1rem);
-            }
+        &:hover {
+            background-image: $munch-background;
 
-            .slogan-contact {
-                // border: 2px solid red;
-                display: flex;
-                justify-content: center;
-                gap: 1rem;
+            img {
+                transition: .3s ease;
 
-                a {
-                    width: 12rem;
-                    font-size: 1rem;
-                    margin: 0;
-                    // border: 2px solid green;
-                    border-radius: 1.5rem;
-                    padding: .5rem 1rem;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    p {
-                        border: 2px solid yellow;
-                    }
-                }
+                transform: scale(1.05);
             }
         }
     }
- 
-    .gallery {
-        display: grid;
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
         place-items: center;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 0em;
-        margin: 5vh auto 10vh;
-        // border: 3px solid $munch-pink-light;
-        border-radius: 1rem;
-        max-width: 100%;
-        overflow: hidden;
-        // background-color: $munch-pink-light;
-        z-index: 5;
+        gap: 15vh;
+        margin: 5vh 0;
+        padding: 5vh 5vw;
 
         figure {
             width: 100%;
             height: 100%;
-            overflow: hidden;
-            // border: 2px solid #fff000;
-            // border-radius: 5px;
-            // background-color: $munch-pink-light;
-            // padding: .5em;
-            @media (max-width: 820px) {
-                border-radius: .5rem;
-            }
-            // DATA SCROLL
-            &[data-scroll] {
-                transform: scale(1) translateY(10vh);
-            }
+            border: none;
 
-            &[data-scroll="in"] {
-                transform: scale(1) translateY(0);
-            }
             img {
-                width: 100%;
-                height: 100%;
-                object-position: center;
-                // object-fit: contain;
-                // border-radius: 5px;
-                transition: .3s ease;
-            }
-
-            &:hover {
-                background-image: $munch-background;
-
-                img {
-                    transition: .3s ease;
-
-                    transform: scale(1.05);
-                }
+                object-fit: cover;
             }
         }
-
-        @media (max-width: 767px) {
-            grid-template-columns: 1fr;
-            place-items: center;
-            gap: 15vh;
-            margin: 5vh 0;
-
-            figure {
-                width: 100%;
-                height: 100%;
-                border: none;
-
-                img {
-                    object-fit: cover;
-                }
-            }
-        }
-
-
     }
+
+
 }

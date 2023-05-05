@@ -93,7 +93,7 @@
     color: $text-color-light;
     
     padding: .65rem 1rem;
-    width: 15rem;
+    width: 13rem;
     margin: 1rem 0;
     
     font-size: 1.15rem;
@@ -109,6 +109,7 @@
 
     i {
         transition: .25s;
+        color: $brand-pink;
     }
     
     &::before,
