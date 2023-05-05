@@ -363,7 +363,7 @@
         background: transparent;
         .hamburger {
             .line {
-                background: #fff;
+                // background: #fff;
                 &::after, &::before {
                     background: inherit;
                 }

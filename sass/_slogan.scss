@@ -22,6 +22,27 @@
             top: 20vh;
         }
     }
+    &.no-bg {
+        background: none;
+        height: auto;
+        padding: 5vh 5vw;
+        @include lg {
+            // border: 2px solid red;
+            text-align: center;
+            height: 30vh;
+            margin: 10vh 0 5vh;
+            // background-attachment: fixed;
+            // background-size: contain;
+            // background-position: right;
+            
+            .slogan-content {
+                margin: 0 auto;
+                // width: 40%;
+                position: relative;
+                top: 0vh;
+            }
+        }
+    }
     h2 {
         font-size: 2rem;
         margin-bottom: 1rem;

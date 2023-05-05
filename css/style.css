@@ -598,9 +598,6 @@
 #header.hero-header {
   background: transparent;
 }
-#header.hero-header .hamburger .line {
-  background: #fff;
-}
 #header.hero-header .hamburger .line::after, #header.hero-header .hamburger .line::before {
   background: inherit;
 }
@@ -710,6 +707,23 @@
     top: 20vh;
   }
 }
+.slogan.no-bg {
+  background: none;
+  height: auto;
+  padding: 5vh 5vw;
+}
+@media (min-width: 820px) {
+  .slogan.no-bg {
+    text-align: center;
+    height: 30vh;
+    margin: 10vh 0 5vh;
+  }
+  .slogan.no-bg .slogan-content {
+    margin: 0 auto;
+    position: relative;
+    top: 0vh;
+  }
+}
 .slogan h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -803,161 +817,65 @@ body {
   width: 100%;
 }
 #services .services {
-  margin: 3vh 10vw;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2em;
-  text-align: center;
+  gap: 5vw;
+  padding: 0 5vw;
 }
-@media (max-width: 768px) {
+@media (min-width: 576px) {
   #services .services {
     grid-template-columns: repeat(2, 1fr);
-    margin: 0;
-    padding: 5vh 5vw;
   }
 }
-@media (max-width: 500px) {
+@media (min-width: 820px) {
   #services .services {
-    grid-template-columns: 1fr;
-    gap: 10vh;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 #services .services .service {
-  padding: 2em;
-  background: #f4f4f4;
-  border: none;
-  outline: none;
+  padding: 1rem;
+  background: #fff;
   overflow: hidden;
   transition: 0.3s;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   transform-style: preserve-3d;
   position: relative;
   cursor: pointer;
+  color: #654321;
 }
-#services .services .service h2 {
-  font-size: 1.3em;
-  font-weight: 500;
-  margin-bottom: 0.5em;
-  color: #800000;
-  font-family: "Fredoka One", cursive;
-  transition: 0.5s;
-}
-@media (max-width: 768px) {
-  #services .services .service h2 {
-    font-size: 1.2em;
+@media (min-width: 576px) {
+  #services .services .service {
+    text-align: center;
   }
 }
+#services .services .service h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  transition: 0.5s;
+}
 #services .services .service p {
-  font-family: "Varela Round", sans-serif;
-  padding: 0.2em 1em;
-  color: #800000;
+  margin-bottom: 1rem;
 }
 #services .services .service .icon {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: space-between;
   transition: 0.5s;
 }
 #services .services .service .icon img {
-  transition: 0.3s;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0.25rem;
   object-fit: cover;
+  transition: 0.25s;
 }
-#services .services .service:hover img {
-  transform: scale(1.15);
-  z-index: 20;
-}
-#services .services .service:hover h2 {
-  opacity: 0;
+@media (min-width: 576px) {
+  #services .services .service .icon img {
+    height: 60vh;
+    object-fit: contain;
+  }
 }
 #services #work-link {
-  display: inline-block;
-  margin: 0 auto 0;
-  width: 100%;
-  text-align: center;
-  padding: 1rem 0;
-  border: none;
-  outline: none;
-  position: relative;
-}
-#services #work-link .catalogBtn {
-  text-decoration: none;
-  color: #e0ffff;
-  position: relative;
-  z-index: 1;
-  width: 50%;
-  margin: 0em auto;
-  padding: 1em 0;
-  transition: 0.2s;
-}
-#services #work-link .catalogBtn a {
-  color: #ddd;
-  text-decoration: none;
-  font-weight: 500;
-  text-transform: capitalize;
-  font-size: 1rem;
-  padding: 0.2em 1em;
   display: block;
   width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-  letter-spacing: 0.1rem;
-  transition: 0.2s;
-}
-#services #work-link .catalogBtn a i {
-  margin-right: 0.5em;
-  color: #ddda;
-}
-#services #work-link .catalogBtn::before, #services #work-link .catalogBtn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
-  background: #f75394;
-  z-index: -1;
-  transition: 0.3s;
-}
-#services #work-link .catalogBtn::before {
-  background: linear-gradient(0deg, #db0a5e, #f63c86);
-  box-shadow: 0 0.25rem 0.5rem rgba(255, 194, 204, 0.1), inset 2px 2px 5px rgba(255, 255, 255, 0.15), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
-}
-#services #work-link .catalogBtn::after {
-  background: linear-gradient(0deg, #f63c86, #db0a5e);
-  opacity: 0;
-  box-shadow: 0 0.15rem 0.25rem rgba(255, 194, 204, 0.2), inset 2px 2px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 2px rgba(255, 255, 255, 0.15);
-}
-@media (min-width: 768px) {
-  #services #work-link .catalogBtn:hover {
-    transform: scale(0.98);
-  }
-  #services #work-link .catalogBtn:hover a {
-    letter-spacing: normal;
-  }
-  #services #work-link .catalogBtn:hover::before {
-    opacity: 0;
-  }
-  #services #work-link .catalogBtn:hover::after {
-    opacity: 1;
-  }
-}
-@media (max-width: 768px) {
-  #services #work-link .catalogBtn:active {
-    transform: scale(0.98);
-  }
-  #services #work-link .catalogBtn:active a {
-    letter-spacing: normal;
-  }
-  #services #work-link .catalogBtn:active::before {
-    opacity: 0;
-  }
-  #services #work-link .catalogBtn:active::after {
-    opacity: 1;
-  }
+  text-align: center;
+  padding: 1rem 5vw;
 }
 #services h2 {
   text-transform: capitalize;
@@ -1501,6 +1419,12 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Varela Round", sans-serif;
+  scroll-padding-top: 5vh;
+}
+@media (min-width: 768px) {
+  * {
+    scroll-padding-top: 7vh;
+  }
 }
 
 body {
