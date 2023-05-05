@@ -622,7 +622,6 @@
   height: 90vh;
   width: 100%;
   padding: 5vh 5vw;
-  background: #0003;
   position: relative;
   isolation: isolate;
 }
@@ -631,11 +630,10 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   object-fit: cover;
   object-position: 5%;
   z-index: -1;
-  mix-blend-mode: darken;
 }
 @media (min-width: 768px) {
   #home {
@@ -662,10 +660,10 @@
 #home .home-content {
   text-transform: capitalize;
   position: relative;
-  top: 10vh;
+  top: 15vh;
   transition: 0.25s ease;
   z-index: 1;
-  color: #f4f4f4;
+  color: #3a2713;
 }
 @media (min-width: 550px) {
   #home .home-content {
@@ -682,6 +680,9 @@
 #home .home-content .home-title h1 {
   font-size: 2.25rem;
   margin-bottom: 0.25rem;
+}
+#home .home-content .btn i {
+  color: #f75394;
 }
 .slogan {
   min-height: 100vh;
