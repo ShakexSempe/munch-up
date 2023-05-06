@@ -30,7 +30,7 @@
         justify-content: space-between;
         align-items: flex-start;
         overflow: hidden;
-        border: 2px solid red;
+        // border: 2px solid red;
 
     }
     .contact-info-title {
@@ -307,6 +307,7 @@
         padding: 0vh 5vw 5vh;
 
         .contact-items {
+            padding-top: 5vh;
             display: grid;
             gap: 10vh;
             @include md {

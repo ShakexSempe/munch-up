@@ -465,6 +465,8 @@
   transition: 0.3s;
 }
 #header aside .nav-links li a {
+  display: block;
+  width: 100%;
   font-size: 1rem;
   text-decoration: none;
   color: #000;
@@ -606,16 +608,16 @@
   transform: translateX(0);
 }
 #header aside.active .contact-links a:nth-child(1) {
-  transition-delay: 0.5s;
+  transition-delay: 0.2s;
 }
 #header aside.active .contact-links a:nth-child(1) i {
-  transition-delay: 0.7s;
+  transition-delay: 0.3s;
 }
 #header aside.active .contact-links a:nth-child(2) {
-  transition-delay: 0.7s;
+  transition-delay: 0.4s;
 }
 #header aside.active .contact-links a:nth-child(2) i {
-  transition-delay: 0.9s;
+  transition-delay: 0.5s;
 }
 #header aside.active .contact-links a:hover {
   color: #f75394;
@@ -1155,7 +1157,6 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     overflow: hidden;
-    border: 2px solid red;
   }
 }
 .contact .contact-info-title {
@@ -1402,6 +1403,7 @@ body {
   padding: 0vh 5vw 5vh;
 }
 .contact .contact-info .contact-items {
+  padding-top: 5vh;
   display: grid;
   gap: 10vh;
 }
