@@ -318,7 +318,6 @@
         .info-box {
             // border: 2px solid red;
             background: #fff;
-            // color: $munch-brown;
             padding: 1rem;
             border-radius: $brand-radius;
             
@@ -327,6 +326,7 @@
                 margin-bottom: 1rem;
                 .contact-icon {
                     font-size: 2rem;
+                    color: $munch-brown-darkest;
                     margin-bottom: .5rem;
                 }
                 h2 {
