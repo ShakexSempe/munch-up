@@ -1,6 +1,7 @@
 #contact {
     overflow-x: hidden;
-    // scroll-padding-top: 50vh;
+    background: #f4f4f4;
+    padding-top: 7vh;
     .title {
         text-align: left;
         p {
@@ -22,43 +23,47 @@
     position: relative;
     width: 100%;
     // margin-top: 50px;
-    padding: 0 5vw;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    overflow: hidden;
-    @media (max-width: 1024px){
-        flex-direction: column-reverse;
-        align-items: center;
-        padding: 0;
+    flex-direction: column-reverse;
+    @include lg {
+        // padding: 0 5vw;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow: hidden;
+        border: 2px solid red;
+
     }
     .contact-info-title {
         text-transform: capitalize;
         text-align: center;
-        margin: 5vh auto;
+        margin: 0vh auto 10vh;
         color: $munch-brown;
         font-weight: 600;
     }
     .contact-form {
         position: relative;
-
+        // border: 2px solid blue;
         background: #f9f9f9;
-        width: calc(100% - 400px);
+        background: #f4f4f4;
+        padding: 10vh 5vw;
+        margin: 0 auto;
+        width: 100%;
+        // width: calc(100% - 400px);
         // padding: 10vh 40px 20px;
-        padding: 10vh 0 20px;
-        margin: 10vh 0;
-        border-radius: 10px;
+        // padding: 10vh 0 20px;
+        // margin: 10vh 0;
+        // border-radius: 10px;
 
-        @media (max-width: 1024px){
-            width: 100%;
-            padding: 30px 1rem 30px;
-            border-radius: 0;
-        }
+        // @media (max-width: 1024px){
+        //     width: 100%;
+        //     padding: 30px 1rem 30px;
+        //     border-radius: 0;
+        // }
         
         form {
             width: 100%;
-
             .row {
+                // background: red;
                 width: 100%;
                 display: flex;
                 @media (max-width: 1024px){
@@ -72,20 +77,23 @@
                 }
                 
                 fieldset {
+                    background: #ffff;
                     padding: 1rem .5rem;
                     display: flex;
                     flex-direction: column;
                     margin: 2em auto;
-                    border: .1rem solid $munch-brown-darkest;
+                    border: none;
+                    border: .1rem solid #0002;
                     height: auto;
                     border-radius: .25rem;
                     overflow: hidden;
                     
 
                     legend {
-                        color: $munch-brown-darkest;
-                        font-weight: 600;
-                        font-size: 1.1rem;
+                        color: $brand-brown;
+                        font-weight: 700;
+                        font-size: 1.125rem;
+                        letter-spacing: .15rem;
                         text-transform: capitalize;
                         margin-left: .5em;
                         padding: 0 .25rem;
@@ -195,10 +203,10 @@
                 }
                 input, textarea, select {
                     position: relative;
-                    border: 2px solid #333;
-                    
+                    border: 1px solid #333;
+                    border: none;
                     color: #000;
-                    background: transparent;
+                    background: #f4f4f4;
                     width: 100%;
                     padding: .7em .5em;
                     outline: none;
@@ -220,12 +228,9 @@
                         color: #333;
                     }
                     &:invalid {
-                        border: 1px solid $munch-brown-dark;
-                        background-color: #eee;
+                        border: 1px solid #0002;
                     }
-                    &:valid {
-                        border: 2px solid pink;
-                    }
+                    
                     optgroup {
                         text-transform: capitalize;
                         option {
@@ -296,88 +301,51 @@
     }
 
     .contact-info {
-        width: 350px;
-        background: #f9f9f9;
-        padding: 10vh .5rem 20px;
-        margin: 10vh 0;
-        border-radius: 10px;
-        // border: 1px solid green;
-        
-        @media (max-width: 1024px){
-            // width: 95%;
-            margin: 1rem auto;
-            // padding: 1rem;
+        // border: 2px solid red;
+        width: 100%;
+        background: #f4f4f4;
+        padding: 0vh 5vw 5vh;
+
+        .contact-items {
+            display: grid;
+            gap: 5vh;
+            @include md {
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 1rem;
+            }
         }
 
         .info-box {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 40px;
-            padding: 1rem .5em;
-            border: 1px solid $munch-brown-darkest;
-            border-radius: 5px;
-            // overflow: hidden;
-            width: 100%;
-            cursor: pointer;
-
-
-            @media (max-width:767px) {
-                margin: .5em 0 5vh;
-            }
-
-            .contact-icon {
-                width: 20px;
-                margin-right: .5em;
-                font-size: 2em;
-                color: $munch-brown-darkest;
+            // border: 2px solid red;
+            background: #fff;
+            // color: $munch-brown;
+            padding: 1rem;
+            border-radius: $brand-radius;
+            
+            .item-title {
+                margin-top: -2rem;
+                margin-bottom: 1rem;
+                .contact-icon {
+                    font-size: 2rem;
+                    margin-bottom: .5rem;
+                }
+                h2 {
+                    text-transform: capitalize;
+                    font-size: 1rem;
+                }
             }
             
-            .details{
-                display: flex;
-                flex-direction: column;
-                // border: 1px solid red;
-                padding: 0 1em;
-                width: 100%;
-                transform: translateX(-.5em);
-                transition: .2s ease;
-                h2 {
-                    font-size: 1.25rem;
-                    font-weight: 600;
-                    color: $munch-brown-darkest;
-                    margin-bottom: .5em;
-                    // font-family: $header-font;
-                    text-transform: capitalize;
-                }
-                
-                a, p {
-                    font-family: $content-font;
-                    color: $munch-brown;
-                    font-size: 1rem;
-                    font-weight: 500;
-                    cursor: pointer;
-                    margin: .5em 0;
-                    transition: .2s ease;
-                    text-decoration: none;
-                    border-radius: 5px;
-                    position: relative;
-
-                    @media (max-width:500px){
-                        font-size: .9em;
-                    }
-
-                    &:hover {
-                        transition: .2s ease;
-                        &::before{opacity:0;}
-                        &::after{opacity:1;}
-                        transform: scale(1.04);
-                    } 
+            a {
+                color: inherit;
+                text-decoration: none;
+                transition: .25s;
+                &:hover {
+                    color: $brand-pink;
                 }
             }
-            // info box items hover state
-            &:hover {
-                & .details {
-                    transform: translateX(0);
-                }
+            i {
+                color: $munch-brown;
+                width: 1.5rem;
             }
         }
     }

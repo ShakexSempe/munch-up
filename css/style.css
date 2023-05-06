@@ -1123,6 +1123,8 @@ body {
 
 #contact {
   overflow-x: hidden;
+  background: #f4f4f4;
+  padding-top: 7vh;
 }
 #contact .title {
   text-align: left;
@@ -1143,40 +1145,31 @@ body {
 .contact {
   position: relative;
   width: 100%;
-  padding: 0 5vw;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  overflow: hidden;
+  flex-direction: column-reverse;
 }
-@media (max-width: 1024px) {
+@media (min-width: 820px) {
   .contact {
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+    border: 2px solid red;
   }
 }
 .contact .contact-info-title {
   text-transform: capitalize;
   text-align: center;
-  margin: 5vh auto;
+  margin: 0vh auto 10vh;
   color: #800000;
   font-weight: 600;
 }
 .contact .contact-form {
   position: relative;
   background: #f9f9f9;
-  width: calc(100% - 400px);
-  padding: 10vh 0 20px;
-  margin: 10vh 0;
-  border-radius: 10px;
-}
-@media (max-width: 1024px) {
-  .contact .contact-form {
-    width: 100%;
-    padding: 30px 1rem 30px;
-    border-radius: 0;
-  }
+  background: #f4f4f4;
+  padding: 10vh 5vw;
+  margin: 0 auto;
+  width: 100%;
 }
 .contact .contact-form form {
   width: 100%;
@@ -1197,19 +1190,22 @@ body {
   }
 }
 .contact .contact-form form .row fieldset {
+  background: #ffff;
   padding: 1rem 0.5rem;
   display: flex;
   flex-direction: column;
   margin: 2em auto;
-  border: 0.1rem solid #51361a;
+  border: none;
+  border: 0.1rem solid #0002;
   height: auto;
   border-radius: 0.25rem;
   overflow: hidden;
 }
 .contact .contact-form form .row fieldset legend {
-  color: #51361a;
-  font-weight: 600;
-  font-size: 1.1rem;
+  color: #3a2713;
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: 0.15rem;
   text-transform: capitalize;
   margin-left: 0.5em;
   padding: 0 0.25rem;
@@ -1313,9 +1309,10 @@ body {
 }
 .contact .contact-form form .row input, .contact .contact-form form .row textarea, .contact .contact-form form .row select {
   position: relative;
-  border: 2px solid #333;
+  border: 1px solid #333;
+  border: none;
   color: #000;
-  background: transparent;
+  background: #f4f4f4;
   width: 100%;
   padding: 0.7em 0.5em;
   outline: none;
@@ -1337,11 +1334,7 @@ body {
   color: #333;
 }
 .contact .contact-form form .row input:invalid, .contact .contact-form form .row textarea:invalid, .contact .contact-form form .row select:invalid {
-  border: 1px solid #654321;
-  background-color: #eee;
-}
-.contact .contact-form form .row input:valid, .contact .contact-form form .row textarea:valid, .contact .contact-form form .row select:valid {
-  border: 2px solid pink;
+  border: 1px solid #0002;
 }
 .contact .contact-form form .row input optgroup, .contact .contact-form form .row textarea optgroup, .contact .contact-form form .row select optgroup {
   text-transform: capitalize;
@@ -1402,82 +1395,48 @@ body {
   margin-bottom: 10vh;
 }
 .contact .contact-info {
-  width: 350px;
-  background: #f9f9f9;
-  padding: 10vh 0.5rem 20px;
-  margin: 10vh 0;
-  border-radius: 10px;
+  width: 100%;
+  background: #f4f4f4;
+  padding: 0vh 5vw 5vh;
 }
-@media (max-width: 1024px) {
-  .contact .contact-info {
-    margin: 1rem auto;
+.contact .contact-info .contact-items {
+  display: grid;
+  gap: 5vh;
+}
+@media (min-width: 768px) {
+  .contact .contact-info .contact-items {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
   }
 }
 .contact .contact-info .info-box {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 40px;
-  padding: 1rem 0.5em;
-  border: 1px solid #51361a;
-  border-radius: 5px;
-  width: 100%;
-  cursor: pointer;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
-@media (max-width: 767px) {
-  .contact .contact-info .info-box {
-    margin: 0.5em 0 5vh;
-  }
+.contact .contact-info .info-box .item-title {
+  margin-top: -2rem;
+  margin-bottom: 1rem;
 }
-.contact .contact-info .info-box .contact-icon {
-  width: 20px;
-  margin-right: 0.5em;
-  font-size: 2em;
-  color: #51361a;
+.contact .contact-info .info-box .item-title .contact-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
-.contact .contact-info .info-box .details {
-  display: flex;
-  flex-direction: column;
-  padding: 0 1em;
-  width: 100%;
-  transform: translateX(-0.5em);
-  transition: 0.2s ease;
-}
-.contact .contact-info .info-box .details h2 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #51361a;
-  margin-bottom: 0.5em;
+.contact .contact-info .info-box .item-title h2 {
   text-transform: capitalize;
-}
-.contact .contact-info .info-box .details a, .contact .contact-info .info-box .details p {
-  font-family: "Varela Round", sans-serif;
-  color: #800000;
   font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  margin: 0.5em 0;
-  transition: 0.2s ease;
+}
+.contact .contact-info .info-box a {
+  color: inherit;
   text-decoration: none;
-  border-radius: 5px;
-  position: relative;
+  transition: 0.25s;
 }
-@media (max-width: 500px) {
-  .contact .contact-info .info-box .details a, .contact .contact-info .info-box .details p {
-    font-size: 0.9em;
-  }
+.contact .contact-info .info-box a:hover {
+  color: #f75394;
 }
-.contact .contact-info .info-box .details a:hover, .contact .contact-info .info-box .details p:hover {
-  transition: 0.2s ease;
-  transform: scale(1.04);
-}
-.contact .contact-info .info-box .details a:hover::before, .contact .contact-info .info-box .details p:hover::before {
-  opacity: 0;
-}
-.contact .contact-info .info-box .details a:hover::after, .contact .contact-info .info-box .details p:hover::after {
-  opacity: 1;
-}
-.contact .contact-info .info-box:hover .details {
-  transform: translateX(0);
+.contact .contact-info .info-box i {
+  color: #800000;
+  width: 1.5rem;
 }
 
 #thankYou {
