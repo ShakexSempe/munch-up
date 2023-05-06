@@ -30,6 +30,18 @@
     width: 100%;
     padding: 0 5vw;
     transition: .5s;
+    isolation: isolate;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #f4f4f4;
+        z-index: -1;
+        transition: .25s;
+    }
 
     .shop-link {
         display: none;
@@ -384,6 +396,9 @@
     &.active-header {
         height: 15vh;
         background: transparent;
+        &::after {
+            // background: red;
+        }
         @media (min-width: 820px) {
             height: 25vh;
         }
@@ -400,6 +415,13 @@
     // HERO HEADER 
     &.hero-header {
         background: transparent;
+        &::after {
+            background: hsla(0, 0%, 100%, .95);
+            @include md {
+                background: transparent;
+                
+            }
+        }
         .hamburger {
             .line {
                 // background: #fff;
