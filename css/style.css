@@ -683,11 +683,12 @@
   }
 }
 .slogan {
-  height: 85vh;
+  height: 100vh;
   padding-top: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-content: space-between;
   gap: 5vh;
 }
 @media (min-width: 576px) {
@@ -719,7 +720,7 @@
   }
 }
 .slogan .slogan-content h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   text-transform: capitalize;
 }
