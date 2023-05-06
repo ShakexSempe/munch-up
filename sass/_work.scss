@@ -1,41 +1,40 @@
 #work {
     padding: 5vh 0;
     .portfolio {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin: 5vh 10vw;
-        @media (max-width: 767px) {
-            margin: 2vh 5vw;
+        // display: flex;
+        // justify-content: space-between;
+        // flex-wrap: wrap;
+        // margin: 5vh 10vw;
+        padding: 5vh 5vw;
+        // border: 2px solid red;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5vh;
+        @include sm {
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            // grid-template-rows: 20vh;
         }
-
+        @include md {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+        }
         .item {
+            // border: 2px solid red;
             position: relative;
-            width: 300px;
-            height: 300px;
-            margin: .5em;
+            // width: 200px;
+            // height: 300px;
+            // margin: .5em;
             cursor: pointer;
             border-radius: 5px;
             overflow: hidden;
-
-           
-
-            @media (max-width:768px) {
-                width: 100%;
-                height: 50vh;
-                margin: 1em;
-
-                img {
-                    border-radius: 5px;
-                }
-            }
-
-
+            width: 100%;
+            
             img {
+                object-fit: cover;
                 width: 100%;
-                height: 100%;
                 transition: .5s;
-                object-fit: fill;
+                height: 100%;
             }
             &:hover {
                 img {
@@ -49,10 +48,13 @@
                 width: 100%;
                 height: 100%;
                 background: #000a;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
+                // display: flex;
+                // flex-direction: column;
+                // // justify-content: space-evenly;
+                display: grid;
+                place-content: center;
+                place-items: center;
+                padding: 1rem; 
                 opacity: 0;
                 transition: .5s ease;
                 color: #ddd;
@@ -60,19 +62,19 @@
                 overflow: hidden;
 
                 h3 {
-                    font-size: 1.2em;
-                    padding: .2em 1em;
+                    font-size: 1.25rem;
+                    margin-bottom: .5rem;
                     border-radius: 5px;
                     font-weight: 700;
                     text-align: center;
                     text-transform: capitalize;
                     color: $text-color-pink;
-                    text-decoration: underline rgba(255, 192, 203, 0.692);
+                    // text-decoration: underline rgba(255, 192, 203, 0.192);
                 }
 
                 p {
-                    padding: .5em;
-                    margin: 1em;
+                    // padding: .5em;
+                    // margin: 1em;
                     border-radius: 5px;
                     text-align: center;
                     font-weight: 500;
@@ -88,12 +90,13 @@
                     text-decoration: none;
                     border: none;
                     outline: none;
-                    padding: .7em 1.5em;
-                    border-radius: 10px;
+                    padding: .6rem 1rem;
+                    margin: 1rem auto;
+                    border-radius: $brand-radius;
                     cursor: pointer;
                     width: 100px;
-                    box-shadow: inset 2px 2px 3px #fff2,
-                                inset -2px -2px 3px #0003;
+                    box-shadow: inset 2px 2px 5px #fff2,
+                                inset -2px -2px 5px #0003;
                 }
             }
 
