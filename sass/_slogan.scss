@@ -1,54 +1,111 @@
 .slogan {
-    background-color: #fafafa;
-    position: relative;
-    z-index: 1;
-    isolation: isolate;
-    // border: 2px solid red;
-    padding: 10vh 5vw;
-    height: 100vh;
-    background: url('../images/desk-hero-3-1.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
-    @include lg {
-        height: 95vh;
-        background-attachment: fixed;
-        background-size: contain;
-        background-position: right;
+    // background-color: #fafafa;
+    // position: relative;
+    // z-index: 1;
+    // isolation: isolate;
+    // // border: 2px solid red;
+    // padding: 10vh 5vw;
+    // height: 100vh;
+    // background: url('../images/desk-hero-3-1.jpg');
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-position: bottom;
+    // @include lg {
+    //     height: 95vh;
+    //     background-attachment: fixed;
+    //     background-size: contain;
+    //     background-position: right;
 
-        .slogan-content {
-            width: 40%;
-            position: relative;
-            top: 20vh;
-        }
-    }
-    &.no-bg {
-        background: none;
-        height: auto;
-        padding: 5vh 5vw;
-        @include lg {
-            // border: 2px solid red;
-            text-align: center;
-            height: 30vh;
-            margin: 10vh 0 5vh;
-            // background-attachment: fixed;
-            // background-size: contain;
-            // background-position: right;
+    //     .slogan-content {
+    //         width: 40%;
+    //         position: relative;
+    //         top: 20vh;
+    //     }
+    // }
+    // &.no-bg {
+    //     background: none;
+    //     height: auto;
+    //     padding: 5vh 5vw;
+    //     @include lg {
+    //         // border: 2px solid red;
+    //         text-align: center;
+    //         height: 30vh;
+    //         margin: 10vh 0 5vh;
+    //         // background-attachment: fixed;
+    //         // background-size: contain;
+    //         // background-position: right;
             
-            .slogan-content {
-                margin: 0 auto;
-                // width: 40%;
+    //         .slogan-content {
+    //             margin: 0 auto;
+    //             // width: 40%;
+    //             position: relative;
+    //             top: 0vh;
+    //         }
+    //     }
+    // }
+    // h2 {
+    //     font-size: 2rem;
+    //     margin-bottom: 1rem;
+    //     text-transform: capitalize;
+    // }
+        // border: 2px solid red;
+        // background-color: red;
+        height: 85vh;
+        padding-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5vh;
+        @include sm {
+            flex-direction: row;
+            padding-top: 10vh;
+            height: auto;
+
+        }
+        @include lg {
+            // display: block;
+            justify-content: flex-start;
+            height: 100vh;
+            background: url('../images/desk-hero-3.jpg');
+            background-size: contain;
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-attachment: fixed;
+        }
+        .slogan-content {
+            // border: 2px solid blue;
+            padding: 5vh 5vw 0;
+            @include lg {
                 position: relative;
-                top: 0vh;
+                top: 20vh;
+            }
+
+            h2 {
+                font-size: 2rem;
+                margin-bottom: .5rem;
+                text-transform: capitalize;
+            }
+            p {
+                text-transform: lowercase;
+                margin-bottom: 5vh;
             }
         }
-    }
-    h2 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        text-transform: capitalize;
-    }
-
+        figure {
+            width: 100%;
+            // border: 4px solid yellow;
+            overflow: hidden;
+            img {
+                width: 100%;
+                // object-fit: contain;
+            }
+            @include sm {
+                width: 50%;
+            }
+            @include lg {
+                display: none;
+            }
+        }
 }
 .gallery {
     display: grid;
@@ -62,6 +119,7 @@
     overflow: hidden;
     // background-color: $munch-pink-light;
     z-index: 5;
+    background: #fafafa;
 
     figure {
         width: 100%;
@@ -106,8 +164,8 @@
         grid-template-columns: 1fr;
         place-items: center;
         gap: 15vh;
-        margin: 5vh 0;
-        padding: 5vh 5vw;
+        margin:  0;
+        padding: 10vh 5vw;
 
         figure {
             width: 100%;

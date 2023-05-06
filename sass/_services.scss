@@ -1,7 +1,21 @@
 #services {
     width: 100%;
     // overflow-x: hidden;
-    
+    padding-top: 5vh;
+    .service-intro {
+        // border: 2px solid red;
+        padding: 5vh 5vw 5vh;
+        margin-bottom: 5vh;
+        color: $munch-brown;
+        @include sm {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            line-height: 1.5;
+        }
+    }
     .services {
         // border: 2px solid red;
         display: grid;
@@ -21,7 +35,7 @@
         //     gap: 5vh;
         // }
         
-
+        
         
 
         .service {
@@ -59,7 +73,7 @@
                     object-fit: cover;
                     transition: .25s;
                     @include sm {
-                        height: 60vh;
+                        height: 50vh;
                         object-fit: contain;
                     }
                 }

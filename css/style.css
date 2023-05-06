@@ -93,7 +93,7 @@
 }
 .btn i {
   transition: 0.25s;
-  color: #f75394;
+  color: #f86da5;
 }
 .btn::before, .btn::after {
   position: absolute;
@@ -683,51 +683,66 @@
   }
 }
 .slogan {
-  background-color: #fafafa;
-  position: relative;
-  z-index: 1;
-  isolation: isolate;
-  padding: 10vh 5vw;
-  height: 100vh;
-  background: url("../images/desk-hero-3-1.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
+  height: 85vh;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5vh;
+}
+@media (min-width: 576px) {
+  .slogan {
+    flex-direction: row;
+    padding-top: 10vh;
+    height: auto;
+  }
 }
 @media (min-width: 820px) {
   .slogan {
-    height: 95vh;
-    background-attachment: fixed;
+    justify-content: flex-start;
+    height: 100vh;
+    background: url("../images/desk-hero-3.jpg");
     background-size: contain;
-    background-position: right;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
   }
+}
+.slogan .slogan-content {
+  padding: 5vh 5vw 0;
+}
+@media (min-width: 820px) {
   .slogan .slogan-content {
-    width: 40%;
     position: relative;
     top: 20vh;
   }
 }
-.slogan.no-bg {
-  background: none;
-  height: auto;
-  padding: 5vh 5vw;
+.slogan .slogan-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+.slogan .slogan-content p {
+  text-transform: lowercase;
+  margin-bottom: 5vh;
+}
+.slogan figure {
+  width: 100%;
+  overflow: hidden;
+}
+.slogan figure img {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .slogan figure {
+    width: 50%;
+  }
 }
 @media (min-width: 820px) {
-  .slogan.no-bg {
-    text-align: center;
-    height: 30vh;
-    margin: 10vh 0 5vh;
+  .slogan figure {
+    display: none;
   }
-  .slogan.no-bg .slogan-content {
-    margin: 0 auto;
-    position: relative;
-    top: 0vh;
-  }
-}
-.slogan h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-transform: capitalize;
 }
 
 .gallery {
@@ -739,6 +754,7 @@
   max-width: 100%;
   overflow: hidden;
   z-index: 5;
+  background: #fafafa;
 }
 .gallery figure {
   width: 100%;
@@ -774,8 +790,8 @@
     grid-template-columns: 1fr;
     place-items: center;
     gap: 15vh;
-    margin: 5vh 0;
-    padding: 5vh 5vw;
+    margin: 0;
+    padding: 10vh 5vw;
   }
   .gallery figure {
     width: 100%;
@@ -815,6 +831,21 @@ body {
 
 #services {
   width: 100%;
+  padding-top: 5vh;
+}
+#services .service-intro {
+  padding: 5vh 5vw 5vh;
+  margin-bottom: 5vh;
+  color: #800000;
+}
+@media (min-width: 576px) {
+  #services .service-intro {
+    text-align: center;
+  }
+}
+#services .service-intro h2 {
+  font-size: 2rem;
+  line-height: 1.5;
 }
 #services .services {
   display: grid;
@@ -867,7 +898,7 @@ body {
 }
 @media (min-width: 576px) {
   #services .services .service .icon img {
-    height: 60vh;
+    height: 50vh;
     object-fit: contain;
   }
 }
