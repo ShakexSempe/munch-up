@@ -308,7 +308,7 @@
 
         .contact-items {
             display: grid;
-            gap: 5vh;
+            gap: 10vh;
             @include md {
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 1rem;

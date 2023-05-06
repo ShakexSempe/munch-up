@@ -1403,7 +1403,7 @@ body {
 }
 .contact .contact-info .contact-items {
   display: grid;
-  gap: 5vh;
+  gap: 10vh;
 }
 @media (min-width: 768px) {
   .contact .contact-info .contact-items {
