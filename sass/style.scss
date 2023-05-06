@@ -7,6 +7,7 @@
 @import 'reset';
 @import 'services';
 @import 'work';
+@import 'footer';
 @import 'contact';
 
 * {
@@ -56,65 +57,7 @@ main {
     }
 }
 
-footer {
-    width: 100%;
-    background-color: $munch-pink-light;
-    margin: 1rem 0 0;
-    padding: 10vh 5vw;
-    text-align: center;
 
-    p {
-        backdrop-filter: blur(2em);
-        font-size: 1rem;
-        margin: 0 auto;
-        color: #000;
-        font-weight: 400;
-        line-height: 1.7;
-        text-transform: capitalize;
-
-        span {
-            color: $munch-brown-darkest;
-        }
-    }
-
-    @media (max-width: 768px) {
-        width: 100%;
-
-        p {
-            text-align: center;
-            font-size: 1rem;
-        }
-    }
-
-    a {
-        color: $munch-brown-dark;
-        text-decoration: none;
-        position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            transform: translateY(.5em) scale(.1);
-            left: 0;
-            width: 100%;
-            height: 2px;
-            opacity: 0;
-            background-color: $munch-brown-darkest;
-            transition: .5s ease;
-        }
-    }
-
-    &:hover {
-        a {
-            &::before {
-                opacity: .6;
-                width: 100%;
-                transform: translateY(0em);
-            }
-        }
-    }
-}
 
 
 

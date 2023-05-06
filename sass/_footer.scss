@@ -1,0 +1,68 @@
+.footer {
+    // border: 3px solid red;
+    padding: 5vh 5vw;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+
+    @include lg {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-items: flex-start;
+        padding: 5vh 0 0;
+        gap: 1rem;
+    }
+
+    img {
+        width: 10rem;
+    }
+    
+    .footer-item {
+        flex-grow: 1;
+        h3 {
+            text-transform: capitalize;
+            margin-bottom: .5rem;
+        }
+        #date {
+            color: $munch-brown;
+        }
+
+        p {
+            // color: $text-light;
+            text-transform: capitalize;
+            line-height: 1.6;
+        }
+        .footer-list {
+            list-style: none;
+            li {
+                margin-bottom: .5rem;
+                i {
+                    width: 1.5rem;
+                    color: $munch-brown;
+                    transition: .25s;
+                }
+                a {
+                    color: $brand-brown;
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+                
+                &:hover {
+                    a {
+                        // color: $brand;;
+                    }
+                    i {
+                        // color: $text-light;
+                        transform: translateX(.25rem);
+                    }
+                }
+            }
+            &.browse-list {
+                text-transform: capitalize;
+            }
+        }
+
+    }
+}
