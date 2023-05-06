@@ -68,6 +68,44 @@
 
     // end of hamburger icon
 
+    .desktop-nav {
+        @media (max-width: 768px) {
+            display: none;
+        }
+        // border: 2px solid red;
+        ul {
+            display: flex;
+            list-style: none;
+            gap: .5rem;
+            li {
+                a {
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    color: $brand-brown;
+                    padding: 0 .5rem;
+                    transition: .25s;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -.125rem;
+                        width: 0%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        height: 2px;
+                        background: $brand-brown;
+                        transition: .25s;
+                    }
+                    &:hover {
+                        color: $munch-brown;
+                        &::after {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .logo {
         position: relative;
         // top: 0vh;
@@ -107,6 +145,7 @@
         background-color: #ffc0cb;
         background-image: radial-gradient(rgba(182, 12, 12, 0.2), #ffc0cb00);
         @media (min-width: 768px) {
+            display: none;
             align-items: center;
         }
         // GENERAL UL STYLE

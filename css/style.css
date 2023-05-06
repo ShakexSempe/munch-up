@@ -72,6 +72,11 @@
 .hamburger.active-menu .menu p {
   color: #fff;
 }
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
 
 .btn {
   display: flex;
@@ -343,6 +348,41 @@
   font-size: 1rem;
   color: #f4f4f4;
 }
+@media (max-width: 768px) {
+  #header .desktop-nav {
+    display: none;
+  }
+}
+#header .desktop-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+#header .desktop-nav ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #3a2713;
+  padding: 0 0.5rem;
+  transition: 0.25s;
+  position: relative;
+}
+#header .desktop-nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -0.125rem;
+  width: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background: #3a2713;
+  transition: 0.25s;
+}
+#header .desktop-nav ul li a:hover {
+  color: #800000;
+}
+#header .desktop-nav ul li a:hover::after {
+  width: 50%;
+}
 #header .logo {
   position: relative;
   height: 2.5rem;
@@ -376,6 +416,7 @@
 }
 @media (min-width: 768px) {
   #header aside {
+    display: none;
     align-items: center;
   }
 }
@@ -666,7 +707,7 @@
 }
 @media (min-width: 576px) {
   #home .home-content {
-    top: 5vh;
+    top: 10vh;
     text-align: center;
   }
 }

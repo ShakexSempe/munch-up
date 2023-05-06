@@ -83,6 +83,10 @@
                 }
             }
         }
+
+        @include md {
+            display: none;
+        }
 }
 
 
