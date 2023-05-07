@@ -25,8 +25,9 @@
     // margin-top: 50px;
     display: flex;
     flex-direction: column-reverse;
+    padding: 5vh 0;
     @include lg {
-        // padding: 0 5vw;
+        padding: 10vh 5vw;
         justify-content: space-between;
         align-items: flex-start;
         overflow: hidden;

@@ -8,6 +8,7 @@
         padding: 5vh 5vw;
         // border: 2px solid red;
         display: grid;
+        place-items: center;
         grid-template-columns: 1fr;
         gap: 5vh;
         @include sm {
@@ -17,7 +18,7 @@
         }
         @include md {
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 1rem;
+            // gap: 1rem;
         }
         .item {
             // border: 2px solid red;
@@ -29,12 +30,18 @@
             border-radius: 5px;
             overflow: hidden;
             width: 100%;
+            @include lg {
+                width: 80%;
+            }
             
             img {
                 object-fit: cover;
                 width: 100%;
                 transition: .5s;
                 height: 100%;
+                // @include lg {
+                //     width: 70%;
+                // }
             }
             &:hover {
                 img {

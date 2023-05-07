@@ -996,6 +996,7 @@ body {
 #work .portfolio {
   padding: 5vh 5vw;
   display: grid;
+  place-items: center;
   grid-template-columns: 1fr;
   gap: 5vh;
 }
@@ -1008,7 +1009,6 @@ body {
 @media (min-width: 768px) {
   #work .portfolio {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
   }
 }
 #work .portfolio .item {
@@ -1017,6 +1017,11 @@ body {
   border-radius: 5px;
   overflow: hidden;
   width: 100%;
+}
+@media (min-width: 820px) {
+  #work .portfolio .item {
+    width: 80%;
+  }
 }
 #work .portfolio .item img {
   object-fit: cover;
@@ -1169,9 +1174,11 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column-reverse;
+  padding: 5vh 0;
 }
 @media (min-width: 820px) {
   .contact {
+    padding: 10vh 5vw;
     justify-content: space-between;
     align-items: flex-start;
     overflow: hidden;
