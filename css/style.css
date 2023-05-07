@@ -1111,6 +1111,10 @@ body {
   text-transform: capitalize;
   line-height: 1.6;
 }
+.footer .footer-item p a {
+  color: #800000;
+  text-decoration: none;
+}
 .footer .footer-item .footer-list {
   list-style: none;
 }

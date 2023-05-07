@@ -37,6 +37,11 @@
             // color: $text-light;
             text-transform: capitalize;
             line-height: 1.6;
+
+            a {
+                color: $munch-brown;
+                text-decoration: none;
+            }
         }
         .footer-list {
             list-style: none;
