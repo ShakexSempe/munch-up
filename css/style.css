@@ -20,15 +20,16 @@
   background: #654321;
   position: relative;
   border-radius: 5rem;
+  transition: 0.25s;
 }
 .hamburger .line::after, .hamburger .line::before {
   position: absolute;
   content: "";
   width: 100%;
   height: 100%;
-  background: inherit;
+  background: #654321;
   border-radius: 5rem;
-  transition: 0.2s;
+  transition: 0.25s;
 }
 .hamburger .line::before {
   transform: translateY(-0.3rem);
@@ -58,10 +59,15 @@
 .hamburger.active-menu {
   transform: scale(0.95);
 }
+.hamburger.active-menu .line {
+  background: #f4f4f4;
+}
 .hamburger.active-menu .line::before {
+  background: #f4f4f4;
   transform: translateY(-0.3rem) translateX(0.25rem);
 }
 .hamburger.active-menu .line::after {
+  background: #f4f4f4;
   transform: translateY(0.3rem) translateX(-0.25rem);
 }
 .hamburger.active-menu .menu {
@@ -424,8 +430,8 @@
   padding-right: 5vw;
   gap: 5vh;
   transition: 0.5s ease;
-  background-color: #ffc0cb;
-  background-image: radial-gradient(rgba(182, 12, 12, 0.2), #ffc0cb00);
+  background: #3a2713;
+  color: #f4f4f4;
 }
 @media (min-width: 768px) {
   #header aside {
@@ -456,11 +462,10 @@
   padding: 0.5rem;
   transition: 0.5s;
   margin-bottom: 1rem;
-  background-color: pink;
-  border-radius: 0.25rem;
   border: none;
+  border-bottom: 2px solid #fff5;
   outline: none;
-  transform: scale(0.1);
+  transform: translateX(2rem);
   opacity: 0;
   transition: 0.3s;
 }
@@ -469,7 +474,7 @@
   width: 100%;
   font-size: 1rem;
   text-decoration: none;
-  color: #000;
+  color: #f4f4f4;
 }
 @media (min-width: 768px) {
   #header aside .nav-links li a {
@@ -478,7 +483,9 @@
 }
 #header aside .nav-links li a i {
   color: rgba(12, 12, 12, 0.377);
+  color: #ddd;
   margin-right: 0.5em;
+  width: 1.5rem;
   transition: 0.2s;
 }
 #header aside .nav-links li:hover {
@@ -489,9 +496,10 @@
 }
 #header aside .contact-links {
   width: 16rem;
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
   border-radius: 0.25rem;
   overflow: hidden;
+  background: #51361a;
 }
 @media (min-width: 768px) {
   #header aside .contact-links {
@@ -503,12 +511,13 @@
   margin-bottom: 0.5rem;
   text-decoration: none;
   opacity: 0;
-  color: #000;
+  color: #f4f4f4;
   font-weight: 500;
   transform: translateX(1rem);
   transition: 1s;
 }
 #header aside .contact-links a i {
+  color: inherit;
   width: 1.5rem;
   transform: translateX(-2rem);
   transition: 1s;
@@ -531,7 +540,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #e7feff;
+  background: #f4f4f4;
   transition: 0.4s;
   transition-delay: 0.2s;
 }
@@ -547,7 +556,7 @@
 }
 #header aside .social-bar ul li a {
   font-size: 1.5rem;
-  color: #f75394;
+  color: #800000;
   transition: 0.2s;
   position: relative;
 }
@@ -570,7 +579,7 @@
 #header aside .social-bar .email-icon {
   position: absolute;
   bottom: 10vh;
-  color: #f75394;
+  color: #800000;
   transition: 0.2s;
   font-size: 1.5rem;
 }
@@ -581,7 +590,7 @@
   left: 0;
 }
 #header aside.active .nav-links li {
-  transform: scale(1);
+  transform: translateX(0);
   transition: 0.5s;
   opacity: 1;
 }

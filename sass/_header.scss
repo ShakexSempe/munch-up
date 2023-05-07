@@ -155,8 +155,10 @@
         padding-right: 5vw;
         gap: 5vh;
         transition: .5s ease;
-        background-color: #ffc0cb;
-        background-image: radial-gradient(rgba(182, 12, 12, 0.2), #ffc0cb00);
+        background: $brand-brown;
+        color: #f4f4f4;
+        // background-color: #ffc0cb;
+        // background-image: radial-gradient(rgba(182, 12, 12, 0.2), #ffc0cb00);
         @media (min-width: 768px) {
             display: none;
             align-items: center;
@@ -190,11 +192,14 @@
                 transition: .5s;
                 // margin: 0 5vw 5vh 0;
                 margin-bottom: 1rem;
-                background-color: $munch-pink-light;
-                border-radius: .25rem;
+                // background-color: $munch-pink-light;
+                // background: #111;
+                // border-radius: .25rem;
                 border: none;
+                border-bottom: 2px solid #fff5;
                 outline: none;
-                transform: scale(.1);
+                // transform: scale(.1);
+                transform: translateX(2rem);
                 opacity: 0;
                 transition: .3s;
 
@@ -203,7 +208,7 @@
                     width: 100%;
                     font-size: 1rem;
                     text-decoration: none;
-                    color: #000;
+                    color: #f4f4f4;
                     // border: 2px solid red;
                     @media (min-width: 768px) {
                         font-size: 1.25rem;
@@ -211,7 +216,9 @@
 
                     i {
                         color: rgba(12, 12, 12, 0.377);
+                        color: #ddd;
                         margin-right: .5em;
+                        width: 1.5rem;
                         transition: .2s;
                     }
                 }
@@ -229,9 +236,10 @@
         .contact-links {
             // border: 2px solid #0003;
             width: 16rem;
-            padding: 1rem 0;
+            padding: 1rem .5rem;
             border-radius: .25rem;
             overflow: hidden;
+            background: $munch-brown-darkest;
             @media (min-width: 768px) {
                 width: 20rem;
             }
@@ -241,11 +249,12 @@
                 margin-bottom: .5rem;
                 text-decoration: none;
                 opacity: 0;
-                color: #000;
+                color: #f4f4f4;
                 font-weight: 500;
                 transform: translateX(1rem);
                 transition: 1s;
                 i {
+                    color: inherit;
                     width: 1.5rem;
                     transform: translateX(-2rem);
                     transition: 1s;
@@ -276,7 +285,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: $munch-bubble;
+            background: #f4f4f4;
             transition: .4s;
             transition-delay: .2s;
 
@@ -288,7 +297,7 @@
                 li {
                     a {
                         font-size: 1.5rem;
-                        color: $munch-pink;
+                        color: $munch-brown;
                         transition: .2s;
                         position: relative;
                         @media (min-width: 768px) {
@@ -315,7 +324,7 @@
             .email-icon {
                 position: absolute;
                 bottom: 10vh;
-                color: $munch-pink;
+                color: $munch-brown;
                 transition: .2s;
                 font-size: 1.5rem;
 
@@ -333,7 +342,7 @@
             left: 0;
             .nav-links {
                 li {
-                    transform: scale(1);
+                    transform: translateX(0);
                     transition: .5s;
                     opacity: 1;
                     &:nth-child(1){
