@@ -1,7 +1,7 @@
 #contact {
     overflow-x: hidden;
     background: #f4f4f4;
-    padding-top: 7vh;
+    padding-top: 5vh;
     .title {
         text-align: left;
         p {
@@ -36,7 +36,7 @@
     .contact-info-title {
         text-transform: capitalize;
         text-align: center;
-        margin: 0vh auto 10vh;
+        padding: 10vh 0 5vh;
         color: $munch-brown;
         font-weight: 600;
     }
