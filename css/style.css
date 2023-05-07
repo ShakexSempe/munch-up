@@ -1094,6 +1094,8 @@ body {
 }
 .footer img {
   width: 10rem;
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 0.5rem #0001;
 }
 .footer .footer-item {
   flex-grow: 1;
