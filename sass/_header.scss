@@ -41,7 +41,7 @@
         background: #fafafa;
         box-shadow: 0 .25rem 1rem rgba(0, 0, 0, .05);
         z-index: -1;
-        transition: .25s;
+        transition: .25s, box-shadow .5s;
     }
 
     .shop-link {
