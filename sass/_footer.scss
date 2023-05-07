@@ -41,6 +41,9 @@
             a {
                 color: $munch-brown;
                 text-decoration: none;
+                &:hover {
+                    color: $brand-pink;
+                }
             }
         }
         .footer-list {
@@ -56,14 +59,15 @@
                     color: $brand-brown;
                     cursor: pointer;
                     text-decoration: none;
+                    transition: .25s;
                 }
                 
                 &:hover {
                     a {
-                        // color: $brand;;
+                        color: $munch-brown;
                     }
                     i {
-                        // color: $text-light;
+                        color: $brand-brown;
                         transform: translateX(.25rem);
                     }
                 }

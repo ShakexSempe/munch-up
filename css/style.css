@@ -1125,6 +1125,9 @@ body {
   color: #800000;
   text-decoration: none;
 }
+.footer .footer-item p a:hover {
+  color: #f75394;
+}
 .footer .footer-item .footer-list {
   list-style: none;
 }
@@ -1140,8 +1143,13 @@ body {
   color: #3a2713;
   cursor: pointer;
   text-decoration: none;
+  transition: 0.25s;
+}
+.footer .footer-item .footer-list li:hover a {
+  color: #800000;
 }
 .footer .footer-item .footer-list li:hover i {
+  color: #3a2713;
   transform: translateX(0.25rem);
 }
 .footer .footer-item .footer-list.browse-list {
