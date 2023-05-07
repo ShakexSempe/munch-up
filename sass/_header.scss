@@ -196,7 +196,7 @@
                 // background: #111;
                 // border-radius: .25rem;
                 border: none;
-                border-bottom: 2px solid #fff5;
+                border-bottom: 2px solid #0005;
                 outline: none;
                 // transform: scale(.1);
                 transform: translateX(2rem);
@@ -224,7 +224,6 @@
                 }
 
                 &:hover {
-                    transform: scale(.99);
 
                     i {
                         color: $munch-pink;
