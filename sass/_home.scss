@@ -61,6 +61,9 @@
             top: 10vh;
             text-align: center;
         }
+        @include xlg {
+            top: 5vh;
+        }
 
         color: $brand-brown;
 
