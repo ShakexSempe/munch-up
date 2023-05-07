@@ -118,14 +118,7 @@
                 }
 
                 a:is(:link, :active, :visited).active {
-                    &::after {
-                        width: 50%;
-                    }
-                    &:hover {
-                        &::after {
-                        background: $brand-pink;
-                        }
-                    }
+                    color: $munch-brown;
                 }
             }
         }

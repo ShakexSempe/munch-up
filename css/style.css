@@ -402,11 +402,8 @@
 #header .desktop-nav ul li a:hover::after {
   width: 50%;
 }
-#header .desktop-nav ul li a:is(:link, :active, :visited).active::after {
-  width: 50%;
-}
-#header .desktop-nav ul li a:is(:link, :active, :visited).active:hover::after {
-  background: #f75394;
+#header .desktop-nav ul li a:is(:link, :active, :visited).active {
+  color: #800000;
 }
 #header .logo {
   position: relative;
