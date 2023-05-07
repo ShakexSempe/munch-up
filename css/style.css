@@ -402,6 +402,12 @@
 #header .desktop-nav ul li a:hover::after {
   width: 50%;
 }
+#header .desktop-nav ul li a:is(:link, :active, :visited).active::after {
+  width: 50%;
+}
+#header .desktop-nav ul li a:is(:link, :active, :visited).active:hover::after {
+  background: #f75394;
+}
 #header .logo {
   position: relative;
   height: 2.5rem;
@@ -487,6 +493,9 @@
   margin-right: 0.5em;
   width: 1.5rem;
   transition: 0.2s;
+}
+#header aside .nav-links li a.active {
+  color: pink;
 }
 #header aside .nav-links li:hover i {
   color: #f75394;

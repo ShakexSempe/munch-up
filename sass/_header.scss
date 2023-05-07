@@ -116,6 +116,17 @@
                         }
                     }
                 }
+
+                a:is(:link, :active, :visited).active {
+                    &::after {
+                        width: 50%;
+                    }
+                    &:hover {
+                        &::after {
+                        background: $brand-pink;
+                        }
+                    }
+                }
             }
         }
     }
@@ -220,6 +231,10 @@
                         margin-right: .5em;
                         width: 1.5rem;
                         transition: .2s;
+                    }
+
+                    &.active {
+                        color: pink;
                     }
                 }
 
@@ -401,7 +416,7 @@
             }
         }
         // END OF ACTIVE SIDEBAR
-
+        
     }
 
     // IO HEADER
@@ -456,4 +471,6 @@
             }
         }
     }
+
+    
 }

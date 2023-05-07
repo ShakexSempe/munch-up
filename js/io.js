@@ -1,7 +1,6 @@
 const home = document.getElementById("home");
 const main = document.getElementById("main");
 const homeBtn = document.querySelector(".top-btn");
-const HEADER = document.querySelector(".header");
 // console.log(HEADER);
 
 // MAIN SECTION OBSERVER

@@ -3,11 +3,18 @@ const navigation = document.querySelector('.navigation');
 // const home = document.querySelector('.home-content');
 const homeImg = document.querySelector('.home-img');
 const logo = document.querySelector(".logo");
+const HEADER = document.querySelector(".header");
 
 const date = document.getElementById('date');
-
-console.log(home);
-
+const pageLinks = document.querySelectorAll('.page-link');
+console.log(pageLinks);
+const activePage = window.location.pathname;
+pageLinks.forEach(link => {
+    if (link.href.includes(`${activePage}`)) {
+        link.classList.add('active');
+        console.log(`${activePage} is active`)
+    }
+});
 // document.addEventListener("scroll", () => {
 //     let scroll_position = window.scrollY;
 //     let scroll_height = window.pageYOffset;
