@@ -1059,7 +1059,7 @@ body {
   color: #4d3419;
 }
 #work .portfolio .item .action h3 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
   font-weight: 700;
   text-transform: capitalize;
@@ -1072,7 +1072,7 @@ body {
 #work .portfolio .item .action h3 span {
   color: #f75394;
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   padding-top: 0.25rem;
 }
 #work .portfolio .item .action h3 span::before {
