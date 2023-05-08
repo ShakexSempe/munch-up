@@ -25,15 +25,21 @@
     }
 
     // DESKTOP HERO
-    @include md {
+    @include lg {
         height: 100vh;
         img {
             display: none;
         }
         background: url(../images/desk-hero.jpg);
+        background: url(../images/desk-hero-3.jpg);
+        background: url(../images/alex-lvrs-1Qn9aCv4T3E-unsplash.jpg);
+        background-color:#ffff;
         background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
+        // background-size: contain;
+        background-position: 100% 70%;
+        background-size: 60%;
+        // background-position: bottom right;
+        // background-position: 100% 100%;
         background-repeat: no-repeat;
         &::after {
             position: absolute;
@@ -43,7 +49,8 @@
             width: 100%;
             height: 100%;
             background: linear-gradient(0deg, rgba(0, 0, 0, .15), transparent 60%);
-            opacity: 1;
+            background: #fff;
+            opacity: 0;
         }
     }
 
@@ -57,12 +64,12 @@
         top: 15vh;
         transition: .25s ease;
         z-index: 1;
-        @include sm {
-            top: 10vh;
-            text-align: center;
+        @include md {
+            top: 25vh;
+            // text-align: center;
         }
         @include xlg {
-            top: 5vh;
+            top: 25vh;
         }
 
         color: $brand-brown;
@@ -81,7 +88,7 @@
                 color: $brand-pink;
             }
             @include sm {
-                margin: 1rem auto;
+                // margin: 1rem auto;
             }
         }
         .cta {

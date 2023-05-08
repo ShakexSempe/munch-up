@@ -1,4 +1,16 @@
 #header {
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: pink;
+    height: 8vh;
+    width: 100%;
+    padding: .25rem 5vw;
+    transition: .25s;
+    isolation: isolate;
     @media (min-width: 820px) {
         background: transparent;
         background: #f4f4f4;
@@ -16,21 +28,9 @@
         display: flex;
         align-items: center;
         z-index: 20;
-        padding: .5rem 1rem;
+        // padding: .5rem 1rem;
     }
-    
-    position: fixed;
-    top: 0;
-    z-index: 20;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: pink;
-    height: 8vh;
-    width: 100%;
-    padding: 0 5vw;
-    transition: .5s;
-    isolation: isolate;
+
     &::after {
         content: '';
         position: absolute;
@@ -41,7 +41,7 @@
         background: #fff;
         box-shadow: 0 .25rem 1rem rgba(0, 0, 0, .05);
         z-index: -1;
-        transition: .25s, box-shadow .5s;
+        transition: .25s, box-shadow .25s;
     }
 
     .shop-link {
@@ -82,43 +82,44 @@
     // end of hamburger icon
 
     .desktop-nav {
-        @media (max-width: 768px) {
-            display: none;
-        }
-        // border: 2px solid red;
-        ul {
-            display: flex;
-            list-style: none;
-            gap: .5rem;
-            li {
-                a {
-                    text-transform: capitalize;
-                    text-decoration: none;
-                    color: $brand-brown;
-                    padding: 0 .5rem;
-                    transition: .25s;
-                    position: relative;
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        bottom: -.125rem;
-                        width: 0%;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        height: 2px;
-                        background: $brand-brown;
+        display: none;
+        @include lg {
+            display: block;
+            // border: 2px solid red;
+            ul {
+                display: flex;
+                list-style: none;
+                gap: .5rem;
+                li {
+                    a {
+                        text-transform: capitalize;
+                        text-decoration: none;
+                        color: $brand-brown;
+                        padding: 0 .5rem;
                         transition: .25s;
-                    }
-                    &:hover {
-                        color: $munch-brown;
+                        position: relative;
                         &::after {
-                            width: 50%;
+                            content: '';
+                            position: absolute;
+                            bottom: -.125rem;
+                            width: 0%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            height: 2px;
+                            background: $brand-brown;
+                            transition: .25s;
+                        }
+                        &:hover {
+                            color: $munch-brown;
+                            &::after {
+                                width: 50%;
+                            }
                         }
                     }
-                }
-
-                a:is(:link, :active, :visited).active {
-                    color: $munch-brown;
+    
+                    a:is(:link, :active, :visited).active {
+                        color: $munch-brown;
+                    }
                 }
             }
         }
@@ -163,7 +164,7 @@
         color: #f4f4f4;
         // background-color: #ffc0cb;
         // background-image: radial-gradient(rgba(182, 12, 12, 0.2), #ffc0cb00);
-        @media (min-width: 768px) {
+        @include lg {
             display: none;
             align-items: center;
         }
@@ -200,7 +201,7 @@
                 // background: #111;
                 // border-radius: .25rem;
                 border: none;
-                border-bottom: 2px solid #0005;
+                border-bottom: 2px solid #0002;
                 outline: none;
                 // transform: scale(.1);
                 transform: translateX(2rem);

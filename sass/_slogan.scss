@@ -59,7 +59,7 @@
         gap: 5vh;
         @include sm {
             flex-direction: row;
-            padding-top: 10vh;
+            // padding-top: 10vh;
             height: auto;
 
         }
@@ -79,7 +79,7 @@
             padding: 5vh 5vw 0;
             @include lg {
                 position: relative;
-                top: 20vh;
+                top: 5vh;
             }
 
             h2 {
@@ -112,23 +112,32 @@
 .gallery {
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
-    padding: 15vh 5vw;
-    // margin: 5vh auto 10vh;
-    // border: 3px solid blue;
-    // border-radius: 1rem;
-    max-width: 100%;
+    padding: 15vh 10vw;
     overflow: hidden;
-    // background-color: $munch-pink-light;
     z-index: 5;
     background: #fafafa;
 
+    @include sm{
+        grid-template-columns: 1fr 1fr;
+        gap: 5vw;
+    }
+    @include lg {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
     figure {
         // width: 100%;
-        height: 60vh;
+        // border: 2px solid red;
+        // height: 40vh;
         overflow: hidden;
         border-radius: $brand-radius;
+
+        @include sm {
+            // height: 30vh;
+        }
         // DATA SCROLL
         &[data-scroll] {
             transform: scale(1) translateY(10vh);
@@ -140,10 +149,14 @@
         img {
             width: 100%;
             height: 100%;
-            object-position: center;
+            object-fit: cover;
+            // object-position: center;
             // object-fit: contain;
-            // border-radius: 5px;
+            border-radius: $brand-radius;
             transition: .3s ease;
+            @include lg {
+                transform: scale(1.05);
+            }
         }
 
         &:hover {
@@ -157,22 +170,21 @@
         }
     }
 
-    @media (max-width: 767px) {
-        grid-template-columns: 1fr;
-        place-items: center;
-        gap: 5vh;
-        margin:  0;
-        padding: 10vh 5vw;
+    @include lg {
+        // place-items: center;
+        // gap: 5vh;
+        // margin:  0;
+        // padding: 10vh 5vw;
 
-        figure {
-            width: 100%;
-            height: 100%;
-            border: none;
+        // figure {
+        //     width: 100%;
+        //     height: 100%;
+        //     border: none;
 
-            img {
-                object-fit: cover;
-            }
-        }
+        //     img {
+        //         object-fit: cover;
+        //     }
+        // }
     }
 
 
