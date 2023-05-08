@@ -1,6 +1,6 @@
 const work = [{
         id: 1,
-        title: "Frozen Theme Cake",
+        title: "Frozen Theme",
         category: "girls",
         price: 450.00,
         img: "../images/item-1-min.jpg",
@@ -8,7 +8,7 @@ const work = [{
     },
     {
         id: 2,
-        title: "dragonballZ Theme cake",
+        title: "dragonballZ Theme",
         category: "boys",
         price: 450.00,
         img: "../images/item-2-min.jpg",
@@ -16,11 +16,11 @@ const work = [{
     },
     {
         id: 3,
-        title: "BMW theme cake",
+        title: "BMW theme",
         category: "boys",
         price: 400.00,
         img: "../images/item-3-min.jpg",
-        desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
+        desc: `ombucha chillwave fanny pack 3 wolf  sold out organic viral.`,
     },
     {
         id: 4,
@@ -36,11 +36,11 @@ const work = [{
         category: "adult",
         price: 550.00,
         img: "../images/item-5-min.jpg",
-        desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
+        desc: `franzen vegan starter pinterest meditation farm-to-table 90's pop-up `,
     },
     {
         id: 6,
-        title: "mother's birthday rose bucket",
+        title: "birthday rose bucket",
         category: "adults",
         price: 450.00,
         img: "../images/item-6-min.jpg",
@@ -56,7 +56,7 @@ const work = [{
     },
     {
         id: 8,
-        title: "birthday classic drip",
+        title: "classic drip",
         category: "girls",
         price: 450.00,
         img: "../images/item-8-min.jpg",
@@ -80,7 +80,7 @@ const work = [{
     },
     {
         id: 11,
-        title: "Baby Boy birthday cake",
+        title: "Baby birthday cake",
         category: "kids",
         price: 400,
         img: "../images/item-11-min.jpg",
@@ -92,11 +92,11 @@ const work = [{
         category: "cupcakes",
         price: 250,
         img: "../images/item-12-min.jpg",
-        desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
+        desc: `Wholesome meals. Delicious Cakes`,
     },
     {
         id: 13,
-        title: "berry compote and cream cheese filling cake",
+        title: "berry compote",
         category: "adults",
         price: 550,
         img: "../images/item-13-min.jpg",
@@ -104,7 +104,7 @@ const work = [{
     },
     {
         id: 14,
-        title: "spiderman theme cake",
+        title: "spiderman theme",
         category: "kids",
         price: 500,
         img: "../images/item-14-min.jpg",
@@ -116,15 +116,15 @@ const work = [{
         category: "kids",
         price: 450,
         img: "../images/item-15-min.jpg",
-        desc: `How I miss putting the smile on people's faces with the work of my hands, being creative and putting my best foot forward. `,
+        desc: `being creative and putting my best foot forward. `,
     },
     {
         id: 16,
-        title: "lemon blueberry cake",
+        title: "lemon blueberry",
         category: "adults",
         price: 550,
         img: "../images/item-16-min.jpg",
-        desc: `So for Mothers day, make this delicious lemon blueberry cake. So moist, got that tang and considering including this baby in my cake list.`,
+        desc: `delicious lemon blueberry cake. So moist, got that tang and considering including this baby in my cake list.`,
     },
     {
         id: 17,
@@ -136,11 +136,11 @@ const work = [{
     },
     {
         id: 18,
-        title: "vanilla and rose flavour marble cake",
+        title: "vanilla & rose marble cake",
         category: "birthday",
         price: 550,
         img: "../images/item-18-min.jpg",
-        desc: `Made this delicious moist cake for one of my loyal customers, a vanilla and rose flavour marble cake for her birthday. Just enjoy making people smile through a slice of cake`,
+        desc: ` vanilla and rose flavour marble cake for her birthday. Just enjoy making people smile through a slice of cake`,
     },
     {
         id: 19,
@@ -182,11 +182,13 @@ window.addEventListener('DOMContentLoaded', () => {
 displayWorkItems = (workItems) => {
     let displayWork = workItems.map(item => {
         return `<div class="item">
+                    <figure>
                     <img src=${item.img} alt="cake">
+                    </figure>
                     <div class="action">
-                        <h3>${item.title}</h3>
+                        <h3>${item.title}<span>${item.price}</span></h3>
                         <p >${item.desc}</p>
-                        <button class="overlaybtn" href="contact.html">R${item.price}</button>
+                        <a href="#contact">place order<i class="fas fa-envelope"></i></a>
                     </div>
                 </div>`
     });
