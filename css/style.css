@@ -89,7 +89,7 @@
   justify-content: space-between;
   align-items: center;
   color: #fefefe;
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 0.8rem;
   width: 13rem;
   margin: 1rem 0;
   font-size: 1.15rem;
@@ -754,14 +754,26 @@
 }
 @media (min-width: 1024px) {
   #home .home-content {
-    top: 25vh;
+    top: 30vh;
   }
 }
 #home .home-content .home-title h1 {
   font-size: 2.25rem;
-  margin-bottom: 0.25rem;
+  font-size: clamp(2.25rem, 5vw, 2.5rem);
+  margin-bottom: 1rem;
 }
-#home .home-content .btn i {
+#home .home-content .cta {
+  width: max-content;
+}
+#home .home-content .cta p {
+  color: #744e25;
+  font-size: 1rem;
+  font-size: clamp(1rem, 3vw, 1.125rem);
+}
+#home .home-content .cta .btn {
+  width: 100%;
+}
+#home .home-content .cta .btn i {
   color: #f75394;
 }
 .slogan {
