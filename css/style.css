@@ -770,8 +770,8 @@
 }
 #home .home-content .cta p {
   color: #744e25;
-  font-size: 1rem;
-  font-size: clamp(1rem, 3vw, 1.125rem);
+  font-size: 1.15rem;
+  font-size: clamp(1.15rem, 2vw, 1.125rem);
 }
 #home .home-content .cta .btn {
   width: 100%;
@@ -843,35 +843,35 @@
 }
 
 .gallery {
-  display: grid;
-  place-items: center;
-  grid-template-columns: 1fr;
-  gap: 1rem;
   padding: 15vh 10vw;
   overflow: hidden;
   z-index: 5;
   background: #fafafa;
 }
+.gallery .grid-container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
 @media (min-width: 500px) {
-  .gallery {
-    grid-template-columns: 1fr 1fr;
+  .gallery .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 5vw;
   }
 }
+.gallery a {
+  margin-top: 10vh;
+}
 @media (min-width: 820px) {
-  .gallery {
-    grid-template-columns: 1fr 1fr 1fr;
+  .gallery a {
+    width: 30%;
   }
 }
 .gallery figure {
   overflow: hidden;
   border-radius: 0.5rem;
-}
-.gallery figure[data-scroll] {
-  transform: scale(1) translateY(10vh);
-}
-.gallery figure[data-scroll=in] {
-  transform: scale(1) translateY(0);
+  max-height: 25rem;
 }
 .gallery figure img {
   width: 100%;
@@ -892,6 +892,7 @@
   transition: 0.3s ease;
   transform: scale(1.05);
 }
+
 * {
   margin: 0;
   padding: 0;
