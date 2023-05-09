@@ -852,7 +852,7 @@
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 5vh;
 }
 @media (min-width: 500px) {
   .gallery .grid-container {

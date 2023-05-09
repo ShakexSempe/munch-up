@@ -121,7 +121,7 @@
         display: grid;
         place-items: center;
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 5vh;
 
         @include sm {
             grid-template-columns: 1fr 1fr 1fr;
