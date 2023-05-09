@@ -1,7 +1,7 @@
 const work = [{
         id: 1,
         title: "Frozen Theme",
-        category: "girls",
+        category: "kids",
         price: 450.00,
         img: "../images/item-1-min.jpg",
         desc: `Frozen themed cake that is fitting for this freezing winter day.  `,
@@ -9,7 +9,7 @@ const work = [{
     {
         id: 2,
         title: "dragonballZ Theme",
-        category: "boys",
+        category: "kids",
         price: 450.00,
         img: "../images/item-2-min.jpg",
         desc: `Another childhood memory cake which is still loved to this day `,
@@ -17,7 +17,7 @@ const work = [{
     {
         id: 3,
         title: "BMW theme",
-        category: "boys",
+        category: "kids",
         price: 400.00,
         img: "../images/item-3-min.jpg",
         desc: `ombucha chillwave fanny pack 3 wolf  sold out organic viral.`,
@@ -57,7 +57,7 @@ const work = [{
     {
         id: 8,
         title: "classic drip",
-        category: "girls",
+        category: "kids",
         price: 450.00,
         img: "../images/item-8-min.jpg",
         desc: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut  `,
@@ -153,7 +153,7 @@ const work = [{
     {
         id: 20,
         title: "Spiderman theme",
-        category: "boys",
+        category: "kids",
         price: 400,
         img: "../images/item-20-min.jpg",
         desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
@@ -180,6 +180,7 @@ window.addEventListener('DOMContentLoaded', () => {
 //join("");
 // portfolio innerHTML
 displayWorkItems = (workItems) => {
+    let placeholder = 'We bake for all occasions using trusted homemade recipes to deliver high quality products.';
     let displayWork = workItems.map(item => {
         return `<div class="item">
                     <figure>
@@ -187,8 +188,8 @@ displayWorkItems = (workItems) => {
                     </figure>
                     <div class="action">
                         <h3>${item.title}<span>${item.price}</span></h3>
-                        <p >${item.desc}</p>
-                        <a href="#contact">place order<i class="fas fa-envelope"></i></a>
+                        <p >${placeholder}</p>
+                        <a href="mailto:munchup1811@gmail.com&subject=${item.category}">place order<i class="fas fa-envelope"></i></a>
                     </div>
                 </div>`
     });

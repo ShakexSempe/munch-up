@@ -1090,6 +1090,7 @@ body {
 #work .portfolio .item .action p {
   font-weight: 400;
   color: #744e25;
+  line-height: 1.4;
 }
 #work .portfolio .item .action a {
   display: block;
