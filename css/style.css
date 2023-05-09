@@ -130,7 +130,7 @@
 }
 .btn.btn-primary::after {
   background: linear-gradient(0deg, #f63c86, #db0a5e);
-  background: linear-gradient(0deg, #271a0c, #130d06);
+  background: linear-gradient(0deg, #754e24, #4e3518);
 }
 .btn.btn-secondary {
   color: #f75394;
@@ -379,6 +379,7 @@
     gap: 0.5rem;
   }
   #header .desktop-nav ul li a {
+    font-size: 0.85rem;
     text-transform: capitalize;
     text-decoration: none;
     color: #4d3419;
