@@ -36,10 +36,11 @@
     }
     .contact-info-title {
         text-transform: capitalize;
-        text-align: center;
-        padding: 10vh 0 5vh;
+        // text-align: center;
+        padding: 10vh 0 10vh;
         color: $munch-brown;
         font-weight: 600;
+        font-size: $font-clamp-md;
     }
     .contact-form {
         position: relative;

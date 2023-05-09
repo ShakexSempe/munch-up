@@ -1238,10 +1238,10 @@ body {
 }
 .contact .contact-info-title {
   text-transform: capitalize;
-  text-align: center;
-  padding: 10vh 0 5vh;
+  padding: 10vh 0 10vh;
   color: #800000;
   font-weight: 600;
+  font-size: clamp(2rem, 4vw, 1.5rem);
 }
 .contact .contact-form {
   position: relative;
