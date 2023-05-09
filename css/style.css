@@ -174,23 +174,25 @@
 
 .top-btn {
   position: fixed;
+  right: 5vw;
   bottom: -5vh;
   opacity: 0;
   transition: 1s;
-  right: 1rem;
   z-index: 10;
 }
 .top-btn a {
   width: 100%;
   height: 100%;
+  display: grid;
+  place-content: center;
+  text-decoration: none;
 }
 .top-btn a i {
-  color: #000;
-  font-size: 1.5rem;
-  border-radius: 50%;
-  border-radius: 0.25rem;
-  background: rgba(255, 194, 204, 0.8);
-  padding: 0.2rem;
+  padding: 0.25rem;
+  background: linear-gradient(0deg, #4d3419, #744e25);
+  border-radius: 0.15rem;
+  color: #f4f4f4;
+  font-size: 1.25rem;
   transition: 0.2s;
 }
 .top-btn a:hover i {
@@ -1069,13 +1071,13 @@ body {
 }
 #work .portfolio .item .action h3 {
   font-size: 1.25rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   font-weight: 700;
   text-transform: capitalize;
 }
 @media (min-width: 500px) {
   #work .portfolio .item .action h3 {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 #work .portfolio .item .action h3 span {
@@ -1616,18 +1618,15 @@ body {
 }
 
 main .title {
-  text-align: center;
   padding: 5vh 5vw 1rem;
+  position: relative;
 }
 main .title h1 {
   text-transform: capitalize;
   color: #654321;
   font-size: 2rem;
+  font-size: clamp(2rem, 4vw, 2.25rem);
   margin-bottom: 1rem;
-}
-main .title h1 i {
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
 }
 main .title p {
   text-transform: capitalize;
