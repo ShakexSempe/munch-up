@@ -85,7 +85,6 @@
         display: none;
         @include lg {
             display: block;
-            // border: 2px solid red;
             ul {
                 display: flex;
                 list-style: none;
@@ -423,6 +422,11 @@
         }
         @media (min-width: 820px) {
             height: 25vh;
+            .logo {
+                // transform: translateY(10vh);
+                position: relative;
+                top: 5vh;
+            }
         }
 
         .hamburger {

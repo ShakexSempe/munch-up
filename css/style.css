@@ -661,6 +661,10 @@
   #header.active-header {
     height: 25vh;
   }
+  #header.active-header .logo {
+    position: relative;
+    top: 5vh;
+  }
 }
 #header.active-header .hamburger .menu {
   background: #000a;
@@ -723,7 +727,7 @@
     background: url(../images/alex-lvrs-1Qn9aCv4T3E-unsplash.jpg);
     background-color: #ffff;
     background-attachment: fixed;
-    background-position: 100% 70%;
+    background-position: 100% 65%;
     background-size: 60%;
     background-repeat: no-repeat;
   }
@@ -755,9 +759,9 @@
     top: 25vh;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 820px) {
   #home .home-content {
-    top: 30vh;
+    top: 35vh;
   }
 }
 #home .home-content .home-title h1 {

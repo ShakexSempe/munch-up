@@ -36,7 +36,7 @@
         background-color:#ffff;
         background-attachment: fixed;
         // background-size: contain;
-        background-position: 100% 70%;
+        background-position: 100% 65%;
         background-size: 60%;
         // background-position: bottom right;
         // background-position: 100% 100%;
@@ -68,8 +68,8 @@
             top: 25vh;
             // text-align: center;
         }
-        @include xlg {
-            top: 30vh;
+        @include lg {
+            top: 35vh;
         }
 
         color: $brand-brown;
