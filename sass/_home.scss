@@ -30,17 +30,20 @@
         img {
             display: none;
         }
-        background: url(../images/desk-hero.jpg);
-        background: url(../images/desk-hero-3.jpg);
         background: url(../images/alex-lvrs-1Qn9aCv4T3E-unsplash.jpg);
-        background-color:#ffff;
+        background: url(../images/desk-hero-3.jpg);
+        background: url(../images/desk-hero.jpg);
+        background-color:#fff;
         background-attachment: fixed;
         // background-size: contain;
         background-position: 100% 65%;
+        background-size: cover;
         background-size: 60%;
         // background-position: bottom right;
         // background-position: 100% 100%;
         background-repeat: no-repeat;
+        border-top-left-radius: 20rem;
+        border-bottom-left-radius: 20rem;
         &::after {
             position: absolute;
             content: '';

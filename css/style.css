@@ -722,14 +722,17 @@
 @media (min-width: 820px) {
   #home {
     height: 100vh;
-    background: url(../images/desk-hero.jpg);
-    background: url(../images/desk-hero-3.jpg);
     background: url(../images/alex-lvrs-1Qn9aCv4T3E-unsplash.jpg);
-    background-color: #ffff;
+    background: url(../images/desk-hero-3.jpg);
+    background: url(../images/desk-hero.jpg);
+    background-color: #fff;
     background-attachment: fixed;
     background-position: 100% 65%;
+    background-size: cover;
     background-size: 60%;
     background-repeat: no-repeat;
+    border-top-left-radius: 20rem;
+    border-bottom-left-radius: 20rem;
   }
   #home img {
     display: none;
@@ -766,7 +769,7 @@
 }
 #home .home-content .home-title h1 {
   font-size: 2.25rem;
-  font-size: clamp(2.25rem, 5vw, 2.5rem);
+  font-size: clamp(2.25rem, 5vw, 2.25rem);
   margin-bottom: 1rem;
 }
 #home .home-content .cta {
