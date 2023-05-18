@@ -407,7 +407,7 @@
     width: 50%;
   }
   #header .desktop-nav ul li a:is(:link, :active, :visited).active {
-    color: #800000;
+    color: #f75394;
   }
 }
 #header .logo {
