@@ -711,42 +711,25 @@
 }
 #home img {
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   object-fit: cover;
   object-position: 5%;
   z-index: -1;
 }
-@media (min-width: 820px) {
-  #home {
-    height: 100vh;
-    background: url(../images/alex-lvrs-1Qn9aCv4T3E-unsplash.jpg);
-    background: url(../images/desk-hero-3.jpg);
-    background: url(../images/desk-hero.jpg);
-    background-color: #fff;
-    background-attachment: fixed;
-    background-position: 100% 65%;
-    background-size: cover;
-    background-size: 60%;
-    background-repeat: no-repeat;
-    border-top-left-radius: 20rem;
-    border-bottom-left-radius: 20rem;
-  }
+@media (min-width: 768px) {
   #home img {
-    display: none;
-  }
-  #home::after {
+    width: 50%;
     position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), transparent 60%);
-    background: #fff;
-    opacity: 0;
+    left: unset;
+    right: 5vw;
+    top: 25vh;
+    height: 70vh;
+    border-radius: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  #home img {
+    width: 60%;
   }
 }
 #home .home-content {
