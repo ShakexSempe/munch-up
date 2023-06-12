@@ -29,7 +29,10 @@ body {
 .container {
     width: 100%;
 }
-
+img {
+    display: block;
+    max-width: 100%;
+}
 main {
     // padding: 10vh 0 0;
     // border: 2px solid red;

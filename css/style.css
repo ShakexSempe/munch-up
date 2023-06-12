@@ -715,14 +715,15 @@
   object-fit: cover;
   object-position: 5%;
   z-index: -1;
+  height: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   #home img {
     width: 50%;
     position: absolute;
     left: unset;
     right: 5vw;
-    top: 25vh;
+    top: 20vh;
     height: 70vh;
     border-radius: 1rem;
   }
@@ -738,7 +739,6 @@
   top: 15vh;
   transition: 0.25s ease;
   z-index: 1;
-  color: #4d3419;
 }
 @media (min-width: 768px) {
   #home .home-content {
@@ -750,10 +750,18 @@
     top: 35vh;
   }
 }
+#home .home-content .home-title {
+  color: #4d3419;
+  margin-bottom: 1rem;
+}
 #home .home-content .home-title h1 {
   font-size: 2.25rem;
   font-size: clamp(2.25rem, 5vw, 2.25rem);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+#home .home-content .home-title p {
+  font-size: clamp(1.15rem, 2vw, 1.125rem);
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
 }
 #home .home-content .cta {
   width: max-content;
@@ -762,6 +770,9 @@
   color: #744e25;
   font-size: 1.15rem;
   font-size: clamp(1.15rem, 2vw, 1.125rem);
+}
+#home .home-content .cta p i {
+  width: 1.25rem;
 }
 #home .home-content .cta .btn {
   width: 100%;
@@ -1606,6 +1617,11 @@ body {
 
 .container {
   width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 main .title {
