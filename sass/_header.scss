@@ -421,11 +421,11 @@
             // background: red;
         }
         @media (min-width: 820px) {
-            height: 25vh;
+            height: 20vh;
             .logo {
                 // transform: translateY(10vh);
                 position: relative;
-                top: 5vh;
+                top: .5rem;
             }
         }
 

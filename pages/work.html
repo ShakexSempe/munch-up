@@ -85,7 +85,14 @@
             </aside>
         </header>
         <div id="home" class="hero">
-            <img src="../images/alex-lvrs-1Qn9aCv4T3E-unsplash.jpg" alt="" loading="lazy">
+            <!-- HERO IMAGE -->
+            <figure>
+                <picture>
+                    <source srcset="../images/hero_1200.jpg" media="(min-width: 820.1px)" width="1200" height="797">
+                    <source srcset="../images/hero_400.jpg" media="(max-width: 820px)" width="1200" height="797">
+                    <img src="../images/hero_400.jpg" width="400" height="600" alt="Cupcakes">
+                </picture>
+            </figure>
             <div class="home-content" id="home-logo">
                 <div class="home-title">
                     <h1>cakes & cupcakes</h1>

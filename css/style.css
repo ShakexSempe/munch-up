@@ -659,11 +659,11 @@
 }
 @media (min-width: 820px) {
   #header.active-header {
-    height: 25vh;
+    height: 20vh;
   }
   #header.active-header .logo {
     position: relative;
-    top: 5vh;
+    top: 0.5rem;
   }
 }
 #header.active-header .hamburger .menu {
@@ -743,11 +743,6 @@
 @media (min-width: 768px) {
   #home .home-content {
     top: 25vh;
-  }
-}
-@media (min-width: 820px) {
-  #home .home-content {
-    top: 35vh;
   }
 }
 #home .home-content .home-title {
