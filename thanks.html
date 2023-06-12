@@ -1,93 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <!-- META CHARSET -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- META VIEWPORT-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- META THEME COLOR -->
-        <meta name="theme-color" content="#ffc0cb"/>
-        <!-- META OG IMAGE -->
-        <meta name="image" property="og:image" content="https://munch-up.netlify.app/logo-min.jpg">
-        <!-- TITLE -->
-        <title>Munch Up - Bakery and Cupcake Shop</title>
-        <!-- META DESCRIPTION -->
-        <meta name="description" content="Midrand based small bakery and cupcake shop. Munch up bakes cakes, cupcakes, cakesicles for birthdays, holidays and other occasions. This local bakery takes orders via email and phonecall or via its social media links">
-        <!-- META KEYWORDS -->
-        <meta name="keywords" content="bakery, shop, cakes, cupcakes,">
-        <!-- CSS LINK -->
-        <link rel="stylesheet" href="css/style.css">
-        <!-- ICONS LINK -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- META FAVICON -->
-        <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-    </head>
-
+<head>
+    <!-- META CHARSET -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- META VIEWPORT-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- META THEME COLOR -->
+    <meta name="theme-color" content="#ffc0cb"/>
+    <!-- META OG IMAGE -->
+    <meta name="image" property="og:image" content="https://munch-up.netlify.app/munch-min.png">
+    <!-- TITLE -->
+    <title>Bakery and Cupcake Shop</title>
+    <!-- META DESCRIPTION -->
+    <meta name="description" content="Midrand based bakery and cupcake shop. Munch up bakes cakes, cupcakes, cakesicles for birthdays, holidays and other occasions.">
+    <!-- META KEYWORDS -->
+    <meta name="keywords" content="bakery, shop, cakes, cupcakes, order form">
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ICONS LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- META FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+</head>
 <body>
-
-    <header>
-        <figure class="logo">
-            <a href="services.html">
-                <img src="images/logo-min.jpg" alt="logo"></a>
-        </figure>
-        <button class="shop-link">
-            <a href="contact.html" target="_blank">
-            <i class="fas fa-shopping-cart"></i>
-            </a>
-        </button>
-        <div class="hamburger">
-            <div class="bar"></div>
-        </div>
-        
-        <aside class="navigation">
-            <ul class="nav-links">
-                <li><a href="index.html"><i class="fas fa-home"></i>home</a></li>
-                <li><a href="services.html"><i class="fas fa-id-card"></i>about</a></li>
-                <li><a href="work.html"><i class="fas fa-birthday-cake"></i>menu</a></li>
-                <li><a href="contact.html"><i class="fas fa-shopping-cart"></i>shop</a></li>
-            </ul>
-            <div class="social-bar">
-                <ul>
-                    <li><a href="https://www.facebook.com/Munch-Up-107890190776218" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li><a href="https://www.instagram.com/phoebe_lobelo/" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-                <a href="mailto:munchup1811@gmail.com" class="email-icon">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
+    <div class="container" id="container">
+        <header class="header" id="header">
+            <figure class="logo">
+                <a title="Munch Up Home" href="#">
+                    <img src="images/logo-min.jpg" alt="Munch Up logo"></a>
+            </figure>
+            <div class="shop-link">
+                <a class="btn" title="Shop" href="#contact">
+                    place order
+                    <!-- <i class="fas fa-shopping-cart"></i> -->
                 </a>
             </div>
-        </aside>
-    </header>
+            <nav class="desktop-nav">
+                <ul class="nav-links">
+                    <li><a class="page-link" href="#">home</a></li>
+                    <li><a class="page-link" href="pages/services.html">about</a></li>
+                    <li><a class="page-link" href="pages/work.html">products</a></li>
+                    <li><a class="page-link" href="pages/contact.html">contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <!-- <div class="menu">
+                    <p>menu</p>
+                </div> -->
+                <!-- <div class="bar"></div> -->
+            </div>
+            <aside class="navigation">
+                <ul class="nav-links">
+                    <li><a class="page-link" href="#"><i class="fas fa-home"></i>home</a></li>
+                    <li><a class="page-link" href="pages/services.html"><i class="fas fa-id-card"></i>about</a></li>
+                    <li><a class="page-link" href="pages/work.html"><i class="fas fa-birthday-cake"></i>products</a></li>
+                    <li><a class="page-link" href="pages/contact.html"><i class="fas fa-envelope"></i>contact</a></li>
+                </ul>
+                <div class="contact-links">
+                    <a href="tel:+27724407705"><i class="fas fa-phone"></i>+27724407705</a>
+                    <a href="mailto:munchup1811@gmail.com"><i class="fas fa-envelope"></i>munchup1811@gmail.com</a>
+                </div>
+                <div class="social-bar">
+                    <ul>
+                        <li><a href="https://www.facebook.com/Munch-Up-107890190776218" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li><a href="https://www.instagram.com/phoebe_lobelo/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="mailto:munchup1811@gmail.com" class="email-icon">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </aside>
+        </header>
+        <div id="home" class="hero">
+            <!-- HERO IMAGE -->
+            <figure>
+                <picture>
+                    <source
+                    srcset="/images/hero_1200.jpg"
+                    media="(min-width: 820.1px)"
+                    width="1200"
+                    height="797"
+                    >
+                    <source
+                    srcset="/images/hero_400.jpg"
+                    media="(max-width: 820px)"
+                    width="1200"
+                    height="797"
+                    >
+                    <img src="images/hero_400.jpg" width="400" height="600" alt="Cupcakes">
+                </picture>
+            </figure>
+            <div class="home-content" id="home-logo">
+                <div class="home-title">
+                    <h1>Thank you!</h1>
+                </div>
+                <div class="cta">
+                    <p><i class="fas fa-location-dot"></i>Gauteng, South Africa</p>
+                    <a href="index.html" class="btn btn-primary">homepage<i class="fas fa-house"></i></a>
+                </div>
+            </div>
+        </div>
+        <main id="main">
 
-    <section id="thankYou">
-        <p>Thank you for choosing Munch Up&trade;.</p>
-        <p>A confirmation email will be sent to you shortly</p>
-        <ul>
-            <li><a href="index.html"><i class="fas fa-home"></i>home</a></li>
-            <li><a href="work.html"><i class="fas fa-birthday-cake"></i>menu</a></li>
-        </ul>
-    </section>
-    
+            <!-- FOOTER -->
+            <div class="footer ">
+                <!-- BOTTOM FOOTER -->
+                <img src="images/logo-min.jpg" loading="lazy" alt="Munch Up logo">
+
+                <div class="footer-item">
+                    <h3>contact details</h3>
+                    <ul class="footer-list contact-list">
+                        <li><i class="fas fa-envelope"></i><a href="mailto:munchup1811@gmail.com">munchup1811@gmail.com</a></li>
+                        <li><i class="fas fa-phone"></i><a href="tel:+27724407705">072 440 7705</a></li>
+                        <li><i class="fa-solid fa-location-dot"></i><a>Gauteng, South Africa</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h3>browse website</h3>
+                    <ul class="footer-list browse-list">
+                        <li><a href="#">home</a></li>
+                        <li><i class="fas fa-arrow-up-right-from-square"></i><a href="pages/services.html">about</a></li>
+                        <li><i class="fas fa-arrow-up-right-from-square"></i><a href="pages/work.html">products</a></li>
+                        <li><i class="fas fa-arrow-up-right-from-square"></i><a href="pages/contact.html">contact</a></li>
+                        <!-- <li><i class="fas fa-arrow-up-right-from-square"></i><a href="#projects">portfolio</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h3>all rights reserved</h3>
+                    <p>copyright&copy; Munch Up</p>
+                    <p>Web Design: <a href="https://shakexsempe.netlify.app/" target="_blank">Shakex Sempe</a></p>
+                    <span id="date"></span>
+                </div>
+            </div>
+        </main>
+    </div>
+        <!-- BACK TO TOP -->
+        <div class="top-btn">
+            <a href="#"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    <!-- JAVASCRIPT -->
     <script src="https://use.fontawesome.com/3b4fc72e2a.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/io.js"></script>
+    
 </body>
-
 </html>
