@@ -79,19 +79,18 @@
         }
     }
 
-    // end of hamburger icon
-
     .desktop-nav {
         display: none;
         @include lg {
             display: block;
+            // transform: translateX(-5vw);
             ul {
                 display: flex;
                 list-style: none;
                 gap: .5rem;
                 li {
                     a {
-                        font-size: .85rem;
+                        font-size: 1rem;
                         text-transform: capitalize;
                         text-decoration: none;
                         color: $brand-brown;
@@ -123,6 +122,9 @@
                 }
             }
         }
+        @include xlg {
+            transform: translateX(-5vw);
+        }
     }
     .logo {
         position: relative;
@@ -136,12 +138,13 @@
         // border-radius: 50%;
         // border: 2px solid blue;
         // transform: scale(1);
-        transition: all .5s ease-out;
+        transition: .25s;
 
             img {
                 width: 100%;
                 height: 100%;
                 border-radius: 50%;
+                transition: .25s;
             }
     }
 
@@ -421,9 +424,9 @@
             // background: red;
         }
         @media (min-width: 820px) {
-            height: 20vh;
+            height: 25vh;
             .logo {
-                // transform: translateY(10vh);
+                transform: translateY(5vh);
                 position: relative;
                 top: .5rem;
             }
