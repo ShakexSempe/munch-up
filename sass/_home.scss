@@ -6,7 +6,6 @@
     isolation: isolate;
     // PSEUDO BG
     @include xlg {
-
         &::after {
             content: '';
             position: absolute;
@@ -16,6 +15,7 @@
             z-index: -2;
         }
     }
+    // HERO IMAGE
     figure {
         width: 100%;
         inset: 0;
@@ -47,10 +47,8 @@
     
         }
     }
-    
-    
 
-
+    // HERO CONTENT
     .home-content {
         // border: 1px solid #000;
         text-transform: capitalize;
@@ -58,15 +56,17 @@
         top: 15vh;
         transition: .25s ease;
         z-index: 1;
+
         @include lg {
             top: 50%;
             transform: translateY(-50%);
         }
 
-        
+
         .home-title {
             color: $brand-brown;
             margin-bottom: 1rem;
+
             h1 {
                 font-size: 2.25rem;
                 font-size: $font-clamp-lg;
@@ -83,13 +83,15 @@
         .cta {
             // border: 2px solid red;
             // width: max-content;
-            
+
             .btn {
                 // margin: 1rem auto;
                 width: 12rem;
+
                 i {
                     color: $brand-pink-light;
                 }
+
                 @include sm {
                     // margin: 1rem auto;
                 }
@@ -98,6 +100,7 @@
 
     }
 
+    // LOCATION P
     .meta-p {
         position: absolute;
         bottom: 15vh;
