@@ -792,23 +792,23 @@
   font-size: clamp(1.15rem, 2vw, 1.125rem);
   font-size: clamp(1.25rem, 3vw, 1.5rem);
 }
-#home .home-content .cta {
-  width: max-content;
-}
-#home .home-content .cta p {
-  color: #744e25;
-  font-size: 1.15rem;
-  font-size: clamp(1.15rem, 2vw, 1.125rem);
-}
-#home .home-content .cta p i {
-  width: 1.25rem;
-}
 #home .home-content .cta .btn {
-  width: 100%;
+  width: 12rem;
 }
 #home .home-content .cta .btn i {
   color: #f75394;
 }
+#home .meta-p {
+  position: absolute;
+  bottom: 15vh;
+  color: #744e25;
+  font-size: 1.15rem;
+  font-size: clamp(1.15rem, 2vw, 1.125rem);
+}
+#home .meta-p i {
+  width: 1.25rem;
+}
+
 .slogan {
   height: 100vh;
   padding-top: 5vh;
