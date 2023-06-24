@@ -1,5 +1,5 @@
 #home {
-    height: 100dvh;
+    height: 95vh;
     width: 100%;
     padding: 5vh 5vw;
     position: relative;
@@ -37,7 +37,7 @@
 
         img {
             object-fit: cover;
-            object-position: 5%;
+            object-position: 0% 0%;
             z-index: -1;
             height: 100%;
 
