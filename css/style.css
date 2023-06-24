@@ -784,31 +784,34 @@
   margin-bottom: 1rem;
 }
 #home .home-content .home-title h1 {
-  font-size: 2.25rem;
-  font-size: clamp(2.25rem, 5vw, 2.25rem);
-  margin-bottom: 0.5rem;
+  font-size: 2.125rem;
+  font-size: clamp(2.125rem, 5vw, 2.25rem);
+  margin-bottom: 1rem;
 }
 #home .home-content .home-title p {
   font-size: clamp(1.15rem, 2vw, 1.125rem);
   font-size: clamp(1.25rem, 3vw, 1.5rem);
 }
-#home .home-content .cta .btn {
-  width: 12rem;
-}
-#home .home-content .cta .btn i {
-  color: #f86da5;
-}
-#home .meta-p {
-  position: absolute;
-  bottom: 15vh;
+#home .home-content .home-title .meta-p {
+  margin-top: 0.5rem;
   color: #744e25;
   font-size: 1.15rem;
   font-size: clamp(1.15rem, 2vw, 1.125rem);
 }
-#home .meta-p i {
+#home .home-content .home-title .meta-p i {
   width: 1.25rem;
 }
-
+#home .cta {
+  position: absolute;
+  bottom: 10vh;
+  left: 5vw;
+}
+#home .cta .btn {
+  width: 12rem;
+}
+#home .cta .btn i {
+  color: #f86da5;
+}
 .slogan {
   height: 100vh;
   padding-top: 5vh;
