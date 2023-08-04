@@ -1,3 +1,5 @@
+@use '../abstracts';
+
 #work {
     // border: 3px solid red;
     padding: 5vh 0;
@@ -12,12 +14,12 @@
         place-items: center;
         grid-template-columns: 1fr;
         gap: 10vh;
-        @include sm {
+        @include abstracts.sm {
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
             // grid-template-rows: 20vh;
         }
-        @include md {
+        @include abstracts.md {
             grid-template-columns: 1fr 1fr 1fr;
             // gap: 1rem;
             row-gap: 10vh;
@@ -31,22 +33,22 @@
             width: 100%;
             // height: 50vh;
             padding: 1rem;
-            border-radius: $brand-radius;
+            border-radius: abstracts.$brand-radius;
             overflow: hidden;
             box-shadow: 0 .5rem .5rem rgba(0,0,0,.05);
-            @include sm {
+            @include abstracts.sm {
                 display: flex;
                 flex-direction: column;
                 // height: 65vh;
             }
             figure {
-                // // border: 2px solid $brand-pink;
+                // // border: 2px solid abstracts.$brand-pink;
                 width: 15rem;
                 // border: 2px solid red;
                 overflow: hidden;
-                border-radius: $brand-radius;
+                border-radius: abstracts.$brand-radius;
                 margin-bottom: .5rem;
-                @include sm {
+                @include abstracts.sm {
                     width: 10rem;
                     height: 10rem;
                     margin: 0 auto;
@@ -58,10 +60,10 @@
                     width: 100%;
                     height: 100%;
                     transition: .5s;
-                    border-radius: $brand-radius;
+                    border-radius: abstracts.$brand-radius;
                     // transform: scale(1.2);
                     // height: 100%;
-                    // @include lg {
+                    // @include abstracts.lg {
                     //     width: 70%;
                     // }
                 }
@@ -73,18 +75,18 @@
                 border-radius: 5px;
                 overflow: hidden;
                 padding: 1rem 0 0;
-                color: $brand-brown;
+                color: abstracts.$brand-brown;
 
                 h3 {
                     font-size: 1.25rem;
                     margin: 1rem 0;
                     font-weight: 700;
                     text-transform: capitalize;
-                    @include sm {
+                    @include abstracts.sm {
                         font-size: 1.125rem;
                     }
                     span {
-                        color: $brand-pink;
+                        color: abstracts.$brand-pink;
                         display: block;
                         font-size: .95rem;
                         padding-top: .25rem;
@@ -96,7 +98,7 @@
 
                 p {
                     font-weight: 400;
-                    color: $brand-brown-light;
+                    color: abstracts.$brand-brown-light;
                     line-height: 1.4;
                 }
 
@@ -110,21 +112,21 @@
                     justify-content: space-between;
                     align-items: center;
                     padding: .65rem 1rem;
-                    border-radius: $brand-radius;
-                    background: $brand-btn;
+                    border-radius: abstracts.$brand-radius;
+                    background: abstracts.$brand-btn;
                     color: #f4f4f4;
                     box-shadow: 0 .25rem .5rem rgba(0,0,0, .1);
 
 
                     i {
-                        color: $brand-pink-light;
+                        color: abstracts.$brand-pink-light;
                     }
                 }
 
 
                 button {
                     display: inline-block;
-                    background: $btn-gradient;
+                    background: abstracts.$btn-gradient;
                     color: #f4f4f4;
                     font-weight: 500;
                     text-decoration: none;
@@ -132,7 +134,7 @@
                     outline: none;
                     padding: .6rem 1rem;
                     margin: 1rem auto;
-                    border-radius: $brand-radius;
+                    border-radius: abstracts.$brand-radius;
                     cursor: pointer;
                     width: 100px;
                     box-shadow: inset 2px 2px 5px #fff2,

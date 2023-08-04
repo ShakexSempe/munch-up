@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap');
+
+
+$header-font: 'Fredoka One', cursive;
+$content-font: 'Varela Round', sans-serif;
+
+$font-clamp-sm: clamp(1.15rem, 2vw, 1.125rem);
+$font-clamp-md: clamp(2rem, 4vw, 1.5rem);
+$font-clamp-lg: clamp(2.125rem, 5vw, 2.25rem);
+

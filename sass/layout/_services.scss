@@ -1,3 +1,5 @@
+@use '../abstracts';
+
 #services {
     width: 100%;
     // overflow-x: hidden;
@@ -6,8 +8,8 @@
         // border: 2px solid red;
         padding: 5vh 5vw 5vh;
         margin-bottom: 5vh;
-        color: $munch-brown;
-        @include sm {
+        color: abstracts.$munch-brown;
+        @include abstracts.sm {
             text-align: center;
         }
 
@@ -22,10 +24,10 @@
         // text-align: center;
         gap: 5vw;
         padding: 0 5vw;
-        @include sm {
+        @include abstracts.sm {
                 grid-template-columns: repeat(2, 1fr);
         }
-        @include lg {
+        @include abstracts.lg {
             grid-template-columns: repeat(3, 1fr);
         }
         // @media(max-width:768px){
@@ -47,8 +49,8 @@
             transform-style: preserve-3d;
             position: relative;
             cursor: pointer;
-            color: $munch-brown-dark;
-            @include sm {
+            color: abstracts.$munch-brown-dark;
+            @include abstracts.sm {
                 text-align: center;
             }
             h2 {
@@ -72,7 +74,7 @@
                     border-radius: .25rem;
                     object-fit: cover;
                     transition: .25s;
-                    @include sm {
+                    @include abstracts.sm {
                         height: 50vh;
                         object-fit: contain;
                     }

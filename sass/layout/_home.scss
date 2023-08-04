@@ -1,3 +1,5 @@
+@use '../abstracts';
+
 #home {
     height: 95vh;
     width: 100%;
@@ -5,7 +7,7 @@
     position: relative;
     isolation: isolate;
     // PSEUDO BG
-    @include xlg {
+    @include abstracts.xlg {
         &::after {
             content: '';
             position: absolute;
@@ -20,7 +22,8 @@
         width: 100%;
         inset: 0;
         position: absolute;
-        @include lg {
+        background-color: #fff;
+        @include abstracts.lg {
             width: 50%;
             position: absolute;
             left: unset;
@@ -31,17 +34,23 @@
             border-radius: 5rem;
             overflow: hidden;
         }
-        @include xlg {
+        @include abstracts.xlg {
             border-radius: 40%;
         }
 
         img {
-            object-fit: cover;
+            // border: 2px solid red;
+            object-fit: contain;
             object-position: 0% 0%;
+            object-position: 0% bottom;
             z-index: -1;
             height: 100%;
+            @include abstracts.sm {
+                object-position: right;
+            }
 
-            @include lg {
+            @include abstracts.lg {
+                object-fit: cover;
                 object-position: left;
             }
     
@@ -57,33 +66,33 @@
         transition: .25s ease;
         z-index: 1;
 
-        @include lg {
+        @include abstracts.lg {
             top: 50%;
             transform: translateY(-50%);
         }
 
 
         .home-title {
-            color: $brand-brown;
+            color: abstracts.$brand-brown;
             margin-bottom: 1rem;
 
             h1 {
                 font-size: 2.125rem;
-                font-size: $font-clamp-lg;
+                font-size: abstracts.$font-clamp-lg;
                 margin-bottom: 1rem;
             }
 
             p {
-                font-size: $font-clamp-sm;
+                font-size: abstracts.$font-clamp-sm;
                 font-size: clamp(1.25rem, 3vw, 1.5rem);
             }
             
             // LOCATION P
             .meta-p {
                 margin-top: .5rem;
-                color: $brand-brown-light;
+                color: abstracts.$brand-brown-light;
                 font-size: 1.15rem;
-                font-size: $font-clamp-sm;
+                font-size: abstracts.$font-clamp-sm;
 
                 i {
                     width: 1.25rem;
@@ -96,19 +105,19 @@
     .cta {
         // border: 2px solid red;
         // width: max-content;
-        position: absolute;
-        bottom: 10vh;
-        left: 5vw;
+        // position: absolute;
+        // bottom: 10vh;
+        // left: 5vw;
 
         .btn {
             // margin: 1rem auto;
             width: 12rem;
 
             i {
-                color: $brand-pink-light;
+                color: abstracts.$brand-pink-light;
             }
 
-            @include sm {
+            @include abstracts.sm {
                 // margin: 1rem auto;
             }
         }

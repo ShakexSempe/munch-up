@@ -1,63 +1,7 @@
-@import 'variables';
-@import 'mixin';
-@import 'components';
-@import 'header';
-@import 'home';
-@import 'slogan';
-@import 'reset';
-@import 'services';
-@import 'work';
-@import 'footer';
-@import 'contact';
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: $content-font;
-    scroll-padding-top: 5vh;
-    @include md {
-        scroll-padding-top: 7vh;
-    }
-}
-body {
-    background: #f4f4f4;
-    color: $brand-brown;
-}
-
-.container {
-    width: 100%;
-}
-img {
-    display: block;
-    max-width: 100%;
-}
-main {
-    // padding: 10vh 0 0;
-    // border: 2px solid red;
-
-    .title {
-        // text-align: center;
-        padding: 5vh 5vw 1rem;
-        // border: 3px solid blue;
-        position: relative;
-
-        h1 {
-            text-transform: capitalize;
-            color: $munch-brown-dark;
-            font-size: 2rem;
-            font-size: clamp(2rem, 4vw, 2.25rem);
-            margin-bottom: 1rem;
-        }
-
-        p {
-            text-transform: capitalize;
-        }
-    }
-}
-
-
-
-
+@use './abstracts';
+@use './base';
+@use './components';
+@use './layout';
+@use './pages';
+@use './utilities';
 

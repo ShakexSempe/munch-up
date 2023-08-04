@@ -1,3 +1,5 @@
+@use '../abstracts';
+
 #contact {
     overflow-x: hidden;
     background: #f4f4f4;
@@ -9,11 +11,11 @@
             text-transform: none;
             line-height: 1.6;
             a {
-                color: $munch-pink;
+                color: abstracts.$munch-pink;
                 font-weight: 600;
 
                 &:hover {
-                    color: $munch-purple;
+                    color: abstracts.$munch-purple;
                 }
             }
         }
@@ -26,7 +28,7 @@
     display: flex;
     flex-direction: column-reverse;
     padding: 5vh 0;
-    @include lg {
+    @include abstracts.lg {
         padding: 10vh 5vw;
         justify-content: space-between;
         align-items: flex-start;
@@ -38,9 +40,9 @@
         text-transform: capitalize;
         // text-align: center;
         padding: 10vh 0 10vh;
-        color: $munch-brown;
+        color: abstracts.$munch-brown;
         font-weight: 600;
-        font-size: $font-clamp-md;
+        font-size: abstracts.$font-clamp-md;
     }
     .contact-form {
         position: relative;
@@ -92,7 +94,7 @@
                     
 
                     legend {
-                        color: $brand-brown;
+                        color: abstracts.$brand-brown;
                         font-weight: 700;
                         font-size: 1.125rem;
                         letter-spacing: .15rem;
@@ -155,7 +157,7 @@
                 }
                 label {
                     text-transform: capitalize;
-                    color: $munch-brown;
+                    color: abstracts.$munch-brown;
                     position: absolute;
                     top: 1em;
                     font-size: 1rem;
@@ -166,7 +168,7 @@
                     transform: translateY(50%);
                     &.required::after {
                         content: '*';
-                        color: $text-color-pink;
+                        color: abstracts.$text-color-pink;
                         font-weight: 800;
                     }
                 }
@@ -188,8 +190,8 @@
                         width: 100%;
                         text-align: center;
                         margin: 2em auto 0;
-                        background: $munch-pink;
-                        color: $munch-mist;
+                        background: abstracts.$munch-pink;
+                        color: abstracts.$munch-mist;
                         border-radius: 5px;
                         padding: .2em;
                     }
@@ -253,7 +255,7 @@
                         }
                     }
                     &[type='submit'] {
-                        background: $submit-btn;
+                        background: abstracts.$submit-btn;
                         color: #fff;
                         width: 20rem;
                         display: block;
@@ -272,13 +274,13 @@
                         border: none;
                         cursor: pointer;
                         position: relative;
-                        box-shadow: $btn-shadow;
+                        box-shadow: abstracts.$btn-shadow;
                         @media (min-width: 768px){
                             &:hover {
                                 letter-spacing: normal;
                                 transition: .25s ease;
                                 transform: scale(.985);
-                                background: $submit-btn-hover;
+                                background: abstracts.$submit-btn-hover;
                             }
                         }
                         @media (max-width: 768px){
@@ -286,7 +288,7 @@
                                 letter-spacing: normal;
                                 transition: .25s ease;
                                 transform: scale(.985);
-                                background: $submit-btn-hover;
+                                background: abstracts.$submit-btn-hover;
                             }
                         }
                     }
@@ -311,7 +313,7 @@
             padding-top: 5vh;
             display: grid;
             gap: 10vh;
-            @include md {
+            @include abstracts.md {
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 1rem;
             }
@@ -321,14 +323,14 @@
             // border: 2px solid red;
             background: #fff;
             padding: 1rem;
-            border-radius: $brand-radius;
+            border-radius: abstracts.$brand-radius;
             
             .item-title {
                 margin-top: -2rem;
                 margin-bottom: 1rem;
                 .contact-icon {
                     font-size: 2rem;
-                    color: $munch-brown-darkest;
+                    color: abstracts.$munch-brown-darkest;
                     margin-bottom: .5rem;
                 }
                 h2 {
@@ -342,11 +344,11 @@
                 text-decoration: none;
                 transition: .25s;
                 &:hover {
-                    color: $brand-pink;
+                    color: abstracts.$brand-pink;
                 }
             }
             i {
-                color: $munch-brown;
+                color: abstracts.$munch-brown;
                 width: 1.5rem;
             }
         }
@@ -422,7 +424,7 @@
                 transform: scale(.98);
 
                 i {
-                    color: $munch-pink;
+                    color: abstracts.$munch-pink;
                 }
             }
             &:active {

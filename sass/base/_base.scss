@@ -1,0 +1,53 @@
+@use '../abstracts';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 5vh;
+    @include abstracts.md {
+        scroll-padding-top: 7vh;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: abstracts.$content-font;
+}
+
+body {
+    background: #f4f4f4;
+    color: abstracts.$brand-brown;
+}
+
+.container {
+    width: 100%;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+main {
+    // border: 2px solid red;
+
+    .title {
+        // border: 3px solid blue;
+        padding: 5vh 5vw 1rem;
+        position: relative;
+
+        h1 {
+            text-transform: capitalize;
+            color: abstracts.$munch-brown-dark;
+            font-size: 2rem;
+            font-size: clamp(2rem, 4vw, 2.25rem);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            text-transform: capitalize;
+        }
+    }
+}
+
+

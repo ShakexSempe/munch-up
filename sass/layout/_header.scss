@@ -1,3 +1,5 @@
+@use '../abstracts';
+
 #header {
     position: fixed;
     top: 0;
@@ -61,14 +63,14 @@
             width: 100%;
             display: grid;
             place-items: center;
-            color: $munch-mist;
+            color: abstracts.$munch-mist;
             padding: .5rem 1rem;
             font-size: .85rem;
             @media (min-width: 768px) {
                 font-size: 1rem;
             }
-            // background: $btn-gradient;
-            // box-shadow: $btn-shadow;
+            // background: abstracts.$btn-gradient;
+            // box-shadow: abstracts.$btn-shadow;
             // border-radius: 20px;
             // padding: .3rem 2rem;
 
@@ -81,7 +83,7 @@
 
     .desktop-nav {
         display: none;
-        @include lg {
+        @include abstracts.lg {
             display: block;
             // transform: translateX(-5vw);
             ul {
@@ -93,7 +95,7 @@
                         font-size: 1rem;
                         text-transform: capitalize;
                         text-decoration: none;
-                        color: $brand-brown;
+                        color: abstracts.$brand-brown;
                         padding: 0 .5rem;
                         transition: .25s;
                         position: relative;
@@ -105,11 +107,11 @@
                             left: 50%;
                             transform: translateX(-50%);
                             height: 2px;
-                            background: $brand-brown;
+                            background: abstracts.$brand-brown;
                             transition: .25s;
                         }
                         &:hover {
-                            color: $munch-brown;
+                            color: abstracts.$munch-brown;
                             &::after {
                                 width: 50%;
                             }
@@ -117,12 +119,12 @@
                     }
     
                     a:is(:link, :active, :visited).active {
-                        color: $brand-pink;
+                        color: abstracts.$brand-pink;
                     }
                 }
             }
         }
-        @include xlg {
+        @include abstracts.xlg {
             transform: translateX(-5vw);
         }
     }
@@ -163,11 +165,11 @@
         padding-right: 5vw;
         gap: 5vh;
         transition: .5s ease;
-        background: $brand-brown;
+        background: abstracts.$brand-brown;
         color: #f4f4f4;
         // background-color: #ffc0cb;
         // background-image: radial-gradient(rgba(182, 12, 12, 0.2), #ffc0cb00);
-        @include lg {
+        @include abstracts.lg {
             display: none;
             align-items: center;
         }
@@ -200,7 +202,7 @@
                 transition: .5s;
                 // margin: 0 5vw 5vh 0;
                 margin-bottom: 1rem;
-                // background-color: $munch-pink-light;
+                // background-color: abstracts.$munch-pink-light;
                 // background: #111;
                 // border-radius: .25rem;
                 border: none;
@@ -238,7 +240,7 @@
                 &:hover {
 
                     i {
-                        color: $munch-pink;
+                        color: abstracts.$munch-pink;
                     }
                 }
             }
@@ -250,7 +252,7 @@
             padding: 1rem .5rem;
             border-radius: .25rem;
             overflow: hidden;
-            background: $munch-brown-darkest;
+            background: abstracts.$munch-brown-darkest;
             @media (min-width: 768px) {
                 width: 20rem;
             }
@@ -308,7 +310,7 @@
                 li {
                     a {
                         font-size: 1.5rem;
-                        color: $munch-brown;
+                        color: abstracts.$munch-brown;
                         transition: .2s;
                         position: relative;
                         @media (min-width: 768px) {
@@ -321,7 +323,7 @@
                         transform: scale(.95);
 
                         i {
-                            color: $munch-pink;
+                            color: abstracts.$munch-pink;
                         }
                     }
 
@@ -335,13 +337,13 @@
             .email-icon {
                 position: absolute;
                 bottom: 10vh;
-                color: $munch-brown;
+                color: abstracts.$munch-brown;
                 transition: .2s;
                 font-size: 1.5rem;
 
 
                 &:hover {
-                    color: $munch-purple;
+                    color: abstracts.$munch-purple;
                 }
             }
 
@@ -394,7 +396,7 @@
                     }
                     // CONTACT LINK HOVER STATE
                 &:hover {
-                    color: $munch-pink;
+                    color: abstracts.$munch-pink;
                     transition: .25s;
                     i {
                         opacity: .4;
@@ -447,7 +449,7 @@
         &::after {
             background: hsla(0, 0%, 100%, .95);
         box-shadow: 0 1rem 1rem transparent;
-            @include md {
+            @include abstracts.md {
                 background: transparent;
                 
             }
@@ -459,7 +461,7 @@
                     background: inherit;
                 }
                 @media(min-width: 820px){
-                    background: $munch-brown;
+                    background: abstracts.$munch-brown;
                     &::after, &::before {
                         background: inherit;
                     }

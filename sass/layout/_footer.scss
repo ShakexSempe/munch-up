@@ -1,3 +1,5 @@
+@use '../abstracts';
+
 .footer {
     // border: 3px solid red;
     padding: 5vh 5vw;
@@ -8,7 +10,7 @@
 
     
 
-    @include lg {
+    @include abstracts.lg {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -30,19 +32,19 @@
             margin-bottom: .5rem;
         }
         #date {
-            color: $munch-brown;
+            color: abstracts.$munch-brown;
         }
 
         p {
-            // color: $text-light;
+            // color: abstracts.$text-light;
             text-transform: capitalize;
             line-height: 1.6;
 
             a {
-                color: $munch-brown;
+                color: abstracts.$munch-brown;
                 text-decoration: none;
                 &:hover {
-                    color: $brand-pink;
+                    color: abstracts.$brand-pink;
                 }
             }
         }
@@ -52,11 +54,11 @@
                 margin-bottom: .5rem;
                 i {
                     width: 1.5rem;
-                    color: $munch-brown;
+                    color: abstracts.$munch-brown;
                     transition: .25s;
                 }
                 a {
-                    color: $brand-brown;
+                    color: abstracts.$brand-brown;
                     cursor: pointer;
                     text-decoration: none;
                     transition: .25s;
@@ -64,10 +66,10 @@
                 
                 &:hover {
                     a {
-                        color: $munch-brown;
+                        color: abstracts.$munch-brown;
                     }
                     i {
-                        color: $brand-brown;
+                        color: abstracts.$brand-brown;
                         transform: translateX(.25rem);
                     }
                 }
