@@ -3,36 +3,19 @@
 #header {
     position: fixed;
     top: 0;
-    z-index: 20;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: pink;
+
     height: 8vh;
     width: 100%;
     padding: .25rem 5vw;
+
     transition: .25s;
     isolation: isolate;
-    @media (min-width: 820px) {
-        background: transparent;
-        background: #f4f4f4;
-    }
-    @media (max-width: 820px) {
-        background: pink;
-        background: transparent;
-        background: #f4f4f4;
-        // box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.836);
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 7vh;
-        // overflow: hidden;
-        display: flex;
-        align-items: center;
-        z-index: 20;
-        // padding: .5rem 1rem;
-    }
+    z-index: 5;
 
+    // PSEUDO BACKGROUND
     &::after {
         content: '';
         position: absolute;
@@ -46,389 +29,12 @@
         transition: .25s, box-shadow .25s;
     }
 
-    .shop-link {
-        display: none;
-        position: relative;
-        // border-radius: .5rem;
-        height: auto;
-        width: max-content;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        z-index: 1;
-        // display: block;
-        transition: .2s;
-
-        a {
-            width: 100%;
-            display: grid;
-            place-items: center;
-            color: abstracts.$munch-mist;
-            padding: .5rem 1rem;
-            font-size: .85rem;
-            @media (min-width: 768px) {
-                font-size: 1rem;
-            }
-            // background: abstracts.$btn-gradient;
-            // box-shadow: abstracts.$btn-shadow;
-            // border-radius: 20px;
-            // padding: .3rem 2rem;
-
-            i {
-                font-size: 1rem;
-                color: #f4f4f4;
-            }
-        }
-    }
-
-    .desktop-nav {
-        display: none;
-        @include abstracts.lg {
-            display: block;
-            // transform: translateX(-5vw);
-            ul {
-                display: flex;
-                list-style: none;
-                gap: .5rem;
-                li {
-                    a {
-                        font-size: 1rem;
-                        text-transform: capitalize;
-                        text-decoration: none;
-                        color: abstracts.$brand-brown;
-                        padding: 0 .5rem;
-                        transition: .25s;
-                        position: relative;
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            bottom: -.125rem;
-                            width: 0%;
-                            left: 50%;
-                            transform: translateX(-50%);
-                            height: 2px;
-                            background: abstracts.$brand-brown;
-                            transition: .25s;
-                        }
-                        &:hover {
-                            color: abstracts.$munch-brown;
-                            &::after {
-                                width: 50%;
-                            }
-                        }
-                    }
-    
-                    a:is(:link, :active, :visited).active {
-                        color: abstracts.$brand-pink;
-                    }
-                }
-            }
-        }
-        @include abstracts.xlg {
-            transform: translateX(-5vw);
-        }
-    }
-    .logo {
-        position: relative;
-        // top: 0vh;
-        // left: 0vw;
-        height: 2.5rem;
-        height: 100%;
-        width: auto;
-        overflow: hidden;
-        z-index: 20;
-        // border-radius: 50%;
-        // border: 2px solid blue;
-        // transform: scale(1);
-        transition: .25s;
-
-            img {
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-                transition: .25s;
-            }
-    }
-
-    aside {
-        position: fixed;
-        top: 0;
-        left: 100%;
-        // left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 15;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        padding-right: 5vw;
-        gap: 5vh;
-        transition: .5s ease;
-        background: abstracts.$brand-brown;
-        color: #f4f4f4;
-        // background-color: #ffc0cb;
-        // background-image: radial-gradient(rgba(182, 12, 12, 0.2), #ffc0cb00);
-        @include abstracts.lg {
-            display: none;
-            align-items: center;
-        }
-        // GENERAL UL STYLE
-        ul {
-
-            li {
-                list-style: none;
-                text-transform: capitalize;
-            }
-        }
-        // NAV LINKS 
-        .nav-links {
-            // border: 2px solid black;
-            width: 16rem;
-            @media (min-width: 768px) {
-                width: 20rem;
-                margin: 0;
-                padding: 0;
-
-                li {
-                    width: 100%;
-                    padding: 0;
-                    margin: 0;
-                }
-            }
-
-            li {
-                padding: .5rem;
-                transition: .5s;
-                // margin: 0 5vw 5vh 0;
-                margin-bottom: 1rem;
-                // background-color: abstracts.$munch-pink-light;
-                // background: #111;
-                // border-radius: .25rem;
-                border: none;
-                border-bottom: 2px solid #0002;
-                outline: none;
-                // transform: scale(.1);
-                transform: translateX(2rem);
-                opacity: 0;
-                transition: .3s;
-
-                a {
-                    display: block;
-                    width: 100%;
-                    font-size: 1rem;
-                    text-decoration: none;
-                    color: #f4f4f4;
-                    // border: 2px solid red;
-                    @media (min-width: 768px) {
-                        font-size: 1.25rem;
-                    }
-
-                    i {
-                        color: rgba(12, 12, 12, 0.377);
-                        color: #ddd;
-                        margin-right: .5em;
-                        width: 1.5rem;
-                        transition: .2s;
-                    }
-
-                    &.active {
-                        color: pink;
-                    }
-                }
-
-                &:hover {
-
-                    i {
-                        color: abstracts.$munch-pink;
-                    }
-                }
-            }
-        }
-        // CONTACT LINKS
-        .contact-links {
-            // border: 2px solid #0003;
-            width: 16rem;
-            padding: 1rem .5rem;
-            border-radius: .25rem;
-            overflow: hidden;
-            background: abstracts.$munch-brown-darkest;
-            @media (min-width: 768px) {
-                width: 20rem;
-            }
-
-            a {
-                display: block;
-                margin-bottom: .5rem;
-                text-decoration: none;
-                opacity: 0;
-                color: #f4f4f4;
-                font-weight: 500;
-                transform: translateX(1rem);
-                transition: 1s;
-                i {
-                    color: inherit;
-                    width: 1.5rem;
-                    transform: translateX(-2rem);
-                    transition: 1s;
-                    opacity: .8;
-                }
-                @media (min-width: 768px) {
-                    font-size: 1.25rem;
-                    i {
-                        width: 2rem;
-                    }
-                }
-
-                
-            }
-
-        }
-        // SOCIAL & EMAIL LINKS
-        .social-bar {
-            @media (max-width: 768px) {
-                width: 50vw;
-            }
-
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 50vw;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #f4f4f4;
-            transition: .4s;
-            transition-delay: .2s;
-
-            ul {
-                display: grid;
-                place-items: center;
-                gap: 3em;
-
-                li {
-                    a {
-                        font-size: 1.5rem;
-                        color: abstracts.$munch-brown;
-                        transition: .2s;
-                        position: relative;
-                        @media (min-width: 768px) {
-                            font-size: 2rem;
-                        }
-                    }
-
-                    &:hover {
-                        transition: .2s;
-                        transform: scale(.95);
-
-                        i {
-                            color: abstracts.$munch-pink;
-                        }
-                    }
-
-                    &:active {
-                        transition: .2s;
-                        transform: scale(.9);
-                    }
-                }
-            }
-
-            .email-icon {
-                position: absolute;
-                bottom: 10vh;
-                color: abstracts.$munch-brown;
-                transition: .2s;
-                font-size: 1.5rem;
-
-
-                &:hover {
-                    color: abstracts.$munch-purple;
-                }
-            }
-
-            
-        }
-
-        // ACTIVE SIDEBAR
-        &.active {
-            left: 0;
-            .nav-links {
-                li {
-                    transform: translateX(0);
-                    transition: .5s;
-                    opacity: 1;
-                    &:nth-child(1){
-                        transition-delay: .3s;
-                    }
-                    &:nth-child(2){
-                        transition-delay: .35s;
-                    }
-                    &:nth-child(3){
-                        transition-delay: .4s;
-                    }
-                    &:nth-child(4){
-                        transition-delay: .45s;
-                    }
-                    &:hover {
-                        transition: .3s;
-                    }
-                }
-            }
-            .contact-links {
-                a {
-                    opacity: 1;
-                    transform: translateX(0);
-                    i {
-                        transform: translateX(0);
-                    }
-                    &:nth-child(1) {
-                        transition-delay: .2s;
-                        i {
-                            transition-delay: .3s;
-                        }
-                    }
-                    &:nth-child(2) {
-                        transition-delay: .4s;
-                        i {
-                            transition-delay: .5s;
-                        }
-                    }
-                    // CONTACT LINK HOVER STATE
-                &:hover {
-                    color: abstracts.$munch-pink;
-                    transition: .25s;
-                    i {
-                        opacity: .4;
-                        transition: .25s;
-                    }
-                }
-                }
-            }
-            .social-bar {
-                transition-delay: .25s;
-                width: 5vw;
-
-                @media (max-width: 768px) {
-                    width: 20vw;
-                }
-            }
-        }
-        // END OF ACTIVE SIDEBAR
-        
-    }
-
-    // IO HEADER
+    // ACTIVE HEADER = HEADER HEIGHT WHEN HERO IO
     &.active-header {
         height: 15vh;
-        background: transparent;
-        &::after {
-            // background: red;
-        }
         @media (min-width: 820px) {
             height: 25vh;
             .logo {
-                transform: translateY(5vh);
                 position: relative;
                 top: .5rem;
             }
@@ -446,35 +52,349 @@
     // HERO HEADER 
     &.hero-header {
         background: transparent;
+
         &::after {
             background: hsla(0, 0%, 100%, .95);
-        box-shadow: 0 1rem 1rem transparent;
+            box-shadow: 0 1rem 1rem transparent;
+
             @include abstracts.md {
                 background: transparent;
-                
-            }
-        }
-        .hamburger {
-            .line {
-                // background: #fff;
-                &::after, &::before {
-                    background: inherit;
-                }
-                @media(min-width: 820px){
-                    background: abstracts.$munch-brown;
-                    &::after, &::before {
-                        background: inherit;
-                    }
-                }
-            }
-            .menu {
-                background: #000a;
-                p {
-                    color: #fff;
-                }
             }
         }
     }
 
+    
+}
+
+.shop-link {
+    display: none;
+}
+
+.desktop-nav {
+    display: none;
+    @include abstracts.lg {
+        display: block;
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: .5rem;
+            li {
+                a {
+                    font-size: 1rem;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    color: abstracts.$brand-brown;
+                    padding: 0 .5rem;
+                    transition: .25s;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -.125rem;
+                        width: 0%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        height: 2px;
+                        background: abstracts.$brand-brown;
+                        transition: .25s;
+                    }
+                    &:hover {
+                        color: abstracts.$munch-brown;
+                        &::after {
+                            width: 50%;
+                        }
+                    }
+                }
+
+                a:is(:link, :active, :visited).active {
+                    color: abstracts.$brand-pink;
+                }
+            }
+        }
+    }
+}
+
+.logo {
+    position: relative;
+    height: 2.5rem;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    z-index: 20;
+    transition: .25s;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            transition: .25s;
+        }
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    padding-left: 20vw;
+    transition: .5s ease;
+    background: abstracts.$brand-brown;
+    color: #f4f4f4;
+    z-index: 15;
+
+    @include abstracts.lg {
+        display: none;
+    }
+    // GENERAL UL STYLE
+    ul {
+
+        li {
+            list-style: none;
+            text-transform: capitalize;
+        }
+    }
+    // NAV LINKS 
+    .nav-links {
+        // border: 2px solid black;
+        width: 16rem;
+        @media (min-width: 768px) {
+            width: 20rem;
+            margin: 0;
+            padding: 0;
+
+            li {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        li {
+            padding: .5rem;
+            transition: .5s;
+            // margin: 0 5vw 5vh 0;
+            margin-bottom: 1rem;
+            // background-color: abstracts.$munch-pink-light;
+            // background: #111;
+            // border-radius: .25rem;
+            border: none;
+            border-bottom: 2px solid #0002;
+            outline: none;
+            // transform: scale(.1);
+            transform: translateX(2rem);
+            opacity: 0;
+            transition: .3s;
+
+            a {
+                display: block;
+                width: 100%;
+                font-size: 1rem;
+                text-decoration: none;
+                color: #f4f4f4;
+                // border: 2px solid red;
+                @media (min-width: 768px) {
+                    font-size: 1.25rem;
+                }
+
+                i {
+                    color: rgba(12, 12, 12, 0.377);
+                    color: #ddd;
+                    margin-right: .5em;
+                    width: 1.5rem;
+                    transition: .2s;
+                }
+
+                &.active {
+                    color: pink;
+                }
+            }
+
+            &:hover {
+
+                i {
+                    color: abstracts.$munch-pink;
+                }
+            }
+        }
+    }
+    // CONTACT LINKS
+    .contact-links {
+        // border: 2px solid yellow;
+        width: 16rem;
+        padding: 1rem .5rem;
+        border-radius: .25rem;
+        overflow: hidden;
+        background: abstracts.$munch-brown-darkest;
+        @media (min-width: 768px) {
+            width: 20rem;
+        }
+
+        a {
+            display: block;
+            margin-bottom: .5rem;
+            text-decoration: none;
+            opacity: 0;
+            color: #f4f4f4;
+            font-weight: 500;
+            transform: translateX(1rem);
+            transition: 1s;
+            i {
+                color: inherit;
+                width: 1.5rem;
+                transform: translateX(-2rem);
+                transition: 1s;
+                opacity: .8;
+            }
+            @media (min-width: 768px) {
+                font-size: 1.25rem;
+                i {
+                    width: 2rem;
+                }
+            }
+
+            
+        }
+
+    }
+    // SOCIAL & EMAIL LINKS
+    .social-bar {
+        @media (max-width: 768px) {
+            width: 50vw;
+        }
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f4f4f4;
+        transition: .4s;
+        transition-delay: .2s;
+
+        ul {
+            display: grid;
+            place-items: center;
+            gap: 3em;
+
+            li {
+                a {
+                    font-size: 1.5rem;
+                    color: abstracts.$munch-brown;
+                    transition: .2s;
+                    position: relative;
+                    @media (min-width: 768px) {
+                        font-size: 2rem;
+                    }
+                }
+
+                &:hover {
+                    transition: .2s;
+                    transform: scale(.95);
+
+                    i {
+                        color: abstracts.$munch-pink;
+                    }
+                }
+
+                &:active {
+                    transition: .2s;
+                    transform: scale(.9);
+                }
+            }
+        }
+
+        .email-icon {
+            position: absolute;
+            bottom: 10vh;
+            color: abstracts.$munch-brown;
+            transition: .2s;
+            font-size: 1.5rem;
+
+
+            &:hover {
+                color: abstracts.$munch-purple;
+            }
+        }
+
+        
+    }
+
+    // ACTIVE SIDEBAR
+    &.active {
+        left: 0;
+        .nav-links {
+            li {
+                transform: translateX(0);
+                transition: .5s;
+                opacity: 1;
+                &:nth-child(1){
+                    transition-delay: .3s;
+                }
+                &:nth-child(2){
+                    transition-delay: .35s;
+                }
+                &:nth-child(3){
+                    transition-delay: .4s;
+                }
+                &:nth-child(4){
+                    transition-delay: .45s;
+                }
+                &:hover {
+                    transition: .3s;
+                }
+            }
+        }
+        .contact-links {
+            a {
+                opacity: 1;
+                transform: translateX(0);
+                i {
+                    transform: translateX(0);
+                }
+                &:nth-child(1) {
+                    transition-delay: .2s;
+                    i {
+                        transition-delay: .3s;
+                    }
+                }
+                &:nth-child(2) {
+                    transition-delay: .4s;
+                    i {
+                        transition-delay: .5s;
+                    }
+                }
+                // CONTACT LINK HOVER STATE
+            &:hover {
+                color: abstracts.$munch-pink;
+                transition: .25s;
+                i {
+                    opacity: .4;
+                    transition: .25s;
+                }
+            }
+            }
+        }
+
+        .social-bar {
+            transition-delay: .25s;
+            width: 5vw;
+
+            @media (max-width: 768px) {
+                width: 15vw;
+            }
+        }
+    }
+    // END OF ACTIVE SIDEBAR
     
 }
