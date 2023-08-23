@@ -41,6 +41,8 @@
             p {
                 text-transform: lowercase;
                 margin-bottom: 5vh;
+                font-size: 1rem;
+                font-size: clamp(1rem,2vw, 1.125rem);
             }
         }
         figure {

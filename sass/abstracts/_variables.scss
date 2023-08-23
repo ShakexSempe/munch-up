@@ -47,12 +47,12 @@ $brand-btn-hover: linear-gradient(0deg, hsl(31, 53%, 30%), hsl(32, 52%, 20%) );
 
 
 
-$btn-shadow:  0 .25rem .5rem hsla(350, 100%, 88%, .1),
+$btn-shadow:  0 .25rem .5rem hsla(0, 0, 0, .15),
                 inset 2px 2px 5px rgba(255, 255, 255, 0.150),
                 inset -2px -2px 5px rgba(0, 0, 0, 0.20);
 
-$btn-shadow-hover :  0 .15rem .25rem hsla(350, 100%, 88%, .2),
-                        inset 2px 2px 2px rgba(0, 0, 0, 0.200),
+$btn-shadow-hover :  0 .15rem .25rem hsla(0, 0%, 0%, 0.25),
+                        inset 2px 2px 2px rgba(0, 0, 0, 0.150),
                         inset -2px -2px 2px rgba(255, 255, 255, 0.150);
 
 $links-shadow:  inset -2px -2px 5px $munch-brown-dark,
