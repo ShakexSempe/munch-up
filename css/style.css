@@ -274,16 +274,19 @@ main .title p {
 
 #contact {
   overflow-x: hidden;
-  background: #f4f4f4;
+  background: #eee;
   padding-top: 5vh;
 }
 #contact .title {
   text-align: left;
+  text-wrap: balance;
 }
 #contact .title p {
   font-size: 1rem;
+  font-size: clamp(1rem, 1.25vw, 1.125rem);
   text-transform: none;
   line-height: 1.6;
+  max-width: 768px;
 }
 #contact .title p a {
   color: #f75394;
@@ -295,7 +298,6 @@ main .title p {
 
 .contact {
   position: relative;
-  width: 100%;
   display: flex;
   flex-direction: column-reverse;
   padding: 5vh 0;
@@ -305,7 +307,6 @@ main .title p {
     padding: 10vh 5vw;
     justify-content: space-between;
     align-items: flex-start;
-    overflow: hidden;
   }
 }
 .contact .contact-info-title {
@@ -315,46 +316,38 @@ main .title p {
   font-weight: 600;
   font-size: clamp(2rem, 4vw, 1.5rem);
 }
-.contact .contact-form {
+
+.contact-form {
   position: relative;
-  background: #f9f9f9;
   background: #f4f4f4;
-  padding: 10vh 5vw;
-  margin: 0 auto;
+  padding: 5vh 5vw;
+  margin-inline: auto;
   width: 100%;
 }
-.contact .contact-form form {
-  width: 100%;
-}
-.contact .contact-form form .row {
-  width: 100%;
+.contact-form form .row {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-@media (max-width: 1024px) {
-  .contact .contact-form form .row {
-    flex-direction: column;
-    align-items: center;
+@media (min-width: 768px) {
+  .contact-form form .row {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
   }
 }
-@media (min-width: 1024px) {
-  .contact .contact-form form .rowlabel {
-    font-size: 0.8em;
-  }
-}
-.contact .contact-form form .row fieldset {
+.contact-form form .row fieldset {
   background: #ffff;
   padding: 1rem 0.5rem;
   display: flex;
   flex-direction: column;
-  margin: 2em auto;
-  border: none;
   border: 0.1rem solid #0002;
-  height: auto;
   border-radius: 0.25rem;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
-.contact .contact-form form .row fieldset legend {
-  color: #4d3419;
+.contact-form form .row fieldset legend {
+  color: #800000;
   font-weight: 700;
   font-size: 1.125rem;
   letter-spacing: 0.15rem;
@@ -362,60 +355,52 @@ main .title p {
   margin-left: 0.5em;
   padding: 0 0.25rem;
 }
-.contact .contact-form form .row fieldset#contact-field {
+.contact-form form .row fieldset#contact-field {
   flex-direction: row;
   gap: 0.5rem;
   padding: 0.5rem;
-  margin: 0;
   width: 100%;
-  height: 150px;
-  overflow: hidden;
 }
 @media (max-width: 1024px) {
-  .contact .contact-form form .row fieldset#contact-field {
+  .contact-form form .row fieldset#contact-field {
     flex-direction: column;
     margin-bottom: 5vh;
-    height: auto;
     padding: 1rem 0.5rem 2rem;
   }
-  .contact .contact-form form .row fieldset#contact-field .input50 {
+  .contact-form form .row fieldset#contact-field .input50 {
     height: auto;
   }
 }
 @media (max-width: 350px) {
-  .contact .contact-form form .row fieldset#contact-field {
+  .contact-form form .row fieldset#contact-field {
     height: auto;
   }
 }
-.contact .contact-form form .row fieldset#treats {
-  padding: 1rem 0.5rem;
-}
-.contact .contact-form form .row fieldset#treats label {
+.contact-form form .row fieldset#treats label {
   position: relative;
   transform: translateY(1em);
 }
-.contact .contact-form form .row fieldset#treats option {
+.contact-form form .row fieldset#treats option {
   text-transform: capitalize;
 }
 @media (max-width: 1024px) {
-  .contact .contact-form form .row fieldset#treats {
+  .contact-form form .row fieldset#treats {
     flex-direction: column;
     height: auto;
     padding: 1em 0.5em 10vh;
-    margin: 10vh auto;
   }
-  .contact .contact-form form .row fieldset#treats .input50 {
+  .contact-form form .row fieldset#treats .input50 {
     height: auto;
   }
 }
 @media (max-width: 350px) {
-  .contact .contact-form form .row fieldset#treats {
+  .contact-form form .row fieldset#treats {
     height: auto;
   }
 }
-.contact .contact-form form .row label {
+.contact-form form .row label {
   text-transform: capitalize;
-  color: #800000;
+  color: #4d3419;
   position: absolute;
   top: 1em;
   font-size: 1rem;
@@ -425,23 +410,23 @@ main .title p {
   letter-spacing: 0.05rem;
   transform: translateY(50%);
 }
-.contact .contact-form form .row label.required::after {
+.contact-form form .row label.required::after {
   content: "*";
   color: #f75394;
   font-weight: 800;
 }
-.contact .contact-form form .row .input50 {
+.contact-form form .row .input50 {
   width: 50%;
 }
-.contact .contact-form form .row .input100 {
+.contact-form form .row .input100 {
   width: 100%;
   margin: 0 10px;
 }
-.contact .contact-form form .row #custom-classic label {
+.contact-form form .row #custom-classic label {
   position: relative;
   transform: translateY(1em);
 }
-.contact .contact-form form .row #custom-classic h3 {
+.contact-form form .row #custom-classic h3 {
   width: 100%;
   text-align: center;
   margin: 2em auto 0;
@@ -450,16 +435,16 @@ main .title p {
   border-radius: 5px;
   padding: 0.2em;
 }
-.contact .contact-form form .row #custom-classic select {
+.contact-form form .row #custom-classic select {
   font-size: 1em;
   text-transform: capitalize;
 }
-.contact .contact-form form .row .input50, .contact .contact-form form .row .input100 {
+.contact-form form .row .input50, .contact-form form .row .input100 {
   width: 100%;
   height: 100%;
   position: relative;
 }
-.contact .contact-form form .row input, .contact .contact-form form .row textarea, .contact .contact-form form .row select {
+.contact-form form .row input, .contact-form form .row textarea, .contact-form form .row select {
   position: relative;
   border: 1px solid #333;
   border: none;
@@ -476,7 +461,7 @@ main .title p {
   border-radius: 5px;
   transition: 0.2s linear;
 }
-.contact .contact-form form .row input::placeholder, .contact .contact-form form .row textarea::placeholder, .contact .contact-form form .row select::placeholder {
+.contact-form form .row input::placeholder, .contact-form form .row textarea::placeholder, .contact-form form .row select::placeholder {
   font-size: 0.9rem;
   font-weight: 400;
   opacity: 0;
@@ -485,24 +470,24 @@ main .title p {
   color: rgba(151, 149, 149, 0.822);
   color: #333;
 }
-.contact .contact-form form .row input:invalid, .contact .contact-form form .row textarea:invalid, .contact .contact-form form .row select:invalid {
+.contact-form form .row input:invalid, .contact-form form .row textarea:invalid, .contact-form form .row select:invalid {
   border: 1px solid #0002;
 }
-.contact .contact-form form .row input optgroup, .contact .contact-form form .row textarea optgroup, .contact .contact-form form .row select optgroup {
+.contact-form form .row input optgroup, .contact-form form .row textarea optgroup, .contact-form form .row select optgroup {
   text-transform: capitalize;
 }
-.contact .contact-form form .row input optgroup option, .contact .contact-form form .row textarea optgroup option, .contact .contact-form form .row select optgroup option {
+.contact-form form .row input optgroup option, .contact-form form .row textarea optgroup option, .contact-form form .row select optgroup option {
   text-transform: lowercase;
 }
-.contact .contact-form form .row input optgroup select, .contact .contact-form form .row textarea optgroup select, .contact .contact-form form .row select optgroup select {
+.contact-form form .row input optgroup select, .contact-form form .row textarea optgroup select, .contact-form form .row select optgroup select {
   text-transform: capitalize;
 }
-.contact .contact-form form .row input:focus::placeholder, .contact .contact-form form .row textarea:focus::placeholder, .contact .contact-form form .row select:focus::placeholder {
+.contact-form form .row input:focus::placeholder, .contact-form form .row textarea:focus::placeholder, .contact-form form .row select:focus::placeholder {
   transition: 0.4s;
   letter-spacing: normal;
   opacity: 1;
 }
-.contact .contact-form form .row input[type=submit], .contact .contact-form form .row textarea[type=submit], .contact .contact-form form .row select[type=submit] {
+.contact-form form .row input[type=submit], .contact-form form .row textarea[type=submit], .contact-form form .row select[type=submit] {
   background: linear-gradient(0deg, #660000, #cc0000);
   color: #fff;
   width: 20rem;
@@ -521,13 +506,13 @@ main .title p {
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15), inset 2px 2px 5px rgba(255, 255, 255, 0.15), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 768px) {
-  .contact .contact-form form .row input[type=submit], .contact .contact-form form .row textarea[type=submit], .contact .contact-form form .row select[type=submit] {
+  .contact-form form .row input[type=submit], .contact-form form .row textarea[type=submit], .contact-form form .row select[type=submit] {
     margin: 0 auto 5vh;
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  .contact .contact-form form .row input[type=submit]:hover, .contact .contact-form form .row textarea[type=submit]:hover, .contact .contact-form form .row select[type=submit]:hover {
+  .contact-form form .row input[type=submit]:hover, .contact-form form .row textarea[type=submit]:hover, .contact-form form .row select[type=submit]:hover {
     letter-spacing: normal;
     transition: 0.25s ease;
     transform: scale(0.985);
@@ -535,59 +520,62 @@ main .title p {
   }
 }
 @media (max-width: 768px) {
-  .contact .contact-form form .row input[type=submit]:active, .contact .contact-form form .row textarea[type=submit]:active, .contact .contact-form form .row select[type=submit]:active {
+  .contact-form form .row input[type=submit]:active, .contact-form form .row textarea[type=submit]:active, .contact-form form .row select[type=submit]:active {
     letter-spacing: normal;
     transition: 0.25s ease;
     transform: scale(0.985);
     background: linear-gradient(0deg, #b30000, maroon);
   }
 }
-.contact .contact-form form .row textarea {
+.contact-form form .row textarea {
   height: 150px;
 }
-.contact .contact-info {
+
+.contact-info {
   width: 100%;
   background: #f4f4f4;
-  padding: 0vh 5vw 5vh;
+  padding: 0vh 5vw 10vh;
+  border-bottom: 1px solid #654321;
 }
-.contact .contact-info .contact-items {
+.contact-info .contact-items {
   padding-top: 5vh;
   display: grid;
   gap: 10vh;
 }
 @media (min-width: 768px) {
-  .contact .contact-info .contact-items {
+  .contact-info .contact-items {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
   }
 }
-.contact .contact-info .info-box {
+.contact-info .info-box {
   background: #fff;
   padding: 1rem;
   border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(81, 54, 26, 0.15);
 }
-.contact .contact-info .info-box .item-title {
+.contact-info .info-box .item-title {
   margin-top: -2rem;
   margin-bottom: 1rem;
 }
-.contact .contact-info .info-box .item-title .contact-icon {
+.contact-info .info-box .item-title .contact-icon {
   font-size: 2rem;
   color: #51361a;
   margin-bottom: 0.5rem;
 }
-.contact .contact-info .info-box .item-title h2 {
+.contact-info .info-box .item-title h2 {
   text-transform: capitalize;
   font-size: 1rem;
 }
-.contact .contact-info .info-box a {
+.contact-info .info-box a {
   color: inherit;
   text-decoration: none;
   transition: 0.25s;
 }
-.contact .contact-info .info-box a:hover {
+.contact-info .info-box a:hover {
   color: #f75394;
 }
-.contact .contact-info .info-box i {
+.contact-info .info-box i {
   color: #800000;
   width: 1.5rem;
 }

@@ -2,14 +2,19 @@
 
 #contact {
     overflow-x: hidden;
-    background: #f4f4f4;
+    background: #eee;
     padding-top: 5vh;
+
+    // CONTACT PAGE TITLE (FORM INFO)
     .title {
         text-align: left;
+        text-wrap: balance;
         p {
             font-size: 1rem;
+            font-size: clamp(1rem, 1.25vw, 1.125rem);
             text-transform: none;
             line-height: 1.6;
+            max-width: 768px;
             a {
                 color: abstracts.$munch-pink;
                 font-weight: 600;
@@ -20,11 +25,11 @@
             }
         }
     }
+
 }
+// CONTACT SECTION = INFO + FORM
 .contact {
     position: relative;
-    width: 100%;
-    // margin-top: 50px;
     display: flex;
     flex-direction: column-reverse;
     padding: 5vh 0;
@@ -32,325 +37,304 @@
         padding: 10vh 5vw;
         justify-content: space-between;
         align-items: flex-start;
-        overflow: hidden;
-        // border: 2px solid red;
 
     }
+    // CONTACT SECTIONS TITLES
     .contact-info-title {
         text-transform: capitalize;
-        // text-align: center;
         padding: 10vh 0 10vh;
         color: abstracts.$munch-brown;
         font-weight: 600;
         font-size: abstracts.$font-clamp-md;
     }
-    .contact-form {
-        position: relative;
-        // border: 2px solid blue;
-        background: #f9f9f9;
-        background: #f4f4f4;
-        padding: 10vh 5vw;
-        margin: 0 auto;
-        width: 100%;
-        // width: calc(100% - 400px);
-        // padding: 10vh 40px 20px;
-        // padding: 10vh 0 20px;
-        // margin: 10vh 0;
-        // border-radius: 10px;
 
-        // @media (max-width: 1024px){
-        //     width: 100%;
-        //     padding: 30px 1rem 30px;
-        //     border-radius: 0;
-        // }
-        
-        form {
-            width: 100%;
-            .row {
-                // background: red;
-                width: 100%;
+}
+
+// CONTACT FORM
+.contact-form {
+    position: relative;
+    background: #f4f4f4;
+    padding: 5vh 5vw;
+    margin-inline: auto;
+    width: 100%;
+    
+    form {
+        // width: 100%;
+        // border: 2px solid red;
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include abstracts.md {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 2rem;
+            }
+            
+            fieldset {
+                background: #ffff;
+                padding: 1rem .5rem;
                 display: flex;
-                @media (max-width: 1024px){
-                    flex-direction: column;
-                    align-items: center;
-                }
-                @media (min-width: 1024px) {
-                    &label {
-                        font-size: .8em;
-                    }
-                }
-                
-                fieldset {
-                    background: #ffff;
-                    padding: 1rem .5rem;
-                    display: flex;
-                    flex-direction: column;
-                    margin: 2em auto;
-                    border: none;
-                    border: .1rem solid #0002;
-                    height: auto;
-                    border-radius: .25rem;
-                    overflow: hidden;
-                    
+                flex-direction: column;
+                border: .1rem solid #0002;
+                border-radius: .25rem;
+                overflow: hidden;
+                margin-bottom: 2rem;
 
-                    legend {
-                        color: abstracts.$brand-brown;
-                        font-weight: 700;
-                        font-size: 1.125rem;
-                        letter-spacing: .15rem;
-                        text-transform: capitalize;
-                        margin-left: .5em;
-                        padding: 0 .25rem;
-
-                    }
-                    // contact-info fieldset
-                    &#contact-field {
-                        flex-direction: row;
-                        gap: .5rem;
-                        padding: .5rem;
-                        margin: 0;
-                        width: 100%;
-                        height: 150px;
-                        overflow: hidden;
-                        
-                        @media (max-width: 1024px){
-                            flex-direction: column;
-                            margin-bottom: 5vh;
-                            height: auto;
-                            padding: 1rem .5rem 2rem;
-                            
-                            .input50 {
-                                height: auto;
-                                // padding-right: 1em;
-                        }
-                        }
-                        @media (max-width: 350px){
-                            height: auto;
-                        }
-                    }
-                    // end of contact-info fieldset
-                    &#treats {
-                        padding: 1rem .5rem;
-                        label {
-                            position: relative;
-                            transform: translateY(1em);
-                        }
-                        option {
-                            text-transform: capitalize;
-                        }
-                        @media (max-width: 1024px){
-                            flex-direction: column;
-                            // margin-bottom: 5vh;
-                            height: auto;
-                            padding: 1em .5em 10vh;
-                            margin: 10vh auto;
-                            
-                            .input50 {
-                                height: auto;
-                                // padding-right: 1em;
-                        }
-                        }
-                        @media (max-width: 350px){
-                            height: auto;
-                        }
-                    }
-                }
-                label {
-                    text-transform: capitalize;
+                legend {
                     color: abstracts.$munch-brown;
-                    position: absolute;
-                    top: 1em;
-                    font-size: 1rem;
-                    font-weight: 500;
-                    left: 0;
-                    padding: 0 4em 0em 0;
-                    letter-spacing: .05rem;
-                    transform: translateY(50%);
-                    &.required::after {
-                        content: '*';
-                        color: abstracts.$text-color-pink;
-                        font-weight: 800;
+                    font-weight: 700;
+                    font-size: 1.125rem;
+                    letter-spacing: .15rem;
+                    text-transform: capitalize;
+                    margin-left: .5em;
+                    padding: 0 .25rem;
+
+                }
+                // CONTACT INFO FIELDSET
+                &#contact-field {
+                    flex-direction: row;
+                    gap: .5rem;
+                    padding: .5rem;
+                    width: 100%;
+                    
+                    @media (max-width: 1024px){
+                        flex-direction: column;
+                        margin-bottom: 5vh;
+                        padding: 1rem .5rem 2rem;
+                        
+                        .input50 {
+                            height: auto;
+                    }
+                    }
+                    @media (max-width: 350px){
+                        height: auto;
                     }
                 }
-                .input50 {
-                    width: 50%;
-                    // margin: 0 10px;
-                }
-                .input100 {
-                    width: 100%;
-                    margin: 0 10px;
-                }
-                #custom-classic {
-                    // overflow: scroll;
+                // TREATS FIELD
+                &#treats {
                     label {
                         position: relative;
                         transform: translateY(1em);
                     }
-                    h3 {
-                        width: 100%;
-                        text-align: center;
-                        margin: 2em auto 0;
-                        background: abstracts.$munch-pink;
-                        color: abstracts.$munch-mist;
-                        border-radius: 5px;
-                        padding: .2em;
-                    }
-                    select {
-                        font-size: 1em;
+                    option {
                         text-transform: capitalize;
                     }
+                    @media (max-width: 1024px){
+                        flex-direction: column;
+                        // margin-bottom: 5vh;
+                        height: auto;
+                        padding: 1em .5em 10vh;
+                        // margin: 10vh auto;
+                        
+                        .input50 {
+                            height: auto;
+                            // padding-right: 1em;
+                    }
+                    }
+                    @media (max-width: 350px){
+                        height: auto;
+                    }
                 }
-                .input50, .input100 {
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
+            }
+
+            
+            label {
+                text-transform: capitalize;
+                color: abstracts.$brand-brown;
+                position: absolute;
+                top: 1em;
+                font-size: 1rem;
+                font-weight: 500;
+                left: 0;
+                padding: 0 4em 0em 0;
+                letter-spacing: .05rem;
+                transform: translateY(50%);
+                &.required::after {
+                    content: '*';
+                    color: abstracts.$text-color-pink;
+                    font-weight: 800;
                 }
-                input, textarea, select {
+            }
+            .input50 {
+                width: 50%;
+                // margin: 0 10px;
+            }
+            .input100 {
+                width: 100%;
+                margin: 0 10px;
+            }
+            #custom-classic {
+                // overflow: scroll;
+                label {
                     position: relative;
-                    border: 1px solid #333;
-                    border: none;
-                    color: #000;
-                    background: #f4f4f4;
+                    transform: translateY(1em);
+                }
+                h3 {
                     width: 100%;
-                    padding: .7em .5em;
-                    outline: none;
-                    font-size: 1rem;
-                    font-weight: 500;
-                    margin: 1em 0 5vh;
-                    resize: none;
-                    bottom: -2em;
+                    text-align: center;
+                    margin: 2em auto 0;
+                    background: abstracts.$munch-pink;
+                    color: abstracts.$munch-mist;
                     border-radius: 5px;
-                    transition: .2s linear;
-
-                    &::placeholder {
-                        font-size: .9rem;
-                        font-weight: 400;
-                        opacity: 0;
-                        letter-spacing: .05rem;
-                        text-transform: capitalize;
-                        color: rgba(151, 149, 149, 0.822);
-                        color: #333;
-                    }
-                    &:invalid {
-                        border: 1px solid #0002;
-                    }
-                    
-                    optgroup {
-                        text-transform: capitalize;
-                        option {
-                            text-transform: lowercase;
-                        }
-
-                        select {
-                            text-transform: capitalize;
-                        }
-                    }
-
-                    // HOVER STATE
-                    &:focus {
-                        &::placeholder {
-                            transition: .4s;
-                            letter-spacing: normal;
-                            opacity: 1;
-                        }
-                    }
-                    &[type='submit'] {
-                        background: abstracts.$submit-btn;
-                        color: #fff;
-                        width: 20rem;
-                        display: block;
-                        margin: 0 auto 10vh;
-                        text-transform: capitalize;
-                        letter-spacing: .05rem;
-                        font-size: 1rem;
-                        @media (max-width: 768px){
-                            margin: 0 auto 5vh;
-                            width: 100%;
-                        }
-                        font-weight: 300;
-                        border: 0;
-                        padding: 1rem;
-                        border-radius: .5rem;
-                        border: none;
-                        cursor: pointer;
-                        position: relative;
-                        box-shadow: abstracts.$btn-shadow;
-                        @media (min-width: 768px){
-                            &:hover {
-                                letter-spacing: normal;
-                                transition: .25s ease;
-                                transform: scale(.985);
-                                background: abstracts.$submit-btn-hover;
-                            }
-                        }
-                        @media (max-width: 768px){
-                            &:active {
-                                letter-spacing: normal;
-                                transition: .25s ease;
-                                transform: scale(.985);
-                                background: abstracts.$submit-btn-hover;
-                            }
-                        }
-                    }
+                    padding: .2em;
                 }
+                select {
+                    font-size: 1em;
+                    text-transform: capitalize;
+                }
+            }
+            .input50, .input100 {
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+            input, textarea, select {
+                position: relative;
+                border: 1px solid #333;
+                border: none;
+                color: #000;
+                background: #f4f4f4;
+                width: 100%;
+                padding: .7em .5em;
+                outline: none;
+                font-size: 1rem;
+                font-weight: 500;
+                margin: 1em 0 5vh;
+                resize: none;
+                bottom: -2em;
+                border-radius: 5px;
+                transition: .2s linear;
 
-                textarea {
-                    height: 150px;
-
+                &::placeholder {
+                    font-size: .9rem;
+                    font-weight: 400;
+                    opacity: 0;
+                    letter-spacing: .05rem;
+                    text-transform: capitalize;
+                    color: rgba(151, 149, 149, 0.822);
+                    color: #333;
+                }
+                &:invalid {
+                    border: 1px solid #0002;
                 }
                 
+                optgroup {
+                    text-transform: capitalize;
+                    option {
+                        text-transform: lowercase;
+                    }
+
+                    select {
+                        text-transform: capitalize;
+                    }
+                }
+
+                // HOVER STATE
+                &:focus {
+                    &::placeholder {
+                        transition: .4s;
+                        letter-spacing: normal;
+                        opacity: 1;
+                    }
+                }
+                &[type='submit'] {
+                    background: abstracts.$submit-btn;
+                    color: #fff;
+                    width: 20rem;
+                    display: block;
+                    margin: 0 auto 10vh;
+                    text-transform: capitalize;
+                    letter-spacing: .05rem;
+                    font-size: 1rem;
+                    @media (max-width: 768px){
+                        margin: 0 auto 5vh;
+                        width: 100%;
+                    }
+                    font-weight: 300;
+                    border: 0;
+                    padding: 1rem;
+                    border-radius: .5rem;
+                    border: none;
+                    cursor: pointer;
+                    position: relative;
+                    box-shadow: abstracts.$btn-shadow;
+                    @media (min-width: 768px){
+                        &:hover {
+                            letter-spacing: normal;
+                            transition: .25s ease;
+                            transform: scale(.985);
+                            background: abstracts.$submit-btn-hover;
+                        }
+                    }
+                    @media (max-width: 768px){
+                        &:active {
+                            letter-spacing: normal;
+                            transition: .25s ease;
+                            transform: scale(.985);
+                            background: abstracts.$submit-btn-hover;
+                        }
+                    }
+                }
             }
+
+            textarea {
+                height: 150px;
+
+            }
+            
+        }
+    }
+}
+
+// CONTACT INFO
+.contact-info {
+    width: 100%;
+    background: #f4f4f4;
+    padding: 0vh 5vw 10vh;
+    border-bottom: 1px solid abstracts.$munch-brown-dark;
+
+    .contact-items {
+        padding-top: 5vh;
+        display: grid;
+        gap: 10vh;
+        @include abstracts.md {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
         }
     }
 
-    .contact-info {
-        // border: 2px solid red;
-        width: 100%;
-        background: #f4f4f4;
-        padding: 0vh 5vw 5vh;
+    .info-box {
+        background: #fff;
+        padding: 1rem;
+        border-radius: abstracts.$brand-radius;
+        box-shadow: 0 .25rem .5rem hsla(31, 51%, 21%, .15);
 
-        .contact-items {
-            padding-top: 5vh;
-            display: grid;
-            gap: 10vh;
-            @include abstracts.md {
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 1rem;
+        .item-title {
+            margin-top: -2rem;
+            margin-bottom: 1rem;
+            .contact-icon {
+                font-size: 2rem;
+                color: abstracts.$munch-brown-darkest;
+                margin-bottom: .5rem;
+            }
+            h2 {
+                text-transform: capitalize;
+                font-size: 1rem;
             }
         }
-
-        .info-box {
-            // border: 2px solid red;
-            background: #fff;
-            padding: 1rem;
-            border-radius: abstracts.$brand-radius;
-            
-            .item-title {
-                margin-top: -2rem;
-                margin-bottom: 1rem;
-                .contact-icon {
-                    font-size: 2rem;
-                    color: abstracts.$munch-brown-darkest;
-                    margin-bottom: .5rem;
-                }
-                h2 {
-                    text-transform: capitalize;
-                    font-size: 1rem;
-                }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: .25s;
+            &:hover {
+                color: abstracts.$brand-pink;
             }
-            
-            a {
-                color: inherit;
-                text-decoration: none;
-                transition: .25s;
-                &:hover {
-                    color: abstracts.$brand-pink;
-                }
-            }
-            i {
-                color: abstracts.$munch-brown;
-                width: 1.5rem;
-            }
+        }
+        i {
+            color: abstracts.$munch-brown;
+            width: 1.5rem;
         }
     }
 }
