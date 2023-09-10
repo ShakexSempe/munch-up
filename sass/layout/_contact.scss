@@ -238,35 +238,40 @@
                         opacity: 1;
                     }
                 }
+
+                // SUBMIT BUTTON
                 &[type='submit'] {
                     background: abstracts.$submit-btn;
                     color: #fff;
-                    width: 20rem;
-                    display: block;
-                    margin: 0 auto 10vh;
+
+                    width: max-content;
+                    padding: 1rem 1.5rem;
+                    margin: 0 0 10vh;
+
+                    text-align: center;
                     text-transform: capitalize;
                     letter-spacing: .05rem;
                     font-size: 1rem;
-                    @media (max-width: 768px){
-                        margin: 0 auto 5vh;
-                        width: 100%;
-                    }
+                    font-size: clamp(1rem, 2vw, 1.125rem);
+                    font-family: abstracts.$content-font;
                     font-weight: 300;
-                    border: 0;
-                    padding: 1rem;
+
                     border-radius: .5rem;
                     border: none;
-                    cursor: pointer;
+                    cursor: default;
                     position: relative;
                     box-shadow: abstracts.$btn-shadow;
-                    @media (min-width: 768px){
+                   
+                    @include abstracts.md {
                         &:hover {
+                            cursor: pointer;
                             letter-spacing: normal;
                             transition: .25s ease;
                             transform: scale(.985);
                             background: abstracts.$submit-btn-hover;
                         }
                     }
+
                     @media (max-width: 768px){
                         &:active {
                             letter-spacing: normal;
