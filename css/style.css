@@ -747,11 +747,6 @@ main .title p {
 .gallery a {
   margin-top: 10vh;
 }
-@media (min-width: 820px) {
-  .gallery a {
-    width: 30%;
-  }
-}
 .gallery figure {
   width: 80%;
   height: auto;
