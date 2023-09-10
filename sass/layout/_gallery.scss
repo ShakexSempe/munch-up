@@ -1,0 +1,57 @@
+@use '../abstracts';
+
+.gallery {
+    padding: 10vh 5vw;
+    overflow: hidden;
+    z-index: 5;
+    background: #fafafa;
+
+    .grid-container {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        gap: 5vh;
+
+        @include abstracts.sm {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+        }
+    }
+
+    a {
+        margin-top: 10vh;
+        @include abstracts.lg {
+        width: 30%;
+        }
+    }
+
+
+    figure {
+        width: 80%;
+        height: auto;
+        overflow: hidden;
+        border-radius: abstracts.$brand-radius;
+        @include abstracts.lg {
+            // height: 60vh;
+            // width: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: abstracts.$brand-radius;
+            transition: .25s ease;
+        }
+
+        &:hover {
+            background-image: abstracts.$munch-background;
+
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+
+}
