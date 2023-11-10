@@ -1139,6 +1139,7 @@ aside.active .social-bar {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  object-position: 50% 70%;
 }
 @media (min-width: 576px) {
   .hero-grid .hero-grid-image img {
