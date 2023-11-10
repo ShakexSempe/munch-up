@@ -1,5 +1,68 @@
 @use '../abstracts';
 
+.hero-grid {
+    height: 95vh;
+    padding: 10vh auto 5vh;
+    // border: 2px solid red;
+    background-color: #ffff;
+    display: grid;
+    grid-template-rows: 50% 50%;
+
+    // DESKTOP GRID 
+    @include abstracts.lg {
+        margin-bottom: 5vh;
+        padding: 30vh 5vw 15vh 0;
+        grid-template-rows: 1fr;
+        grid-template-columns: 40vw auto;
+        background: #fafafa;
+    }
+
+
+
+    .hero-grid-image {
+        // border: 2px solid blue;
+        overflow: hidden;
+
+        img {
+            // border: 2px solid red;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            @include abstracts.sm {
+                object-position: left;
+            }
+            @include abstracts.lg {
+                border-top-left-radius: 2rem;
+                border-top-right-radius: 2rem;
+            }
+        }
+    }
+
+    .hero-grid-title {
+        padding: 20vh 5vw 0;
+        text-transform: capitalize;
+        // align-self: end;
+
+        h1 {
+            margin-bottom: 1rem;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+        }
+
+        p {
+            line-height: 1.4;
+            font-size: clamp(.95rem, 2vw, 1.125rem);
+        }
+
+        .cta {
+            margin-top: 1rem;
+        }
+
+        @include abstracts.lg {
+            padding: 0vh 0.5rem 1rem 5vw;
+        }
+    }
+}
+
 #home {
     height: 95vh;
     width: 100%;

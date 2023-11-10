@@ -31,6 +31,11 @@ img {
   max-width: 100%;
 }
 
+img.icon {
+  width: 1rem;
+  height: 1rem;
+}
+
 main .title {
   padding: 5vh 5vw 1rem;
   position: relative;
@@ -1108,6 +1113,62 @@ aside.active .social-bar {
 @media (max-width: 768px) {
   aside.active .social-bar {
     width: 15vw;
+  }
+}
+
+.hero-grid {
+  height: 95vh;
+  padding: 10vh auto 5vh;
+  background-color: #ffff;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+@media (min-width: 820px) {
+  .hero-grid {
+    margin-bottom: 5vh;
+    padding: 30vh 5vw 15vh 0;
+    grid-template-rows: 1fr;
+    grid-template-columns: 40vw auto;
+    background: #fafafa;
+  }
+}
+.hero-grid .hero-grid-image {
+  overflow: hidden;
+}
+.hero-grid .hero-grid-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .hero-grid .hero-grid-image img {
+    object-position: left;
+  }
+}
+@media (min-width: 820px) {
+  .hero-grid .hero-grid-image img {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+}
+.hero-grid .hero-grid-title {
+  padding: 20vh 5vw 0;
+  text-transform: capitalize;
+}
+.hero-grid .hero-grid-title h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+.hero-grid .hero-grid-title p {
+  line-height: 1.4;
+  font-size: clamp(.95rem, 2vw, 1.125rem);
+}
+.hero-grid .hero-grid-title .cta {
+  margin-top: 1rem;
+}
+@media (min-width: 820px) {
+  .hero-grid .hero-grid-title {
+    padding: 0vh 0.5rem 1rem 5vw;
   }
 }
 

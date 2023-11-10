@@ -42,7 +42,8 @@ date.innerHTML = new Date().getFullYear();
 
 
 // INTERSECTION OBSERVERS
-const home = document.getElementById("home");
+// const home = document.getElementById("home");
+const home = document.querySelector('[data-home]');
 const main = document.getElementById("main");
 const homeBtn = document.querySelector(".top-btn");
 // console.log(HEADER);
