@@ -235,9 +235,12 @@ main .title p {
 .top-btn a {
   width: 100%;
   height: 100%;
+  background: #654321;
+  padding: 0.25rem;
   display: grid;
   place-content: center;
   text-decoration: none;
+  border-radius: 0.25rem;
 }
 .top-btn a i {
   padding: 0.25rem;
