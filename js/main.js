@@ -50,7 +50,7 @@ const homeBtn = document.querySelector(".top-btn");
 
 // MAIN SECTION OBSERVER
 const homeOptions = {
-    rootMargin: "-95% 0px 0px 0px"
+    rootMargin: "-90% 0px 0px 0px"
 };
 
 const homeObserver = new IntersectionObserver(

@@ -31,9 +31,9 @@
 
     // ACTIVE HEADER = HEADER HEIGHT WHEN HERO IO
     &.active-header {
-        height: 15vh;
+        height: 10vh;
         @media (min-width: 820px) {
-            height: 25vh;
+            height: 20vh;
             .logo {
                 position: relative;
                 top: .5rem;

@@ -141,10 +141,10 @@ main .title p {
   align-items: center;
   background-color: #4d3419;
   color: #fefefe;
-  padding: 0.8rem 0.8rem;
-  width: 13rem;
+  padding: 0.75rem;
+  width: 11rem;
   margin: 1rem 0;
-  font-size: 1.15rem;
+  font-size: 1rem;
   text-decoration: none;
   text-transform: capitalize;
   letter-spacing: 0.025rem;
@@ -795,11 +795,11 @@ main .title p {
   transition: 0.25s, box-shadow 0.25s;
 }
 #header.active-header {
-  height: 15vh;
+  height: 10vh;
 }
 @media (min-width: 820px) {
   #header.active-header {
-    height: 25vh;
+    height: 20vh;
   }
   #header.active-header .logo {
     position: relative;
@@ -1117,7 +1117,7 @@ aside.active .social-bar {
 }
 
 .hero-grid {
-  height: 95vh;
+  height: 90vh;
   padding: 10vh auto 5vh;
   background-color: #ffff;
   display: grid;
@@ -1139,7 +1139,7 @@ aside.active .social-bar {
   object-fit: cover;
   height: 100%;
   width: 100%;
-  object-position: 50% 70%;
+  object-position: 50% 80%;
 }
 @media (min-width: 576px) {
   .hero-grid .hero-grid-image img {
@@ -1153,19 +1153,19 @@ aside.active .social-bar {
   }
 }
 .hero-grid .hero-grid-title {
-  padding: 20vh 5vw 0;
+  padding: 15vh 5vw 0;
   text-transform: capitalize;
 }
 .hero-grid .hero-grid-title h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: clamp(2rem, 4vw, 2.8rem);
 }
 .hero-grid .hero-grid-title p {
   line-height: 1.4;
-  font-size: clamp(.95rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 2vw, 1.125rem);
 }
 .hero-grid .hero-grid-title .cta {
-  margin-top: 1rem;
+  margin: 1rem 0 0;
 }
 @media (min-width: 820px) {
   .hero-grid .hero-grid-title {
