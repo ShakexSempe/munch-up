@@ -37,6 +37,7 @@
     </head>
 <body>
     <div class="container" id="container">
+        
         <header class="header" id="header">
             <figure class="logo">
                 <a title="Munch Up Home" href="../index.html">
@@ -84,26 +85,36 @@
                 </div>
             </aside>
         </header>
-        <div id="home" class="hero">
-            <!-- HERO IMAGE -->
-            <figure>
-                <picture>
-                    <source srcset="../images/hero_1200.jpg" media="(min-width: 820.1px)" width="1200" height="797">
-                    <source srcset="../images/hero_400.jpg" media="(max-width: 820px)" width="1200" height="797">
-                    <img src="../images/hero_400.jpg" width="400" height="600" alt="Cupcakes">
-                </picture>
-            </figure>
-            <div class="home-content" id="home-logo">
+
+        <div data-home class=" hero-grid">
+            
+            <!-- HERO TITLE -->
+            <div class="home-content hero-grid-title" id="home-logo">
                 <div class="home-title">
                     <h1>cakes & cupcakes</h1>
                     <p>Treats for every occasion</p>
-                    <p class="meta-p"><i class="fas fa-location-dot"></i>Gauteng, South Africa</p>
+                    <p class="meta-p">Gauteng, South Africa</p>
                 </div>
                 <div class="cta">
-                    <a href="#main" class="btn btn-primary">our products<i class="fas fa-angles-right"></i></a>
+                    <a href="#main" class="btn btn-primary">our products
+                        <img src="../icons/solid/icons8-double-right-48-light.png" height="48" width="48" alt="double-right icon" class="icon">
+                    </a>
                 </div>
             </div>
+
+            <!-- HERO IMAGE -->
+            <figure class="hero-grid-image">
+                <picture>
+                    <source srcset="../images/hero_1200.jpg" media="(min-width: 500.1px)" width="1200" height="797">
+                    <source srcset="../images/hero_400.jpg" media="(max-width: 500px)" width="1200" height="797">
+                    <img src="../images/hero_400.jpg" width="400" height="600" alt="Cupcakes">
+                </picture>
+            </figure>
+
+            
+
         </div>
+        
         <main id="main">
             <section id="work">
                 <div class="title">
