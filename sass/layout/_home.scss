@@ -52,7 +52,12 @@
         p {
             line-height: 1.4;
             font-size: clamp(1rem, 2vw, 1.125rem);
+        
+            &.meta-p {
+                opacity: 0.7;
+            }
         }
+        
 
         .cta {
             margin: 1rem 0 0;

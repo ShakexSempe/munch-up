@@ -1,34 +1,81 @@
 @use '../abstracts';
 
 .gallery {
-    padding: 10vh 5vw;
+    // border: 1px solid blue;
     overflow: hidden;
     z-index: 5;
     background: #fafafa;
+    padding: 10vh 5vw;
+
+    @include abstracts.md {
+        padding: 15vh 5vw;
+    }
 
     .grid-container {
+        // border: 2px solid red;
         display: grid;
         place-items: center;
-        grid-template-columns: 1fr;
-        gap: 5vh;
+        grid-template-columns: 1fr 1fr;
+        overflow: hidden;
+        border-radius: 0.125rem;
 
-        @include abstracts.sm {
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 2rem;
+        .gallery-grid-item {
+            // border: 3px solid blue;
+            transition: 250ms;
+            height: 100%;
+            position: relative;
+            isolation: isolate;
+
+            &::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: #000;
+                opacity: 0;
+                transition: 250ms;
+            }
+            
+            img {
+                object-fit: cover;
+                transition: 250ms;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.05);
+                }
+            }
         }
+
+        @include abstracts.md {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 60vh;
+        }
+
+
+        &:has(:hover){
+            .gallery-grid-item {
+
+                &:not(:hover) {
+                    &::after {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+
     }
 
     a {
-        margin-top: 10vh;
-        
+        margin-top: 5vh;
     }
 
 
     figure {
-        width: 80%;
+        width: 100%;
         height: auto;
         overflow: hidden;
-        border-radius: abstracts.$brand-radius;
+        // border-radius: abstracts.$brand-radius;
         @include abstracts.lg {
             // height: 60vh;
             // width: 100%;
@@ -38,16 +85,8 @@
             height: 100%;
             object-fit: cover;
             object-position: center;
-            border-radius: abstracts.$brand-radius;
+            // border-radius: abstracts.$brand-radius;
             transition: .25s ease;
-        }
-
-        &:hover {
-            background-image: abstracts.$munch-background;
-
-            img {
-                transform: scale(1.05);
-            }
         }
     }
 
