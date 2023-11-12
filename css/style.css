@@ -767,7 +767,7 @@ main .title p {
   transition: 250ms;
 }
 .gallery .grid-container .gallery-grid-item:hover img {
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 @media (min-width: 768px) {
   .gallery .grid-container {
@@ -780,6 +780,11 @@ main .title p {
 }
 .gallery a {
   margin-top: 5vh;
+}
+@media (min-width: 768px) {
+  .gallery a {
+    margin-top: 10vh;
+  }
 }
 .gallery figure {
   width: 100%;
@@ -1155,6 +1160,7 @@ aside.active .social-bar {
     grid-template-rows: 1fr;
     grid-template-columns: 40vw auto;
     background: #fafafa;
+    background: linear-gradient(0deg, #f4f4f4, #fff);
   }
 }
 .hero-grid .hero-grid-image {
