@@ -244,19 +244,17 @@
                     background: abstracts.$submit-btn;
                     color: #fff;
 
-                    width: max-content;
-                    padding: 1rem 1.5rem;
+                    width: 10rem;
+                    padding: .75rem 1rem;
                     margin: 0 0 10vh;
 
                     text-align: center;
                     text-transform: capitalize;
-                    letter-spacing: .05rem;
                     font-size: 1rem;
                     font-size: clamp(1rem, 2vw, 1.125rem);
                     font-family: abstracts.$content-font;
-                    font-weight: 300;
 
-                    border-radius: .5rem;
+                    border-radius: abstracts.$brand-radius;
                     border: none;
                     cursor: default;
                     position: relative;

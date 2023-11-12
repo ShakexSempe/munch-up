@@ -499,16 +499,14 @@ main .title p {
 .contact-form form .row input[type=submit], .contact-form form .row textarea[type=submit], .contact-form form .row select[type=submit] {
   background: linear-gradient(0deg, #660000, #cc0000);
   color: #fff;
-  width: max-content;
-  padding: 1rem 1.5rem;
+  width: 10rem;
+  padding: 0.75rem 1rem;
   margin: 0 0 10vh;
   text-align: center;
   text-transform: capitalize;
-  letter-spacing: 0.05rem;
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.125rem);
   font-family: "Varela Round", sans-serif;
-  font-weight: 300;
   border-radius: 0.5rem;
   border: none;
   cursor: default;
