@@ -112,7 +112,8 @@
     color: abstracts.$text-color-light;
 
     padding: .75rem;
-    width: 11rem;
+    width: 10rem;
+    width: clamp(10rem, 40vw, 11rem );
     margin: 1rem 0;
 
     font-size: 1rem;
