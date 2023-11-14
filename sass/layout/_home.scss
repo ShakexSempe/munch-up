@@ -7,16 +7,17 @@
     background-color: #ffff;
     display: grid;
     grid-template-rows: 50% 50%;
-    row-gap: 1rem;
+    row-gap: 0.5rem;
 
     // DESKTOP GRID 
     @include abstracts.lg {
         // border: 2px solid red;
         height: 95vh;
         margin-bottom: 5vh;
-        padding: 10vh 0 0;
+        padding: 15vh 0 5vh;
         // padding: 30vh 5vw 15vh 0;
         grid-template-rows: 1fr 1fr;
+        grid-template-rows: 40% auto;
         grid-template-columns: 1fr;
         // grid-template-columns: 45vw auto;
         grid-template-areas: 'title title' 
@@ -30,6 +31,9 @@
     .hero-grid-image {
         // border: 2px solid blue;
         overflow: hidden;
+        @include abstracts.sm {
+            padding-inline: 5vw;
+        }
 
         img {
             // border: 2px solid red;
@@ -37,17 +41,18 @@
             height: 100%;
             width: 100%;
             object-position: 50% 80%;
+            // max-width: 1000px;
             @include abstracts.sm {
                 object-position: left;
-                padding: 0 5vw;
-            }
-            @include abstracts.lg {
-                grid-area: image;
-        
+                object-fit: cover;
                 border-top-left-radius: 2rem;
                 border-top-right-radius: 2rem;
-
             }
+        }
+        
+        @include abstracts.lg {
+            padding-inline: 5vw;
+            grid-area: image;
         }
     }
 
@@ -61,7 +66,7 @@
             margin-bottom: 1rem;
             font-size: clamp(1.5rem, 4vw, 2.25rem);
             font-size: 2rem;
-            font-size: clamp(1.5rem, 5vw, 3rem);
+            font-size: clamp(1.5rem, 4vw, 3rem);
             line-height: 1.2;
             font-weight: 600;
             text-wrap: balance;

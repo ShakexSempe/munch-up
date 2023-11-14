@@ -52,6 +52,7 @@
     // HERO HEADER 
     &.hero-header {
         background: transparent;
+        background: #fff;
 
         &::after {
             background: hsla(0, 0%, 100%, .95);
