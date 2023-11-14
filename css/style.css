@@ -828,7 +828,7 @@ main .title p {
 }
 @media (min-width: 820px) {
   #header.active-header {
-    height: 20vh;
+    height: 15vh;
   }
   #header.active-header .logo {
     position: relative;
@@ -1151,13 +1151,16 @@ aside.active .social-bar {
   background-color: #ffff;
   display: grid;
   grid-template-rows: 50% 50%;
+  row-gap: 1rem;
 }
 @media (min-width: 820px) {
   .hero-grid {
+    height: 95vh;
     margin-bottom: 5vh;
-    padding: 30vh 5vw 15vh 0;
-    grid-template-rows: 1fr;
-    grid-template-columns: 45vw auto;
+    padding: 10vh 0 0;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "title title" "image image";
     background: #fafafa;
     background: linear-gradient(0deg, #f4f4f4, #fff 45%);
   }
@@ -1174,37 +1177,61 @@ aside.active .social-bar {
 @media (min-width: 576px) {
   .hero-grid .hero-grid-image img {
     object-position: left;
+    padding: 0 5vw;
   }
 }
 @media (min-width: 820px) {
   .hero-grid .hero-grid-image img {
+    grid-area: image;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
   }
 }
 .hero-grid .hero-grid-title {
   padding: 15vh 5vw 0;
-  text-transform: capitalize;
+  position: relative;
 }
 .hero-grid .hero-grid-title h1 {
+  text-transform: capitalize;
   margin-bottom: 1rem;
-  font-size: clamp(2rem, 4vw, 2.8rem);
-  font-size: 2rem;
   font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-size: 2rem;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  line-height: 1.2;
+  font-weight: 600;
+  text-wrap: balance;
+  max-width: 600px;
+}
+.hero-grid .hero-grid-title h1 span {
+  opacity: 0.7;
+}
+@media (min-width: 576px) {
+  .hero-grid .hero-grid-title .home-title {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 .hero-grid .hero-grid-title p {
   line-height: 1.4;
+  margin-bottom: 0.25rem;
   font-size: clamp(1rem, 2vw, 1.125rem);
 }
 .hero-grid .hero-grid-title p.meta-p {
   opacity: 0.8;
+  text-transform: capitalize;
 }
 .hero-grid .hero-grid-title .cta {
   margin: 1rem 0 0;
 }
 @media (min-width: 820px) {
   .hero-grid .hero-grid-title {
+    grid-area: title;
     padding: 0vh 0.25rem 1rem 5vw;
+    display: flex;
+    align-items: end;
+    padding: 10vh 5vw 0;
   }
 }
 

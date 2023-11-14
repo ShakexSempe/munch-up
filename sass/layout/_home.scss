@@ -7,13 +7,20 @@
     background-color: #ffff;
     display: grid;
     grid-template-rows: 50% 50%;
+    row-gap: 1rem;
 
     // DESKTOP GRID 
     @include abstracts.lg {
+        // border: 2px solid red;
+        height: 95vh;
         margin-bottom: 5vh;
-        padding: 30vh 5vw 15vh 0;
-        grid-template-rows: 1fr;
-        grid-template-columns: 45vw auto;
+        padding: 10vh 0 0;
+        // padding: 30vh 5vw 15vh 0;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        // grid-template-columns: 45vw auto;
+        grid-template-areas: 'title title' 
+                                'image image';
         background: #fafafa;
         background: linear-gradient(0deg, #f4f4f4, #fff 45%);
     }
@@ -32,40 +39,88 @@
             object-position: 50% 80%;
             @include abstracts.sm {
                 object-position: left;
+                padding: 0 5vw;
             }
             @include abstracts.lg {
+                grid-area: image;
+        
                 border-top-left-radius: 2rem;
                 border-top-right-radius: 2rem;
+
             }
         }
     }
 
     .hero-grid-title {
+        // border: 2px solid red;
         padding: 15vh 5vw 0;
-        text-transform: capitalize;
-
+        position: relative;
+        
         h1 {
+            text-transform: capitalize;
             margin-bottom: 1rem;
-            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-size: clamp(1.5rem, 4vw, 2.25rem);
             font-size: 2rem;
-                font-size: clamp(1.5rem, 4vw, 2.25rem);
+            font-size: clamp(1.5rem, 5vw, 3rem);
+            line-height: 1.2;
+            font-weight: 600;
+            text-wrap: balance;
+            max-width: 600px;
+            // border: 3px solid red;
+
+            span {
+                opacity: 0.7;
+            }
+        }
+
+        .home-title {
+            @include abstracts.sm {
+                display: flex;
+                // border: 1px solid green;
+                align-items: start;
+                justify-content: space-between;
+                width: 100%;
+                
+            }
+
+            .home-subtitle {
+                // border: 1px solid yellow;
+                // display: flex;
+            }
         }
 
         p {
             line-height: 1.4;
+            margin-bottom: 0.25rem;
             font-size: clamp(1rem, 2vw, 1.125rem);
             &.meta-p {
                 opacity: 0.8;
+                text-transform: capitalize;
             }
         }
         
 
         .cta {
             margin: 1rem 0 0;
+            
         }
 
         @include abstracts.lg {
+            grid-area: title;
             padding: 0vh 0.25rem 1rem 5vw;
+            // border: 2px solid blue;
+            display: flex;
+            align-items: end;
+            padding: 10vh 5vw 0;
+            
+            
+            // .home-title {
+            //     border: 1px solid green;
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: space-between;
+            //     width: 100%;
+            // }
         }
     }
 }
