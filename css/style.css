@@ -1227,7 +1227,7 @@ aside.active .social-bar {
   font-size: clamp(1rem, 2vw, 1.125rem);
 }
 .hero-grid .hero-grid-title p.meta-p {
-  opacity: 0.8;
+  opacity: 0.7;
   text-transform: capitalize;
 }
 .hero-grid .hero-grid-title .cta {
