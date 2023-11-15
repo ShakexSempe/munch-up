@@ -677,6 +677,7 @@ main .title p {
     align-items: flex-start;
     padding: 10vh 5vw 5vh;
     gap: 1rem;
+    background: linear-gradient(90deg, #fff, #fafafa);
   }
 }
 .footer .footer-logo {
@@ -726,11 +727,9 @@ main .title p {
   text-decoration: none;
   transition: 250ms;
 }
-.footer .footer-item .footer-list li:hover {
-  gap: 0.25rem;
-}
 .footer .footer-item .footer-list li:hover a {
   color: #f75394;
+  transform: translateX(-0.25rem);
 }
 .footer .footer-item .footer-list li:hover i {
   color: #4d341a;

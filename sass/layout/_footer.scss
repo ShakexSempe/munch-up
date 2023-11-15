@@ -17,6 +17,7 @@
         align-items: flex-start;
         padding: 10vh 5vw 5vh;
         gap: 1rem;
+        background: linear-gradient(90deg, #fff, #fafafa);
     }
 
     .footer-logo {
@@ -69,9 +70,9 @@
                 }
                 
                 &:hover {
-                    gap: 0.25rem;
                     a {
                         color: abstracts.$brand-pink;
+                        transform: translateX(-0.25rem);
                     }
                     i {
                         color: abstracts.$brand-brown;
