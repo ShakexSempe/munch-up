@@ -704,7 +704,7 @@ main .title p {
   color: #800000;
   text-decoration: none;
 }
-.footer .footer-item p a:hover {
+.footer .footer-item p a:hover, .footer .footer-item p a:focus {
   color: #f75394;
 }
 .footer .footer-item .footer-list {
@@ -726,7 +726,10 @@ main .title p {
   color: #4d341a;
   cursor: pointer;
   text-decoration: none;
-  transition: 250ms;
+  transition: 150ms;
+}
+.footer .footer-item .footer-list li a:hover, .footer .footer-item .footer-list li a:focus {
+  color: #f75394;
 }
 .footer .footer-item .footer-list li:hover a {
   color: #f75394;
