@@ -330,6 +330,7 @@ main .title p {
 .contact-form {
   position: relative;
   background: #f4f4f4;
+  background: #ededed;
   padding: 5vh 5vw;
   margin-inline: auto;
   width: 100%;
