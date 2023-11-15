@@ -973,18 +973,18 @@ aside .nav-links {
   }
 }
 aside .nav-links li {
-  padding: 0.5rem;
   transition: 0.5s;
-  margin-bottom: 1rem;
-  border: none;
-  border-bottom: 2px solid #0002;
-  outline: none;
+  margin-bottom: 0.5rem;
   transform: translateX(2rem);
   opacity: 0;
-  transition: 0.3s;
+  transition: s;
 }
 aside .nav-links li a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid transparent;
   width: 100%;
   font-size: 1rem;
   text-decoration: none;
@@ -1000,10 +1000,18 @@ aside .nav-links li a i {
   color: #ddd;
   margin-right: 0.5em;
   width: 1.5rem;
-  transition: 0.2s;
+  transition: 250ms;
+  opacity: 0.5;
 }
-aside .nav-links li a.active {
+aside .nav-links li a .icon {
+  opacity: 0.6;
+}
+aside .nav-links li a.active, aside .nav-links li a:hover {
   color: pink;
+  border-color: #0006;
+}
+aside .nav-links li a.active .icon, aside .nav-links li a:hover .icon {
+  opacity: 1;
 }
 aside .nav-links li:hover i {
   color: #f75394;
@@ -1021,7 +1029,9 @@ aside .contact-links {
   }
 }
 aside .contact-links a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 0.5rem;
   text-decoration: none;
   opacity: 0;
@@ -1029,6 +1039,9 @@ aside .contact-links a {
   font-weight: 500;
   transform: translateX(1rem);
   transition: 1s;
+}
+aside .contact-links a .icon {
+  opacity: 0.8;
 }
 aside .contact-links a i {
   color: inherit;

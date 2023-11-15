@@ -179,28 +179,24 @@ aside {
         }
 
         li {
-            padding: .5rem;
             transition: .5s;
-            // margin: 0 5vw 5vh 0;
-            margin-bottom: 1rem;
-            // background-color: abstracts.$munch-pink-light;
-            // background: #111;
-            // border-radius: .25rem;
-            border: none;
-            border-bottom: 2px solid #0002;
-            outline: none;
-            // transform: scale(.1);
+            margin-bottom: 0.5rem;
             transform: translateX(2rem);
             opacity: 0;
-            transition: .3s;
-
+            transition: s;
+            
             a {
-                display: block;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                padding: 0.5rem;
+                border-bottom: 1px solid transparent;
                 width: 100%;
                 font-size: 1rem;
                 text-decoration: none;
                 color: #f4f4f4;
-                // border: 2px solid red;
+                
                 @media (min-width: 768px) {
                     font-size: 1.25rem;
                 }
@@ -208,13 +204,22 @@ aside {
                 i {
                     color: rgba(12, 12, 12, 0.377);
                     color: #ddd;
-                    margin-right: .5em;
+                    margin-right: 0.5em;
                     width: 1.5rem;
-                    transition: .2s;
+                    transition: 250ms;
+                    opacity: 0.5;
                 }
 
-                &.active {
+                .icon {
+                    opacity: 0.6;
+                }
+
+                &.active, &:hover {
                     color: pink;
+                    border-color: #0006;
+                    .icon {
+                        opacity: 1;
+                    }
                 }
             }
 
@@ -239,7 +244,10 @@ aside {
         }
 
         a {
-            display: block;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
             margin-bottom: .5rem;
             text-decoration: none;
             opacity: 0;
@@ -247,6 +255,11 @@ aside {
             font-weight: 500;
             transform: translateX(1rem);
             transition: 1s;
+
+            .icon {
+                opacity: 0.8;
+            }
+            
             i {
                 color: inherit;
                 width: 1.5rem;
