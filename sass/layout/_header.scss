@@ -399,3 +399,25 @@ aside {
     // END OF ACTIVE SIDEBAR
     
 }
+
+
+.skip-link {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: auto;
+    width: 100%;
+    background: red;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-transform: capitalize;
+    transform: translateY(-10vh);
+    transition: 250ms;
+
+    &:focus {
+        background-color: blue;
+        transform: translateY(0);
+    }
+
+}

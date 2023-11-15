@@ -309,6 +309,7 @@ main .title p {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
+  flex-direction: column;
   padding: 5vh 0;
 }
 @media (min-width: 820px) {
@@ -461,7 +462,6 @@ main .title p {
   background: #f4f4f4;
   width: 100%;
   padding: 0.7em 0.5em;
-  outline: none;
   font-size: 1rem;
   font-weight: 500;
   margin: 1em 0 5vh;
@@ -565,17 +565,21 @@ main .title p {
   font-size: 2rem;
   color: #51361a;
   margin-bottom: 0.5rem;
+  width: 2rem;
+  height: 2rem;
 }
 .contact-info .info-box .item-title h2 {
   text-transform: capitalize;
   font-size: 1rem;
 }
-.contact-info .info-box a {
+.contact-info .info-box a, .contact-info .info-box p {
   color: inherit;
   text-decoration: none;
   transition: 0.25s;
+  display: flex;
+  gap: 0.5rem;
 }
-.contact-info .info-box a:hover {
+.contact-info .info-box a:hover, .contact-info .info-box p:hover {
   color: #f75394;
 }
 .contact-info .info-box i {
@@ -1144,6 +1148,25 @@ aside.active .social-bar {
   aside.active .social-bar {
     width: 15vw;
   }
+}
+
+.skip-link {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: auto;
+  width: 100%;
+  background: red;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  text-transform: capitalize;
+  transform: translateY(-10vh);
+  transition: 250ms;
+}
+.skip-link:focus {
+  background-color: blue;
+  transform: translateY(0);
 }
 
 .hero-grid {

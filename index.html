@@ -44,7 +44,11 @@
 
     <div class="container" id="container">
         
+        <!-- HEADER -->
         <header data-header class="header" id="header">
+            <!-- SKIP TO MAIN -->
+            <a href="#main" tabindex="0" class="skip-link">skip to main</a>
+            
             <figure class="logo">
                 <a title="Munch Up Home" href="#">
                     <img src="images/logo-min.jpg" width="350" height="348" alt="Munch Up logo"></a>
@@ -100,6 +104,7 @@
             </aside>
         </header>
 
+        <!-- HERO - GRID LAYOUT -->
         <div data-home class=" hero-grid">
             
             <!-- HERO TITLE -->
@@ -134,6 +139,7 @@
 
         </div>
 
+        <!-- MAIN -->
         <main id="main">
 
             <section class="slogan">
@@ -141,7 +147,7 @@
                     <h2>We bake & make:</h2>
                     <p>Cakes, cake pops, cupcakes, <br> cakesicles and party combos</p>
                     <div class="slogan-contact">
-                        <a class="btn btn-primary" title="Services page" href="pages/services.html#main">About Us
+                        <a class="btn btn-primary" title="Services page" href="pages/work.html#main">our products
                         <img src="icons/outline/icons8-right-button-48-light.png" height="48" width="48" alt="right-button icon" class="icon">
                             
                         </a>
@@ -153,6 +159,7 @@
             </section>
 
             <div id="gallery" class="gallery">
+
                 <div class="grid-container">
                     
                     <figure class="gallery-grid-item">
@@ -173,13 +180,54 @@
 
 
                 </div>
-                <a class="btn btn-primary" href="pages/work.html#main">view products
+
+                <a class="btn btn-primary" href="pages/services.html#main">view products
                     <img src="icons/outline/icons8-right-button-48-light.png" height="48" width="48" alt="right-button" class="icon">
-                    </a>
+                </a>
 
             </div>
 
             <div id="contact" class="contact">
+
+                <div class="contact-info">
+                    <h1 title="contact info: munch up" class="contact-info-title">contact info</h1>
+                    <div class="contact-items">
+
+                        <!-- EMAIL -->
+                        <div class="info-box">
+                            <div class="item-title">
+                                <img class="icon contact-icon" src="icons/solid/icons8-envelope-48-dark.png" height="48" width="48" alt="envelope">
+                                <h2>email address</h2>
+                            </div>
+                            <a href="mailto:munchup1811@gmail.com">
+                                <img class="icon" src="icons/solid/icons8-email-send-48-dark.png" height="48" width="48" alt="sent envelope">
+                                    munchup1811@gmail.com</a>
+                        </div>
+                        <!-- PHONE -->
+                        <div class="info-box">
+                            <div class="item-title">
+                                <img class="icon contact-icon" src="icons/solid/icons8-phone-48.png" height="48" width="48" alt="envelope">
+                                <h2>phone number</h2>
+                            </div>
+                            <a href="tel:+27724407705">
+                                <img src="icons/solid/icons8-outgoing-call-48-dark.png" height="48" width="48" alt="outgoing call" class="icon">
+                                +27724407705</a>
+                        </div>
+
+                        <!-- ADDRESS -->
+                        <div class="info-box">
+                            <div class="item-title">
+                                <img class="icon contact-icon" src="icons/solid/icons8-location-48-dark.png" height="48" width="48" alt="location-dot">
+                                <h2>address</h2>
+                            </div>
+                            <p>
+                                <img src="icons/solid/icons8-double-right-48-dark.png" height="48" width="48" alt="double-right" class="icon">
+                                Midrand, South Africa</p>
+                        </div>
+
+                    </div>
+                </div>
+
                 <div id="form" class="contact-form">
                     <h1 title="contact form" class="contact-info-title">order form</h1>
                     <form action="https://formsubmit.co/bshakex@gmail.com" method="POST">
@@ -188,17 +236,17 @@
                                 <legend>contact info</legend>
                                 <div class="input50">
                                     <label for="name" class="required">Name</label>
-                                    <input tabindex="1" name="name" type="text" id="name" placeholder="name & surname"
+                                    <input name="name" type="text" id="name" placeholder="name & surname"
                                         required>
                                 </div>
 
                                 <div class="input50">
                                     <label for="name" class="required">email</label>
-                                    <input tabindex="2" name="email" type="email" placeholder="email address" required>
+                                    <input name="email" type="email" placeholder="email address" required>
                                 </div>
                                 <div class="input50">
                                     <label for="tel" class="required">phone</label>
-                                    <input tabindex="3" name="tel" id="tel" type="tel" placeholder="phone number"
+                                    <input name="tel" id="tel" type="tel" placeholder="phone number"
                                         required>
                                 </div>
                             </fieldset>
@@ -266,39 +314,7 @@
                     </form>
                 </div>
 
-                <div class="contact-info">
-                    <h1 title="contact info: munch up" class="contact-info-title">contact info</h1>
-                    <div class="contact-items">
-
-                        <!-- EMAIL -->
-                        <div class="info-box">
-                            <div class="item-title">
-                                <i class="fas fa-at contact-icon"></i>
-                                <h2>email address</h2>
-                            </div>
-                            <a href="mailto:munchup1811@gmail.com"><i
-                                    class="fas fa-envelope"></i>munchup1811@gmail.com</a>
-                        </div>
-                        <!-- PHONE -->
-                        <div class="info-box">
-                            <div class="item-title">
-                                <i class="fas fa-mobile-alt contact-icon"></i>
-                                <h2>phone number</h2>
-                            </div>
-                            <a href="tel:+27724407705"><i class="fas fa-phone"></i>+27724407705</a>
-                        </div>
-
-                        <!-- ADDRESS -->
-                        <div class="info-box">
-                            <div class="item-title">
-                                <i class="fas fa-map-marked-alt contact-icon"></i>
-                                <h2>address</h2>
-                            </div>
-                            <p><i class="fas fa-location-dot"></i>Midrand, South Africa</p>
-                        </div>
-
-                    </div>
-                </div>
+                
 
             </div>
 
