@@ -679,7 +679,7 @@ main .title p {
     gap: 1rem;
   }
 }
-.footer img {
+.footer .footer-logo {
   width: 10rem;
   border-radius: 50%;
   box-shadow: 0 0.5rem 0.5rem #0001;
@@ -710,20 +710,27 @@ main .title p {
 }
 .footer .footer-item .footer-list li {
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 250ms;
 }
 .footer .footer-item .footer-list li i {
   width: 1.5rem;
   color: #800000;
-  transition: 0.25s;
+  transition: 250ms;
 }
 .footer .footer-item .footer-list li a {
   color: #4d341a;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.25s;
+  transition: 250ms;
+}
+.footer .footer-item .footer-list li:hover {
+  gap: 0.25rem;
 }
 .footer .footer-item .footer-list li:hover a {
-  color: #800000;
+  color: #f75394;
 }
 .footer .footer-item .footer-list li:hover i {
   color: #4d341a;
