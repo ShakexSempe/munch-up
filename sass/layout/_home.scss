@@ -27,7 +27,7 @@
     }
 
     @include abstracts.xlg {
-        grid-template-rows: auto auto;
+        grid-template-rows: 1fr 1fr;
     }
 
     .hero-image-grid {
@@ -39,7 +39,7 @@
             display: grid;
             column-gap: 0.5rem;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 15rem;
+            grid-template-rows: 10rem;
 
             // border: 3px solid blue;
             :nth-child(even) {
