@@ -1203,14 +1203,41 @@ aside.active .social-bar {
 @media (min-width: 820px) {
   .hero-grid {
     height: 95vh;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
     padding: 15vh 0 5vh;
     grid-template-rows: 1fr 1fr;
-    grid-template-rows: 40% auto;
+    grid-template-rows: 45% auto;
     grid-template-columns: 1fr;
     grid-template-areas: "title title" "image image";
     background: #fafafa;
     background: linear-gradient(0deg, #f4f4f4, #fff 45%);
+  }
+}
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-rows: auto auto;
+  }
+}
+.hero-grid .hero-image-grid {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .hero-grid .hero-image-grid {
+    grid-area: image;
+    margin-inline: 5vw;
+    display: grid;
+    column-gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15rem;
+  }
+  .hero-grid .hero-image-grid :nth-child(even) img {
+    transform: translateY(2rem);
+  }
+  .hero-grid .hero-image-grid img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
   }
 }
 .hero-grid .hero-grid-image {
@@ -1218,7 +1245,13 @@ aside.active .social-bar {
 }
 @media (min-width: 576px) {
   .hero-grid .hero-grid-image {
-    padding-inline: 5vw;
+    padding: 0 5vw 5vh;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-grid .hero-grid-image {
+    display: none;
+    grid-template-rows: 1fr;
   }
 }
 .hero-grid .hero-grid-image img {
@@ -1281,10 +1314,9 @@ aside.active .social-bar {
 @media (min-width: 820px) {
   .hero-grid .hero-grid-title {
     grid-area: title;
-    padding: 0vh 0.25rem 1rem 5vw;
     display: flex;
-    align-items: end;
-    padding: 10vh 5vw 0;
+    align-items: center;
+    padding: 0vh 5vw 0;
   }
 }
 

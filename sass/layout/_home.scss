@@ -13,11 +13,11 @@
     @include abstracts.lg {
         // border: 2px solid red;
         height: 95vh;
-        margin-bottom: 5vh;
-        padding: 15vh 0 5vh;
+        margin-bottom: 10vh;
         // padding: 30vh 5vw 15vh 0;
+        padding: 15vh 0 5vh;
         grid-template-rows: 1fr 1fr;
-        grid-template-rows: 40% auto;
+        grid-template-rows: 45% auto;
         grid-template-columns: 1fr;
         // grid-template-columns: 45vw auto;
         grid-template-areas: 'title title' 
@@ -26,13 +26,51 @@
         background: linear-gradient(0deg, #f4f4f4, #fff 45%);
     }
 
+    @include abstracts.xlg {
+        grid-template-rows: auto auto;
+    }
+
+    .hero-image-grid {
+        display: none;
+        @include abstracts.xlg {
+            grid-area: image;
+            // height:10rem;
+            margin-inline: 5vw;
+            display: grid;
+            column-gap: 0.5rem;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 15rem;
+
+            // border: 3px solid blue;
+            :nth-child(even) {
+                img {
+                    transform: translateY(2rem);
+                }
+            }
+            
+            img {
+                // border: 3px solid red;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                // object-position: left;
+                border-radius: 0.5rem;
+            }
+        }
+
+    }
 
 
     .hero-grid-image {
         // border: 2px solid blue;
         overflow: hidden;
         @include abstracts.sm {
-            padding-inline: 5vw;
+            padding: 0 5vw 5vh;
+        }
+
+        @include abstracts.xlg {
+            display: none;
+            grid-template-rows: 1fr;
         }
 
         img {
@@ -106,11 +144,9 @@
 
         @include abstracts.lg {
             grid-area: title;
-            padding: 0vh 0.25rem 1rem 5vw;
-            // border: 2px solid blue;
             display: flex;
-            align-items: end;
-            padding: 10vh 5vw 0;
+            align-items: center;
+            padding: 0vh 5vw 0;
             
             
             // .home-title {
