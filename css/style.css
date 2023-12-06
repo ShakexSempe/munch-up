@@ -771,7 +771,7 @@ main .title p {
   content: "";
   position: absolute;
   inset: 0;
-  background: #000;
+  background: #fff;
   opacity: 0;
   transition: 250ms;
 }
@@ -789,7 +789,7 @@ main .title p {
   }
 }
 .gallery .grid-container:has(:hover) .gallery-grid-item:not(:hover)::after {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .gallery a {
   margin-top: 5vh;
@@ -1238,6 +1238,13 @@ aside.active .social-bar {
     width: 100%;
     height: 100%;
     border-radius: 0.5rem;
+    transition: 250ms;
+  }
+  .hero-grid .hero-image-grid:hover img {
+    transform: translateY(1rem);
+  }
+  .hero-grid .hero-image-grid:hover :nth-child(even) img {
+    transform: translateY(1rem);
   }
 }
 .hero-grid .hero-grid-image {
