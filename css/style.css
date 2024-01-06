@@ -1257,7 +1257,6 @@ aside.active .social-bar {
 }
 @media (min-width: 1024px) {
   .hero-grid .hero-grid-image {
-    display: none;
     grid-template-rows: 1fr;
   }
 }
@@ -1324,6 +1323,11 @@ aside.active .social-bar {
     display: flex;
     align-items: center;
     padding: 0vh 5vw 0;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-grid:has(.hero-image-grid) .hero-grid-image {
+    display: none;
   }
 }
 
