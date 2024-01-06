@@ -30,7 +30,7 @@
                 content: '';
                 position: absolute;
                 inset: 0;
-                background: #fff;
+                background: #000;
                 opacity: 0;
                 transition: 250ms;
             }
@@ -58,7 +58,7 @@
 
                 &:not(:hover) {
                     &::after {
-                        opacity: 0.6;
+                        opacity: 0.8;
                     }
                 }
             }
