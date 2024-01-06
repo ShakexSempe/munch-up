@@ -281,52 +281,6 @@ main .title p {
   opacity: 0;
 }
 
-#contact {
-  overflow-x: hidden;
-  background: #eee;
-  padding-top: 5vh;
-}
-#contact .title {
-  text-align: left;
-  text-wrap: balance;
-}
-#contact .title p {
-  font-size: 1rem;
-  font-size: clamp(1rem, 1.25vw, 1.125rem);
-  text-transform: none;
-  line-height: 1.6;
-  max-width: 768px;
-}
-#contact .title p a {
-  color: #f75394;
-  font-weight: 600;
-}
-#contact .title p a:hover {
-  color: #b768a2;
-}
-
-.contact {
-  position: relative;
-  display: flex;
-  flex-direction: column-reverse;
-  flex-direction: column;
-  padding: 5vh 0;
-}
-@media (min-width: 820px) {
-  .contact {
-    padding: 10vh 5vw;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-}
-.contact .contact-info-title {
-  text-transform: capitalize;
-  padding: 10vh 0 10vh;
-  color: #800000;
-  font-weight: 600;
-  font-size: clamp(2rem, 4vw, 1.5rem);
-}
-
 .contact-form {
   position: relative;
   background: #f4f4f4;
@@ -348,42 +302,33 @@ main .title p {
   }
 }
 .contact-form form .row fieldset {
-  background: #ffff;
-  padding: 1rem 0.5rem;
+  background: white;
+  padding: 0rem 1rem 2rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
-  border: 0.1rem solid #0002;
+  border: 1px solid #eee;
   border-radius: 0.25rem;
   overflow: hidden;
-  margin-bottom: 2rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
 }
 .contact-form form .row fieldset legend {
-  color: #800000;
-  font-weight: 700;
-  font-size: 1.125rem;
-  letter-spacing: 0.15rem;
+  color: #4d341a;
+  font-weight: 600;
+  font-size: 1.25rem;
   text-transform: capitalize;
-  margin-left: 0.5em;
-  padding: 0 0.25rem;
 }
 .contact-form form .row fieldset#contact-field {
-  flex-direction: row;
-  gap: 0.5rem;
-  padding: 0.5rem;
+  flex-direction: column;
   width: 100%;
+  gap: 0.5rem;
 }
-@media (max-width: 1024px) {
+@media (min-width: 820px) {
   .contact-form form .row fieldset#contact-field {
-    flex-direction: column;
-    margin-bottom: 5vh;
-    padding: 1rem 0.5rem 2rem;
+    flex-direction: row;
+    gap: 1rem;
   }
   .contact-form form .row fieldset#contact-field .input50 {
-    height: auto;
-  }
-}
-@media (max-width: 350px) {
-  .contact-form form .row fieldset#contact-field {
     height: auto;
   }
 }
@@ -410,16 +355,14 @@ main .title p {
   }
 }
 .contact-form form .row label {
-  text-transform: capitalize;
-  color: #4d341a;
   position: absolute;
-  top: 1em;
+  top: 1rem;
+  left: 0;
+  transform: translateY(25%);
+  color: #4d341a;
+  text-transform: capitalize;
   font-size: 1rem;
   font-weight: 500;
-  left: 0;
-  padding: 0 4em 0em 0;
-  letter-spacing: 0.05rem;
-  transform: translateY(50%);
 }
 .contact-form form .row label.required::after {
   content: "*";
@@ -457,7 +400,7 @@ main .title p {
 }
 .contact-form form .row input, .contact-form form .row textarea, .contact-form form .row select {
   position: relative;
-  border: 1px solid #333;
+  border: 1px solid #000;
   border: none;
   color: #000;
   background: #f4f4f4;
@@ -533,6 +476,52 @@ main .title p {
 }
 .contact-form form .row textarea {
   height: 150px;
+}
+
+#contact {
+  overflow-x: hidden;
+  background: #eee;
+  padding-top: 5vh;
+}
+#contact .title {
+  text-align: left;
+  text-wrap: balance;
+}
+#contact .title p {
+  font-size: 1rem;
+  font-size: clamp(1rem, 1.25vw, 1.125rem);
+  text-transform: none;
+  line-height: 1.6;
+  max-width: 768px;
+}
+#contact .title p a {
+  color: #f75394;
+  font-weight: 600;
+}
+#contact .title p a:hover {
+  color: #b768a2;
+}
+
+.contact {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-direction: column;
+  padding: 5vh 0;
+}
+@media (min-width: 820px) {
+  .contact {
+    padding: 10vh 5vw;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.contact .contact-info-title {
+  text-transform: capitalize;
+  padding: 10vh 0 10vh;
+  color: #800000;
+  font-weight: 600;
+  font-size: clamp(2rem, 4vw, 1.5rem);
 }
 
 .contact-info {
